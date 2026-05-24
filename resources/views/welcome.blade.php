@@ -68,6 +68,9 @@
                         <a href="#how-it-works" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">How It Works</a>
                     </li>
                     <li>
+                        <a href="#faq"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">FAQ</a>
+                    </li>
+                    <li>
                         <a href="#contact"      class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Contact</a>
                     </li>
                 </ul>
@@ -95,7 +98,7 @@
                 <span class="w-px h-4 bg-white/10 block"></span>
 
                 <!-- Primary CTA -->
-                <a href="#license"
+                <a href="#contact"
                    class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white text-[13.5px] font-semibold px-5 py-2.5 rounded-xl border border-blue-500/30">
                     <!-- Key icon -->
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -236,6 +239,23 @@
                 </li>
 
                 <li>
+                    <a href="#faq"
+                       class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                        <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center"
+                              style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="font-semibold text-[14px] text-gray-200">FAQ</div>
+                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Common questions answered</div>
+                        </div>
+                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </a>
+                </li>
+
+                <li>
                     <a href="#contact"
                        class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center"
@@ -275,7 +295,7 @@
                     @endauth
                 @endif
 
-                <a href="#license"
+                <a href="#contact"
                    class="btn-cta flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[14px] font-semibold px-4 py-3 rounded-xl border border-blue-500/30">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="7.5" cy="15.5" r="5.5"/>
@@ -327,15 +347,23 @@
         <p class="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-4">
             Install on your own server in <span class="text-white font-semibold">30 minutes</span>.
             Full source code. One-time license.
-            Rebrand and resell as your own.
+            White-label branding freedom included.
         </p>
-        <p class="text-gray-600 text-sm max-w-xl mx-auto mb-11">
+        <p class="text-gray-600 text-sm max-w-xl mx-auto mb-8">
             Powered by AI Voice Search · Real-time Dispatch · Fleet Management · White-label Ready
         </p>
 
+        <!-- Price badge -->
+        <div class="inline-flex items-center gap-3 mb-8 px-5 py-2.5 rounded-2xl" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
+            <span class="text-[13.5px] font-semibold text-white">One-Time License —</span>
+            <span class="text-[18px] font-black text-blue-400 leading-none">$4,999</span>
+            <span class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Fixed · No Recurring Fees</span>
+        </div>
+
         <!-- CTA row -->
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="#license"
+            <a href="#contact"
                class="btn-cta w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-semibold px-7 py-3.5 rounded-xl text-[15px] border border-blue-500/30">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="7.5" cy="15.5" r="5.5"/>
@@ -345,15 +373,57 @@
                 <span>Get License Access</span>
             </a>
 
-            <a href="#how-it-works"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border text-gray-300 hover:text-white font-medium px-7 py-3.5 rounded-xl text-[15px] transition-all duration-200 hover:border-white/25 hover:bg-white/5"
+            <a href="https://wa.me/message/limoschedule" target="_blank" rel="noopener"
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border text-gray-300 hover:text-white font-medium px-7 py-3.5 rounded-xl text-[15px] transition-all duration-200 hover:border-green-500/40 hover:bg-green-500/10"
                style="border-color: rgba(255,255,255,0.12);">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"/>
-                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/>
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
                 </svg>
-                Watch Demo
+                WhatsApp Us
             </a>
+        </div>
+
+        <!-- Audio player -->
+        <div class="mt-10 max-w-md mx-auto">
+            <div class="relative flex items-center gap-4 px-5 py-4 rounded-2xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(12px);">
+                <!-- Play button -->
+                <button id="heroAudioBtn" type="button" onclick="document.getElementById('heroAudio').paused ? (document.getElementById('heroAudio').play(), this.innerHTML='<svg width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;currentColor&quot;><rect x=&quot;6&quot; y=&quot;4&quot; width=&quot;4&quot; height=&quot;16&quot;/><rect x=&quot;14&quot; y=&quot;4&quot; width=&quot;4&quot; height=&quot;16&quot;/></svg>') : (document.getElementById('heroAudio').pause(), this.innerHTML='<svg width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;currentColor&quot;><polygon points=&quot;5 3 19 12 5 21 5 3&quot;/></svg>')"
+                    class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105"
+                    style="background: #3B82F6; box-shadow: 0 0 20px rgba(59,130,246,0.4);">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </button>
+                <!-- Waveform bars (decorative) -->
+                <div class="flex-1 flex items-center gap-[2.5px]" style="height: 28px;">
+                    <div class="vw-bar" style="height: 6px;  animation-delay: 0.0s;"></div>
+                    <div class="vw-bar" style="height: 14px; animation-delay: 0.1s;"></div>
+                    <div class="vw-bar" style="height: 20px; animation-delay: 0.2s;"></div>
+                    <div class="vw-bar" style="height: 28px; animation-delay: 0.3s;"></div>
+                    <div class="vw-bar" style="height: 22px; animation-delay: 0.4s;"></div>
+                    <div class="vw-bar" style="height: 16px; animation-delay: 0.5s;"></div>
+                    <div class="vw-bar" style="height: 24px; animation-delay: 0.6s;"></div>
+                    <div class="vw-bar" style="height: 10px; animation-delay: 0.7s;"></div>
+                    <div class="vw-bar" style="height: 18px; animation-delay: 0.8s;"></div>
+                    <div class="vw-bar" style="height: 26px; animation-delay: 0.9s;"></div>
+                    <div class="vw-bar" style="height: 12px; animation-delay: 1.0s;"></div>
+                    <div class="vw-bar" style="height: 22px; animation-delay: 1.1s;"></div>
+                    <div class="vw-bar" style="height: 8px;  animation-delay: 1.2s;"></div>
+                    <div class="vw-bar" style="height: 20px; animation-delay: 1.3s;"></div>
+                    <div class="vw-bar" style="height: 28px; animation-delay: 1.4s;"></div>
+                    <div class="vw-bar" style="height: 16px; animation-delay: 1.5s;"></div>
+                    <div class="vw-bar" style="height: 10px; animation-delay: 1.6s;"></div>
+                    <div class="vw-bar" style="height: 22px; animation-delay: 1.7s;"></div>
+                    <div class="vw-bar" style="height: 18px; animation-delay: 1.8s;"></div>
+                    <div class="vw-bar" style="height: 6px;  animation-delay: 1.9s;"></div>
+                </div>
+                <!-- Label -->
+                <div class="flex-shrink-0 text-right">
+                    <div class="text-[11px] font-semibold text-white">System Overview</div>
+                    <div class="text-[10px] text-gray-500 mt-0.5">2 min · English</div>
+                </div>
+                <audio id="heroAudio" preload="none">
+                    <source src="{{ url('public/assets/audio/overview.mp3') }}" type="audio/mpeg">
+                </audio>
+            </div>
         </div>
 
         <!-- Trust strip -->
@@ -373,7 +443,7 @@
             </div>
             <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.24s">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                White-Label &amp; Resellable
+                White-Label Ready
             </div>
             <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.32s">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -456,7 +526,7 @@
                 </div>
                 <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">White Label System</h3>
                 <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Replace every trace of our branding with yours. Custom domain, logo, colors, and app name — zero attribution required. Resell as your own product.
+                    Replace every trace of our branding with yours. Custom domain, logo, colors, and app name — zero attribution required. Full white-label customization allowed.
                 </p>
                 <div class="feat-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -630,7 +700,7 @@
             <p class="text-gray-500 text-sm">
                 All features included in a single one-time license. No monthly fees. No hidden costs.
             </p>
-            <a href="#license"
+            <a href="#contact"
                class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white font-semibold px-6 py-2.5 rounded-xl text-sm border border-blue-500/30 flex-shrink-0">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="7.5" cy="15.5" r="5.5"/>
@@ -1401,6 +1471,1679 @@
     </div><!-- /container -->
 </section>
 <!-- ════ END AI CALL AGENT ════ -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION — ADMIN PANEL SHOWCASE
+═════════════════════════════════════════════════════════ -->
+<section id="admin-panel" class="relative py-28 overflow-hidden">
+
+    <!-- Background -->
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59,130,246,0.055) 0%, transparent 65%);"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 50% 35% at 15% 85%, rgba(59,130,246,0.04) 0%, transparent 60%);"></div>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative">
+
+        <!-- ── Section Header ── -->
+        <div class="text-center mb-14">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-semibold tracking-[0.1em] uppercase text-blue-400 mb-6"
+                 style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+                </svg>
+                Enterprise Admin Panel
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-bold text-white tracking-tight leading-tight mb-5">
+                Complete Control.<br class="hidden sm:block"> Zero Limitations.
+            </h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+                A fully-featured operations dashboard — manage bookings, fleet, pricing,
+                analytics and your entire team from one powerful interface. Fully yours, fully branded.
+            </p>
+        </div>
+
+        <!-- ── Tab Navigation ── -->
+        <div class="flex items-center justify-center mb-8 overflow-x-auto pb-1">
+            <div class="flex items-center gap-1 p-1 rounded-xl flex-shrink-0"
+                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="admin-tab active-tab" data-panel="ap-dashboard">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    Dashboard
+                </button>
+                <button class="admin-tab" data-panel="ap-bookings">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
+                    Bookings
+                </button>
+                <button class="admin-tab" data-panel="ap-fleet">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/><circle cx="16" cy="19" r="2"/><circle cx="9" cy="19" r="2"/><path d="M21 19h2v-6l-3-4H7v9M7 19h2"/></svg>
+                    Fleet
+                </button>
+                <button class="admin-tab" data-panel="ap-pricing">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                    Pricing
+                </button>
+                <button class="admin-tab" data-panel="ap-analytics">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    Analytics
+                </button>
+                <button class="admin-tab" data-panel="ap-team">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    Team
+                </button>
+            </div>
+        </div>
+
+        <!-- ── Browser Frame Wrapper (horizontal scroll on mobile) ── -->
+        <div class="overflow-x-auto rounded-2xl" style="box-shadow: 0 40px 100px rgba(0,0,0,0.55), 0 0 0 1px rgba(59,130,246,0.06);">
+        <div class="min-w-[900px] rounded-2xl overflow-hidden" style="background: rgba(12,12,12,0.95); border: 1px solid rgba(255,255,255,0.08); box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);">
+
+            <!-- Browser Chrome Bar -->
+            <div class="flex items-center gap-3 px-4 py-3" style="background: rgba(255,255,255,0.025); border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <div class="flex items-center gap-1.5 flex-shrink-0">
+                    <div class="w-3 h-3 rounded-full" style="background: #FF5F57;"></div>
+                    <div class="w-3 h-3 rounded-full" style="background: #FFBD2E;"></div>
+                    <div class="w-3 h-3 rounded-full" style="background: #28C840;"></div>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <div class="flex items-center gap-2 px-4 py-1.5 rounded-lg text-[11.5px] text-gray-500 max-w-xs w-full"
+                         style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        yourbrand.com/admin/dashboard
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-semibold text-green-400"
+                         style="background: rgba(34,197,94,0.08); border: 1px solid rgba(34,197,94,0.15);">
+                        <div class="w-1.5 h-1.5 rounded-full bg-green-400 admin-live-dot"></div>
+                        Live
+                    </div>
+                </div>
+            </div>
+
+            <!-- Admin App: Sidebar + Main -->
+            <div class="flex" style="height: 580px;">
+
+                <!-- ─── Sidebar ─── -->
+                <div class="flex-shrink-0 flex flex-col" style="width: 196px; background: rgba(7,7,7,0.98); border-right: 1px solid rgba(255,255,255,0.05);">
+
+                    <!-- Brand mark -->
+                    <div class="flex items-center gap-2.5 px-4 py-4" style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                        <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-[12px] font-bold text-white leading-none">LimoAdmin</div>
+                            <div class="text-[10px] text-gray-500 mt-0.5">v2.4 Enterprise</div>
+                        </div>
+                    </div>
+
+                    <!-- Nav -->
+                    <nav class="flex-1 px-2.5 py-3 flex flex-col gap-0.5">
+                        <div class="sidebar-nav-item active-nav" data-nav="ap-dashboard">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                            <span>Dashboard</span>
+                        </div>
+                        <div class="sidebar-nav-item" data-nav="ap-bookings">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
+                            <span>Bookings</span>
+                            <span class="ml-auto text-[10px] px-1.5 py-0.5 rounded-full font-bold" style="background: rgba(59,130,246,0.2); color: #60a5fa;">12</span>
+                        </div>
+                        <div class="sidebar-nav-item" data-nav="ap-fleet">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/><circle cx="16" cy="19" r="2"/><circle cx="9" cy="19" r="2"/><path d="M21 19h2v-6l-3-4H7v9M7 19h2"/></svg>
+                            <span>Fleet</span>
+                        </div>
+                        <div class="sidebar-nav-item" data-nav="ap-pricing">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                            <span>Pricing</span>
+                        </div>
+                        <div class="sidebar-nav-item" data-nav="ap-analytics">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="sidebar-nav-item" data-nav="ap-team">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            <span>Team</span>
+                        </div>
+                        <div class="mt-2 pt-2" style="border-top: 1px solid rgba(255,255,255,0.05);">
+                            <div class="sidebar-nav-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M22 12h-2M19.07 19.07l-1.41-1.41M12 22v-2M4.93 19.07l1.41-1.41M2 12h2M4.93 4.93l1.41 1.41M12 2v2"/></svg>
+                                <span>Settings</span>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!-- User -->
+                    <div class="px-3 py-3 flex items-center gap-2.5" style="border-top: 1px solid rgba(255,255,255,0.05);">
+                        <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-[11px] font-bold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">A</div>
+                        <div class="min-w-0">
+                            <div class="text-[11.5px] font-semibold text-white truncate">Admin</div>
+                            <div class="text-[10px] text-gray-500 truncate">Super Admin</div>
+                        </div>
+                    </div>
+                </div><!-- /sidebar -->
+
+                <!-- ─── Main Content ─── -->
+                <div class="flex-1 flex flex-col overflow-hidden" style="background: rgba(10,10,12,0.99);">
+
+                    <!-- Top Bar -->
+                    <div class="flex items-center justify-between px-5 py-3 flex-shrink-0" style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                        <div class="ap-page-title text-[14px] font-bold text-white">Overview</div>
+                        <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-[11.5px] text-gray-500"
+                                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
+                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                                Search...
+                            </div>
+                            <div class="relative w-7 h-7 rounded-lg flex items-center justify-center"
+                                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                                <div class="absolute top-1 right-1 w-2 h-2 rounded-full bg-blue-500" style="border: 1.5px solid rgba(10,10,12,0.99);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scrollable Panel Area -->
+                    <div class="flex-1 overflow-y-auto admin-content-scroll">
+
+                        <!-- ════ DASHBOARD PANEL ════ -->
+                        <div id="ap-dashboard" class="admin-panel p-5 space-y-4">
+
+                            <!-- KPI Cards -->
+                            <div class="grid grid-cols-4 gap-3">
+
+                                <div class="admin-kpi-card p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="text-[11px] text-gray-500 font-medium">Total Revenue</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.1);">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-[20px] font-bold text-white mb-1.5">$48,290</div>
+                                    <div class="flex items-center gap-1 text-[10.5px] text-green-400">
+                                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+                                        +12.4% this month
+                                    </div>
+                                </div>
+
+                                <div class="admin-kpi-card p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="text-[11px] text-gray-500 font-medium">Active Bookings</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.1);">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-[20px] font-bold text-white mb-1.5">247</div>
+                                    <div class="flex items-center gap-1 text-[10.5px] text-green-400">
+                                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
+                                        +8 since yesterday
+                                    </div>
+                                </div>
+
+                                <div class="admin-kpi-card p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="text-[11px] text-gray-500 font-medium">Fleet Utilization</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.1);">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/><circle cx="16" cy="19" r="2"/><circle cx="9" cy="19" r="2"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-[20px] font-bold text-white mb-2">84%</div>
+                                    <div class="w-full h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);">
+                                        <div class="h-full rounded-full" style="width: 84%; background: linear-gradient(90deg, #1d4ed8, #3B82F6);"></div>
+                                    </div>
+                                </div>
+
+                                <div class="admin-kpi-card p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="text-[11px] text-gray-500 font-medium">Team Online</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.1);">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="text-[20px] font-bold text-white mb-1.5">18 / 24</div>
+                                    <div class="flex items-center gap-1.5 text-[10.5px] text-gray-400">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-green-400"></div>
+                                        6 drivers available
+                                    </div>
+                                </div>
+
+                            </div><!-- /kpi -->
+
+                            <!-- Revenue Chart + Activity Feed -->
+                            <div class="grid grid-cols-3 gap-3">
+
+                                <div class="col-span-2 p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div>
+                                            <div class="text-[13px] font-bold text-white">Revenue Overview</div>
+                                            <div class="text-[11px] text-gray-500 mt-0.5">Last 7 months</div>
+                                        </div>
+                                        <div class="px-2.5 py-1 rounded-lg text-[11px] font-medium text-blue-400"
+                                             style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">Monthly</div>
+                                    </div>
+                                    <svg viewBox="0 0 360 90" class="w-full" style="height: 100px;" preserveAspectRatio="none">
+                                        <defs>
+                                            <linearGradient id="rev-grad" x1="0" y1="0" x2="0" y2="1">
+                                                <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.22"/>
+                                                <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <line x1="0" y1="22" x2="360" y2="22" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                                        <line x1="0" y1="45" x2="360" y2="45" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                                        <line x1="0" y1="68" x2="360" y2="68" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                                        <path d="M0 78 L51 63 L103 70 L154 45 L206 52 L257 28 L308 18 L360 12 L360 90 L0 90Z" fill="url(#rev-grad)"/>
+                                        <path d="M0 78 L51 63 L103 70 L154 45 L206 52 L257 28 L308 18 L360 12" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="0"   cy="78" r="3" fill="#3B82F6"/>
+                                        <circle cx="51"  cy="63" r="3" fill="#3B82F6"/>
+                                        <circle cx="103" cy="70" r="3" fill="#3B82F6"/>
+                                        <circle cx="154" cy="45" r="3" fill="#3B82F6"/>
+                                        <circle cx="206" cy="52" r="3" fill="#3B82F6"/>
+                                        <circle cx="257" cy="28" r="3" fill="#3B82F6"/>
+                                        <circle cx="308" cy="18" r="3" fill="#3B82F6"/>
+                                        <circle cx="360" cy="12" r="3" fill="#3B82F6"/>
+                                    </svg>
+                                    <div class="flex justify-between mt-1">
+                                        <span class="text-[9.5px] text-gray-600">Nov</span>
+                                        <span class="text-[9.5px] text-gray-600">Dec</span>
+                                        <span class="text-[9.5px] text-gray-600">Jan</span>
+                                        <span class="text-[9.5px] text-gray-600">Feb</span>
+                                        <span class="text-[9.5px] text-gray-600">Mar</span>
+                                        <span class="text-[9.5px] text-gray-600">Apr</span>
+                                        <span class="text-[9.5px] text-gray-600">May</span>
+                                    </div>
+                                </div>
+
+                                <!-- Live Activity -->
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[13px] font-bold text-white mb-3.5">Live Activity</div>
+                                    <div class="space-y-3">
+                                        <div class="flex items-start gap-2.5">
+                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.2);">
+                                                <div class="w-1.5 h-1.5 rounded-full bg-green-400"></div>
+                                            </div>
+                                            <div><div class="text-[11px] text-gray-300 leading-tight">Booking #4892 confirmed</div><div class="text-[10px] text-gray-600 mt-0.5">2 min ago</div></div>
+                                        </div>
+                                        <div class="flex items-start gap-2.5">
+                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
+                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/></svg>
+                                            </div>
+                                            <div><div class="text-[11px] text-gray-300 leading-tight">Vehicle #7 dispatched</div><div class="text-[10px] text-gray-600 mt-0.5">5 min ago</div></div>
+                                        </div>
+                                        <div class="flex items-start gap-2.5">
+                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(234,179,8,0.1); border: 1px solid rgba(234,179,8,0.2);">
+                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#EAB308" stroke-width="2.5" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                                            </div>
+                                            <div><div class="text-[11px] text-gray-300 leading-tight">Driver late alert #3041</div><div class="text-[10px] text-gray-600 mt-0.5">8 min ago</div></div>
+                                        </div>
+                                        <div class="flex items-start gap-2.5">
+                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.2);">
+                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                                            </div>
+                                            <div><div class="text-[11px] text-gray-300 leading-tight">Payment received $240</div><div class="text-[10px] text-gray-600 mt-0.5">12 min ago</div></div>
+                                        </div>
+                                        <div class="flex items-start gap-2.5">
+                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
+                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                                            </div>
+                                            <div><div class="text-[11px] text-gray-300 leading-tight">New driver registered</div><div class="text-[10px] text-gray-600 mt-0.5">18 min ago</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- /chart row -->
+
+                        </div><!-- /ap-dashboard -->
+
+                        <!-- ════ BOOKINGS PANEL ════ -->
+                        <div id="ap-bookings" class="admin-panel p-5 hidden">
+
+                            <!-- Toolbar -->
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <div class="px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white cursor-pointer" style="background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.25);">All (247)</div>
+                                    <div class="px-3 py-1.5 rounded-lg text-[11.5px] text-gray-400 cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Pending (12)</div>
+                                    <div class="px-3 py-1.5 rounded-lg text-[11.5px] text-gray-400 cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Active (38)</div>
+                                    <div class="px-3 py-1.5 rounded-lg text-[11.5px] text-gray-400 cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Done (197)</div>
+                                </div>
+                                <button class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white flex-shrink-0" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); border: 1px solid rgba(59,130,246,0.5);">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    New Booking
+                                </button>
+                            </div>
+
+                            <!-- Table -->
+                            <div class="rounded-xl overflow-hidden" style="border: 1px solid rgba(255,255,255,0.07);">
+                                <div class="grid text-[10px] font-semibold text-gray-500 uppercase tracking-[0.08em] px-4 py-2.5" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.07);">
+                                    <div>ID</div><div>Customer</div><div>Route</div><div>Vehicle</div><div>Status</div><div>Fare</div><div></div>
+                                </div>
+                                <div class="divide-y divide-white/[0.04]">
+
+                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
+                                        <div class="text-[11px] font-mono text-gray-500">#4892</div>
+                                        <div><div class="text-[12px] font-medium text-white">James Carter</div><div class="text-[10px] text-gray-500">+1 555 234 8900</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">JFK → Manhattan Hotel</div><div class="text-[10px] text-gray-500">Today, 9:30 PM</div></div>
+                                        <div class="text-[11px] text-gray-400">Exec Sedan #04</div>
+                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Active</span></div>
+                                        <div class="text-[12px] font-semibold text-white">$145</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                    </div>
+
+                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
+                                        <div class="text-[11px] font-mono text-gray-500">#4891</div>
+                                        <div><div class="text-[12px] font-medium text-white">Sarah Williamson</div><div class="text-[10px] text-gray-500">+1 555 872 3100</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Midtown → LaGuardia</div><div class="text-[10px] text-gray-500">Today, 11:00 PM</div></div>
+                                        <div class="text-[11px] text-gray-400">SUV Premium #09</div>
+                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Pending</span></div>
+                                        <div class="text-[12px] font-semibold text-white">$210</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                    </div>
+
+                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
+                                        <div class="text-[11px] font-mono text-gray-500">#4889</div>
+                                        <div><div class="text-[12px] font-medium text-white">Michael Torres</div><div class="text-[10px] text-gray-500">+1 555 431 2200</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Newark EWR → Downtown</div><div class="text-[10px] text-gray-500">Tomorrow, 7:00 AM</div></div>
+                                        <div class="text-[11px] text-gray-400">Stretch Limo #02</div>
+                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">Confirmed</span></div>
+                                        <div class="text-[12px] font-semibold text-white">$380</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                    </div>
+
+                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
+                                        <div class="text-[11px] font-mono text-gray-500">#4888</div>
+                                        <div><div class="text-[12px] font-medium text-white">Emily Chen</div><div class="text-[10px] text-gray-500">+1 555 128 9900</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Chelsea → JFK Airport</div><div class="text-[10px] text-gray-500">Today, 6:45 PM</div></div>
+                                        <div class="text-[11px] text-gray-400">Exec Sedan #07</div>
+                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-gray-400" style="background: rgba(255,255,255,0.06);">Completed</span></div>
+                                        <div class="text-[12px] font-semibold text-white">$175</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                    </div>
+
+                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
+                                        <div class="text-[11px] font-mono text-gray-500">#4885</div>
+                                        <div><div class="text-[12px] font-medium text-white">David Osei</div><div class="text-[10px] text-gray-500">+1 555 667 4400</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Upper East Side → Boston</div><div class="text-[10px] text-gray-500">Tomorrow, 9:00 AM</div></div>
+                                        <div class="text-[11px] text-gray-400">Van Premium #11</div>
+                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Pending</span></div>
+                                        <div class="text-[12px] font-semibold text-white">$520</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                    </div>
+
+                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
+                                        <div class="text-[11px] font-mono text-gray-500">#4882</div>
+                                        <div><div class="text-[12px] font-medium text-white">Priya Sharma</div><div class="text-[10px] text-gray-500">+1 555 303 7700</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Wall Street → Newark EWR</div><div class="text-[10px] text-gray-500">Today, 4:15 PM</div></div>
+                                        <div class="text-[11px] text-gray-400">Exec Sedan #12</div>
+                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Active</span></div>
+                                        <div class="text-[12px] font-semibold text-white">$290</div>
+                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div><!-- /ap-bookings -->
+
+                        <!-- ════ FLEET PANEL ════ -->
+                        <div id="ap-fleet" class="admin-panel p-5 hidden">
+
+                            <!-- Fleet Stats -->
+                            <div class="grid grid-cols-4 gap-3 mb-4">
+                                <div class="p-3 rounded-xl flex items-center gap-3" style="background: rgba(34,197,94,0.05); border: 1px solid rgba(34,197,94,0.15);">
+                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(34,197,94,0.1);"><div class="w-2 h-2 rounded-full bg-green-400"></div></div>
+                                    <div><div class="text-[17px] font-bold text-white">18</div><div class="text-[10.5px] text-green-400 font-medium">Available</div></div>
+                                </div>
+                                <div class="p-3 rounded-xl flex items-center gap-3" style="background: rgba(59,130,246,0.05); border: 1px solid rgba(59,130,246,0.15);">
+                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1);"><div class="w-2 h-2 rounded-full bg-blue-400"></div></div>
+                                    <div><div class="text-[17px] font-bold text-white">24</div><div class="text-[10.5px] text-blue-400 font-medium">On Ride</div></div>
+                                </div>
+                                <div class="p-3 rounded-xl flex items-center gap-3" style="background: rgba(234,179,8,0.05); border: 1px solid rgba(234,179,8,0.15);">
+                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(234,179,8,0.1);"><div class="w-2 h-2 rounded-full bg-yellow-400"></div></div>
+                                    <div><div class="text-[17px] font-bold text-white">3</div><div class="text-[10.5px] text-yellow-400 font-medium">Maintenance</div></div>
+                                </div>
+                                <div class="p-3 rounded-xl flex items-center gap-3" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.05);">
+                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/><circle cx="16" cy="19" r="2"/><circle cx="9" cy="19" r="2"/></svg>
+                                    </div>
+                                    <div><div class="text-[17px] font-bold text-white">45</div><div class="text-[10.5px] text-gray-400 font-medium">Total Fleet</div></div>
+                                </div>
+                            </div>
+
+                            <!-- Vehicle Cards -->
+                            <div class="grid grid-cols-3 gap-3">
+
+                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-start justify-between mb-3">
+                                        <div><div class="text-[12.5px] font-bold text-white">Executive Sedan</div><div class="text-[10.5px] text-gray-500 mt-0.5">Mercedes S-Class · #04</div></div>
+                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Available</span>
+                                    </div>
+                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
+                                        <svg viewBox="0 0 140 48" class="w-28" fill="none"><path d="M8 36 L24 20 L46 14 L94 14 L112 22 L132 28 L132 36 Q125 43 112 43 L24 43 Q12 43 8 36Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="32" cy="43" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="108" cy="43" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M44 14 L46 26 L94 26 L96 14" stroke="rgba(59,130,246,0.3)" stroke-width="1" fill="rgba(59,130,246,0.03)"/></svg>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[10.5px]">
+                                        <span class="text-gray-500">ODO: 42,180 km</span>
+                                        <span class="text-gray-500">Service in 8 days</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.12);">
+                                    <div class="flex items-start justify-between mb-3">
+                                        <div><div class="text-[12.5px] font-bold text-white">SUV Premium</div><div class="text-[10.5px] text-gray-500 mt-0.5">Cadillac Escalade · #09</div></div>
+                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">On Ride</span>
+                                    </div>
+                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
+                                        <svg viewBox="0 0 150 52" class="w-32" fill="none"><path d="M6 38 L22 18 L50 12 L100 12 L118 20 L144 28 L144 38 Q136 46 120 46 L22 46 Q12 46 6 38Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="34" cy="46" r="9" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="116" cy="46" r="9" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M48 12 L50 26 L100 26 L102 12" stroke="rgba(59,130,246,0.35)" stroke-width="1" fill="rgba(59,130,246,0.04)"/></svg>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[10.5px]">
+                                        <span class="text-gray-500">ODO: 28,450 km</span>
+                                        <span class="text-blue-400/70">En route · ETA 14 min</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(234,179,8,0.12);">
+                                    <div class="flex items-start justify-between mb-3">
+                                        <div><div class="text-[12.5px] font-bold text-white">Stretch Limousine</div><div class="text-[10.5px] text-gray-500 mt-0.5">Lincoln Continental · #02</div></div>
+                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Maintenance</span>
+                                    </div>
+                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
+                                        <svg viewBox="0 0 190 48" class="w-full max-w-[140px]" fill="none"><path d="M5 36 L20 22 L40 14 L150 14 L170 22 L185 28 L185 36 Q178 44 165 44 L20 44 Q10 44 5 36Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="30" cy="44" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="158" cy="44" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M38 14 L40 26 L150 26 L152 14" stroke="rgba(59,130,246,0.3)" stroke-width="1" fill="rgba(59,130,246,0.03)"/></svg>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[10.5px]">
+                                        <span class="text-yellow-600/80">Brake service needed</span>
+                                        <span class="text-gray-500">ODO: 71,200 km</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-start justify-between mb-3">
+                                        <div><div class="text-[12.5px] font-bold text-white">Luxury Van</div><div class="text-[10.5px] text-gray-500 mt-0.5">Mercedes Sprinter · #11</div></div>
+                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Available</span>
+                                    </div>
+                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
+                                        <svg viewBox="0 0 155 50" class="w-32" fill="none"><path d="M8 36 L22 16 L52 10 L108 10 L125 18 L147 28 L147 36 Q140 44 125 44 L22 44 Q12 44 8 36Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="34" cy="44" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="120" cy="44" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M50 10 L52 22 L108 22 L110 10" stroke="rgba(59,130,246,0.3)" stroke-width="1" fill="rgba(59,130,246,0.03)"/></svg>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[10.5px]">
+                                        <span class="text-gray-500">ODO: 18,930 km</span>
+                                        <span class="text-gray-500">Service in 30 days</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.12);">
+                                    <div class="flex items-start justify-between mb-3">
+                                        <div><div class="text-[12.5px] font-bold text-white">Executive Sedan</div><div class="text-[10.5px] text-gray-500 mt-0.5">BMW 7 Series · #07</div></div>
+                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">On Ride</span>
+                                    </div>
+                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
+                                        <svg viewBox="0 0 140 48" class="w-28" fill="none"><path d="M8 36 L24 20 L46 14 L94 14 L112 22 L132 28 L132 36 Q125 43 112 43 L24 43 Q12 43 8 36Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="32" cy="43" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="108" cy="43" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M44 14 L46 26 L94 26 L96 14" stroke="rgba(59,130,246,0.35)" stroke-width="1" fill="rgba(59,130,246,0.04)"/></svg>
+                                    </div>
+                                    <div class="flex items-center justify-between text-[10.5px]">
+                                        <span class="text-gray-500">ODO: 55,640 km</span>
+                                        <span class="text-blue-400/70">En route · ETA 7 min</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-3.5 rounded-xl flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.03); border: 1px dashed rgba(59,130,246,0.18); min-height: 140px;">
+                                    <div class="text-center">
+                                        <div class="w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                        </div>
+                                        <div class="text-[11.5px] font-medium text-blue-400">Add Vehicle</div>
+                                        <div class="text-[10px] text-gray-600 mt-0.5">40 more in fleet</div>
+                                    </div>
+                                </div>
+
+                            </div><!-- /vehicle grid -->
+
+                        </div><!-- /ap-fleet -->
+
+                        <!-- ════ PRICING PANEL ════ -->
+                        <div id="ap-pricing" class="admin-panel p-5 hidden">
+
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <div class="text-[14px] font-bold text-white">Pricing Configuration</div>
+                                    <div class="text-[11.5px] text-gray-500 mt-0.5">Base rates, per-mile fares, and surge multipliers</div>
+                                </div>
+                                <button class="px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); border: 1px solid rgba(59,130,246,0.5);">Save Changes</button>
+                            </div>
+
+                            <div class="rounded-xl overflow-hidden mb-4" style="border: 1px solid rgba(255,255,255,0.07);">
+                                <div class="grid text-[10px] font-semibold text-gray-500 uppercase tracking-[0.08em] px-5 py-3" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.07);">
+                                    <div>Service Type</div><div>Base Fare</div><div>Per Mile</div><div>Min Fare</div><div>Wait Time</div><div>Surge</div>
+                                </div>
+                                <div class="divide-y divide-white/[0.04]">
+
+                                    <div class="grid items-center px-5 py-3.5 hover:bg-white/[0.015] transition-colors" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px;">
+                                        <div class="flex items-center gap-2.5">
+                                            <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
+                                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8"/><path d="M5 5l14 14"/></svg>
+                                            </div>
+                                            <div><div class="text-[12px] font-semibold text-white">Airport Transfer</div><div class="text-[10.5px] text-gray-500">All major airports</div></div>
+                                        </div>
+                                        <div class="text-[12px] text-white font-mono">$35.00</div><div class="text-[12px] text-white font-mono">$3.20</div><div class="text-[12px] text-white font-mono">$75.00</div><div class="text-[12px] text-white font-mono">$0.50/min</div>
+                                        <div class="w-9 h-5 rounded-full flex items-center px-0.5 cursor-pointer" style="background: #3B82F6;"><div class="w-4 h-4 rounded-full bg-white ml-auto shadow-sm"></div></div>
+                                    </div>
+
+                                    <div class="grid items-center px-5 py-3.5 hover:bg-white/[0.015] transition-colors" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px;">
+                                        <div class="flex items-center gap-2.5">
+                                            <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
+                                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                                            </div>
+                                            <div><div class="text-[12px] font-semibold text-white">City Transfer</div><div class="text-[10.5px] text-gray-500">Point-to-point urban</div></div>
+                                        </div>
+                                        <div class="text-[12px] text-white font-mono">$20.00</div><div class="text-[12px] text-white font-mono">$2.80</div><div class="text-[12px] text-white font-mono">$40.00</div><div class="text-[12px] text-white font-mono">$0.40/min</div>
+                                        <div class="w-9 h-5 rounded-full flex items-center px-0.5 cursor-pointer" style="background: #3B82F6;"><div class="w-4 h-4 rounded-full bg-white ml-auto shadow-sm"></div></div>
+                                    </div>
+
+                                    <div class="grid items-center px-5 py-3.5 hover:bg-white/[0.015] transition-colors" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px;">
+                                        <div class="flex items-center gap-2.5">
+                                            <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
+                                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            </div>
+                                            <div><div class="text-[12px] font-semibold text-white">Hourly Charter</div><div class="text-[10.5px] text-gray-500">Billed per hour</div></div>
+                                        </div>
+                                        <div class="text-[12px] text-white font-mono">$90.00</div><div class="text-[12px] text-gray-500 font-mono">N/A</div><div class="text-[12px] text-white font-mono">$90.00</div><div class="text-[12px] text-gray-500 font-mono">Included</div>
+                                        <div class="w-9 h-5 rounded-full flex items-center px-0.5 cursor-pointer" style="background: rgba(255,255,255,0.1);"><div class="w-4 h-4 rounded-full bg-white/40 shadow-sm"></div></div>
+                                    </div>
+
+                                    <div class="grid items-center px-5 py-3.5 hover:bg-white/[0.015] transition-colors" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px;">
+                                        <div class="flex items-center gap-2.5">
+                                            <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
+                                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6l9-3 9 3M3 18l9 3 9-3"/></svg>
+                                            </div>
+                                            <div><div class="text-[12px] font-semibold text-white">Long Distance</div><div class="text-[10.5px] text-gray-500">Interstate / 50+ miles</div></div>
+                                        </div>
+                                        <div class="text-[12px] text-white font-mono">$50.00</div><div class="text-[12px] text-white font-mono">$2.40</div><div class="text-[12px] text-white font-mono">$200.00</div><div class="text-[12px] text-white font-mono">$0.35/min</div>
+                                        <div class="w-9 h-5 rounded-full flex items-center px-0.5 cursor-pointer" style="background: #3B82F6;"><div class="w-4 h-4 rounded-full bg-white ml-auto shadow-sm"></div></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Surge Rules -->
+                            <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                <div class="text-[12.5px] font-bold text-white mb-3">Dynamic Surge Multipliers</div>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
+                                        <div class="text-[10.5px] text-gray-500 mb-1.5">Peak Hours (6–9AM, 5–8PM)</div>
+                                        <div class="text-[18px] font-bold text-blue-400">1.5×</div>
+                                    </div>
+                                    <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
+                                        <div class="text-[10.5px] text-gray-500 mb-1.5">High Demand (&gt;85% fleet)</div>
+                                        <div class="text-[18px] font-bold text-yellow-400">2.0×</div>
+                                    </div>
+                                    <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
+                                        <div class="text-[10.5px] text-gray-500 mb-1.5">Late Night (11PM–4AM)</div>
+                                        <div class="text-[18px] font-bold text-purple-400">1.25×</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /ap-pricing -->
+
+                        <!-- ════ ANALYTICS PANEL ════ -->
+                        <div id="ap-analytics" class="admin-panel p-5 hidden">
+
+                            <div class="grid grid-cols-3 gap-3 mb-4">
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[11px] text-gray-500 mb-2">Monthly Revenue</div>
+                                    <div class="text-[22px] font-bold text-white">$48,290</div>
+                                    <div class="flex items-center gap-1 mt-1.5 text-[10.5px] text-green-400"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>+12.4% vs last month</div>
+                                </div>
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[11px] text-gray-500 mb-2">Avg. Booking Value</div>
+                                    <div class="text-[22px] font-bold text-white">$195.60</div>
+                                    <div class="flex items-center gap-1 mt-1.5 text-[10.5px] text-green-400"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>+$18.40 vs last month</div>
+                                </div>
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[11px] text-gray-500 mb-2">Repeat Customer Rate</div>
+                                    <div class="text-[22px] font-bold text-white">68%</div>
+                                    <div class="flex items-center gap-1 mt-1.5 text-[10.5px] text-green-400"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>+5% vs last month</div>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-3">
+
+                                <div class="col-span-2 p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[13px] font-bold text-white mb-4">Weekly Bookings</div>
+                                    <div class="flex items-end gap-3" style="height: 120px;">
+                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 55%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Mon</div></div>
+                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 72%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Tue</div></div>
+                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 67%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Wed</div></div>
+                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 88%; background: linear-gradient(180deg, #60a5fa, #3B82F6);"></div><div class="text-[9.5px] text-gray-600">Thu</div></div>
+                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 96%; background: linear-gradient(180deg, #93c5fd, #3B82F6); box-shadow: 0 0 12px rgba(59,130,246,0.3);"></div><div class="text-[9.5px] text-blue-400">Fri</div></div>
+                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 82%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Sat</div></div>
+                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 58%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Sun</div></div>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[13px] font-bold text-white mb-4">Booking Sources</div>
+                                    <div class="space-y-3.5">
+                                        <div>
+                                            <div class="flex items-center justify-between mb-1.5"><span class="text-[11.5px] text-gray-400">Website</span><span class="text-[11.5px] text-white font-semibold">42%</span></div>
+                                            <div class="h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);"><div class="h-full rounded-full bg-blue-500" style="width: 42%;"></div></div>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center justify-between mb-1.5"><span class="text-[11.5px] text-gray-400">Mobile App</span><span class="text-[11.5px] text-white font-semibold">35%</span></div>
+                                            <div class="h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);"><div class="h-full rounded-full" style="width: 35%; background: #6366f1;"></div></div>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center justify-between mb-1.5"><span class="text-[11.5px] text-gray-400">AI Phone Agent</span><span class="text-[11.5px] text-white font-semibold">15%</span></div>
+                                            <div class="h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);"><div class="h-full rounded-full" style="width: 15%; background: #22d3ee;"></div></div>
+                                        </div>
+                                        <div>
+                                            <div class="flex items-center justify-between mb-1.5"><span class="text-[11.5px] text-gray-400">Manual / Phone</span><span class="text-[11.5px] text-white font-semibold">8%</span></div>
+                                            <div class="h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);"><div class="h-full rounded-full" style="width: 8%; background: #a3e635;"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div><!-- /ap-analytics -->
+
+                        <!-- ════ TEAM PANEL ════ -->
+                        <div id="ap-team" class="admin-panel p-5 hidden">
+
+                            <div class="flex items-center justify-between mb-4">
+                                <div>
+                                    <div class="text-[14px] font-bold text-white">Team Management</div>
+                                    <div class="text-[11.5px] text-gray-500 mt-0.5">24 members · Role-based access control</div>
+                                </div>
+                                <button class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); border: 1px solid rgba(59,130,246,0.5);">
+                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                    Invite Member
+                                </button>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-3">
+
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-start gap-3 mb-3">
+                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">A</div>
+                                        <div class="min-w-0 flex-1">
+                                            <div class="text-[12.5px] font-bold text-white truncate">Alex Morgan</div>
+                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.2);">Super Admin</span>
+                                        </div>
+                                        <div class="w-2 h-2 rounded-full bg-green-400 flex-shrink-0 mt-1.5"></div>
+                                    </div>
+                                    <div class="text-[10.5px] text-gray-500 mb-3">alex@yourbrand.com</div>
+                                    <div class="flex flex-wrap gap-1">
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Fleet</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Pricing</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Team</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-blue-400" style="background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.15);">+4 more</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-start gap-3 mb-3">
+                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #6d28d9, #7c3aed);">S</div>
+                                        <div class="min-w-0 flex-1">
+                                            <div class="text-[12.5px] font-bold text-white truncate">Sarah Kim</div>
+                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(124,58,237,0.15); color: #a78bfa; border: 1px solid rgba(124,58,237,0.2);">Dispatcher</span>
+                                        </div>
+                                        <div class="w-2 h-2 rounded-full bg-green-400 flex-shrink-0 mt-1.5"></div>
+                                    </div>
+                                    <div class="text-[10.5px] text-gray-500 mb-3">sarah@yourbrand.com</div>
+                                    <div class="flex flex-wrap gap-1">
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Bookings</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Fleet</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Drivers</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-start gap-3 mb-3">
+                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #065f46, #059669);">R</div>
+                                        <div class="min-w-0 flex-1">
+                                            <div class="text-[12.5px] font-bold text-white truncate">Ryan Osei</div>
+                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(5,150,105,0.15); color: #34d399; border: 1px solid rgba(5,150,105,0.2);">Driver</span>
+                                        </div>
+                                        <div class="w-2 h-2 rounded-full bg-gray-600 flex-shrink-0 mt-1.5"></div>
+                                    </div>
+                                    <div class="text-[10.5px] text-gray-500 mb-3">ryan.osei@drivers.com</div>
+                                    <div class="flex flex-wrap gap-1">
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">My Rides</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Schedule</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-start gap-3 mb-3">
+                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #92400e, #d97706);">M</div>
+                                        <div class="min-w-0 flex-1">
+                                            <div class="text-[12.5px] font-bold text-white truncate">Maria Santos</div>
+                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(217,119,6,0.15); color: #fbbf24; border: 1px solid rgba(217,119,6,0.2);">Manager</span>
+                                        </div>
+                                        <div class="w-2 h-2 rounded-full bg-green-400 flex-shrink-0 mt-1.5"></div>
+                                    </div>
+                                    <div class="text-[10.5px] text-gray-500 mb-3">m.santos@yourbrand.com</div>
+                                    <div class="flex flex-wrap gap-1">
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Reports</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Analytics</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Team</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="flex items-start gap-3 mb-3">
+                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #1e1b4b, #4338ca);">J</div>
+                                        <div class="min-w-0 flex-1">
+                                            <div class="text-[12.5px] font-bold text-white truncate">Jordan Lee</div>
+                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(67,56,202,0.15); color: #818cf8; border: 1px solid rgba(67,56,202,0.2);">Dispatcher</span>
+                                        </div>
+                                        <div class="w-2 h-2 rounded-full bg-yellow-400 flex-shrink-0 mt-1.5"></div>
+                                    </div>
+                                    <div class="text-[10.5px] text-gray-500 mb-3">j.lee@yourbrand.com</div>
+                                    <div class="flex flex-wrap gap-1">
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Bookings</span>
+                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Fleet</span>
+                                    </div>
+                                </div>
+
+                                <div class="p-4 rounded-xl flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.03); border: 1px dashed rgba(59,130,246,0.18);">
+                                    <div class="text-center">
+                                        <div class="w-9 h-9 rounded-full flex items-center justify-center mx-auto mb-2" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                                        </div>
+                                        <div class="text-[11.5px] font-medium text-blue-400">Invite Member</div>
+                                        <div class="text-[10px] text-gray-600 mt-0.5">+19 more in team</div>
+                                    </div>
+                                </div>
+
+                            </div><!-- /team grid -->
+
+                        </div><!-- /ap-team -->
+
+                    </div><!-- /scroll area -->
+
+                </div><!-- /main content -->
+
+            </div><!-- /admin app layout -->
+
+        </div><!-- /browser frame inner -->
+        </div><!-- /overflow wrapper -->
+
+        <!-- ── Feature Pills ── -->
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-10">
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Role-based access control
+            </div>
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                Real-time live updates
+            </div>
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Fully white-label UI
+            </div>
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                Unlimited team seats
+            </div>
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                Export &amp; reporting
+            </div>
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Dynamic surge pricing
+            </div>
+        </div>
+
+    </div><!-- /container -->
+</section>
+<!-- ════ END ADMIN PANEL ════ -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION — HOW IT WORKS
+═════════════════════════════════════════════════════════ -->
+<section id="how-it-works" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
+
+    <!-- Subtle section grid -->
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+    <!-- Centre glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[400px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.055) 0%, transparent 68%);"></div>
+
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- ── Section Header ── -->
+        <div class="text-center max-w-2xl mx-auto mb-20 lg:mb-24 section-fade">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-5" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #3B82F6;">
+                <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+                Quick Setup
+            </div>
+            <h2 class="text-[30px] sm:text-[38px] lg:text-[44px] font-bold leading-[1.14] tracking-tight text-white mb-5">
+                Up and running in<br>
+                <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">under 30 minutes</span>
+            </h2>
+            <p class="text-[15px] sm:text-[15.5px] text-gray-400 leading-relaxed max-w-xl mx-auto">
+                No cloud lock-in. No recurring fees. Install once on your own server and own your booking system forever.
+            </p>
+        </div>
+
+        <!-- ── Steps Grid ── -->
+        <div class="relative">
+
+            <!-- Desktop dashed connector line -->
+            <div class="hiw-connector-line hidden lg:block"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-7">
+
+                <!-- ═══ STEP 1 ═══ -->
+                <div class="hiw-step section-fade" style="transition-delay: 0.06s;">
+                    <div class="hiw-step-inner">
+
+                        <!-- Icon -->
+                        <div class="flex lg:justify-center mb-6">
+                            <div class="hiw-step-icon relative w-[80px] h-[80px] rounded-2xl flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25);">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="4 17 10 11 4 5"/>
+                                    <line x1="12" y1="19" x2="20" y2="19"/>
+                                </svg>
+                                <span class="absolute -top-2.5 -right-2.5 w-[22px] h-[22px] rounded-full flex items-center justify-center text-[10px] font-bold text-white" style="background: #3B82F6; box-shadow: 0 0 12px rgba(59,130,246,0.65);">1</span>
+                            </div>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="lg:text-center">
+                            <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 01</div>
+                            <h3 class="text-[18px] sm:text-[19px] font-bold text-white mb-3 leading-tight">Install in 30 Minutes</h3>
+                            <p class="text-[13.5px] text-gray-400 leading-relaxed mb-5">
+                                Upload the files to your server, run the web installer, and your limo booking system is live. No DevOps expertise required.
+                            </p>
+                            <div class="space-y-2.5 lg:inline-flex lg:flex-col lg:items-start">
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Works on any PHP / MySQL hosting
+                                </div>
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    One-click web installer included
+                                </div>
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Full setup documentation provided
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /step 1 -->
+
+                <!-- ═══ STEP 2 ═══ -->
+                <div class="hiw-step section-fade" style="transition-delay: 0.16s;">
+                    <div class="hiw-step-inner">
+
+                        <!-- Icon -->
+                        <div class="flex lg:justify-center mb-6">
+                            <div class="hiw-step-icon relative w-[80px] h-[80px] rounded-2xl flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25);">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="4" y1="21" x2="4" y2="14"/>
+                                    <line x1="4" y1="10" x2="4" y2="3"/>
+                                    <line x1="12" y1="21" x2="12" y2="12"/>
+                                    <line x1="12" y1="8" x2="12" y2="3"/>
+                                    <line x1="20" y1="21" x2="20" y2="16"/>
+                                    <line x1="20" y1="12" x2="20" y2="3"/>
+                                    <line x1="1" y1="14" x2="7" y2="14"/>
+                                    <line x1="9" y1="8" x2="15" y2="8"/>
+                                    <line x1="17" y1="16" x2="23" y2="16"/>
+                                </svg>
+                                <span class="absolute -top-2.5 -right-2.5 w-[22px] h-[22px] rounded-full flex items-center justify-center text-[10px] font-bold text-white" style="background: #3B82F6; box-shadow: 0 0 12px rgba(59,130,246,0.65);">2</span>
+                            </div>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="lg:text-center">
+                            <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 02</div>
+                            <h3 class="text-[18px] sm:text-[19px] font-bold text-white mb-3 leading-tight">Setup Branding &amp; Pricing</h3>
+                            <p class="text-[13.5px] text-gray-400 leading-relaxed mb-5">
+                                Upload your logo, set brand colors, configure vehicle classes, and define all pricing rules — straight from the admin panel.
+                            </p>
+                            <div class="space-y-2.5 lg:inline-flex lg:flex-col lg:items-start">
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Full white-label — your brand &amp; domain
+                                </div>
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Custom vehicle classes &amp; fare rules
+                                </div>
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Dynamic surge pricing controls
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /step 2 -->
+
+                <!-- ═══ STEP 3 ═══ -->
+                <div class="hiw-step section-fade" style="transition-delay: 0.26s;">
+                    <div class="hiw-step-inner">
+
+                        <!-- Icon -->
+                        <div class="flex lg:justify-center mb-6">
+                            <div class="hiw-step-icon relative w-[80px] h-[80px] rounded-2xl flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25);">
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                                <span class="absolute -top-2.5 -right-2.5 w-[22px] h-[22px] rounded-full flex items-center justify-center text-[10px] font-bold text-white" style="background: #3B82F6; box-shadow: 0 0 12px rgba(59,130,246,0.65);">3</span>
+                            </div>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="lg:text-center">
+                            <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 03</div>
+                            <h3 class="text-[18px] sm:text-[19px] font-bold text-white mb-3 leading-tight">Start Taking Bookings</h3>
+                            <p class="text-[13.5px] text-gray-400 leading-relaxed mb-5">
+                                Customers book online, pay instantly, and receive AI confirmation calls — while you manage everything from one clean dashboard.
+                            </p>
+                            <div class="space-y-2.5 lg:inline-flex lg:flex-col lg:items-start">
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Automated booking confirmations
+                                </div>
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Driver dispatch &amp; GPS tracking
+                                </div>
+                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Payments, invoicing &amp; receipts
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><!-- /step 3 -->
+
+            </div><!-- /grid -->
+        </div><!-- /steps -->
+
+        <!-- ── Bottom CTA ── -->
+        <div class="mt-16 lg:mt-20 flex flex-col items-center gap-5 section-fade" style="transition-delay: 0.36s;">
+            <!-- Trust chip -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                No subscriptions &nbsp;·&nbsp; No vendor lock-in &nbsp;·&nbsp; Full source code ownership
+            </div>
+            <!-- Buttons -->
+            <div class="flex flex-col sm:flex-row items-center gap-3">
+                <a href="#contact" class="btn-cta inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-[14px] text-white" style="background: #3B82F6;">
+                    <span>Get LimoSchedule</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="#features" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-[14px] text-gray-300 hover:text-white transition-colors duration-200" style="border: 1px solid rgba(255,255,255,0.1);">
+                    Explore Features
+                </a>
+            </div>
+        </div>
+
+    </div><!-- /container -->
+</section>
+<!-- ════ END HOW IT WORKS ════ -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION — FAQ
+═════════════════════════════════════════════════════════ -->
+<section id="faq" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
+
+    <!-- Grid texture -->
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+    <!-- Center ambient glow -->
+    <div class="absolute top-1/2 left-1/2 w-[900px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.06) 0%, transparent 65%); transform: translate(-50%, -50%);"></div>
+
+    <div class="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+
+        <!-- Section header -->
+        <div class="text-center mb-16 section-fade">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-semibold tracking-widest uppercase text-blue-400 mb-6" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2); letter-spacing: 0.12em;">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                FAQ
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight" style="letter-spacing: -0.03em;">
+                Everything you need<br class="hidden sm:block"> to know
+            </h2>
+            <p class="text-gray-400 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+                Clear answers to the questions every serious buyer asks before they commit.
+            </p>
+        </div>
+
+        <!-- Accordion -->
+        <div class="flex flex-col gap-3 section-fade" style="transition-delay: 0.1s;" id="faq-accordion">
+
+            <!-- Q1 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">01</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Is this a SaaS product?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">No — LimoSchedule is <span class="text-white font-medium">not SaaS</span>. There are no monthly fees, no subscriptions, and no data sent to our servers. You purchase a one-time license and receive the full source code to deploy on your own infrastructure. Your data stays on your server, always.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">02</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Can I self-host it on my own server?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Absolutely. LimoSchedule is built to be self-hosted on any VPS, dedicated server, or cloud provider — AWS, DigitalOcean, Hetzner, or your own hardware. You get complete control over your environment, database, and backups. <span class="text-white font-medium">No vendor dependency whatsoever.</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">03</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Can I white-label it for my clients?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes — LimoSchedule is fully white-label ready. Replace the logo, colors, domain, and product name to match any limo or transportation brand. Agencies and developers can <span class="text-white font-medium">deploy it under their own brand</span> for multiple clients under a single license. Full white-label &amp; branding freedom included.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">04</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Is the AI Voice Agent included?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. The <span class="text-white font-medium">AI Voice Call Agent</span> is built into the platform — it answers inbound calls, qualifies leads, collects booking details, and confirms reservations automatically, 24/7. You connect your own AI provider keys (OpenAI, ElevenLabs, or compatible) so you pay usage costs directly, with no markup from us.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">05</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">How fast is the installation process?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Most installs go live in <span class="text-white font-medium">under 30 minutes</span>. Upload the files, configure your <code class="text-blue-400 text-[13px] px-1.5 py-0.5 rounded" style="background: rgba(59,130,246,0.1);">.env</code>, run the installer, and you're done. The step-by-step documentation covers every major hosting environment. No developer experience required — if you can set up a WordPress site, you can install LimoSchedule.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /accordion -->
+
+        <!-- Bottom nudge -->
+        <div class="mt-14 text-center section-fade" style="transition-delay: 0.22s;">
+            <p class="text-gray-500 text-[13px] mb-5">Still have questions? We respond within a few hours.</p>
+            <a href="#contact" class="btn-cta inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-[14px] text-white" style="background: #3B82F6;">
+                <span>Talk to the team</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+        </div>
+
+    </div><!-- /container -->
+</section>
+<!-- ════ END FAQ ════ -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION — CONTACT / LEAD GENERATION
+═════════════════════════════════════════════════════════ -->
+<section id="contact" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
+
+    <!-- Grid texture -->
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+    <!-- Left ambient glow -->
+    <div class="absolute top-1/2 left-0 w-[650px] h-[650px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.07) 0%, transparent 65%); transform: translateY(-50%) translateX(-35%);"></div>
+
+    <!-- Right ambient glow -->
+    <div class="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.04) 0%, transparent 65%); transform: translateY(-50%) translateX(35%);"></div>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-14 xl:gap-20 items-start">
+
+            <!-- ══ LEFT: Value Proposition ══ -->
+            <div class="lg:pt-3 section-fade">
+
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-6" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #3B82F6;">
+                    <svg width="7" height="7" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="7"/></svg>
+                    Limited Licenses Available
+                </div>
+
+                <!-- Headline -->
+                <h2 class="text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[46px] font-bold leading-[1.12] tracking-tight text-white mb-5">
+                    Own Your Limo<br>Booking System.<br>
+                    <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">One-Time. Forever.</span>
+                </h2>
+
+                <p class="text-[15px] text-gray-400 leading-relaxed mb-6 max-w-[400px]">
+                    One license. Your server. Your brand. A complete limo booking platform you fully own — no subscriptions, no lock-in.
+                </p>
+
+                <!-- Price callout -->
+                <div class="inline-flex items-center gap-3 mb-9 px-5 py-3 rounded-2xl" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
+                    <span class="text-[13px] font-semibold text-white">One-Time License</span>
+                    <span class="w-px h-4 bg-white/15"></span>
+                    <span class="text-[22px] font-black text-blue-400 leading-none">$4,999</span>
+                    <span class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Fixed</span>
+                </div>
+
+                <!-- Trust points -->
+                <div class="space-y-4 mb-9">
+
+                    <div class="contact-trust-item">
+                        <div class="contact-trust-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-[13.5px] font-semibold text-white leading-snug">One-time license — no subscriptions</div>
+                            <div class="text-[12px] text-gray-500 mt-0.5">Pay once, use forever. Zero recurring charges.</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-trust-item">
+                        <div class="contact-trust-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-[13.5px] font-semibold text-white leading-snug">Fully self-hosted on your own server</div>
+                            <div class="text-[12px] text-gray-500 mt-0.5">Your data, your infrastructure, your complete control.</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-trust-item">
+                        <div class="contact-trust-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-[13.5px] font-semibold text-white leading-snug">Complete source code included</div>
+                            <div class="text-[12px] text-gray-500 mt-0.5">Modify, extend, and white-label without restriction.</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-trust-item">
+                        <div class="contact-trust-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-[13.5px] font-semibold text-white leading-snug">White-label branding freedom</div>
+                            <div class="text-[12px] text-gray-500 mt-0.5">Full white-label customization allowed. Deploy as your own brand.</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Stats row -->
+                <div class="flex items-center gap-6 pt-7" style="border-top: 1px solid rgba(255,255,255,0.07);">
+                    <div>
+                        <div class="text-[24px] font-bold text-white leading-none">30 min</div>
+                        <div class="text-[11.5px] text-gray-500 mt-1">Avg. setup time</div>
+                    </div>
+                    <div class="w-px h-9 flex-shrink-0" style="background: rgba(255,255,255,0.08);"></div>
+                    <div>
+                        <div class="text-[24px] font-bold text-white leading-none">100%</div>
+                        <div class="text-[11.5px] text-gray-500 mt-1">Source code access</div>
+                    </div>
+                    <div class="w-px h-9 flex-shrink-0" style="background: rgba(255,255,255,0.08);"></div>
+                    <div>
+                        <div class="text-[24px] font-bold text-white leading-none">∞</div>
+                        <div class="text-[11.5px] text-gray-500 mt-1">Bookings / month</div>
+                    </div>
+                </div>
+
+            </div><!-- /left -->
+
+            <!-- ══ RIGHT: Form Card ══ -->
+            <div class="section-fade" style="transition-delay: 0.12s;">
+                <div class="contact-form-card">
+
+                    <!-- Form header -->
+                    <div class="mb-6 relative z-10">
+                        <h3 class="text-[20px] font-bold text-white mb-1.5">Request License Access</h3>
+                        <p class="text-[13px] text-gray-400">Fill in your details — we'll respond within 24 hours.</p>
+                    </div>
+
+                    <!-- Form wrap (hidden when success shown) -->
+                    <div id="cfFormWrap" class="relative z-10">
+                        <form id="contactForm" action="#" method="POST" class="space-y-4" novalidate>
+                            @csrf
+
+                            <!-- Row 1: Name + Company -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="contact-label" for="cf_name">
+                                        <span class="inline-flex items-center gap-1.5">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                            Full Name <span class="text-blue-500 ml-0.5">*</span>
+                                        </span>
+                                    </label>
+                                    <input type="text" id="cf_name" name="name" class="contact-input" placeholder="John Smith" autocomplete="name" required>
+                                </div>
+                                <div>
+                                    <label class="contact-label" for="cf_company">
+                                        <span class="inline-flex items-center gap-1.5">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                                            Company
+                                        </span>
+                                    </label>
+                                    <input type="text" id="cf_company" name="company" class="contact-input" placeholder="Acme Limo Co." autocomplete="organization">
+                                </div>
+                            </div>
+
+                            <!-- Row 2: Email + WhatsApp -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="contact-label" for="cf_email">
+                                        <span class="inline-flex items-center gap-1.5">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                            Email Address <span class="text-blue-500 ml-0.5">*</span>
+                                        </span>
+                                    </label>
+                                    <input type="email" id="cf_email" name="email" class="contact-input" placeholder="john@example.com" autocomplete="email" required>
+                                </div>
+                                <div>
+                                    <label class="contact-label" for="cf_whatsapp">
+                                        <span class="inline-flex items-center gap-1.5">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                                            WhatsApp
+                                        </span>
+                                    </label>
+                                    <input type="tel" id="cf_whatsapp" name="whatsapp" class="contact-input" placeholder="+1 (555) 000-0000" autocomplete="tel">
+                                </div>
+                            </div>
+
+                            <!-- Row 3: Country -->
+                            <div>
+                                <label class="contact-label" for="cf_country">
+                                    <span class="inline-flex items-center gap-1.5">
+                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+                                        Country <span class="text-blue-500 ml-0.5">*</span>
+                                    </span>
+                                </label>
+                                <select id="cf_country" name="country" class="contact-input contact-select" required>
+                                    <option value="" disabled selected style="background:#111111;">Select your country…</option>
+                                    <option value="US"    style="background:#111111;">United States</option>
+                                    <option value="GB"    style="background:#111111;">United Kingdom</option>
+                                    <option value="CA"    style="background:#111111;">Canada</option>
+                                    <option value="AU"    style="background:#111111;">Australia</option>
+                                    <option value="AE"    style="background:#111111;">United Arab Emirates</option>
+                                    <option value="SA"    style="background:#111111;">Saudi Arabia</option>
+                                    <option value="DE"    style="background:#111111;">Germany</option>
+                                    <option value="FR"    style="background:#111111;">France</option>
+                                    <option value="IT"    style="background:#111111;">Italy</option>
+                                    <option value="ES"    style="background:#111111;">Spain</option>
+                                    <option value="NL"    style="background:#111111;">Netherlands</option>
+                                    <option value="SG"    style="background:#111111;">Singapore</option>
+                                    <option value="IN"    style="background:#111111;">India</option>
+                                    <option value="PK"    style="background:#111111;">Pakistan</option>
+                                    <option value="NG"    style="background:#111111;">Nigeria</option>
+                                    <option value="ZA"    style="background:#111111;">South Africa</option>
+                                    <option value="BR"    style="background:#111111;">Brazil</option>
+                                    <option value="MX"    style="background:#111111;">Mexico</option>
+                                    <option value="other" style="background:#111111;">Other…</option>
+                                </select>
+                            </div>
+
+                            <!-- Row 4: Message -->
+                            <div>
+                                <label class="contact-label" for="cf_message">
+                                    <span class="inline-flex items-center gap-1.5">
+                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                                        Message
+                                    </span>
+                                </label>
+                                <textarea id="cf_message" name="message" class="contact-input" rows="4" placeholder="Tell us about your limo business and what you're looking to build…" style="resize: vertical; min-height: 112px;"></textarea>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="pt-1">
+                                <button type="submit" id="cfSubmitBtn" class="btn-cta w-full flex items-center justify-center gap-2.5 px-6 py-[13px] rounded-xl font-bold text-[14px] text-white" style="background: #3B82F6;">
+                                    <span>Request License Access</span>
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                </button>
+                            </div>
+
+                        </form>
+                    </div><!-- /cfFormWrap -->
+
+                    <!-- Success state (hidden by default) -->
+                    <div id="cfSuccess" class="hidden relative z-10 text-center py-6">
+                        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.3);">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h4 class="text-[18px] font-bold text-white mb-2">Request Sent!</h4>
+                        <p class="text-[13.5px] text-gray-400 max-w-[280px] mx-auto">We've received your request and will get back to you within 24 hours.</p>
+                    </div>
+
+                    <!-- Privacy note -->
+                    <div class="mt-5 flex items-center justify-center gap-1.5 text-[11.5px] text-gray-600 relative z-10">
+                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                        Your information is private and never shared with third parties.
+                    </div>
+
+                </div><!-- /contact-form-card -->
+            </div><!-- /right -->
+
+        </div><!-- /grid -->
+    </div><!-- /container -->
+
+</section>
+<!-- ════ END CONTACT ════ -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION — FINAL CTA
+═════════════════════════════════════════════════════════ -->
+<section id="cta-final" class="relative overflow-hidden" style="background: #0A0A0A; padding: 120px 0 140px;">
+
+    <!-- Grid texture -->
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.016) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.016) 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+    <!-- Top separator line -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px" style="background: linear-gradient(90deg, transparent, rgba(59,130,246,0.4), transparent);"></div>
+
+    <!-- Massive center glow -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.18) 0%, rgba(59,130,246,0.06) 40%, transparent 70%);"></div>
+
+    <!-- Noise overlay -->
+    <div class="absolute inset-0 pointer-events-none opacity-[0.025]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E&quot;);"></div>
+
+    <div class="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10 text-center">
+
+        <!-- Eyebrow badge -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-[11px] font-bold tracking-[0.12em] uppercase mb-8 section-fade" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.28); color: #3B82F6;">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse inline-block"></span>
+            One-Time License — Own It Forever
+        </div>
+
+        <!-- Headline -->
+        <h2 class="font-bold text-white leading-[1.08] tracking-tight mb-6 section-fade" style="font-size: clamp(2.4rem, 5.5vw, 4.25rem); letter-spacing: -0.035em; transition-delay: 0.06s;">
+            Own Your Limo Booking<br>
+            <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">System Today</span>
+        </h2>
+
+        <!-- Price callout -->
+        <div class="inline-flex items-center gap-3 mb-8 px-6 py-3 rounded-2xl section-fade" style="background: rgba(59,130,246,0.09); border: 1px solid rgba(59,130,246,0.3); transition-delay: 0.09s;">
+            <span class="text-[14px] font-semibold text-white">One-Time License</span>
+            <span class="w-px h-4 bg-white/15"></span>
+            <span class="text-[26px] font-black text-blue-400 leading-none">$4,999</span>
+            <span class="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Fixed Price · No Subscriptions</span>
+        </div>
+
+        <!-- Sub-copy -->
+        <p class="text-gray-400 leading-relaxed mb-12 mx-auto section-fade" style="font-size: clamp(1rem, 2vw, 1.2rem); max-width: 580px; transition-delay: 0.12s;">
+            Full source code. No recurring fees. Deploy in 30 minutes.<br class="hidden sm:block">
+            White-label branding freedom — the system is yours outright.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14 section-fade" style="transition-delay: 0.18s;">
+
+            <!-- Primary: Get License -->
+            <a href="#contact" class="cta-final-btn-primary group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-[15px] text-white overflow-hidden" style="background: #3B82F6; box-shadow: 0 0 0 1px rgba(59,130,246,0.5), 0 8px 32px rgba(59,130,246,0.35);">
+                <span class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(135deg, #2563EB, #3B82F6);"></span>
+                <svg class="relative z-10 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/>
+                </svg>
+                <span class="relative z-10">Get License Access</span>
+                <svg class="relative z-10 flex-shrink-0 transform group-hover:translate-x-0.5 transition-transform duration-200" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+
+            <!-- Secondary: WhatsApp -->
+            <a href="https://wa.me/message/limoschedule" target="_blank" rel="noopener" class="cta-final-btn-ghost group inline-flex items-center gap-2.5 px-8 py-4 rounded-2xl font-semibold text-[15px] text-gray-300 hover:text-white transition-all duration-250" style="border: 1px solid rgba(34,197,94,0.25); background: rgba(34,197,94,0.05); backdrop-filter: blur(12px);">
+                <svg class="flex-shrink-0 opacity-80 group-hover:opacity-100 transition-opacity" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                </svg>
+                <span>WhatsApp Us</span>
+            </a>
+        </div>
+
+        <!-- Trust strip -->
+        <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 section-fade" style="transition-delay: 0.24s;">
+            <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                No monthly fees
+            </div>
+            <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
+            <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Full source code included
+            </div>
+            <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
+            <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                Self-hosted on your server
+            </div>
+            <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
+            <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                White-label branding freedom
+            </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="mt-16 pt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 section-fade" style="border-top: 1px solid rgba(255,255,255,0.05); transition-delay: 0.3s;">
+            <div class="text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-white mb-1" style="letter-spacing: -0.03em;">30<span class="text-blue-400">min</span></div>
+                <div class="text-[11.5px] text-gray-500 uppercase tracking-wider">Install time</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-white mb-1" style="letter-spacing: -0.03em;">100<span class="text-blue-400">%</span></div>
+                <div class="text-[11.5px] text-gray-500 uppercase tracking-wider">White-label</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-white mb-1" style="letter-spacing: -0.03em;">0<span class="text-blue-400">$</span></div>
+                <div class="text-[11.5px] text-gray-500 uppercase tracking-wider">Monthly fee</div>
+            </div>
+            <div class="text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-white mb-1" style="letter-spacing: -0.03em;">24<span class="text-blue-400">/7</span></div>
+                <div class="text-[11.5px] text-gray-500 uppercase tracking-wider">AI Voice Agent</div>
+            </div>
+        </div>
+
+    </div><!-- /container -->
+</section>
+<!-- ════ END FINAL CTA ════ -->
+
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+═════════════════════════════════════════════════════════ -->
+<footer id="footer" class="relative" style="background: #070707; border-top: 1px solid rgba(255,255,255,0.06);">
+
+    <!-- Subtle top glow line -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-px pointer-events-none" style="background: linear-gradient(90deg, transparent, rgba(59,130,246,0.3), transparent);"></div>
+
+    <!-- Grid texture -->
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px); background-size: 60px 60px;"></div>
+
+    <!-- Footer inner -->
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <!-- ── Top block: logo + columns ── -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr_1fr] gap-10 lg:gap-8 pt-16 pb-12">
+
+            <!-- Brand column -->
+            <div class="flex flex-col gap-6">
+                <!-- Logo -->
+                <a href="/" class="inline-block" aria-label="LimoSchedule — Home">
+                    <div class="logo-badge bg-white rounded-xl px-3 py-[7px] inline-flex">
+                        <img
+                            src="{{ url('public/logo/logo.jpg') }}"
+                            alt="LimoSchedule"
+                            class="h-[30px] w-auto block"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                </a>
+
+                <p class="text-gray-500 text-[13.5px] leading-relaxed max-w-[270px]">
+                    The professional self-hosted limo booking platform. One-time license — $4,999 fixed. Full source code. Zero recurring fees.
+                </p>
+
+                <!-- Contact info -->
+                <div class="flex flex-col gap-3">
+                    <a href="mailto:support@limoschedule.com" class="footer-contact-link group inline-flex items-center gap-3 text-gray-400 hover:text-white text-[13px] transition-colors duration-200">
+                        <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:border-blue-500/40 group-hover:bg-blue-500/10" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </span>
+                        support@limoschedule.com
+                    </a>
+                    <a href="https://wa.me/message/limoschedule" target="_blank" rel="noopener" class="footer-contact-link group inline-flex items-center gap-3 text-gray-400 hover:text-white text-[13px] transition-colors duration-200">
+                        <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:border-green-500/40 group-hover:bg-green-500/10" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        </span>
+                        WhatsApp Support
+                    </a>
+                </div>
+
+                <!-- Social icons -->
+                <div class="flex items-center gap-2.5">
+                    <a href="#" target="_blank" rel="noopener" aria-label="X / Twitter" class="footer-social group w-9 h-9 rounded-xl flex items-center justify-center text-gray-500 hover:text-white transition-all duration-200" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.26 5.632 5.905-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="GitHub" class="footer-social group w-9 h-9 rounded-xl flex items-center justify-center text-gray-500 hover:text-white transition-all duration-200" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social group w-9 h-9 rounded-xl flex items-center justify-center text-gray-500 hover:text-white transition-all duration-200" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="YouTube" class="footer-social group w-9 h-9 rounded-xl flex items-center justify-center text-gray-500 hover:text-white transition-all duration-200" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product column -->
+            <div>
+                <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Product</h4>
+                <ul class="flex flex-col gap-3.5">
+                    <li><a href="#features" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Features</a></li>
+                    <li><a href="#voice-search" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Voice Search</a></li>
+                    <li><a href="#ai-agent" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">AI Voice Agent</a></li>
+                    <li><a href="#admin-panel" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Panel</a></li>
+                    <li><a href="#how-it-works" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">How It Works</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources column -->
+            <div>
+                <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Resources</h4>
+                <ul class="flex flex-col gap-3.5">
+                    <li><a href="#faq" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">FAQ</a></li>
+                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Documentation</a></li>
+                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Installation Guide</a></li>
+                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Changelog</a></li>
+                    <li><a href="#contact" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal column -->
+            <div>
+                <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Company</h4>
+                <ul class="flex flex-col gap-3.5">
+                    <li><a href="#contact" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Contact</a></li>
+                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Terms of License</a></li>
+                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Refund Policy</a></li>
+                </ul>
+            </div>
+
+        </div><!-- /grid -->
+
+        <!-- ── Divider ── -->
+        <div class="h-px w-full" style="background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07) 30%, rgba(255,255,255,0.07) 70%, transparent);"></div>
+
+        <!-- ── Bottom bar ── -->
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-7">
+
+            <!-- Copyright -->
+            <p class="text-gray-600 text-[12.5px] text-center sm:text-left">
+                &copy; {{ date('Y') }} LimoSchedule. All rights reserved. Self-hosted &amp; white-label limo booking software.
+            </p>
+
+            <!-- Made with / badges -->
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 text-gray-600 text-[12px]">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="#3B82F6"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+                    Built for operators, by operators
+                </span>
+                <span class="w-px h-3.5 bg-white/8"></span>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium text-blue-400" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
+                    v2.0 — Self-Hosted
+                </span>
+            </div>
+
+        </div><!-- /bottom bar -->
+
+    </div><!-- /inner -->
+</footer>
+<!-- ════ END FOOTER ════ -->
+
+
+<script>
+(function () {
+    var form = document.getElementById('contactForm');
+    var wrap = document.getElementById('cfFormWrap');
+    var success = document.getElementById('cfSuccess');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = document.getElementById('cfSubmitBtn');
+        btn.disabled = true;
+        btn.querySelector('span').textContent = 'Sending…';
+        setTimeout(function () {
+            wrap.classList.add('hidden');
+            success.classList.remove('hidden');
+        }, 800);
+    });
+})();
+</script>
 
 
 <!-- Main JavaScript -->

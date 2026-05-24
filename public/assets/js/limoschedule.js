@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════
    LIMOSCHEDULE — Main JavaScript
-   Sections: Navbar · Features · Voice Search · AI Call Agent
+   Sections: Navbar · Features · Voice Search · AI Call Agent · Admin Panel
 ══════════════════════════════════════════════════════ */
 
 /* ── Navbar + Global ── */
@@ -282,3 +282,97 @@
     }
 
 })();
+
+/* ══════════════════════════════════════════════════════
+   ADMIN PANEL — Tab switching
+══════════════════════════════════════════════════════ */
+(function () {
+    'use strict';
+
+    var pageTitles = {
+        'ap-dashboard': 'Overview',
+        'ap-bookings':  'Booking Management',
+        'ap-fleet':     'Fleet Control',
+        'ap-pricing':   'Pricing Settings',
+        'ap-analytics': 'Revenue Analytics',
+        'ap-team':      'Team Management'
+    };
+
+    function switchAdminPanel(panelId) {
+        document.querySelectorAll('.admin-panel').forEach(function (p) {
+            p.classList.add('hidden');
+        });
+        document.querySelectorAll('.admin-tab').forEach(function (t) {
+            t.classList.remove('active-tab');
+        });
+        document.querySelectorAll('.sidebar-nav-item').forEach(function (n) {
+            n.classList.remove('active-nav');
+        });
+
+        var target = document.getElementById(panelId);
+        if (target) { target.classList.remove('hidden'); }
+
+        var activeTab = document.querySelector('.admin-tab[data-panel="' + panelId + '"]');
+        if (activeTab) { activeTab.classList.add('active-tab'); }
+
+        var activeNav = document.querySelector('.sidebar-nav-item[data-nav="' + panelId + '"]');
+        if (activeNav) { activeNav.classList.add('active-nav'); }
+
+        var titleEl = document.querySelector('.ap-page-title');
+        if (titleEl && pageTitles[panelId]) { titleEl.textContent = pageTitles[panelId]; }
+    }
+
+    document.querySelectorAll('.admin-tab').forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            var panelId = tab.getAttribute('data-panel');
+            if (panelId) { switchAdminPanel(panelId); }
+        });
+    });
+
+    document.querySelectorAll('.sidebar-nav-item[data-nav]').forEach(function (item) {
+        item.addEventListener('click', function () {
+            var panelId = item.getAttribute('data-nav');
+            if (panelId) { switchAdminPanel(panelId); }
+        });
+    });
+
+})();
+
+/* ── FAQ Accordion ── */
+(function () {
+    'use strict';
+
+    var accordion = document.getElementById('faq-accordion');
+    if (!accordion) { return; }
+
+    function closeItem(item) {
+        var body    = item.querySelector('.faq-body');
+        var trigger = item.querySelector('.faq-trigger');
+        var chevron = item.querySelector('.faq-chevron');
+        body.style.maxHeight = '0';
+        trigger.setAttribute('aria-expanded', 'false');
+        chevron.style.transform = 'rotate(0deg)';
+        item.style.borderColor = 'rgba(255,255,255,0.07)';
+    }
+
+    function openItem(item) {
+        var body    = item.querySelector('.faq-body');
+        var trigger = item.querySelector('.faq-trigger');
+        var chevron = item.querySelector('.faq-chevron');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        trigger.setAttribute('aria-expanded', 'true');
+        chevron.style.transform = 'rotate(180deg)';
+        item.style.borderColor = 'rgba(59,130,246,0.35)';
+    }
+
+    accordion.querySelectorAll('.faq-trigger').forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+            var item   = trigger.closest('.faq-item');
+            var isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+            accordion.querySelectorAll('.faq-item').forEach(closeItem);
+
+            if (!isOpen) { openItem(item); }
+        });
+    });
+}());
