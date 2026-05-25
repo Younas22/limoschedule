@@ -8,12 +8,6 @@ use Illuminate\Http\Request;
 
 class DemoRequestController extends Controller
 {
-    public function index()
-    {
-        $countries = Country::orderBy('name')->get();
-        return view('welcome', compact('countries'));
-    }
-
     public function store(Request $request)
     {
         $validated = $request->validate([

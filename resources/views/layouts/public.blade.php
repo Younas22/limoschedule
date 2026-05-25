@@ -115,9 +115,11 @@
         <!-- Nav links -->
         <nav class="hidden sm:flex items-center gap-1">
             <a href="{{ url('/') }}"
-               class="pub-nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+               class="pub-nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
             <a href="{{ route('blogs.index') }}"
-               class="pub-nav-link {{ request()->routeIs('blogs.index') || request()->routeIs('blog.show') ? 'active' : '' }}">Blog</a>
+               class="pub-nav-link {{ request()->routeIs('blogs.*') || request()->routeIs('blog.show') ? 'active' : '' }}">Blog</a>
+            <a href="{{ url('/') }}#contact"
+               class="pub-nav-link">Contact</a>
         </nav>
 
         <!-- Right CTA -->
@@ -149,7 +151,7 @@
             </div>
             <div class="flex items-center gap-5">
                 <a href="{{ url('/') }}" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Home</a>
-                <a href="{{ route('blogs.index') }}" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Blog</a>
+                <a href="{{ route('blogs.index') }}" class="text-gray-500 hover:text-gray-300 text-sm transition-colors font-semibold text-gray-300">Blog</a>
                 <a href="{{ url('/') }}#contact" class="text-gray-500 hover:text-gray-300 text-sm transition-colors">Contact</a>
             </div>
         </div>
