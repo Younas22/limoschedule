@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LimoSchedule &mdash; Self-Hosted Automated Limo Booking System</title>
     <meta name="description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
+    <meta name="author" content="LimoSchedule">
+    <link rel="canonical" href="{{ url('/') }}">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="{{ url('/') }}">
+    <meta property="og:title"       content="LimoSchedule — Self-Hosted Automated Limo Booking System">
+    <meta property="og:description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
+    <meta property="og:image"       content="{{ url('public/logo/favicon.png') }}">
+    <meta property="og:site_name"   content="LimoSchedule">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary">
+    <meta name="twitter:title"       content="LimoSchedule — Self-Hosted Automated Limo Booking System">
+    <meta name="twitter:description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
+    <meta name="twitter:image"       content="{{ url('public/logo/favicon.png') }}">
 
     <!-- Official Favicon -->
-    <link rel="icon" type="image/jpeg" href="{{ url('public/logo/favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url('public/logo/favicon.png') }}?v=2">
+    <link rel="shortcut icon" href="{{ url('public/logo/favicon.png') }}?v=2">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,6 +150,9 @@
                     </li>
                     <li>
                         <a href="#contact"      class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Contact</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('blogs.index') }}" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Blog</a>
                     </li>
                 </ul>
             </nav>
@@ -333,6 +353,25 @@
                         <div>
                             <div class="font-semibold text-[14px] text-gray-200">Contact</div>
                             <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Talk to our team</div>
+                        </div>
+                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('blogs.index') }}"
+                       class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                        <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center"
+                              style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <div class="font-semibold text-[14px] text-gray-200">Blog</div>
+                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Articles &amp; industry insights</div>
                         </div>
                         <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
                     </a>
