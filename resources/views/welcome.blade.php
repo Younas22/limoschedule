@@ -7,7 +7,7 @@
     <meta name="description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
 
     <!-- Official Favicon -->
-    <link rel="icon" type="image/jpeg" href="{{ url('public/logo/favicon.jpg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ url('public/logo/favicon.png') }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,10 +37,10 @@
         <div class="flex items-center justify-between h-[66px]">
 
             <!-- ─── Official Logo ─── -->
-            <a href="/" class="flex-shrink-0 block" aria-label="LimoSchedule — Home">
-                <div class="logo-badge bg-white rounded-xl px-3 py-[7px]">
+            <a href="{{ url('/') }}" class="flex-shrink-0 block" aria-label="LimoSchedule — Home">
+                <div class="logo-badge rounded-xl px-3 py-[7px]">
                     <img
-                        src="{{ url('public/logo/logo.jpg') }}"
+                        src="{{ url('public/logo/logo-white.png') }}"
                         alt="LimoSchedule — Automated Limo Booking System"
                         class="h-[30px] w-auto block"
                         loading="eager"
@@ -59,7 +59,7 @@
                         <a href="#voice-search" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Voice Search</a>
                     </li>
                     <li>
-                        <a href="#ai-agent"     class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">AI Agent</a>
+                        <a href="#ai-call-agent"     class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">AI Agent</a>
                     </li>
                     <li>
                         <a href="#admin-panel"  class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Admin Panel</a>
@@ -178,7 +178,7 @@
                 </li>
 
                 <li>
-                    <a href="#ai-agent"
+                    <a href="#ai-call-agent"
                        class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center"
                               style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
@@ -3005,15 +3005,15 @@
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
         <!-- ── Top block: logo + columns ── -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr_1fr] gap-10 lg:gap-8 pt-16 pb-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr] gap-10 lg:gap-8 pt-16 pb-12">
 
             <!-- Brand column -->
             <div class="flex flex-col gap-6">
                 <!-- Logo -->
-                <a href="/" class="inline-block" aria-label="LimoSchedule — Home">
-                    <div class="logo-badge bg-white rounded-xl px-3 py-[7px] inline-flex">
+                <a href="{{ url('/') }}" class="inline-block" aria-label="LimoSchedule — Home">
+                    <div class="logo-badge rounded-xl px-3 py-[7px] inline-flex">
                         <img
-                            src="{{ url('public/logo/logo.jpg') }}"
+                            src="{{ url('public/logo/logo-white.png') }}"
                             alt="LimoSchedule"
                             class="h-[30px] w-auto block"
                             loading="lazy"
@@ -3026,37 +3026,7 @@
                     The professional self-hosted limo booking platform. One-time license — $4,999 fixed. Full source code. Zero recurring fees.
                 </p>
 
-                <!-- Contact info -->
-                <div class="flex flex-col gap-3">
-                    <a href="mailto:support@limoschedule.com" class="footer-contact-link group inline-flex items-center gap-3 text-gray-400 hover:text-white text-[13px] transition-colors duration-200">
-                        <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:border-blue-500/40 group-hover:bg-blue-500/10" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </span>
-                        support@limoschedule.com
-                    </a>
-                    <a href="https://wa.me/message/limoschedule" target="_blank" rel="noopener" class="footer-contact-link group inline-flex items-center gap-3 text-gray-400 hover:text-white text-[13px] transition-colors duration-200">
-                        <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:border-green-500/40 group-hover:bg-green-500/10" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                        </span>
-                        WhatsApp Support
-                    </a>
-                </div>
 
-                <!-- Social icons -->
-                <div class="flex items-center gap-2.5">
-                    <a href="#" target="_blank" rel="noopener" aria-label="X / Twitter" class="footer-social group w-9 h-9 rounded-xl flex items-center justify-center text-gray-500 hover:text-white transition-all duration-200" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.26 5.632 5.905-5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener" aria-label="GitHub" class="footer-social group w-9 h-9 rounded-xl flex items-center justify-center text-gray-500 hover:text-white transition-all duration-200" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social group w-9 h-9 rounded-xl flex items-center justify-center text-gray-500 hover:text-white transition-all duration-200" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener" aria-label="YouTube" class="footer-social group w-9 h-9 rounded-xl flex items-center justify-center text-gray-500 hover:text-white transition-all duration-200" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                    </a>
-                </div>
             </div>
 
             <!-- Product column -->
@@ -3065,33 +3035,33 @@
                 <ul class="flex flex-col gap-3.5">
                     <li><a href="#features" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Features</a></li>
                     <li><a href="#voice-search" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Voice Search</a></li>
-                    <li><a href="#ai-agent" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">AI Voice Agent</a></li>
+                    <li><a href="#ai-call-agent" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">AI Voice Agent</a></li>
                     <li><a href="#admin-panel" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Panel</a></li>
                     <li><a href="#how-it-works" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">How It Works</a></li>
                 </ul>
             </div>
 
-            <!-- Resources column -->
-            <div>
-                <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Resources</h4>
-                <ul class="flex flex-col gap-3.5">
-                    <li><a href="#faq" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">FAQ</a></li>
-                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Documentation</a></li>
-                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Installation Guide</a></li>
-                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Changelog</a></li>
-                    <li><a href="#contact" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Support</a></li>
-                </ul>
-            </div>
-
-            <!-- Legal column -->
+            <!-- Company column -->
             <div>
                 <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Company</h4>
-                <ul class="flex flex-col gap-3.5">
+                <ul class="flex flex-col gap-3.5 mb-6">
+                    <li><a href="#faq" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">FAQ</a></li>
                     <li><a href="#contact" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Contact</a></li>
-                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Privacy Policy</a></li>
-                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Terms of License</a></li>
-                    <li><a href="#" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Refund Policy</a></li>
                 </ul>
+                <div class="flex flex-col gap-3">
+                    <a href="mailto:support@limoschedule.com" class="footer-contact-link group inline-flex items-center gap-3 text-gray-400 hover:text-white text-[13px] transition-colors duration-200">
+                        <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:border-blue-500/40 group-hover:bg-blue-500/10" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </span>
+                        support@limoschedule.com
+                    </a>
+                    <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%20%E2%80%94%20the%20self-hosted%20limo%20booking%20system.%20Can%20you%20please%20provide%20more%20details%3F" target="_blank" rel="noopener" class="footer-contact-link group inline-flex items-center gap-3 text-gray-400 hover:text-white text-[13px] transition-colors duration-200">
+                        <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:border-green-500/40 group-hover:bg-green-500/10" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                        </span>
+                        +92 346 0820722
+                    </a>
+                </div>
             </div>
 
         </div><!-- /grid -->
