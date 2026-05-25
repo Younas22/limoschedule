@@ -141,6 +141,19 @@ body { background: #0A0A0A; color: #fff; -webkit-font-smoothing: antialiased; }
    SECTION 2 — FEATURES GRID
 ══════════════════════════════════════════════════════ */
 
+/* No-JS fallback: show all animated elements if JavaScript hasn't loaded */
+html:not(.js-ready) .section-fade,
+html:not(.js-ready) .stat-item,
+html:not(.js-ready) .voice-result-reveal,
+html:not(.js-ready) .voice-panel-reveal,
+html:not(.js-ready) .ai-call-fade,
+html:not(.js-ready) .ai-call-left-reveal,
+html:not(.js-ready) .ai-call-right-reveal,
+html:not(.js-ready) .ai-bubble-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
 /* Section fade-up reveal */
 .section-fade {
     opacity: 0;

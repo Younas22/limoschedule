@@ -3,6 +3,19 @@
    Sections: Navbar · Features · Voice Search · AI Call Agent · Admin Panel
 ══════════════════════════════════════════════════════ */
 
+/* Enable scroll animations (hides elements via CSS only when JS is available) */
+document.documentElement.classList.add('js-ready');
+
+/* Fallback: if IntersectionObserver never fires, reveal all hidden elements after 2s */
+setTimeout(function () {
+    document.querySelectorAll(
+        '.section-fade:not(.visible),.stat-item:not(.visible),' +
+        '.ai-call-fade:not(.visible),.voice-panel-reveal:not(.visible),' +
+        '.voice-result-reveal:not(.visible),.ai-call-left-reveal:not(.visible),' +
+        '.ai-call-right-reveal:not(.visible),.ai-bubble-reveal:not(.visible)'
+    ).forEach(function (el) { el.classList.add('visible'); });
+}, 2000);
+
 /* ── Navbar + Global ── */
 (function () {
     'use strict';
