@@ -1,4 +1,4 @@
-﻿﻿﻿﻿<!DOCTYPE html>
+﻿﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -20,6 +20,67 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="{{ url('public/assets/css/limoschedule.css') }}">
+
+    <!-- Select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <style>
+        /* Select2 dark theme override */
+        .select2-container--default .select2-selection--single {
+            background: rgba(255,255,255,0.04) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            border-radius: 10px !important;
+            height: 44px !important;
+            display: flex !important;
+            align-items: center !important;
+            color: #e5e7eb !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #e5e7eb !important;
+            line-height: 44px !important;
+            padding-left: 14px !important;
+            font-size: 13.5px !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__placeholder {
+            color: #6b7280 !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 44px !important;
+            right: 10px !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow b {
+            border-color: #6b7280 transparent transparent transparent !important;
+        }
+        .select2-dropdown {
+            background: #141414 !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            border-radius: 10px !important;
+        }
+        .select2-container--default .select2-search--dropdown .select2-search__field {
+            background: rgba(255,255,255,0.06) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            border-radius: 6px !important;
+            color: #e5e7eb !important;
+            font-size: 13px !important;
+            padding: 6px 10px !important;
+        }
+        .select2-container--default .select2-results__option {
+            color: #d1d5db !important;
+            font-size: 13.5px !important;
+            padding: 8px 14px !important;
+        }
+        .select2-container--default .select2-results__option--highlighted[aria-selected] {
+            background: rgba(59,130,246,0.2) !important;
+            color: #fff !important;
+        }
+        .select2-container--default .select2-results__option[aria-selected=true] {
+            background: rgba(59,130,246,0.12) !important;
+            color: #60a5fa !important;
+        }
+        .select2-container { width: 100% !important; }
+        .select2-container--open .select2-selection--single {
+            border-color: rgba(59,130,246,0.5) !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -2913,7 +2974,7 @@
 
                     <!-- Form wrap (hidden when success shown) -->
                     <div id="cfFormWrap" class="relative z-10">
-                        <form id="contactForm" action="#" method="POST" class="space-y-4" novalidate>
+                        <form id="contactForm" action="{{ route('demo.store') }}" method="POST" class="space-y-4">
                             @csrf
 
                             <!-- Row 1: Name + Company -->
@@ -2960,35 +3021,54 @@
                                 </div>
                             </div>
 
-                            <!-- Row 3: Country -->
+                            <!-- Row 3: Country + Total Employees -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="contact-label" for="cf_country">
+                                        <span class="inline-flex items-center gap-1.5">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+                                            Country <span class="text-blue-500 ml-0.5">*</span>
+                                        </span>
+                                    </label>
+                                    <select id="cf_country" name="country" required>
+                                        <option value="">Select your country&hellip;</option>
+                                        @foreach($countries as $country)
+                                            <option value="{{ $country->name }}">{{ $country->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="contact-label" for="cf_employees">
+                                        <span class="inline-flex items-center gap-1.5">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                                            Total Employees <span class="text-blue-500 ml-0.5">*</span>
+                                        </span>
+                                    </label>
+                                    <select id="cf_employees" name="total_employees" class="contact-input contact-select" required>
+                                        <option value="" disabled selected style="background:#111111;">Select range&hellip;</option>
+                                        <option value="1-5"    style="background:#111111;">1 &ndash; 5</option>
+                                        <option value="6-10"   style="background:#111111;">6 &ndash; 10</option>
+                                        <option value="11-25"  style="background:#111111;">11 &ndash; 25</option>
+                                        <option value="26-50"  style="background:#111111;">26 &ndash; 50</option>
+                                        <option value="51-100" style="background:#111111;">51 &ndash; 100</option>
+                                        <option value="100+"   style="background:#111111;">100+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Row 4: Budget -->
                             <div>
-                                <label class="contact-label" for="cf_country">
+                                <label class="contact-label" for="cf_budget">
                                     <span class="inline-flex items-center gap-1.5">
-                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
-                                        Country <span class="text-blue-500 ml-0.5">*</span>
+                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                                        System Setup Budget <span class="text-blue-500 ml-0.5">*</span>
                                     </span>
                                 </label>
-                                <select id="cf_country" name="country" class="contact-input contact-select" required>
-                                    <option value="" disabled selected style="background:#111111;">Select your country&hellip;</option>
-                                    <option value="US"    style="background:#111111;">United States</option>
-                                    <option value="GB"    style="background:#111111;">United Kingdom</option>
-                                    <option value="CA"    style="background:#111111;">Canada</option>
-                                    <option value="AU"    style="background:#111111;">Australia</option>
-                                    <option value="AE"    style="background:#111111;">United Arab Emirates</option>
-                                    <option value="SA"    style="background:#111111;">Saudi Arabia</option>
-                                    <option value="DE"    style="background:#111111;">Germany</option>
-                                    <option value="FR"    style="background:#111111;">France</option>
-                                    <option value="IT"    style="background:#111111;">Italy</option>
-                                    <option value="ES"    style="background:#111111;">Spain</option>
-                                    <option value="NL"    style="background:#111111;">Netherlands</option>
-                                    <option value="SG"    style="background:#111111;">Singapore</option>
-                                    <option value="IN"    style="background:#111111;">India</option>
-                                    <option value="PK"    style="background:#111111;">Pakistan</option>
-                                    <option value="NG"    style="background:#111111;">Nigeria</option>
-                                    <option value="ZA"    style="background:#111111;">South Africa</option>
-                                    <option value="BR"    style="background:#111111;">Brazil</option>
-                                    <option value="MX"    style="background:#111111;">Mexico</option>
-                                    <option value="other" style="background:#111111;">Other&hellip;</option>
+                                <select id="cf_budget" name="budget" class="contact-input contact-select" required>
+                                    <option value="" disabled selected style="background:#111111;">What is your budget?&hellip;</option>
+                                    <option value="$1500" style="background:#111111;">$1,500</option>
+                                    <option value="$2500" style="background:#111111;">$2,500</option>
+                                    <option value="$5000" style="background:#111111;">$5,000</option>
                                 </select>
                             </div>
 
@@ -3086,7 +3166,7 @@
                 <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Not needed</div>
 
                 <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">Custom dev build</div>
-                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$50k&ndash;$150k</div>
+                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$10k&ndash;$15k</div>
                 <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Included</div>
 
                 <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">SaaS booking platform</div>
@@ -3277,25 +3357,28 @@
 <!-- â•â•â•â• END FOOTER â•â•â•â• -->
 
 
+<!-- jQuery + Select2 -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script>
-(function () {
-    var form = document.getElementById('contactForm');
-    var wrap = document.getElementById('cfFormWrap');
-    var success = document.getElementById('cfSuccess');
-    if (!form) return;
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var btn = document.getElementById('cfSubmitBtn');
-        btn.disabled = true;
-        btn.querySelector('span').textContent = 'Sending&hellip;';
-        setTimeout(function () {
-            wrap.classList.add('hidden');
-            success.classList.remove('hidden');
-        }, 800);
+$(function () {
+    $('#cf_country').select2({
+        placeholder: 'Select your country…',
+        allowClear: false,
+        dropdownCssClass: 'select2-dark',
+        theme: 'default'
     });
-})();
-</script>
 
+    /* Submit: show loading state while form posts */
+    $('#contactForm').on('submit', function () {
+        var btn = document.getElementById('cfSubmitBtn');
+        if (btn) {
+            btn.disabled = true;
+            btn.querySelector('span').textContent = 'Sending…';
+        }
+    });
+});
+</script>
 
 <!-- Main JavaScript -->
 <script src="{{ url('public/assets/js/limoschedule.js') }}"></script>
