@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿﻿﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LimoSchedule — Self-Hosted Automated Limo Booking System</title>
+    <title>LimoSchedule &mdash; Self-Hosted Automated Limo Booking System</title>
     <meta name="description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
 
     <!-- Official Favicon -->
@@ -24,9 +24,9 @@
 
 <body>
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION 1 — STICKY PREMIUM NAVBAR
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION 1 &mdash; STICKY PREMIUM NAVBAR
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <header
     id="navbar"
     class="fixed top-0 left-0 right-0 z-50"
@@ -36,12 +36,12 @@
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-[66px]">
 
-            <!-- ─── Official Logo ─── -->
-            <a href="{{ url('/') }}" class="flex-shrink-0 block" aria-label="LimoSchedule — Home">
+            <!-- â”€â”€â”€ Official Logo â”€â”€â”€ -->
+            <a href="{{ url('/') }}" class="flex-shrink-0 block" aria-label="LimoSchedule &mdash; Home">
                 <div class="logo-badge rounded-xl px-3 py-[7px]">
                     <img
                         src="{{ url('public/logo/logo-white.png') }}"
-                        alt="LimoSchedule — Automated Limo Booking System"
+                        alt="LimoSchedule &mdash; Automated Limo Booking System"
                         class="h-[30px] w-auto block"
                         loading="eager"
                         decoding="sync"
@@ -49,7 +49,7 @@
                 </div>
             </a>
 
-            <!-- ─── Desktop Navigation ─── -->
+            <!-- â”€â”€â”€ Desktop Navigation â”€â”€â”€ -->
             <nav class="hidden xl:flex items-center" aria-label="Primary navigation">
                 <ul class="flex items-center gap-0.5 list-none m-0 p-0">
                     <li>
@@ -76,7 +76,7 @@
                 </ul>
             </nav>
 
-            <!-- ─── Desktop Right Actions ─── -->
+            <!-- â”€â”€â”€ Desktop Right Actions â”€â”€â”€ -->
             <div class="hidden xl:flex items-center gap-3 flex-shrink-0">
 
                 <!-- Auth links -->
@@ -97,20 +97,23 @@
                 <!-- Divider -->
                 <span class="w-px h-4 bg-white/10 block"></span>
 
-                <!-- Primary CTA -->
+                <!-- WhatsApp CTA — Primary in nav -->
+                <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F"
+                   target="_blank" rel="noopener"
+                   class="wa-hero-cta inline-flex items-center gap-2 text-white text-[13px] font-bold px-4 py-2 rounded-xl"
+                   style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                    <span>WhatsApp Us</span>
+                </a>
+                <!-- Secondary CTA -->
                 <a href="#contact"
-                   class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white text-[13.5px] font-semibold px-5 py-2.5 rounded-xl border border-blue-500/30">
-                    <!-- Key icon -->
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="7.5" cy="15.5" r="5.5"/>
-                        <path d="M21 2l-9.6 9.6"/>
-                        <path d="M15.5 7.5l3 3L22 7l-3-3"/>
-                    </svg>
-                    <span>Get License Access</span>
+                   class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-4 py-2 rounded-xl border border-blue-500/30">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
+                    <span>Get License</span>
                 </a>
             </div>
 
-            <!-- ─── Mobile Hamburger ─── -->
+            <!-- â”€â”€â”€ Mobile Hamburger â”€â”€â”€ -->
             <button
                 id="hamburger"
                 type="button"
@@ -127,11 +130,11 @@
         </div><!-- /flex row -->
     </div><!-- /container -->
 
-    <!-- ─── Mobile Menu Panel ─── -->
+    <!-- â”€â”€â”€ Mobile Menu Panel â”€â”€â”€ -->
     <div
         id="mobile-menu"
         class="mobile-menu xl:hidden"
-        style="background: rgba(9,9,9,0.98); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-top: 1px solid rgba(255,255,255,0.06);"
+        style="background: rgba(9,9,9,0.99); border-top: 1px solid rgba(255,255,255,0.06);"
         role="dialog"
         aria-label="Mobile navigation"
     >
@@ -284,7 +287,7 @@
                         <a href="{{ url('/dashboard') }}"
                            class="flex items-center justify-center text-[14px] font-medium text-gray-300 hover:text-white border rounded-xl px-4 py-3 transition-all duration-200 hover:border-white/20"
                            style="border-color: rgba(255,255,255,0.1); background: rgba(255,255,255,0.03);">
-                            Dashboard →
+                            Dashboard &rarr;
                         </a>
                     @else
                         <a href="{{ route('login') }}"
@@ -295,6 +298,13 @@
                     @endauth
                 @endif
 
+                <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F"
+                   target="_blank" rel="noopener"
+                   class="wa-hero-cta flex items-center justify-center gap-2 text-white text-[14px] font-bold px-4 py-3 rounded-xl"
+                   style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                    Talk to a Real Person — WhatsApp
+                </a>
                 <a href="#contact"
                    class="btn-cta flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[14px] font-semibold px-4 py-3 rounded-xl border border-blue-500/30">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -310,12 +320,12 @@
     </div><!-- /mobile-menu -->
 
 </header>
-<!-- ════ END NAVBAR ════ -->
+<!-- â•â•â•â• END NAVBAR â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
-     HERO — PLACEHOLDER (future section prompt)
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     HERO &mdash; PLACEHOLDER (future section prompt)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <main id="hero" class="hero-grid relative min-h-screen flex items-center justify-center overflow-hidden" style="padding-top: 66px;">
 
     <!-- Ambient glow orb -->
@@ -326,62 +336,69 @@
 
     <div class="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 text-center py-24">
 
-        <!-- Top badge -->
-        <div class="inline-flex items-center gap-2.5 mb-8 px-4 py-2 rounded-full"
-             style="background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.18);">
-            <span class="ping-dot relative w-2 h-2 rounded-full bg-[#3B82F6] flex-shrink-0"></span>
-            <span class="text-blue-400 text-xs font-semibold tracking-[0.12em] uppercase">
-                Self-Hosted · Open Source · White-Label
+        <!-- Urgency badge -->
+        <div class="inline-flex items-center gap-2.5 mb-6 px-4 py-2 rounded-full"
+             style="background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.22);">
+            <span class="relative flex h-2 w-2 flex-shrink-0">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
             </span>
+            <span class="text-red-400 text-xs font-bold tracking-[0.14em] uppercase">Limited Licenses Available &mdash; Only a Few Spots Left</span>
         </div>
 
         <!-- Main headline -->
-        <h1 class="text-5xl sm:text-6xl lg:text-[72px] xl:text-[80px] font-black tracking-tight leading-[1.05] mb-6">
-            The Complete<br>
+        <h1 class="text-3xl sm:text-4xl lg:text-[48px] xl:text-[56px] font-black tracking-tight leading-[1.05] mb-6">
+            Your Limo,
             <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 40%, #3B82F6 80%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                Limo Booking System
+                Automated.
             </span>
         </h1>
 
-        <!-- Sub-headline -->
-        <p class="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-4">
-            Install on your own server in <span class="text-white font-semibold">30 minutes</span>.
-            Full source code. One-time license.
-            White-label branding freedom included.
+        <!-- Emotional sub-headline -->
+        <p class="text-gray-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-3 font-medium">
+            Every missed call, every manual booking, every dispatch error is revenue leaving your business.
         </p>
-        <p class="text-gray-600 text-sm max-w-xl mx-auto mb-8">
-            Powered by AI Voice Search · Real-time Dispatch · Fleet Management · White-label Ready
+        <p class="text-gray-500 text-base max-w-xl mx-auto mb-8 leading-relaxed">
+            LimoSchedule is the enterprise-grade, self-hosted limo booking system that automates your entire operation &mdash; AI agent, voice search, fleet dispatch, and real-time control. <span class="text-white font-semibold">One-time license. Yours forever.</span>
         </p>
 
         <!-- Price badge -->
-        <div class="inline-flex items-center gap-3 mb-8 px-5 py-2.5 rounded-2xl" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
+        <div class="inline-flex flex-wrap items-center justify-center gap-3 mb-8 px-5 py-3 rounded-2xl" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
-            <span class="text-[13.5px] font-semibold text-white">One-Time License —</span>
-            <span class="text-[18px] font-black text-blue-400 leading-none">$4,999</span>
-            <span class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Fixed · No Recurring Fees</span>
+            <span class="text-[13.5px] font-semibold text-white">One-Time License &mdash;</span>
+            <span class="text-[22px] font-black text-blue-400 leading-none">$4,999</span>
+            <span class="w-px h-4 bg-white/15"></span>
+            <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider">No Subscriptions Â· No Monthly Fees Â· Own It Forever</span>
         </div>
 
-        <!-- CTA row -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <!-- CTA row &mdash; WhatsApp PRIMARY -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4">
+
+            <!-- PRIMARY: WhatsApp with pulse glow -->
+            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
+               class="wa-hero-cta w-full sm:w-auto inline-flex items-center justify-center gap-2.5 font-bold px-8 py-4 rounded-xl text-[15px] text-white"
+               style="background: linear-gradient(135deg, #16a34a, #22c55e); box-shadow: 0 0 0 0 rgba(34,197,94,0.5); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                    <path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/>
+                </svg>
+                <span>Talk to a Real Person Now</span>
+            </a>
+
+            <!-- SECONDARY: Get License -->
             <a href="#contact"
-               class="btn-cta w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-semibold px-7 py-3.5 rounded-xl text-[15px] border border-blue-500/30">
+               class="btn-cta w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-semibold px-7 py-4 rounded-xl text-[15px] border border-blue-500/30">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="7.5" cy="15.5" r="5.5"/>
                     <path d="M21 2l-9.6 9.6"/>
                     <path d="M15.5 7.5l3 3L22 7l-3-3"/>
                 </svg>
-                <span>Get License Access</span>
-            </a>
-
-            <a href="https://wa.me/message/limoschedule" target="_blank" rel="noopener"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border text-gray-300 hover:text-white font-medium px-7 py-3.5 rounded-xl text-[15px] transition-all duration-200 hover:border-green-500/40 hover:bg-green-500/10"
-               style="border-color: rgba(255,255,255,0.12);">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
-                </svg>
-                WhatsApp Us
+                <span>Request Private Demo</span>
             </a>
         </div>
+
+        <!-- Micro-trust under CTAs -->
+        <p class="text-gray-600 text-xs mb-10">Instant response on WhatsApp Â· See the live admin panel Â· No obligation</p>
 
         <!-- Audio player -->
         <div class="mt-10 max-w-md mx-auto">
@@ -418,7 +435,7 @@
                 <!-- Label -->
                 <div class="flex-shrink-0 text-right">
                     <div class="text-[11px] font-semibold text-white">System Overview</div>
-                    <div class="text-[10px] text-gray-500 mt-0.5">2 min · English</div>
+                    <div class="text-[10px] text-gray-500 mt-0.5">2 min Â· English</div>
                 </div>
                 <audio id="heroAudio" preload="none">
                     <source src="{{ url('public/assets/audio/overview.mp3') }}" type="audio/mpeg">
@@ -427,27 +444,27 @@
         </div>
 
         <!-- Trust strip -->
-        <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mt-14 pt-10 border-t"
+        <div class="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 mt-10 pt-10 border-t"
              style="border-color: rgba(255,255,255,0.07);">
             <div class="stat-item flex items-center gap-2 text-sm text-gray-500">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                Open Source Code
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Built for Real Limo Operators
             </div>
-            <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.08s">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                Self-Hosted &amp; Private
+            <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.07s">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Enterprise-Grade Architecture
             </div>
-            <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.16s">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                One-Time License
+            <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.14s">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Private &amp; Self-Hosted
             </div>
-            <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.24s">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                White-Label Ready
+            <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.21s">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Full Ownership Included
             </div>
-            <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.32s">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                30-Min Server Install
+            <div class="stat-item flex items-center gap-2 text-sm text-gray-500" style="transition-delay: 0.28s">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                Pay Once Â· Use Forever
             </div>
         </div>
 
@@ -455,21 +472,126 @@
 </main>
 
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION 2 — FEATURES GRID
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION &mdash; PAIN / PROBLEM (inserted before features)
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section id="the-problem" class="relative py-24 lg:py-32 overflow-hidden" style="background: #060606;">
+
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(239,68,68,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(239,68,68,0.02) 1px, transparent 1px); background-size: 56px 56px;"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(239,68,68,0.06) 0%, transparent 70%);"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 section-fade">
+            <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2);">
+                <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-red-400">The Real Cost of Doing Nothing</span>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+                Every day without this system,<br>
+                <span style="background: linear-gradient(135deg, #ef4444, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    you're losing money.
+                </span>
+            </h2>
+            <p class="text-gray-400 text-[17px] leading-relaxed">
+                Limo business owners running manual operations are hemorrhaging revenue every single day &mdash; through missed calls, double bookings, dispatch chaos, and a poor customer experience that sends clients to your competitors.
+            </p>
+        </div>
+
+        <!-- Pain cards grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
+
+            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.05s">
+                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-[16px] mb-2">Missed Calls = Missed Revenue</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed">Every unanswered call is a booking going straight to your competitor. No system, no second chances.</p>
+            </div>
+
+            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.10s">
+                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-[16px] mb-2">Dispatch Chaos Destroys Reputation</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed">Double bookings, wrong vehicles, late drivers &mdash; manual dispatch is a ticking time bomb for your 5-star rating.</p>
+            </div>
+
+            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.15s">
+                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-[16px] mb-2">Staff Dependency Caps Your Growth</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed">Your business stops when your staff stops. Sick days, late nights, holiday gaps &mdash; it all bleeds revenue.</p>
+            </div>
+
+            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.20s">
+                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-[16px] mb-2">Manual Bookings Waste Hours Daily</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed">Hours spent on spreadsheets, calls, and WhatsApp messages that an automated system handles in seconds.</p>
+            </div>
+
+            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.25s">
+                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-[16px] mb-2">Poor Customer Experience Kills Loyalty</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed">Slow responses, no confirmations, no tracking &mdash; premium clients expect a premium experience. Are you delivering it?</p>
+            </div>
+
+            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.30s">
+                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                </div>
+                <h3 class="text-white font-bold text-[16px] mb-2">Operational Costs That Never Stop</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed">SaaS subscriptions, booking platform commissions, dispatcher salaries &mdash; the costs compound while your margin shrinks.</p>
+            </div>
+
+        </div>
+
+        <!-- Solution transition -->
+        <div class="text-center section-fade" style="transition-delay: 0.35s">
+            <div class="inline-block px-8 py-5 rounded-2xl mb-6" style="background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.2);">
+                <p class="text-[18px] sm:text-[22px] font-bold text-white leading-snug">
+                    LimoSchedule eliminates every one of these problems.<br>
+                    <span class="text-blue-400">One system. One payment. Zero recurring costs.</span>
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
+                   class="wa-hero-cta inline-flex items-center gap-2.5 font-bold px-7 py-3.5 rounded-xl text-[14px] text-white"
+                   style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                    Get Instant Demo on WhatsApp
+                </a>
+                <a href="#features" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-[14px] text-gray-300 hover:text-white transition-colors duration-200" style="border: 1px solid rgba(255,255,255,0.1);">
+                    See All Features &rarr;
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- â•â•â•â• END PAIN SECTION â•â•â•â• -->
+
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION 2 &mdash; FEATURES GRID
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="features" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
 
     <!-- Faint section grid -->
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 56px 56px;"></div>
 
-    <!-- Ambient glow — top center -->
+    <!-- Ambient glow &mdash; top center -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[340px] pointer-events-none"
          style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.10) 0%, transparent 70%);"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
-        <!-- ── Section Header ── -->
+        <!-- â”€â”€ Section Header â”€â”€ -->
         <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20 section-fade">
 
             <!-- Eyebrow -->
@@ -482,19 +604,18 @@
             </div>
 
             <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5">
-                Everything your limo<br>
+                Stop losing bookings.<br>
                 <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 45%, #3B82F6 90%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    business needs.
+                    Start running on autopilot.
                 </span>
             </h2>
 
             <p class="text-gray-400 text-[16.5px] leading-relaxed">
-                One system. One license. Every tool your team needs to automate bookings,
-                manage your fleet, and deliver a five-star passenger experience.
+                One system. One license. Built for premium transportation companies that want to automate operations, eliminate staff dependency, and deliver a five-star customer experience &mdash; 24/7, automatically.
             </p>
         </div>
 
-        <!-- ── Feature Cards Grid ── -->
+        <!-- â”€â”€ Feature Cards Grid â”€â”€ -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
 
             <!-- 1. Open Source Code Access -->
@@ -507,7 +628,7 @@
                 </div>
                 <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Open Source Code Access</h3>
                 <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Full, unencrypted source code delivered with your license. Read, modify, and extend every line — no runtime fees, no black boxes.
+                    Full, unencrypted source code delivered with your license. Read, modify, and extend every line &mdash; no runtime fees, no black boxes.
                 </p>
                 <div class="feat-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -526,7 +647,7 @@
                 </div>
                 <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">White Label System</h3>
                 <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Replace every trace of our branding with yours. Custom domain, logo, colors, and app name — zero attribution required. Full white-label customization allowed.
+                    Replace every trace of our branding with yours. Custom domain, logo, colors, and app name &mdash; zero attribution required. Full white-label customization allowed.
                 </p>
                 <div class="feat-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -547,7 +668,7 @@
                 </div>
                 <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Self-Hosted &amp; Private</h3>
                 <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Deploy on any VPS, dedicated server, or private cloud. Your data, your infrastructure, your rules — no third-party ever touches your records.
+                    Deploy on any VPS, dedicated server, or private cloud. Your data, your infrastructure, your rules &mdash; no third-party ever touches your records.
                 </p>
                 <div class="feat-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -575,7 +696,7 @@
                 </div>
             </div>
 
-            <!-- 5. AI Booking Agent — FEATURED -->
+            <!-- 5. AI Booking Agent &mdash; FEATURED -->
             <div class="feature-card featured section-fade" style="transition-delay: 0.25s">
                 <!-- Featured label -->
                 <div class="absolute top-4 right-4">
@@ -594,7 +715,7 @@
                 </div>
                 <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">AI Booking Agent</h3>
                 <p class="text-gray-400 text-[13.5px] leading-relaxed pr-8">
-                    Intelligent AI agent handles customer enquiries, confirms bookings, upsells upgrades, and optimizes schedules autonomously — 24/7, zero staff required.
+                    Intelligent AI agent handles customer enquiries, confirms bookings, upsells upgrades, and optimizes schedules autonomously &mdash; 24/7, zero staff required.
                 </p>
                 <div class="feat-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -603,7 +724,7 @@
                 </div>
             </div>
 
-            <!-- 6. Voice Search Booking — FEATURED -->
+            <!-- 6. Voice Search Booking &mdash; FEATURED -->
             <div class="feature-card featured section-fade" style="transition-delay: 0.30s">
                 <div class="absolute top-4 right-4">
                     <span class="inline-flex items-center gap-1 text-[10px] font-bold tracking-widest uppercase text-blue-400 px-2 py-0.5 rounded-full"
@@ -621,7 +742,7 @@
                 </div>
                 <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Voice Search Booking</h3>
                 <p class="text-gray-400 text-[13.5px] leading-relaxed pr-8">
-                    Customers book rides with natural voice commands in any language. No typing, no friction — just speak the destination and the system handles the rest.
+                    Customers book rides with natural voice commands in any language. No typing, no friction &mdash; just speak the destination and the system handles the rest.
                 </p>
                 <div class="feat-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -642,7 +763,7 @@
                 </div>
                 <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Fleet Management</h3>
                 <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Real-time vehicle tracking, driver assignment, availability management, and intelligent route optimization across your entire fleet — from one dashboard.
+                    Real-time vehicle tracking, driver assignment, availability management, and intelligent route optimization across your entire fleet &mdash; from one dashboard.
                 </p>
                 <div class="feat-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -663,7 +784,7 @@
                 </div>
                 <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Admin Control Panel</h3>
                 <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Comprehensive dashboard for bookings, drivers, pricing rules, revenue reports, and customer management — all in one powerful and intuitive interface.
+                    Comprehensive dashboard for bookings, drivers, pricing rules, revenue reports, and customer management &mdash; all in one powerful and intuitive interface.
                 </p>
                 <div class="feat-arrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -695,30 +816,34 @@
 
         </div><!-- /grid -->
 
-        <!-- ── Bottom CTA strip ── -->
-        <div class="mt-16 flex flex-col sm:flex-row items-center justify-center gap-4 section-fade" style="transition-delay: 0.5s">
-            <p class="text-gray-500 text-sm">
-                All features included in a single one-time license. No monthly fees. No hidden costs.
+        <!-- â”€â”€ Bottom CTA strip â”€â”€ -->
+        <div class="mt-16 flex flex-col items-center gap-5 section-fade" style="transition-delay: 0.5s">
+            <p class="text-gray-500 text-sm text-center">
+                All features included in a single one-time license of <span class="text-white font-semibold">$4,999</span>. No monthly fees. No hidden costs. No subscriptions.
             </p>
-            <a href="#contact"
-               class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white font-semibold px-6 py-2.5 rounded-xl text-sm border border-blue-500/30 flex-shrink-0">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="7.5" cy="15.5" r="5.5"/>
-                    <path d="M21 2l-9.6 9.6"/>
-                    <path d="M15.5 7.5l3 3L22 7l-3-3"/>
-                </svg>
-                <span>Get License Access</span>
-            </a>
+            <div class="flex flex-col sm:flex-row items-center gap-3">
+                <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
+                   class="wa-hero-cta inline-flex items-center gap-2.5 font-bold px-6 py-3 rounded-xl text-[13.5px] text-white flex-shrink-0"
+                   style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                    See Live Admin Panel on WhatsApp
+                </a>
+                <a href="#contact"
+                   class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white font-semibold px-6 py-3 rounded-xl text-[13.5px] border border-blue-500/30 flex-shrink-0">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
+                    <span>Request Private Demo</span>
+                </a>
+            </div>
         </div>
 
     </div><!-- /container -->
 </section>
-<!-- ════ END FEATURES ════ -->
+<!-- â•â•â•â• END FEATURES â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION 3 — VOICE SEARCH BOOKING
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION 3 &mdash; VOICE SEARCH BOOKING
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="voice-search" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
 
     <!-- Section grid -->
@@ -734,7 +859,7 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
-        <!-- ── Section Header ── -->
+        <!-- â”€â”€ Section Header â”€â”€ -->
         <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20 section-fade">
 
             <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full"
@@ -749,24 +874,23 @@
             </div>
 
             <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5">
-                Just speak.<br>
+                Your customers speak.<br>
                 <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 45%, #3B82F6 90%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    AI does the rest.
+                    Revenue appears instantly.
                 </span>
             </h2>
 
             <p class="text-gray-400 text-[16.5px] leading-relaxed">
-                Passengers book their ride with a single voice command. Natural language, any language —
-                the AI finds available vehicles and confirms the booking in seconds.
+                The world's most frictionless booking experience &mdash; passengers speak a single voice command in any language, and the AI instantly finds vehicles, quotes fares, and confirms bookings. Faster bookings mean higher conversion rates and a luxury experience that keeps clients coming back.
             </p>
         </div>
 
-        <!-- ── Main 2-col layout ── -->
+        <!-- â”€â”€ Main 2-col layout â”€â”€ -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
 
-            <!-- ╔═══════════════════╗
-                 ║  LEFT: VOICE UI  ║
-                 ╚═══════════════════╝ -->
+            <!-- â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+                 â•‘  LEFT: VOICE UI  â•‘
+                 â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
             <div class="voice-panel-reveal">
                 <div class="relative rounded-2xl overflow-hidden"
                      style="background: rgba(14,14,18,0.9); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(16px);">
@@ -782,7 +906,7 @@
                             <span class="w-2.5 h-2.5 rounded-full" style="background: rgba(234,179,8,0.7);"></span>
                             <span class="w-2.5 h-2.5 rounded-full" style="background: rgba(34,197,94,0.7);"></span>
                         </div>
-                        <span class="text-[10.5px] font-medium text-gray-600 tracking-[0.1em] uppercase select-none">Voice Interface · LimoSchedule AI</span>
+                        <span class="text-[10.5px] font-medium text-gray-600 tracking-[0.1em] uppercase select-none">Voice Interface Â· LimoSchedule AI</span>
                         <div class="flex items-center gap-1.5">
                             <span class="w-1.5 h-1.5 rounded-full bg-green-400" style="box-shadow: 0 0 7px rgba(74,222,128,0.9);"></span>
                             <span class="text-[10px] text-green-400 font-bold tracking-wider">LIVE</span>
@@ -889,7 +1013,7 @@
                                 <div class="flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center" style="background: rgba(59,130,246,0.15);">
                                     <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                                 </div>
-                                <span class="text-[12px] text-gray-500">Route analyzed: <span class="text-gray-300">Airport Terminal → City Center · 14.2 km</span></span>
+                                <span class="text-[12px] text-gray-500">Route analyzed: <span class="text-gray-300">Airport Terminal &rarr; City Center Â· 14.2 km</span></span>
                             </div>
                             <div class="flex items-center gap-2.5">
                                 <div class="flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center" style="background: rgba(59,130,246,0.15);">
@@ -919,16 +1043,16 @@
                 </div><!-- /panel -->
             </div><!-- /LEFT -->
 
-            <!-- ╔════════════════════╗
-                 ║  RIGHT: RESULTS   ║
-                 ╚════════════════════╝ -->
+            <!-- â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
+                 â•‘  RIGHT: RESULTS   â•‘
+                 â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
             <div class="flex flex-col gap-4">
 
                 <!-- Results header -->
                 <div class="flex items-center justify-between mb-1 section-fade" style="transition-delay: 0.1s">
                     <div>
                         <div class="text-white font-bold text-[17px]">Available Now</div>
-                        <div class="text-gray-500 text-[12.5px] mt-0.5">3 vehicles · Airport → City Center · Tonight</div>
+                        <div class="text-gray-500 text-[12.5px] mt-0.5">3 vehicles Â· Airport &rarr; City Center Â· Tonight</div>
                     </div>
                     <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full flex-shrink-0"
                          style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
@@ -937,7 +1061,7 @@
                     </div>
                 </div>
 
-                <!-- ── Card 1: Executive Sedan ── -->
+                <!-- â”€â”€ Card 1: Executive Sedan â”€â”€ -->
                 <div class="voice-result-card voice-result-reveal p-5" style="transition-delay: 0.25s">
                     <div class="flex items-start gap-4">
                         <!-- Vehicle icon -->
@@ -958,7 +1082,7 @@
                             <div class="flex items-start justify-between gap-2 mb-1.5">
                                 <div>
                                     <h4 class="text-white font-bold text-[14.5px] leading-snug">Executive Sedan</h4>
-                                    <p class="text-gray-500 text-[12px] mt-0.5">Mercedes E-Class · Up to 3 pax</p>
+                                    <p class="text-gray-500 text-[12px] mt-0.5">Mercedes E-Class Â· Up to 3 pax</p>
                                 </div>
                                 <div class="text-right flex-shrink-0">
                                     <div class="text-white font-black text-[22px] leading-none">$85</div>
@@ -984,13 +1108,13 @@
                             </div>
                             <button class="btn-cta w-full flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-4 py-2.5 rounded-xl border border-blue-500/30">
                                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                <span>Book Now · $85</span>
+                                <span>Book Now Â· $85</span>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- ── Card 2: Premium SUV — AI Recommended ── -->
+                <!-- â”€â”€ Card 2: Premium SUV &mdash; AI Recommended â”€â”€ -->
                 <div class="voice-result-card voice-result-reveal p-5" style="transition-delay: 0.40s; border-color: rgba(59,130,246,0.22); background: rgba(59,130,246,0.035);">
                     <!-- AI recommended badge -->
                     <div class="flex items-center justify-between mb-3">
@@ -1021,7 +1145,7 @@
                             <div class="flex items-start justify-between gap-2 mb-1.5">
                                 <div>
                                     <h4 class="text-white font-bold text-[14.5px] leading-snug">Premium SUV</h4>
-                                    <p class="text-gray-500 text-[12px] mt-0.5">Cadillac Escalade · Up to 6 pax</p>
+                                    <p class="text-gray-500 text-[12px] mt-0.5">Cadillac Escalade Â· Up to 6 pax</p>
                                 </div>
                                 <div class="text-right flex-shrink-0">
                                     <div class="text-white font-black text-[22px] leading-none">$120</div>
@@ -1046,13 +1170,13 @@
                             </div>
                             <button class="btn-cta w-full flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-4 py-2.5 rounded-xl border border-blue-500/30">
                                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                <span>Book Now · $120</span>
+                                <span>Book Now Â· $120</span>
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- ── Card 3: Luxury Van ── -->
+                <!-- â”€â”€ Card 3: Luxury Van â”€â”€ -->
                 <div class="voice-result-card voice-result-reveal p-5" style="transition-delay: 0.55s">
                     <div class="flex items-start gap-4">
                         <!-- Van icon -->
@@ -1075,7 +1199,7 @@
                             <div class="flex items-start justify-between gap-2 mb-1.5">
                                 <div>
                                     <h4 class="text-white font-bold text-[14.5px] leading-snug">Luxury Van</h4>
-                                    <p class="text-gray-500 text-[12px] mt-0.5">Mercedes Sprinter · Up to 8 pax</p>
+                                    <p class="text-gray-500 text-[12px] mt-0.5">Mercedes Sprinter Â· Up to 8 pax</p>
                                 </div>
                                 <div class="text-right flex-shrink-0">
                                     <div class="text-white font-black text-[22px] leading-none">$165</div>
@@ -1101,7 +1225,7 @@
                             <button class="w-full flex items-center justify-center gap-2 text-gray-300 hover:text-white text-[13px] font-semibold px-4 py-2.5 rounded-xl border transition-all duration-200 hover:border-white/25 hover:bg-white/[0.04]"
                                     style="border-color: rgba(255,255,255,0.1);">
                                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                <span>Book Now · $165</span>
+                                <span>Book Now Â· $165</span>
                             </button>
                         </div>
                     </div>
@@ -1110,7 +1234,7 @@
                 <!-- Trust footer -->
                 <div class="flex items-center justify-center gap-2 mt-1 voice-result-reveal" style="transition-delay: 0.66s">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    <span class="text-[12px] text-gray-600">Secure payment · Free cancellation · Confirmed in seconds</span>
+                    <span class="text-[12px] text-gray-600">Secure payment Â· Free cancellation Â· Confirmed in seconds</span>
                 </div>
 
             </div><!-- /RIGHT -->
@@ -1119,12 +1243,12 @@
 
     </div><!-- /container -->
 </section>
-<!-- ════ END VOICE SEARCH ════ -->
+<!-- â•â•â•â• END VOICE SEARCH â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION 4 — AI LIMO CALL AGENT
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION 4 &mdash; AI LIMO CALL AGENT
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="ai-call-agent" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
 
     <!-- Grid overlay -->
@@ -1148,18 +1272,18 @@
                 <span class="text-[11px] font-bold text-blue-400 tracking-[0.16em] uppercase">AI Voice Agent</span>
             </div>
             <h2 class="text-[36px] sm:text-[48px] lg:text-[58px] font-black text-white leading-[1.06] tracking-tight mb-6">
-                Your 24/7 AI<br class="hidden sm:block">
-                <span style="background: linear-gradient(135deg, #3B82F6 30%, #93c5fd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Booking Agent</span>
+                Fire your dispatcher.<br class="hidden sm:block">
+                <span style="background: linear-gradient(135deg, #3B82F6 30%, #93c5fd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Your AI never sleeps.</span>
             </h2>
             <p class="text-gray-400 text-[17px] leading-relaxed max-w-2xl mx-auto">
-                Customers call. The AI handles everything — trip details, real-time pricing, availability, and full booking confirmation. Zero staff needed.
+                Every call answered instantly &mdash; 2 AM, Christmas morning, every weekend. The AI collects trip details, quotes real-time pricing, checks availability, and confirms bookings automatically. No human delays. No missed bookings. No staff dependency. Your operation runs 24/7 on autopilot.
             </p>
         </div>
 
         <!-- 2-col layout -->
         <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-            <!-- ── LEFT: Step-by-step flow ── -->
+            <!-- â”€â”€ LEFT: Step-by-step flow â”€â”€ -->
             <div class="ai-call-left-reveal">
                 <div class="flex flex-col gap-0">
 
@@ -1176,7 +1300,7 @@
                         </div>
                         <div class="pb-6 pt-1">
                             <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Customer Calls In</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">Your AI agent answers every call instantly — 24/7, no hold music, no waiting. Fully branded to your company.</p>
+                            <p class="text-gray-500 text-[14px] leading-relaxed">Your AI agent answers every call instantly &mdash; 24/7, no hold music, no waiting. Fully branded to your company.</p>
                         </div>
                     </div>
 
@@ -1193,7 +1317,7 @@
                         </div>
                         <div class="pb-6 pt-1">
                             <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Collects Trip Details</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">Pickup location, drop-off address, date, time, and passenger count — gathered naturally through conversation.</p>
+                            <p class="text-gray-500 text-[14px] leading-relaxed">Pickup location, drop-off address, date, time, and passenger count &mdash; gathered naturally through conversation.</p>
                         </div>
                     </div>
 
@@ -1210,7 +1334,7 @@
                         </div>
                         <div class="pb-6 pt-1">
                             <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Instant Pricing Quote</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">AI calculates the exact fare and presents clear pricing options — sedan, SUV, stretch, or whatever your fleet offers.</p>
+                            <p class="text-gray-500 text-[14px] leading-relaxed">AI calculates the exact fare and presents clear pricing options &mdash; sedan, SUV, stretch, or whatever your fleet offers.</p>
                         </div>
                     </div>
 
@@ -1231,7 +1355,7 @@
                         </div>
                     </div>
 
-                    <!-- Step 5 — final, no connector line -->
+                    <!-- Step 5 &mdash; final, no connector line -->
                     <div class="ai-step-item flex items-start gap-5 group">
                         <div class="flex-shrink-0">
                             <div class="ai-step-icon w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300"
@@ -1243,14 +1367,14 @@
                         </div>
                         <div class="pt-1">
                             <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Booking Confirmed Automatically</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">Booking created, driver notified, SMS confirmation sent to the customer — all before the call ends.</p>
+                            <p class="text-gray-500 text-[14px] leading-relaxed">Booking created, driver notified, SMS confirmation sent to the customer &mdash; all before the call ends.</p>
                         </div>
                     </div>
 
                 </div>
             </div><!-- /LEFT -->
 
-            <!-- ── RIGHT: Call UI mockup ── -->
+            <!-- â”€â”€ RIGHT: Call UI mockup â”€â”€ -->
             <div class="ai-call-right-reveal">
                 <div class="relative">
 
@@ -1261,7 +1385,7 @@
                     <div class="ai-call-card relative rounded-2xl overflow-hidden"
                          style="background: rgba(12,12,20,0.98); border: 1px solid rgba(255,255,255,0.07); box-shadow: 0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(59,130,246,0.05);">
 
-                        <!-- ── Call header ── -->
+                        <!-- â”€â”€ Call header â”€â”€ -->
                         <div class="px-5 py-4 flex items-center justify-between"
                              style="background: rgba(59,130,246,0.04); border-bottom: 1px solid rgba(255,255,255,0.06);">
                             <div class="flex items-center gap-3">
@@ -1300,7 +1424,7 @@
                             </div>
                         </div>
 
-                        <!-- ── Conversation ── -->
+                        <!-- â”€â”€ Conversation â”€â”€ -->
                         <div id="ai-chat-area" class="px-5 py-5 flex flex-col gap-3.5 overflow-hidden" style="min-height: 360px;">
 
                             <!-- AI: greeting -->
@@ -1314,7 +1438,7 @@
                                          style="background: rgba(59,130,246,0.09); border: 1px solid rgba(59,130,246,0.16);">
                                         Hello! Thank you for calling. I'm your AI booking agent. Where would you like to be picked up today?
                                     </div>
-                                    <div class="text-[10px] text-gray-600 mt-1 ml-1">LimoAgent · just now</div>
+                                    <div class="text-[10px] text-gray-600 mt-1 ml-1">LimoAgent Â· just now</div>
                                 </div>
                             </div>
 
@@ -1342,14 +1466,14 @@
                                 <div class="max-w-[84%]">
                                     <div class="px-4 py-3 rounded-2xl rounded-bl-sm text-[13px] text-white leading-relaxed"
                                          style="background: rgba(59,130,246,0.09); border: 1px solid rgba(59,130,246,0.16);">
-                                        Got it! Checking availability for 9 PM JFK → Midtown…
+                                        Got it! Checking availability for 9 PM JFK &rarr; Midtown&hellip;
                                         <!-- Pricing card inside bubble -->
                                         <div class="mt-3 rounded-xl overflow-hidden"
                                              style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.16);">
                                             <div class="px-3.5 py-2.5 flex items-center justify-between hover:bg-white/5 transition-colors cursor-default">
                                                 <div>
                                                     <div class="text-white font-semibold text-[12.5px]">Executive Sedan</div>
-                                                    <div class="text-gray-500 text-[10.5px] mt-0.5">Mercedes E-Class · up to 3 pax</div>
+                                                    <div class="text-gray-500 text-[10.5px] mt-0.5">Mercedes E-Class Â· up to 3 pax</div>
                                                 </div>
                                                 <div class="text-white font-black text-[18px]">$95</div>
                                             </div>
@@ -1357,7 +1481,7 @@
                                             <div class="px-3.5 py-2.5 flex items-center justify-between hover:bg-white/5 transition-colors cursor-default">
                                                 <div>
                                                     <div class="text-white font-semibold text-[12.5px]">Luxury SUV</div>
-                                                    <div class="text-gray-500 text-[10.5px] mt-0.5">Cadillac Escalade · up to 6 pax</div>
+                                                    <div class="text-gray-500 text-[10.5px] mt-0.5">Cadillac Escalade Â· up to 6 pax</div>
                                                 </div>
                                                 <div class="text-white font-black text-[18px]">$135</div>
                                             </div>
@@ -1369,7 +1493,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-[10px] text-gray-600 mt-1 ml-1">LimoAgent · just now</div>
+                                    <div class="text-[10px] text-gray-600 mt-1 ml-1">LimoAgent Â· just now</div>
                                 </div>
                             </div>
 
@@ -1410,7 +1534,7 @@
 
                         </div><!-- /conversation -->
 
-                        <!-- ── Waveform + controls ── -->
+                        <!-- â”€â”€ Waveform + controls â”€â”€ -->
                         <div class="px-5 pb-5 pt-3" style="border-top: 1px solid rgba(255,255,255,0.05);">
 
                             <!-- Active call waveform -->
@@ -1468,14 +1592,25 @@
 
         </div><!-- /2-col grid -->
 
+        <!-- WhatsApp nudge below AI agent section -->
+        <div class="mt-16 text-center section-fade" style="transition-delay: 0.3s">
+            <p class="text-gray-500 text-[14px] mb-4">Want to see the AI agent in action? Watch a live demo on WhatsApp.</p>
+            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
+               class="wa-hero-cta inline-flex items-center gap-2.5 font-bold px-7 py-3.5 rounded-xl text-[14px] text-white"
+               style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                Get Instant Demo on WhatsApp
+            </a>
+        </div>
+
     </div><!-- /container -->
 </section>
-<!-- ════ END AI CALL AGENT ════ -->
+<!-- â•â•â•â• END AI CALL AGENT â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION — ADMIN PANEL SHOWCASE
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION &mdash; ADMIN PANEL SHOWCASE
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="admin-panel" class="relative py-28 overflow-hidden">
 
     <!-- Background -->
@@ -1484,7 +1619,7 @@
 
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative">
 
-        <!-- ── Section Header ── -->
+        <!-- â”€â”€ Section Header â”€â”€ -->
         <div class="text-center mb-14">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-semibold tracking-[0.1em] uppercase text-blue-400 mb-6"
                  style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
@@ -1497,12 +1632,12 @@
                 Complete Control.<br class="hidden sm:block"> Zero Limitations.
             </h2>
             <p class="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                A fully-featured operations dashboard — manage bookings, fleet, pricing,
+                A fully-featured operations dashboard &mdash; manage bookings, fleet, pricing,
                 analytics and your entire team from one powerful interface. Fully yours, fully branded.
             </p>
         </div>
 
-        <!-- ── Tab Navigation ── -->
+        <!-- â”€â”€ Tab Navigation â”€â”€ -->
         <div class="flex items-center justify-center mb-8 overflow-x-auto pb-1">
             <div class="flex items-center gap-1 p-1 rounded-xl flex-shrink-0"
                  style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
@@ -1533,7 +1668,7 @@
             </div>
         </div>
 
-        <!-- ── Browser Frame Wrapper (horizontal scroll on mobile) ── -->
+        <!-- â”€â”€ Browser Frame Wrapper (horizontal scroll on mobile) â”€â”€ -->
         <div class="overflow-x-auto rounded-2xl" style="box-shadow: 0 40px 100px rgba(0,0,0,0.55), 0 0 0 1px rgba(59,130,246,0.06);">
         <div class="min-w-[900px] rounded-2xl overflow-hidden" style="background: rgba(12,12,12,0.95); border: 1px solid rgba(255,255,255,0.08); box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);">
 
@@ -1563,7 +1698,7 @@
             <!-- Admin App: Sidebar + Main -->
             <div class="flex" style="height: 580px;">
 
-                <!-- ─── Sidebar ─── -->
+                <!-- â”€â”€â”€ Sidebar â”€â”€â”€ -->
                 <div class="flex-shrink-0 flex flex-col" style="width: 196px; background: rgba(7,7,7,0.98); border-right: 1px solid rgba(255,255,255,0.05);">
 
                     <!-- Brand mark -->
@@ -1622,7 +1757,7 @@
                     </div>
                 </div><!-- /sidebar -->
 
-                <!-- ─── Main Content ─── -->
+                <!-- â”€â”€â”€ Main Content â”€â”€â”€ -->
                 <div class="flex-1 flex flex-col overflow-hidden" style="background: rgba(10,10,12,0.99);">
 
                     <!-- Top Bar -->
@@ -1645,7 +1780,7 @@
                     <!-- Scrollable Panel Area -->
                     <div class="flex-1 overflow-y-auto admin-content-scroll">
 
-                        <!-- ════ DASHBOARD PANEL ════ -->
+                        <!-- â•â•â•â• DASHBOARD PANEL â•â•â•â• -->
                         <div id="ap-dashboard" class="admin-panel p-5 space-y-4">
 
                             <!-- KPI Cards -->
@@ -1793,7 +1928,7 @@
 
                         </div><!-- /ap-dashboard -->
 
-                        <!-- ════ BOOKINGS PANEL ════ -->
+                        <!-- â•â•â•â• BOOKINGS PANEL â•â•â•â• -->
                         <div id="ap-bookings" class="admin-panel p-5 hidden">
 
                             <!-- Toolbar -->
@@ -1820,7 +1955,7 @@
                                     <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
                                         <div class="text-[11px] font-mono text-gray-500">#4892</div>
                                         <div><div class="text-[12px] font-medium text-white">James Carter</div><div class="text-[10px] text-gray-500">+1 555 234 8900</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">JFK → Manhattan Hotel</div><div class="text-[10px] text-gray-500">Today, 9:30 PM</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">JFK &rarr; Manhattan Hotel</div><div class="text-[10px] text-gray-500">Today, 9:30 PM</div></div>
                                         <div class="text-[11px] text-gray-400">Exec Sedan #04</div>
                                         <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Active</span></div>
                                         <div class="text-[12px] font-semibold text-white">$145</div>
@@ -1830,7 +1965,7 @@
                                     <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
                                         <div class="text-[11px] font-mono text-gray-500">#4891</div>
                                         <div><div class="text-[12px] font-medium text-white">Sarah Williamson</div><div class="text-[10px] text-gray-500">+1 555 872 3100</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Midtown → LaGuardia</div><div class="text-[10px] text-gray-500">Today, 11:00 PM</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Midtown &rarr; LaGuardia</div><div class="text-[10px] text-gray-500">Today, 11:00 PM</div></div>
                                         <div class="text-[11px] text-gray-400">SUV Premium #09</div>
                                         <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Pending</span></div>
                                         <div class="text-[12px] font-semibold text-white">$210</div>
@@ -1840,7 +1975,7 @@
                                     <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
                                         <div class="text-[11px] font-mono text-gray-500">#4889</div>
                                         <div><div class="text-[12px] font-medium text-white">Michael Torres</div><div class="text-[10px] text-gray-500">+1 555 431 2200</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Newark EWR → Downtown</div><div class="text-[10px] text-gray-500">Tomorrow, 7:00 AM</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Newark EWR &rarr; Downtown</div><div class="text-[10px] text-gray-500">Tomorrow, 7:00 AM</div></div>
                                         <div class="text-[11px] text-gray-400">Stretch Limo #02</div>
                                         <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">Confirmed</span></div>
                                         <div class="text-[12px] font-semibold text-white">$380</div>
@@ -1850,7 +1985,7 @@
                                     <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
                                         <div class="text-[11px] font-mono text-gray-500">#4888</div>
                                         <div><div class="text-[12px] font-medium text-white">Emily Chen</div><div class="text-[10px] text-gray-500">+1 555 128 9900</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Chelsea → JFK Airport</div><div class="text-[10px] text-gray-500">Today, 6:45 PM</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Chelsea &rarr; JFK Airport</div><div class="text-[10px] text-gray-500">Today, 6:45 PM</div></div>
                                         <div class="text-[11px] text-gray-400">Exec Sedan #07</div>
                                         <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-gray-400" style="background: rgba(255,255,255,0.06);">Completed</span></div>
                                         <div class="text-[12px] font-semibold text-white">$175</div>
@@ -1860,7 +1995,7 @@
                                     <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
                                         <div class="text-[11px] font-mono text-gray-500">#4885</div>
                                         <div><div class="text-[12px] font-medium text-white">David Osei</div><div class="text-[10px] text-gray-500">+1 555 667 4400</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Upper East Side → Boston</div><div class="text-[10px] text-gray-500">Tomorrow, 9:00 AM</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Upper East Side &rarr; Boston</div><div class="text-[10px] text-gray-500">Tomorrow, 9:00 AM</div></div>
                                         <div class="text-[11px] text-gray-400">Van Premium #11</div>
                                         <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Pending</span></div>
                                         <div class="text-[12px] font-semibold text-white">$520</div>
@@ -1870,7 +2005,7 @@
                                     <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
                                         <div class="text-[11px] font-mono text-gray-500">#4882</div>
                                         <div><div class="text-[12px] font-medium text-white">Priya Sharma</div><div class="text-[10px] text-gray-500">+1 555 303 7700</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Wall Street → Newark EWR</div><div class="text-[10px] text-gray-500">Today, 4:15 PM</div></div>
+                                        <div><div class="text-[11px] text-gray-300 truncate">Wall Street &rarr; Newark EWR</div><div class="text-[10px] text-gray-500">Today, 4:15 PM</div></div>
                                         <div class="text-[11px] text-gray-400">Exec Sedan #12</div>
                                         <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Active</span></div>
                                         <div class="text-[12px] font-semibold text-white">$290</div>
@@ -1882,7 +2017,7 @@
 
                         </div><!-- /ap-bookings -->
 
-                        <!-- ════ FLEET PANEL ════ -->
+                        <!-- â•â•â•â• FLEET PANEL â•â•â•â• -->
                         <div id="ap-fleet" class="admin-panel p-5 hidden">
 
                             <!-- Fleet Stats -->
@@ -1912,7 +2047,7 @@
 
                                 <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
                                     <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">Executive Sedan</div><div class="text-[10.5px] text-gray-500 mt-0.5">Mercedes S-Class · #04</div></div>
+                                        <div><div class="text-[12.5px] font-bold text-white">Executive Sedan</div><div class="text-[10.5px] text-gray-500 mt-0.5">Mercedes S-Class Â· #04</div></div>
                                         <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Available</span>
                                     </div>
                                     <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
@@ -1926,7 +2061,7 @@
 
                                 <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.12);">
                                     <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">SUV Premium</div><div class="text-[10.5px] text-gray-500 mt-0.5">Cadillac Escalade · #09</div></div>
+                                        <div><div class="text-[12.5px] font-bold text-white">SUV Premium</div><div class="text-[10.5px] text-gray-500 mt-0.5">Cadillac Escalade Â· #09</div></div>
                                         <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">On Ride</span>
                                     </div>
                                     <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
@@ -1934,13 +2069,13 @@
                                     </div>
                                     <div class="flex items-center justify-between text-[10.5px]">
                                         <span class="text-gray-500">ODO: 28,450 km</span>
-                                        <span class="text-blue-400/70">En route · ETA 14 min</span>
+                                        <span class="text-blue-400/70">En route Â· ETA 14 min</span>
                                     </div>
                                 </div>
 
                                 <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(234,179,8,0.12);">
                                     <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">Stretch Limousine</div><div class="text-[10.5px] text-gray-500 mt-0.5">Lincoln Continental · #02</div></div>
+                                        <div><div class="text-[12.5px] font-bold text-white">Stretch Limousine</div><div class="text-[10.5px] text-gray-500 mt-0.5">Lincoln Continental Â· #02</div></div>
                                         <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Maintenance</span>
                                     </div>
                                     <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
@@ -1954,7 +2089,7 @@
 
                                 <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
                                     <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">Luxury Van</div><div class="text-[10.5px] text-gray-500 mt-0.5">Mercedes Sprinter · #11</div></div>
+                                        <div><div class="text-[12.5px] font-bold text-white">Luxury Van</div><div class="text-[10.5px] text-gray-500 mt-0.5">Mercedes Sprinter Â· #11</div></div>
                                         <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Available</span>
                                     </div>
                                     <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
@@ -1968,7 +2103,7 @@
 
                                 <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.12);">
                                     <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">Executive Sedan</div><div class="text-[10.5px] text-gray-500 mt-0.5">BMW 7 Series · #07</div></div>
+                                        <div><div class="text-[12.5px] font-bold text-white">Executive Sedan</div><div class="text-[10.5px] text-gray-500 mt-0.5">BMW 7 Series Â· #07</div></div>
                                         <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">On Ride</span>
                                     </div>
                                     <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
@@ -1976,7 +2111,7 @@
                                     </div>
                                     <div class="flex items-center justify-between text-[10.5px]">
                                         <span class="text-gray-500">ODO: 55,640 km</span>
-                                        <span class="text-blue-400/70">En route · ETA 7 min</span>
+                                        <span class="text-blue-400/70">En route Â· ETA 7 min</span>
                                     </div>
                                 </div>
 
@@ -1994,7 +2129,7 @@
 
                         </div><!-- /ap-fleet -->
 
-                        <!-- ════ PRICING PANEL ════ -->
+                        <!-- â•â•â•â• PRICING PANEL â•â•â•â• -->
                         <div id="ap-pricing" class="admin-panel p-5 hidden">
 
                             <div class="flex items-center justify-between mb-4">
@@ -2063,23 +2198,23 @@
                                 <div class="text-[12.5px] font-bold text-white mb-3">Dynamic Surge Multipliers</div>
                                 <div class="grid grid-cols-3 gap-3">
                                     <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
-                                        <div class="text-[10.5px] text-gray-500 mb-1.5">Peak Hours (6–9AM, 5–8PM)</div>
-                                        <div class="text-[18px] font-bold text-blue-400">1.5×</div>
+                                        <div class="text-[10.5px] text-gray-500 mb-1.5">Peak Hours (6&ndash;9AM, 5&ndash;8PM)</div>
+                                        <div class="text-[18px] font-bold text-blue-400">1.5Ã—</div>
                                     </div>
                                     <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
                                         <div class="text-[10.5px] text-gray-500 mb-1.5">High Demand (&gt;85% fleet)</div>
-                                        <div class="text-[18px] font-bold text-yellow-400">2.0×</div>
+                                        <div class="text-[18px] font-bold text-yellow-400">2.0Ã—</div>
                                     </div>
                                     <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
-                                        <div class="text-[10.5px] text-gray-500 mb-1.5">Late Night (11PM–4AM)</div>
-                                        <div class="text-[18px] font-bold text-purple-400">1.25×</div>
+                                        <div class="text-[10.5px] text-gray-500 mb-1.5">Late Night (11PM&ndash;4AM)</div>
+                                        <div class="text-[18px] font-bold text-purple-400">1.25Ã—</div>
                                     </div>
                                 </div>
                             </div>
 
                         </div><!-- /ap-pricing -->
 
-                        <!-- ════ ANALYTICS PANEL ════ -->
+                        <!-- â•â•â•â• ANALYTICS PANEL â•â•â•â• -->
                         <div id="ap-analytics" class="admin-panel p-5 hidden">
 
                             <div class="grid grid-cols-3 gap-3 mb-4">
@@ -2141,13 +2276,13 @@
 
                         </div><!-- /ap-analytics -->
 
-                        <!-- ════ TEAM PANEL ════ -->
+                        <!-- â•â•â•â• TEAM PANEL â•â•â•â• -->
                         <div id="ap-team" class="admin-panel p-5 hidden">
 
                             <div class="flex items-center justify-between mb-4">
                                 <div>
                                     <div class="text-[14px] font-bold text-white">Team Management</div>
-                                    <div class="text-[11.5px] text-gray-500 mt-0.5">24 members · Role-based access control</div>
+                                    <div class="text-[11.5px] text-gray-500 mt-0.5">24 members Â· Role-based access control</div>
                                 </div>
                                 <button class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); border: 1px solid rgba(59,130,246,0.5);">
                                     <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
@@ -2264,7 +2399,7 @@
         </div><!-- /browser frame inner -->
         </div><!-- /overflow wrapper -->
 
-        <!-- ── Feature Pills ── -->
+        <!-- â”€â”€ Feature Pills â”€â”€ -->
         <div class="flex flex-wrap items-center justify-center gap-3 mt-10">
             <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -2294,12 +2429,12 @@
 
     </div><!-- /container -->
 </section>
-<!-- ════ END ADMIN PANEL ════ -->
+<!-- â•â•â•â• END ADMIN PANEL â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION — HOW IT WORKS
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION &mdash; HOW IT WORKS
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="how-it-works" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
 
     <!-- Subtle section grid -->
@@ -2310,7 +2445,7 @@
 
     <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
 
-        <!-- ── Section Header ── -->
+        <!-- â”€â”€ Section Header â”€â”€ -->
         <div class="text-center max-w-2xl mx-auto mb-20 lg:mb-24 section-fade">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-5" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #3B82F6;">
                 <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
@@ -2325,7 +2460,7 @@
             </p>
         </div>
 
-        <!-- ── Steps Grid ── -->
+        <!-- â”€â”€ Steps Grid â”€â”€ -->
         <div class="relative">
 
             <!-- Desktop dashed connector line -->
@@ -2333,7 +2468,7 @@
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-7">
 
-                <!-- ═══ STEP 1 ═══ -->
+                <!-- â•â•â• STEP 1 â•â•â• -->
                 <div class="hiw-step section-fade" style="transition-delay: 0.06s;">
                     <div class="hiw-step-inner">
 
@@ -2374,7 +2509,7 @@
                     </div>
                 </div><!-- /step 1 -->
 
-                <!-- ═══ STEP 2 ═══ -->
+                <!-- â•â•â• STEP 2 â•â•â• -->
                 <div class="hiw-step section-fade" style="transition-delay: 0.16s;">
                     <div class="hiw-step-inner">
 
@@ -2401,12 +2536,12 @@
                             <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 02</div>
                             <h3 class="text-[18px] sm:text-[19px] font-bold text-white mb-3 leading-tight">Setup Branding &amp; Pricing</h3>
                             <p class="text-[13.5px] text-gray-400 leading-relaxed mb-5">
-                                Upload your logo, set brand colors, configure vehicle classes, and define all pricing rules — straight from the admin panel.
+                                Upload your logo, set brand colors, configure vehicle classes, and define all pricing rules &mdash; straight from the admin panel.
                             </p>
                             <div class="space-y-2.5 lg:inline-flex lg:flex-col lg:items-start">
                                 <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
                                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Full white-label — your brand &amp; domain
+                                    Full white-label &mdash; your brand &amp; domain
                                 </div>
                                 <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
                                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
@@ -2422,7 +2557,7 @@
                     </div>
                 </div><!-- /step 2 -->
 
-                <!-- ═══ STEP 3 ═══ -->
+                <!-- â•â•â• STEP 3 â•â•â• -->
                 <div class="hiw-step section-fade" style="transition-delay: 0.26s;">
                     <div class="hiw-step-inner">
 
@@ -2442,7 +2577,7 @@
                             <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 03</div>
                             <h3 class="text-[18px] sm:text-[19px] font-bold text-white mb-3 leading-tight">Start Taking Bookings</h3>
                             <p class="text-[13.5px] text-gray-400 leading-relaxed mb-5">
-                                Customers book online, pay instantly, and receive AI confirmation calls — while you manage everything from one clean dashboard.
+                                Customers book online, pay instantly, and receive AI confirmation calls &mdash; while you manage everything from one clean dashboard.
                             </p>
                             <div class="space-y-2.5 lg:inline-flex lg:flex-col lg:items-start">
                                 <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
@@ -2466,12 +2601,12 @@
             </div><!-- /grid -->
         </div><!-- /steps -->
 
-        <!-- ── Bottom CTA ── -->
+        <!-- â”€â”€ Bottom CTA â”€â”€ -->
         <div class="mt-16 lg:mt-20 flex flex-col items-center gap-5 section-fade" style="transition-delay: 0.36s;">
             <!-- Trust chip -->
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                No subscriptions &nbsp;·&nbsp; No vendor lock-in &nbsp;·&nbsp; Full source code ownership
+                No subscriptions &nbsp;Â·&nbsp; No vendor lock-in &nbsp;Â·&nbsp; Full source code ownership
             </div>
             <!-- Buttons -->
             <div class="flex flex-col sm:flex-row items-center gap-3">
@@ -2487,12 +2622,12 @@
 
     </div><!-- /container -->
 </section>
-<!-- ════ END HOW IT WORKS ════ -->
+<!-- â•â•â•â• END HOW IT WORKS â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION — FAQ
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION &mdash; FAQ
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="faq" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
 
     <!-- Grid texture -->
@@ -2533,7 +2668,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">No — LimoSchedule is <span class="text-white font-medium">not SaaS</span>. There are no monthly fees, no subscriptions, and no data sent to our servers. You purchase a one-time license and receive the full source code to deploy on your own infrastructure. Your data stays on your server, always.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">No &mdash; LimoSchedule is <span class="text-white font-medium">not SaaS</span>. There are no monthly fees, no subscriptions, and no data sent to our servers. You purchase a one-time license and receive the full source code to deploy on your own infrastructure. Your data stays on your server, always.</p>
                     </div>
                 </div>
             </div>
@@ -2551,7 +2686,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Absolutely. LimoSchedule is built to be self-hosted on any VPS, dedicated server, or cloud provider — AWS, DigitalOcean, Hetzner, or your own hardware. You get complete control over your environment, database, and backups. <span class="text-white font-medium">No vendor dependency whatsoever.</span></p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Absolutely. LimoSchedule is built to be self-hosted on any VPS, dedicated server, or cloud provider &mdash; AWS, DigitalOcean, Hetzner, or your own hardware. You get complete control over your environment, database, and backups. <span class="text-white font-medium">No vendor dependency whatsoever.</span></p>
                     </div>
                 </div>
             </div>
@@ -2569,7 +2704,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes — LimoSchedule is fully white-label ready. Replace the logo, colors, domain, and product name to match any limo or transportation brand. Agencies and developers can <span class="text-white font-medium">deploy it under their own brand</span> for multiple clients under a single license. Full white-label &amp; branding freedom included.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes &mdash; LimoSchedule is fully white-label ready. Replace the logo, colors, domain, and product name to match any limo or transportation brand. Agencies and developers can <span class="text-white font-medium">deploy it under their own brand</span> for multiple clients under a single license. Full white-label &amp; branding freedom included.</p>
                     </div>
                 </div>
             </div>
@@ -2587,7 +2722,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. The <span class="text-white font-medium">AI Voice Call Agent</span> is built into the platform — it answers inbound calls, qualifies leads, collects booking details, and confirms reservations automatically, 24/7. You connect your own AI provider keys (OpenAI, ElevenLabs, or compatible) so you pay usage costs directly, with no markup from us.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. The <span class="text-white font-medium">AI Voice Call Agent</span> is built into the platform &mdash; it answers inbound calls, qualifies leads, collects booking details, and confirms reservations automatically, 24/7. You connect your own AI provider keys (OpenAI, ElevenLabs, or compatible) so you pay usage costs directly, with no markup from us.</p>
                     </div>
                 </div>
             </div>
@@ -2605,7 +2740,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Most installs go live in <span class="text-white font-medium">under 30 minutes</span>. Upload the files, configure your <code class="text-blue-400 text-[13px] px-1.5 py-0.5 rounded" style="background: rgba(59,130,246,0.1);">.env</code>, run the installer, and you're done. The step-by-step documentation covers every major hosting environment. No developer experience required — if you can set up a WordPress site, you can install LimoSchedule.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Most installs go live in <span class="text-white font-medium">under 30 minutes</span>. Upload the files, configure your <code class="text-blue-400 text-[13px] px-1.5 py-0.5 rounded" style="background: rgba(59,130,246,0.1);">.env</code>, run the installer, and you're done. The step-by-step documentation covers every major hosting environment. No developer experience required &mdash; if you can set up a WordPress site, you can install LimoSchedule.</p>
                     </div>
                 </div>
             </div>
@@ -2623,12 +2758,12 @@
 
     </div><!-- /container -->
 </section>
-<!-- ════ END FAQ ════ -->
+<!-- â•â•â•â• END FAQ â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION — CONTACT / LEAD GENERATION
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION &mdash; CONTACT / LEAD GENERATION
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="contact" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
 
     <!-- Grid texture -->
@@ -2644,24 +2779,46 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-14 xl:gap-20 items-start">
 
-            <!-- ══ LEFT: Value Proposition ══ -->
+            <!-- â•â• LEFT: Value Proposition â•â• -->
             <div class="lg:pt-3 section-fade">
 
                 <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-6" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #3B82F6;">
-                    <svg width="7" height="7" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="7"/></svg>
-                    Limited Licenses Available
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-6" style="background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.25); color: #ef4444;">
+                    <span class="relative flex h-2 w-2 flex-shrink-0">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                    </span>
+                    Limited Licenses Available &mdash; Act Now
                 </div>
 
                 <!-- Headline -->
                 <h2 class="text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[46px] font-bold leading-[1.12] tracking-tight text-white mb-5">
-                    Own Your Limo<br>Booking System.<br>
-                    <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">One-Time. Forever.</span>
+                    Stop Losing Bookings.<br>Get the System That<br>
+                    <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Runs Itself.</span>
                 </h2>
 
-                <p class="text-[15px] text-gray-400 leading-relaxed mb-6 max-w-[400px]">
-                    One license. Your server. Your brand. A complete limo booking platform you fully own — no subscriptions, no lock-in.
+                <p class="text-[15px] text-gray-400 leading-relaxed mb-6 max-w-[420px]">
+                    Cheaper than hiring a dispatcher. Cheaper than building custom software. Cheaper than losing one more month of bookings to manual chaos.
                 </p>
+
+                <!-- WhatsApp contact option -->
+                <div class="mb-6 p-4 rounded-xl" style="background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2);">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(34,197,94,0.15);">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="#22c55e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-white font-semibold text-[13.5px]">Prefer a faster response?</div>
+                            <div class="text-gray-500 text-[12px]">Talk to a real person on WhatsApp right now.</div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
+                       class="wa-hero-cta w-full flex items-center justify-center gap-2.5 font-bold py-2.5 rounded-lg text-[13px] text-white"
+                       style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                        Message Us on WhatsApp &mdash; Instant Reply
+                    </a>
+                </div>
 
                 <!-- Price callout -->
                 <div class="inline-flex items-center gap-3 mb-9 px-5 py-3 rounded-2xl" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
@@ -2680,7 +2837,7 @@
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         </div>
                         <div>
-                            <div class="text-[13.5px] font-semibold text-white leading-snug">One-time license — no subscriptions</div>
+                            <div class="text-[13.5px] font-semibold text-white leading-snug">One-time license &mdash; no subscriptions</div>
                             <div class="text-[12px] text-gray-500 mt-0.5">Pay once, use forever. Zero recurring charges.</div>
                         </div>
                     </div>
@@ -2730,21 +2887,28 @@
                     </div>
                     <div class="w-px h-9 flex-shrink-0" style="background: rgba(255,255,255,0.08);"></div>
                     <div>
-                        <div class="text-[24px] font-bold text-white leading-none">∞</div>
+                        <div class="text-[24px] font-bold text-white leading-none">&infin;</div>
                         <div class="text-[11.5px] text-gray-500 mt-1">Bookings / month</div>
                     </div>
                 </div>
 
             </div><!-- /left -->
 
-            <!-- ══ RIGHT: Form Card ══ -->
+            <!-- â•â• RIGHT: Form Card â•â• -->
             <div class="section-fade" style="transition-delay: 0.12s;">
                 <div class="contact-form-card">
 
                     <!-- Form header -->
                     <div class="mb-6 relative z-10">
-                        <h3 class="text-[20px] font-bold text-white mb-1.5">Request License Access</h3>
-                        <p class="text-[13px] text-gray-400">Fill in your details — we'll respond within 24 hours.</p>
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="relative flex h-2 w-2 flex-shrink-0">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                            </div>
+                            <span class="text-[11px] font-bold text-blue-400 tracking-[0.12em] uppercase">We reply within 4 hours &mdash; usually faster</span>
+                        </div>
+                        <h3 class="text-[22px] font-bold text-white mb-1.5">Request Your Private Demo</h3>
+                        <p class="text-[13px] text-gray-400">See the live admin panel, AI agent, and full system &mdash; tailored to your limo business. No obligation.</p>
                     </div>
 
                     <!-- Form wrap (hidden when success shown) -->
@@ -2805,7 +2969,7 @@
                                     </span>
                                 </label>
                                 <select id="cf_country" name="country" class="contact-input contact-select" required>
-                                    <option value="" disabled selected style="background:#111111;">Select your country…</option>
+                                    <option value="" disabled selected style="background:#111111;">Select your country&hellip;</option>
                                     <option value="US"    style="background:#111111;">United States</option>
                                     <option value="GB"    style="background:#111111;">United Kingdom</option>
                                     <option value="CA"    style="background:#111111;">Canada</option>
@@ -2824,7 +2988,7 @@
                                     <option value="ZA"    style="background:#111111;">South Africa</option>
                                     <option value="BR"    style="background:#111111;">Brazil</option>
                                     <option value="MX"    style="background:#111111;">Mexico</option>
-                                    <option value="other" style="background:#111111;">Other…</option>
+                                    <option value="other" style="background:#111111;">Other&hellip;</option>
                                 </select>
                             </div>
 
@@ -2836,15 +3000,16 @@
                                         Message
                                     </span>
                                 </label>
-                                <textarea id="cf_message" name="message" class="contact-input" rows="4" placeholder="Tell us about your limo business and what you're looking to build…" style="resize: vertical; min-height: 112px;"></textarea>
+                                <textarea id="cf_message" name="message" class="contact-input" rows="4" placeholder="Tell us about your limo business and what you're looking to build&hellip;" style="resize: vertical; min-height: 112px;"></textarea>
                             </div>
 
                             <!-- Submit -->
                             <div class="pt-1">
-                                <button type="submit" id="cfSubmitBtn" class="btn-cta w-full flex items-center justify-center gap-2.5 px-6 py-[13px] rounded-xl font-bold text-[14px] text-white" style="background: #3B82F6;">
-                                    <span>Request License Access</span>
+                                <button type="submit" id="cfSubmitBtn" class="btn-cta w-full flex items-center justify-center gap-2.5 px-6 py-[14px] rounded-xl font-bold text-[15px] text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); box-shadow: 0 4px 24px rgba(59,130,246,0.4);">
+                                    <span>Get My Private Demo &mdash; $4,999 One-Time</span>
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                                 </button>
+                                <p class="text-center text-[11.5px] text-gray-600 mt-2.5">No obligation Â· We respond within 4 hours Â· 100% private</p>
                             </div>
 
                         </form>
@@ -2872,12 +3037,12 @@
     </div><!-- /container -->
 
 </section>
-<!-- ════ END CONTACT ════ -->
+<!-- â•â•â•â• END CONTACT â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
-     SECTION — FINAL CTA
-═════════════════════════════════════════════════════════ -->
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+     SECTION &mdash; FINAL CTA
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <section id="cta-final" class="relative overflow-hidden" style="background: #0A0A0A; padding: 120px 0 140px;">
 
     <!-- Grid texture -->
@@ -2895,72 +3060,88 @@
     <div class="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10 text-center">
 
         <!-- Eyebrow badge -->
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-[11px] font-bold tracking-[0.12em] uppercase mb-8 section-fade" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.28); color: #3B82F6;">
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse inline-block"></span>
-            One-Time License — Own It Forever
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-[11px] font-bold tracking-[0.12em] uppercase mb-8 section-fade" style="background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.3); color: #ef4444;">
+            <span class="relative flex h-2 w-2 flex-shrink-0">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+            </span>
+            Limited Licenses Available &mdash; Don't Miss Your Spot
         </div>
 
         <!-- Headline -->
         <h2 class="font-bold text-white leading-[1.08] tracking-tight mb-6 section-fade" style="font-size: clamp(2.4rem, 5.5vw, 4.25rem); letter-spacing: -0.035em; transition-delay: 0.06s;">
-            Own Your Limo Booking<br>
-            <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">System Today</span>
+            Your competitors won't wait.<br>
+            <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Neither should you.</span>
         </h2>
 
-        <!-- Price callout -->
-        <div class="inline-flex items-center gap-3 mb-8 px-6 py-3 rounded-2xl section-fade" style="background: rgba(59,130,246,0.09); border: 1px solid rgba(59,130,246,0.3); transition-delay: 0.09s;">
-            <span class="text-[14px] font-semibold text-white">One-Time License</span>
-            <span class="w-px h-4 bg-white/15"></span>
-            <span class="text-[26px] font-black text-blue-400 leading-none">$4,999</span>
-            <span class="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Fixed Price · No Subscriptions</span>
+        <!-- Value comparison table -->
+        <div class="max-w-2xl mx-auto mb-10 section-fade" style="transition-delay: 0.09s;">
+            <div class="grid grid-cols-3 rounded-2xl overflow-hidden text-[12.5px]" style="border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
+                <div class="px-4 py-3 font-bold text-gray-500 border-b" style="border-color: rgba(255,255,255,0.06);"></div>
+                <div class="px-4 py-3 text-center font-bold text-gray-500 border-b border-l" style="border-color: rgba(255,255,255,0.06);">Others</div>
+                <div class="px-4 py-3 text-center font-bold text-blue-400 border-b border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">LimoSchedule</div>
+
+                <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">Full-time dispatcher</div>
+                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">~$45,000/yr</div>
+                <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Not needed</div>
+
+                <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">Custom dev build</div>
+                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$50k&ndash;$150k</div>
+                <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Included</div>
+
+                <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">SaaS booking platform</div>
+                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$300&ndash;$1,000/mo</div>
+                <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">$0/mo forever</div>
+
+                <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">Lost bookings (monthly)</div>
+                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$2,000+</div>
+                <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Eliminated</div>
+
+                <div class="px-4 py-3 text-white font-bold">LimoSchedule</div>
+                <div class="px-4 py-3 text-center text-red-400 font-bold border-l" style="border-color: rgba(255,255,255,0.05);">All of the above</div>
+                <div class="px-4 py-3 text-center font-black text-blue-400 text-[16px] border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">$4,999 once</div>
+            </div>
+            <p class="text-center text-gray-600 text-[11.5px] mt-3">Pay once. Own it forever. The system pays for itself in the first month.</p>
         </div>
 
-        <!-- Sub-copy -->
-        <p class="text-gray-400 leading-relaxed mb-12 mx-auto section-fade" style="font-size: clamp(1rem, 2vw, 1.2rem); max-width: 580px; transition-delay: 0.12s;">
-            Full source code. No recurring fees. Deploy in 30 minutes.<br class="hidden sm:block">
-            White-label branding freedom — the system is yours outright.
-        </p>
+        <!-- CTA Buttons &mdash; WhatsApp DOMINANT -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 section-fade" style="transition-delay: 0.18s;">
 
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14 section-fade" style="transition-delay: 0.18s;">
-
-            <!-- Primary: Get License -->
-            <a href="#contact" class="cta-final-btn-primary group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-[15px] text-white overflow-hidden" style="background: #3B82F6; box-shadow: 0 0 0 1px rgba(59,130,246,0.5), 0 8px 32px rgba(59,130,246,0.35);">
-                <span class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(135deg, #2563EB, #3B82F6);"></span>
-                <svg class="relative z-10 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/>
-                </svg>
-                <span class="relative z-10">Get License Access</span>
-                <svg class="relative z-10 flex-shrink-0 transform group-hover:translate-x-0.5 transition-transform duration-200" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <!-- Primary: WhatsApp -->
+            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
+               class="wa-hero-cta group inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-[15px] text-white"
+               style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                <span>Message Us Now &mdash; Instant Response</span>
             </a>
 
-            <!-- Secondary: WhatsApp -->
-            <a href="https://wa.me/message/limoschedule" target="_blank" rel="noopener" class="cta-final-btn-ghost group inline-flex items-center gap-2.5 px-8 py-4 rounded-2xl font-semibold text-[15px] text-gray-300 hover:text-white transition-all duration-250" style="border: 1px solid rgba(34,197,94,0.25); background: rgba(34,197,94,0.05); backdrop-filter: blur(12px);">
-                <svg class="flex-shrink-0 opacity-80 group-hover:opacity-100 transition-opacity" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
-                </svg>
-                <span>WhatsApp Us</span>
+            <!-- Secondary: Request Demo -->
+            <a href="#contact" class="cta-final-btn-primary group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-[15px] text-white overflow-hidden" style="background: #3B82F6; box-shadow: 0 0 0 1px rgba(59,130,246,0.5), 0 8px 32px rgba(59,130,246,0.35);">
+                <span class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(135deg, #2563EB, #3B82F6);"></span>
+                <svg class="relative z-10 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
+                <span class="relative z-10">Request Private Demo</span>
             </a>
         </div>
 
         <!-- Trust strip -->
         <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 section-fade" style="transition-delay: 0.24s;">
             <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                 No monthly fees
             </div>
             <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
             <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
                 Full source code included
             </div>
             <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
             <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-                Self-hosted on your server
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                Self-hosted & private
             </div>
             <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
             <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                 White-label branding freedom
             </div>
         </div>
@@ -2987,12 +3168,12 @@
 
     </div><!-- /container -->
 </section>
-<!-- ════ END FINAL CTA ════ -->
+<!-- â•â•â•â• END FINAL CTA â•â•â•â• -->
 
 
-<!-- ════════════════════════════════════════════════════════
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      FOOTER
-═════════════════════════════════════════════════════════ -->
+â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 <footer id="footer" class="relative" style="background: #070707; border-top: 1px solid rgba(255,255,255,0.06);">
 
     <!-- Subtle top glow line -->
@@ -3004,13 +3185,13 @@
     <!-- Footer inner -->
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
-        <!-- ── Top block: logo + columns ── -->
+        <!-- â”€â”€ Top block: logo + columns â”€â”€ -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr] gap-10 lg:gap-8 pt-16 pb-12">
 
             <!-- Brand column -->
             <div class="flex flex-col gap-6">
                 <!-- Logo -->
-                <a href="{{ url('/') }}" class="inline-block" aria-label="LimoSchedule — Home">
+                <a href="{{ url('/') }}" class="inline-block" aria-label="LimoSchedule &mdash; Home">
                     <div class="logo-badge rounded-xl px-3 py-[7px] inline-flex">
                         <img
                             src="{{ url('public/logo/logo-white.png') }}"
@@ -3023,7 +3204,7 @@
                 </a>
 
                 <p class="text-gray-500 text-[13.5px] leading-relaxed max-w-[270px]">
-                    The professional self-hosted limo booking platform. One-time license — $4,999 fixed. Full source code. Zero recurring fees.
+                    The professional self-hosted limo booking platform. One-time license &mdash; $4,999 fixed. Full source code. Zero recurring fees.
                 </p>
 
 
@@ -3066,10 +3247,10 @@
 
         </div><!-- /grid -->
 
-        <!-- ── Divider ── -->
+        <!-- â”€â”€ Divider â”€â”€ -->
         <div class="h-px w-full" style="background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07) 30%, rgba(255,255,255,0.07) 70%, transparent);"></div>
 
-        <!-- ── Bottom bar ── -->
+        <!-- â”€â”€ Bottom bar â”€â”€ -->
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-7">
 
             <!-- Copyright -->
@@ -3085,7 +3266,7 @@
                 </span>
                 <span class="w-px h-3.5 bg-white/8"></span>
                 <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium text-blue-400" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
-                    v2.0 — Self-Hosted
+                    v2.0 &mdash; Self-Hosted
                 </span>
             </div>
 
@@ -3093,7 +3274,7 @@
 
     </div><!-- /inner -->
 </footer>
-<!-- ════ END FOOTER ════ -->
+<!-- â•â•â•â• END FOOTER â•â•â•â• -->
 
 
 <script>
@@ -3106,7 +3287,7 @@
         e.preventDefault();
         var btn = document.getElementById('cfSubmitBtn');
         btn.disabled = true;
-        btn.querySelector('span').textContent = 'Sending…';
+        btn.querySelector('span').textContent = 'Sending&hellip;';
         setTimeout(function () {
             wrap.classList.add('hidden');
             success.classList.remove('hidden');
@@ -3119,5 +3300,50 @@
 <!-- Main JavaScript -->
 <script src="{{ url('public/assets/js/limoschedule.js') }}"></script>
 
+
+<!-- ════════════════════════════════════════════════════════
+     FLOATING WHATSAPP BUTTON (always visible)
+═════════════════════════════════════════════════════════ -->
+<a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F"
+   target="_blank" rel="noopener"
+   id="float-wa-btn"
+   aria-label="Chat on WhatsApp"
+   style="position:fixed;bottom:28px;left:28px;z-index:9000;width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#16a34a,#22c55e);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(34,197,94,0.5);animation:wa-float-pulse 2.5s ease-in-out infinite;text-decoration:none;transition:transform 0.2s ease;">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+    <span id="float-wa-tooltip" style="position:absolute;left:70px;top:50%;transform:translateY(-50%);background:rgba(10,10,10,0.97);border:1px solid rgba(34,197,94,0.3);color:white;font-size:12px;font-weight:700;white-space:nowrap;padding:7px 13px;border-radius:8px;opacity:0;transition:opacity 0.2s ease;pointer-events:none;">Talk to us &mdash; Instant reply</span>
+</a>
+
+
+<!-- ════ CRO Animation & Utility Styles ════ -->
+<style>
+@keyframes wa-float-pulse {
+    0%,100% { box-shadow: 0 4px 24px rgba(34,197,94,0.5), 0 0 0 0 rgba(34,197,94,0.4); }
+    50%      { box-shadow: 0 4px 36px rgba(34,197,94,0.7), 0 0 0 14px rgba(34,197,94,0); }
+}
+@keyframes wa-pulse-glow {
+    0%,100% { box-shadow: 0 4px 18px rgba(34,197,94,0.4); }
+    50%      { box-shadow: 0 4px 32px rgba(34,197,94,0.7), 0 0 0 8px rgba(34,197,94,0); }
+}
+.wa-hero-cta { transition: transform 0.2s ease; }
+.wa-hero-cta:hover { transform: translateY(-2px); }
+#float-wa-btn:hover { transform: scale(1.1) !important; }
+#float-wa-btn:hover #float-wa-tooltip { opacity: 1 !important; }
+/* Hide floating button on mobile since sticky bar handles it */
+@media (max-width: 1279px) { #float-wa-btn { display: none !important; } }
+</style>
+
+<script>
+// Float WA tooltip on hover
+(function(){
+    var btn = document.getElementById('float-wa-btn');
+    var tip = document.getElementById('float-wa-tooltip');
+    if(btn && tip){
+        btn.addEventListener('mouseenter', function(){ tip.style.opacity='1'; });
+        btn.addEventListener('mouseleave', function(){ tip.style.opacity='0'; });
+    }
+})();
+</script>
+
 </body>
 </html>
+
