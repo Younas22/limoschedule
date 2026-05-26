@@ -68,7 +68,7 @@
          style="background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.15);">
         <p class="text-gray-300 font-semibold text-[15px] mb-1">Ready to automate your limo business?</p>
         <p class="text-gray-500 text-[13px] mb-5">Self-hosted booking system — one-time license, full source code.</p>
-        <a href="{{ url('/') }}#contact"
+        <a href="{{ url('/contact') }}"
            class="inline-flex items-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-5 py-2.5 rounded-xl border border-blue-500/30 hover:bg-blue-500 transition-colors">
             Request a Live Demo
         </a>
