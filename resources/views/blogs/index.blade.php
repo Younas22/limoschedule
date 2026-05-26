@@ -1,27 +1,5 @@
 @extends('layouts.public')
 
-@section('seo')
-    <title>Blog — LimoSchedule</title>
-    <meta name="description" content="Read the latest articles, guides and news about limo booking automation, dispatch software, and the limo industry on the LimoSchedule blog.">
-    <meta name="author" content="LimoSchedule">
-    <link rel="canonical" href="{{ route('blogs.index') }}">
-    <link rel="icon" type="image/png" href="{{ url('public/logo/favicon.png') }}">
-
-    <!-- Open Graph -->
-    <meta property="og:type"        content="website">
-    <meta property="og:url"         content="{{ route('blogs.index') }}">
-    <meta property="og:title"       content="Blog — LimoSchedule">
-    <meta property="og:description" content="Read the latest articles, guides and news about limo booking automation, dispatch software, and the limo industry.">
-    <meta property="og:image"       content="{{ url('public/logo/favicon.png') }}">
-    <meta property="og:site_name"   content="LimoSchedule">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card"        content="summary">
-    <meta name="twitter:title"       content="Blog — LimoSchedule">
-    <meta name="twitter:description" content="Read the latest articles, guides and news about limo booking automation and dispatch software.">
-    <meta name="twitter:image"       content="{{ url('public/logo/favicon.png') }}">
-@endsection
-
 @section('content')
 <div class="max-w-6xl mx-auto px-5 sm:px-6 py-14">
 

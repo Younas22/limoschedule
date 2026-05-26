@@ -1,30 +1,5 @@
 @extends('layouts.public')
 
-@section('seo')
-    <title>LimoSchedule &mdash; Self-Hosted Automated Limo Booking System</title>
-    <meta name="description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
-    <meta name="author" content="LimoSchedule">
-    <link rel="canonical" href="{{ url('/') }}">
-
-    <!-- Open Graph -->
-    <meta property="og:type"        content="website">
-    <meta property="og:url"         content="{{ url('/') }}">
-    <meta property="og:title"       content="LimoSchedule — Self-Hosted Automated Limo Booking System">
-    <meta property="og:description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
-    <meta property="og:image"       content="{{ url('public/logo/favicon.png') }}">
-    <meta property="og:site_name"   content="LimoSchedule">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card"        content="summary">
-    <meta name="twitter:title"       content="LimoSchedule — Self-Hosted Automated Limo Booking System">
-    <meta name="twitter:description" content="Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.">
-    <meta name="twitter:image"       content="{{ url('public/logo/favicon.png') }}">
-
-    <!-- Official Favicon -->
-    <link rel="icon" type="image/png" href="{{ url('public/logo/favicon.png') }}?v=2">
-    <link rel="shortcut icon" href="{{ url('public/logo/favicon.png') }}?v=2">
-@endsection
-
 @push('styles')
     <!-- Select2 -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">

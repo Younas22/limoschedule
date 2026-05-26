@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="{{ url('public/logo/favicon.png') }}">
-
-    @yield('seo')
+    @include('partials._seo')
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,35 +70,39 @@
         }
 
         /* Blog content (detail page) */
-        .prose-blog h1,.prose-blog h2,.prose-blog h3,.prose-blog h4 {
-            color: #f3f4f6; font-weight: 700; margin: 1.6em 0 .6em; line-height: 1.3;
+        .prose-blog { color: #d1d5db; }
+        .prose-blog * { color: inherit; background-color: transparent; }
+        .prose-blog h1,.prose-blog h2,.prose-blog h3,.prose-blog h4,.prose-blog h5,.prose-blog h6 {
+            color: #f3f4f6 !important; font-weight: 700; margin: 1.6em 0 .6em; line-height: 1.3;
         }
         .prose-blog h2 { font-size: 1.5rem; }
         .prose-blog h3 { font-size: 1.25rem; }
-        .prose-blog p { margin: 0 0 1.1em; line-height: 1.85; color: #d1d5db; }
-        .prose-blog a { color: #60a5fa; text-decoration: underline; }
-        .prose-blog ul,.prose-blog ol { padding-left: 1.6em; margin-bottom: 1.1em; color: #d1d5db; }
-        .prose-blog li { margin-bottom: .4em; }
+        .prose-blog p { margin: 0 0 1.1em; line-height: 1.85; color: #d1d5db !important; }
+        .prose-blog span { color: inherit !important; }
+        .prose-blog strong,.prose-blog b { color: #f3f4f6 !important; }
+        .prose-blog a { color: #60a5fa !important; text-decoration: underline; }
+        .prose-blog ul,.prose-blog ol { padding-left: 1.6em; margin-bottom: 1.1em; color: #d1d5db !important; }
+        .prose-blog li { margin-bottom: .4em; color: #d1d5db !important; }
         .prose-blog blockquote {
             border-left: 3px solid #3B82F6; margin: 1.4em 0;
-            padding: .8em 1.2em; background: rgba(59,130,246,0.06);
-            border-radius: 0 8px 8px 0; color: #9ca3af; font-style: italic;
+            padding: .8em 1.2em; background: rgba(59,130,246,0.06) !important;
+            border-radius: 0 8px 8px 0; color: #9ca3af !important; font-style: italic;
         }
         .prose-blog pre {
-            background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(0,0,0,0.5) !important; border: 1px solid rgba(255,255,255,0.1);
             border-radius: 10px; padding: 1.2em; overflow-x: auto;
             font-size: .9rem; margin-bottom: 1.2em;
         }
         .prose-blog code {
-            background: rgba(255,255,255,0.08); padding: 2px 6px;
-            border-radius: 4px; font-size: .88em;
+            background: rgba(255,255,255,0.08) !important; padding: 2px 6px;
+            border-radius: 4px; font-size: .88em; color: #93c5fd !important;
         }
-        .prose-blog pre code { background: none; padding: 0; }
+        .prose-blog pre code { background: none !important; padding: 0; color: #e5e7eb !important; }
         .prose-blog img { max-width: 100%; border-radius: 10px; margin: 1.2em 0; }
         .prose-blog hr { border-color: rgba(255,255,255,0.1); margin: 2em 0; }
         .prose-blog table { width: 100%; border-collapse: collapse; margin-bottom: 1.2em; }
-        .prose-blog th,.prose-blog td { padding: .6em .9em; border: 1px solid rgba(255,255,255,0.1); }
-        .prose-blog th { background: rgba(255,255,255,0.05); color: #f3f4f6; font-weight: 600; }
+        .prose-blog th,.prose-blog td { padding: .6em .9em; border: 1px solid rgba(255,255,255,0.1); color: #d1d5db !important; }
+        .prose-blog th { background: rgba(255,255,255,0.05) !important; color: #f3f4f6 !important; font-weight: 600; }
     </style>
 
     @stack('styles')
@@ -127,13 +129,13 @@
             <!-- Desktop Nav links -->
             <nav class="hidden xl:flex items-center" aria-label="Primary navigation">
                 <ul class="flex items-center gap-0.5 list-none m-0 p-0">
-                    <li><a href="{{ url('/') }}#features"     class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Features</a></li>
-                    <li><a href="{{ url('/') }}#voice-search" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Voice Search</a></li>
-                    <li><a href="{{ url('/') }}#ai-call-agent"class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">AI Agent</a></li>
-                    <li><a href="{{ url('/') }}#admin-panel"  class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Admin Panel</a></li>
-                    <li><a href="{{ url('/') }}#how-it-works" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">How It Works</a></li>
-                    <li><a href="{{ url('/') }}#faq"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">FAQ</a></li>
-                    <li><a href="{{ url('/') }}#contact"      class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Contact</a></li>
+                    <li><a href="{{ route('features') }}"     class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Features</a></li>
+                    <li><a href="{{ route('voice-search') }}" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Voice Search</a></li>
+                    <li><a href="{{ route('ai-agent') }}"     class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">AI Agent</a></li>
+                    <li><a href="{{ route('admin-panel') }}"  class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Admin Panel</a></li>
+                    <li><a href="{{ route('how-it-works') }}" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">How It Works</a></li>
+                    <li><a href="{{ route('faq') }}"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">FAQ</a></li>
+                    <li><a href="{{ route('contact') }}"      class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Contact</a></li>
                 </ul>
             </nav>
 
@@ -154,7 +156,7 @@
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
                     <span>WhatsApp Us</span>
                 </a>
-                <a href="{{ url('/') }}#contact"
+                <a href="{{ route('contact') }}"
                    class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-4 py-2 rounded-xl border border-blue-500/30">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
                     <span>Get License</span>
@@ -180,7 +182,7 @@
         <div class="max-w-7xl mx-auto px-5 sm:px-6 py-3 pb-4">
             <ul class="list-none m-0 p-0 flex flex-col gap-0.5">
                 <li>
-                    <a href="{{ url('/') }}#features" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('features') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </span>
@@ -192,7 +194,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#voice-search" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('voice-search') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3M8 22h8"/></svg>
                         </span>
@@ -204,7 +206,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#ai-call-agent" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('ai-agent') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 007 4.5v15A2.5 2.5 0 009.5 22h5a2.5 2.5 0 002.5-2.5v-15A2.5 2.5 0 0014.5 2h-5z"/><path d="M7 8H4a2 2 0 00-2 2v4a2 2 0 002 2h3M17 8h3a2 2 0 012 2v4a2 2 0 01-2 2h-3"/><circle cx="12" cy="12" r="1.5" fill="#3B82F6" stroke="none"/></svg>
                         </span>
@@ -216,7 +218,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#admin-panel" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('admin-panel') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
                         </span>
@@ -228,7 +230,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#how-it-works" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('how-it-works') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12A10 10 0 1112 2"/><polyline points="22 2 22 8 16 8"/><path d="M12 12l3-3"/></svg>
                         </span>
@@ -240,7 +242,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#faq" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('faq') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                         </span>
@@ -252,7 +254,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#contact" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('contact') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         </span>
@@ -293,7 +295,7 @@
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
                     Talk to a Real Person — WhatsApp
                 </a>
-                <a href="{{ url('/') }}#contact"
+                <a href="{{ route('contact') }}"
                    class="btn-cta flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[14px] font-semibold px-4 py-3 rounded-xl border border-blue-500/30">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
                     <span>Get License Access</span>

@@ -13,6 +13,15 @@ Route::get('/', [PublicController::class, 'home'])->name('home');
 Route::post('/demo-request', [DemoRequestController::class, 'store'])->name('demo.store');
 Route::get('/demo-thankyou', fn() => view('demo-thankyou'))->name('demo.thankyou');
 
+// Public section pages
+Route::get('/features', [PublicController::class, 'features'])->name('features');
+Route::get('/voice-search', [PublicController::class, 'voiceSearch'])->name('voice-search');
+Route::get('/ai-agent', [PublicController::class, 'aiAgent'])->name('ai-agent');
+Route::get('/admin-panel', [PublicController::class, 'adminPanel'])->name('admin-panel');
+Route::get('/how-it-works', [PublicController::class, 'howItWorks'])->name('how-it-works');
+Route::get('/faq', [PublicController::class, 'faq'])->name('faq');
+Route::get('/contact', [PublicController::class, 'contact'])->name('contact');
+
 // Public blog routes
 Route::get('/blogs', [PublicController::class, 'blogs'])->name('blogs.index');
 
@@ -61,8 +70,15 @@ Route::get('/sitemap.xml', function () {
 
     $urls = collect();
 
-    $urls->push(['loc' => url('/'), 'lastmod' => now()->toDateString(), 'priority' => '1.0', 'changefreq' => 'weekly']);
-    $urls->push(['loc' => route('blogs.index'), 'lastmod' => $blogs->first()?->updated_at->toDateString() ?? now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'daily']);
+    $urls->push(['loc' => url('/'),                    'lastmod' => now()->toDateString(), 'priority' => '1.0', 'changefreq' => 'weekly']);
+    $urls->push(['loc' => route('features'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('ai-agent'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('admin-panel'),        'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('voice-search'),       'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('how-it-works'),       'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('faq'),                'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('contact'),            'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('blogs.index'),        'lastmod' => $blogs->first()?->updated_at->toDateString() ?? now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'daily']);
 
     foreach ($blogs as $blog) {
         $urls->push(['loc' => route('blog.show', $blog->slug), 'lastmod' => $blog->updated_at->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);

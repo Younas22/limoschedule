@@ -1,32 +1,5 @@
 @extends('layouts.public')
 
-@section('seo')
-    <title>{{ $blog->meta_title ?: $blog->title }} — LimoSchedule Blog</title>
-    <meta name="description" content="{{ $blog->meta_description ?: ($blog->excerpt ?: 'Read this article on the LimoSchedule blog.') }}">
-    <meta name="author" content="LimoSchedule">
-    <link rel="canonical" href="{{ route('blog.show', $blog->slug) }}">
-    <link rel="icon" type="image/png" href="{{ url('public/logo/favicon.png') }}">
-
-    <!-- Open Graph -->
-    <meta property="og:type"        content="article">
-    <meta property="og:url"         content="{{ route('blog.show', $blog->slug) }}">
-    <meta property="og:title"       content="{{ $blog->meta_title ?: $blog->title }}">
-    <meta property="og:description" content="{{ $blog->meta_description ?: ($blog->excerpt ?: 'Read this article on the LimoSchedule blog.') }}">
-    <meta property="og:image"       content="{{ $blog->featured_image ? url('public/' . $blog->featured_image) : url('public/logo/favicon.png') }}">
-    <meta property="og:site_name"   content="LimoSchedule">
-    @if ($blog->published_at)
-        <meta property="article:published_time" content="{{ $blog->published_at->toIso8601String() }}">
-    @endif
-    @if ($blog->category)
-        <meta property="article:section" content="{{ $blog->category->name }}">
-    @endif
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card"        content="summary_large_image">
-    <meta name="twitter:title"       content="{{ $blog->meta_title ?: $blog->title }}">
-    <meta name="twitter:description" content="{{ $blog->meta_description ?: ($blog->excerpt ?: 'Read this article on the LimoSchedule blog.') }}">
-    <meta name="twitter:image"       content="{{ $blog->featured_image ? url('public/' . $blog->featured_image) : url('public/logo/favicon.png') }}">
-@endsection
 
 @section('content')
 <div class="max-w-3xl mx-auto px-5 sm:px-6 py-12">
