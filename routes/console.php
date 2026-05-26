@@ -10,3 +10,6 @@ Artisan::command('inspire', function () {
 
 // Publish scheduled blog posts every hour
 Schedule::command('blog:publish-scheduled')->hourly();
+
+// Test cron job - runs every minute
+Schedule::command('cron:test')->everyMinute();
