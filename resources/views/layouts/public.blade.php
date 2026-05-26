@@ -106,6 +106,7 @@
     </style>
 
     @stack('styles')
+    <script src="https://chat.limoschedule.com/widget.js"></script>
 </head>
 <body>
 
