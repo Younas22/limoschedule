@@ -1,5 +1,125 @@
 @extends('layouts.public')
 
+@push('styles')
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+    <style>
+        /* Prevent horizontal scrollbar when dropdown opens near viewport edge */
+        html, body { overflow-x: hidden !important; }
+
+        /* ── Select2 trigger ── */
+        .select2-container { width: 100% !important; }
+        .select2-container--default .select2-selection--single {
+            background: rgba(255,255,255,0.04) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            border-radius: 10px !important;
+            height: 44px !important;
+            outline: none !important;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+        }
+        /* Open state — keep full radius, detach from dropdown visually */
+        .select2-container--default.select2-container--open .select2-selection--single {
+            border-color: rgba(59,130,246,0.5) !important;
+            border-radius: 10px !important;
+            box-shadow: 0 0 0 3px rgba(59,130,246,0.12) !important;
+        }
+        /* Override Select2's default border-radius removal on open */
+        .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+        .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+            border-radius: 10px !important;
+        }
+        /* Selected text */
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #e5e7eb !important;
+            font-size: 13.5px !important;
+            line-height: 44px !important;
+            padding: 0 36px 0 14px !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            white-space: nowrap !important;
+            display: block !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__placeholder {
+            color: #6b7280 !important;
+        }
+        /* Chevron */
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 44px !important;
+            width: 34px !important;
+            top: 0 !important;
+            right: 4px !important;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow b {
+            border-color: #6b7280 transparent transparent transparent !important;
+            border-width: 5px 4px 0 4px !important;
+        }
+        .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+            border-color: transparent transparent #6b7280 transparent !important;
+            border-width: 0 4px 5px 4px !important;
+        }
+        /* ── Dropdown panel — floats 6px below trigger ── */
+        .select2-dropdown {
+            background: #141414 !important;
+            border: 1px solid rgba(59,130,246,0.25) !important;
+            border-radius: 10px !important;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important;
+            overflow: hidden !important;
+            animation: none !important;
+            transition: none !important;
+        }
+        .select2-dropdown--below { margin-top: 6px !important; }
+        .select2-dropdown--above { margin-bottom: 6px !important; }
+        /* ── Search box ── */
+        .select2-container--default .select2-search--dropdown {
+            padding: 8px 10px 6px !important;
+        }
+        .select2-container--default .select2-search--dropdown .select2-search__field {
+            background: rgba(255,255,255,0.06) !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            border-radius: 7px !important;
+            color: #e5e7eb !important;
+            font-size: 13px !important;
+            padding: 7px 10px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            /* Kill all native focus animations (the left-to-right line) */
+            outline: none !important;
+            -webkit-appearance: none !important;
+            box-shadow: none !important;
+            transition: border-color 0.15s ease !important;
+            animation: none !important;
+        }
+        .select2-container--default .select2-search--dropdown .select2-search__field:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            border-color: rgba(59,130,246,0.45) !important;
+        }
+        /* ── Results list ── */
+        .select2-results__options {
+            max-height: 220px !important;
+            overflow-y: auto !important;
+            padding: 4px 0 !important;
+        }
+        .select2-results__options::-webkit-scrollbar { width: 4px; }
+        .select2-results__options::-webkit-scrollbar-track { background: transparent; }
+        .select2-results__options::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 4px; }
+        .select2-container--default .select2-results__option {
+            color: #d1d5db !important;
+            font-size: 13px !important;
+            padding: 8px 14px !important;
+            line-height: 1.4 !important;
+            transition: none !important;
+        }
+        .select2-container--default .select2-results__option--highlighted[aria-selected] {
+            background: rgba(59,130,246,0.18) !important;
+            color: #fff !important;
+        }
+        .select2-container--default .select2-results__option[aria-selected=true] {
+            background: rgba(59,130,246,0.10) !important;
+            color: #60a5fa !important;
+        }
+    </style>
+@endpush
+
 @section('content')
 <section id="contact" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
@@ -170,3 +290,26 @@
     </div>
 </section>
 @endsection
+
+@push('scripts')
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+$(function () {
+    $('#cf_country').select2({
+        placeholder: 'Select your country…',
+        allowClear: false,
+        dropdownCssClass: 'select2-dark',
+        theme: 'default'
+    });
+
+    $('#contactForm').on('submit', function () {
+        var btn = document.getElementById('cfSubmitBtn');
+        if (btn) {
+            btn.disabled = true;
+            btn.querySelector('span').textContent = 'Sending…';
+        }
+    });
+});
+</script>
+@endpush
