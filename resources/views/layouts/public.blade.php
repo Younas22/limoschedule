@@ -121,9 +121,7 @@
 
             <!-- Logo -->
             <a href="{{ url('/') }}" class="flex-shrink-0 block" aria-label="LimoSchedule — Home">
-                <div class="logo-badge rounded-xl px-3 py-[7px]" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                    <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule — Automated Limo Booking System" class="h-[30px] w-auto block" loading="eager" decoding="sync">
-                </div>
+                <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule — Automated Limo Booking System" class="h-[30px] w-auto block" loading="eager" decoding="sync">
             </a>
 
             <!-- Desktop Nav links -->
@@ -335,9 +333,7 @@
             <!-- Brand column -->
             <div class="flex flex-col gap-6">
                 <a href="{{ url('/') }}" class="inline-block" aria-label="LimoSchedule — Home">
-                    <div class="logo-badge rounded-xl px-3 py-[7px] inline-flex" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                        <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" class="h-[30px] w-auto block" loading="lazy" decoding="async">
-                    </div>
+                    <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" class="h-[30px] w-auto block" loading="lazy" decoding="async">
                 </a>
                 <p class="text-gray-500 text-[13.5px] leading-relaxed max-w-[270px]">
                     The professional self-hosted limo booking platform. One-time license — $4,999 fixed. Full source code. Zero recurring fees.
