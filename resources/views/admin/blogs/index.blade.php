@@ -74,6 +74,7 @@
                 <table class="w-full text-sm">
                     <thead>
                         <tr class="bg-gray-50 border-b border-gray-100">
+                            <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">#</th>
                             <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Post</th>
                             <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Category</th>
                             <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Status</th>
@@ -82,8 +83,11 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-50">
-                        @foreach($blogs as $blog)
+                        @foreach($blogs as $i => $blog)
                         <tr class="hover:bg-gray-50 transition">
+                            <td class="px-5 py-3 text-xs font-medium text-gray-400 w-10">
+                                {{ $blogs->firstItem() + $i }}
+                            </td>
                             <td class="px-5 py-3">
                                 <div class="flex items-center gap-3">
                                     @if($blog->featured_image)
