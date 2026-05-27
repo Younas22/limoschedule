@@ -107,6 +107,16 @@
 
     @stack('styles')
     <script src="https://chat.limoschedule.com/widget.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMFKF24L1V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZMFKF24L1V');
+</script>
 </head>
 <body>
 
