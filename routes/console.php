@@ -9,7 +9,7 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 
 // Publish scheduled blog posts every hour
-Schedule::command('blog:publish-scheduled')->hourly();
+Schedule::command('blog:publish-scheduled')->everyMinute();
 
 // Test cron job - runs every minute
 Schedule::command('cron:test')->everyMinute();
