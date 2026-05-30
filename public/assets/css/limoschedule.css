@@ -77,6 +77,12 @@ body { background: #0A0A0A; color: #fff; -webkit-font-smoothing: antialiased; }
 
 /* Mobile menu slide-in */
 .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 50;
     transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.4,0,0.2,1), visibility 0.3s ease;
     opacity: 0;
     transform: translateY(-6px);

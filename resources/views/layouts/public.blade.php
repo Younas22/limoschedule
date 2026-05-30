@@ -15,7 +15,7 @@
     <script src="{{ url('public/assets/js/tailwind.config.js') }}"></script>
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="{{ url('public/assets/css/limoschedule.css') }}">
+    <link rel="stylesheet" href="{{ url('public/assets/css/limoschedule.css') }}?v={{ filemtime(public_path('assets/css/limoschedule.css')) }}">
 
     <style>
         body { background: #0A0A0A; color: #e5e7eb; font-family: 'Inter', sans-serif; }
@@ -414,7 +414,7 @@
     </div>
 </footer>
 
-<script src="{{ url('public/assets/js/limoschedule.js') }}"></script>
+<script src="{{ url('public/assets/js/limoschedule.js') }}?v={{ filemtime(public_path('assets/js/limoschedule.js')) }}"></script>
 @stack('scripts')
 </body>
 </html>
