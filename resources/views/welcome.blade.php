@@ -446,7 +446,7 @@
             <span class="text-[13.5px] font-semibold text-white">One-Time License &mdash;</span>
             <span class="text-[22px] font-black text-blue-400 leading-none">$4,999</span>
             <span class="w-px h-4 bg-white/15"></span>
-            <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider">No Subscriptions Â· No Monthly Fees Â· Own It Forever</span>
+            <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider">No Subscriptions · No Monthly Fees · Own It Forever</span>
         </div>
 
         <!-- CTA row &mdash; WhatsApp PRIMARY -->
@@ -476,7 +476,7 @@
         </div>
 
         <!-- Micro-trust under CTAs -->
-        <p class="text-gray-600 text-xs mb-10">Instant response on WhatsApp Â· See the live admin panel Â· No obligation</p>
+        <p class="text-gray-600 text-xs mb-10">Instant response on WhatsApp · See the live admin panel · No obligation</p>
 
         <!-- Audio player -->
         <div class="mt-10 max-w-md mx-auto">
