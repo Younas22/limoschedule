@@ -6,7 +6,7 @@
 
     <div class="mb-6">
         <h1 class="text-2xl font-bold text-gray-800">Demo Requests</h1>
-        <p class="text-gray-500 text-sm mt-1">Tamam demo requests yahan dekhein</p>
+        <p class="text-gray-500 text-sm mt-1">View all demo requests here</p>
     </div>
 
     @if(session('success'))
@@ -22,11 +22,11 @@
             <p class="text-3xl font-bold text-gray-800 mt-1">{{ $total }}</p>
         </div>
         <div class="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
-            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Aaj ke Requests</p>
+            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Today's Requests</p>
             <p class="text-3xl font-bold text-yellow-500 mt-1">{{ $today }}</p>
         </div>
         <div class="bg-white rounded-xl shadow-sm p-5 border border-gray-100">
-            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Is Hafte</p>
+            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">This Week</p>
             <p class="text-3xl font-bold text-blue-500 mt-1">{{ $thisWeek }}</p>
         </div>
     </div>
@@ -38,11 +38,11 @@
                 type="text"
                 name="search"
                 value="{{ request('search') }}"
-                placeholder="Naam, email ya company se dhundein..."
+                placeholder="Search by name, email or company..."
                 class="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
             >
             <button type="submit" class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-medium px-5 py-2 rounded-lg text-sm transition">
-                Dhundein
+                Search
             </button>
             @if(request('search'))
                 <a href="{{ route('admin.dashboard') }}" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium px-4 py-2 rounded-lg text-sm transition">
@@ -59,7 +59,7 @@
                 <svg class="w-12 h-12 mx-auto mb-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                 </svg>
-                <p class="text-sm">Koi request nahi mili</p>
+                <p class="text-sm">No requests found</p>
             </div>
         @else
             <div class="overflow-x-auto">
@@ -67,7 +67,7 @@
                     <thead>
                         <tr class="bg-gray-50 border-b border-gray-100">
                             <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">#</th>
-                            <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Naam</th>
+                            <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Name</th>
                             <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Company</th>
                             <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">Email</th>
                             <th class="text-left px-5 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">WhatsApp</th>
@@ -95,7 +95,7 @@
                                 {{ $req->created_at ? $req->created_at->format('d M Y') : '—' }}
                             </td>
                             <td class="px-5 py-3">
-                                <form method="POST" action="{{ route('admin.requests.destroy', $req->id) }}" onsubmit="return confirm('Yeh record delete karein?')">
+                                <form method="POST" action="{{ route('admin.requests.destroy', $req->id) }}" onsubmit="return confirm('Delete this record?')">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="text-red-500 hover:text-red-700 text-xs font-medium transition">

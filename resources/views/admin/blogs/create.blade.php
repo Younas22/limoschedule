@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 
-@section('title', 'Naya Blog Post')
+@section('title', 'New Blog Post')
 
 @push('styles')
     <!-- Summernote -->
@@ -37,8 +37,8 @@
             </svg>
         </a>
         <div>
-            <h1 class="text-2xl font-bold text-gray-800">Naya Blog Post</h1>
-            <p class="text-gray-500 text-sm">Naya article likhein</p>
+            <h1 class="text-2xl font-bold text-gray-800">New Blog Post</h1>
+            <p class="text-gray-500 text-sm">Write a new article</p>
         </div>
     </div>
 
@@ -57,7 +57,7 @@
                         type="text"
                         name="title"
                         value="{{ old('title') }}"
-                        placeholder="Blog post ka title..."
+                        placeholder="Blog post title..."
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent @error('title') border-red-400 @enderror"
                     >
                     @error('title') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
@@ -75,7 +75,7 @@
                     <textarea
                         name="excerpt"
                         rows="3"
-                        placeholder="Blog post ki short summary..."
+                        placeholder="Short summary of the blog post..."
                         class="w-full px-4 py-2.5 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent resize-none @error('excerpt') border-red-400 @enderror"
                     >{{ old('excerpt') }}</textarea>
                     @error('excerpt') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
@@ -101,7 +101,7 @@
                             id="metaTitle"
                             value="{{ old('meta_title') }}"
                             maxlength="70"
-                            placeholder="SEO title (khali choro to blog title use hoga)"
+                            placeholder="SEO title (leave empty to use blog title)"
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 @error('meta_title') border-red-400 @enderror"
                         >
                         @error('meta_title') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
@@ -117,7 +117,7 @@
                             id="metaDesc"
                             rows="3"
                             maxlength="160"
-                            placeholder="Search engines mein yeh description dikhega..."
+                            placeholder="This description will appear in search engines..."
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none @error('meta_description') border-red-400 @enderror"
                         >{{ old('meta_description') }}</textarea>
                         @error('meta_description') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
@@ -125,9 +125,9 @@
                         <!-- Google SERP Preview -->
                         <div class="mt-3 p-3 bg-gray-50 rounded-lg border border-gray-100">
                             <p class="text-xs text-gray-400 mb-1.5 font-medium uppercase tracking-wide">Google Preview</p>
-                            <p id="serpTitle" class="text-blue-600 text-sm font-medium leading-snug truncate">Blog post ka title yahan ayega</p>
+                            <p id="serpTitle" class="text-blue-600 text-sm font-medium leading-snug truncate">Blog post title will appear here</p>
                             <p class="text-green-700 text-xs">limoschedule.com/blog/slug</p>
-                            <p id="serpDesc" class="text-gray-600 text-xs mt-0.5 leading-relaxed line-clamp-2">Meta description yahan dikhega...</p>
+                            <p id="serpDesc" class="text-gray-600 text-xs mt-0.5 leading-relaxed line-clamp-2">Meta description will appear here...</p>
                         </div>
                     </div>
                 </div>
@@ -160,14 +160,14 @@
                             value="{{ old('published_at') }}"
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400"
                         >
-                        <p class="mt-1 text-xs text-gray-400">Post is waqt publish hoga</p>
+                        <p class="mt-1 text-xs text-gray-400">Post will be published at this time</p>
                     </div>
 
                     <!-- Category -->
                     <div class="mb-5">
                         <label class="block text-xs font-medium text-gray-600 mb-1.5">Category</label>
                         <select name="category_id" class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400">
-                            <option value="">— Category chunein —</option>
+                            <option value="">— Select Category —</option>
                             @foreach($categories as $cat)
                                 <option value="{{ $cat->id }}" {{ old('category_id') == $cat->id ? 'selected' : '' }}>
                                     {{ $cat->name }}
@@ -198,7 +198,7 @@
                             <svg class="w-8 h-8 text-gray-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                             </svg>
-                            <p class="text-xs text-gray-500">Click karein ya image drag karein</p>
+                            <p class="text-xs text-gray-500">Click or drag image here</p>
                             <p class="text-xs text-gray-400 mt-1">PNG, JPG, WebP — max 3MB</p>
                         </div>
                         <input type="file" name="featured_image" id="featuredImage" accept="image/*" class="hidden">
@@ -218,7 +218,7 @@
     <script>
         // Summernote init
         $('#editor').summernote({
-            placeholder: 'Blog content yahan likhein...\n\nHeadings ke liye H1, H2, H3 use karein. Images bhi insert kar sakte hain.',
+            placeholder: 'Write blog content here...\n\nUse H1, H2, H3 for headings. You can also insert images.',
             tabsize: 2,
             height: 500,
             toolbar: [
@@ -260,7 +260,7 @@
                     $(editor).summernote('insertImage', resp.url);
                 },
                 error: function() {
-                    alert('Image upload fail ho gaya. Dobara try karein.');
+                    alert('Image upload failed. Please try again.');
                 }
             });
         }
@@ -280,8 +280,8 @@
         var titleInput  = document.querySelector('input[name="title"]');
 
         function updateSerp() {
-            var t = metaTitle.value || titleInput.value || 'Blog post ka title yahan ayega';
-            var d = metaDesc.value || 'Meta description yahan dikhega...';
+            var t = metaTitle.value || titleInput.value || 'Blog post title will appear here';
+            var d = metaDesc.value || 'Meta description will appear here...';
             document.getElementById('serpTitle').textContent = t;
             document.getElementById('serpDesc').textContent  = d;
         }

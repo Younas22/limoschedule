@@ -22,7 +22,7 @@
 
         <!-- Card -->
         <div class="bg-white rounded-2xl shadow-2xl p-8">
-            <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center">Login karein</h2>
+            <h2 class="text-xl font-semibold text-gray-800 mb-6 text-center">Sign In</h2>
 
             @if(session('error'))
                 <div class="mb-4 px-4 py-3 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">
@@ -63,7 +63,7 @@
 
                 <div class="flex items-center mb-6">
                     <input type="checkbox" name="remember" id="remember" class="w-4 h-4 text-yellow-500 border-gray-300 rounded">
-                    <label for="remember" class="ml-2 text-sm text-gray-600">Mujhe yaad rakhein</label>
+                    <label for="remember" class="ml-2 text-sm text-gray-600">Remember me</label>
                 </div>
 
                 <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold py-2.5 rounded-lg transition duration-200 text-sm">
