@@ -2,8 +2,8 @@
 <meta name="description" content="{{ $seo['description'] ?? '' }}">
 <meta name="author" content="LimoSchedule">
 <link rel="canonical" href="{{ $seo['canonical'] ?? url()->current() }}">
-<link rel="icon" type="image/png" href="{{ url('public/logo/favicon.png') }}?v=2">
-<link rel="shortcut icon" href="{{ url('public/logo/favicon.png') }}?v=2">
+<link rel="icon" type="image/x-icon" href="{{ url('public/favicon.ico') }}?v=3">
+<link rel="shortcut icon" href="{{ url('public/favicon.ico') }}?v=3">
 
 <!-- Open Graph -->
 <meta property="og:type"        content="{{ $seo['og_type'] ?? 'website' }}">
