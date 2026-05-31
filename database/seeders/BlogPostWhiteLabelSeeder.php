@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 namespace Database\Seeders;
 
@@ -36,7 +36,7 @@ class BlogPostWhiteLabelSeeder extends Seeder
 <p>On the flip side, if you use standard livery SaaS tools, they will charge you hefty monthly subscription fees and take a percentage cut of every single booking just to allow you to upload your own logo.</p>
 
 <h2>Take Absolute Ownership with LimoSchedule</h2>
-<p>LimoSchedule breaks this broken model by delivering a premium, enterprise-grade booking ecosystem with zero brand attribution required for a single, one-time payment of $4,999.</p>
+<p>LimoSchedule breaks this broken model by delivering a premium, enterprise-grade booking ecosystem with zero brand attribution required for a single, one-time payment of $1,999.</p>
 <p>LimoSchedule gives you full, unencrypted access to its open-source code. You can deploy it onto your private VPS hosting server via a 30-minute automated installer. Once live, you can completely strip away any reference to LimoSchedule, replacing it with your own brand assets and custom domain name.</p>
 <p>Your premium clients gain access to next-generation features like AI Voice Search Booking and autonomous text confirmations, while you manage operations from a powerful, real-time enterprise admin dashboard. No monthly fees, no cloud lock-ins, and absolute digital freedom.</p>
 
@@ -69,3 +69,4 @@ HTML;
         );
     }
 }
+

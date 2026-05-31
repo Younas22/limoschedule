@@ -1,4 +1,4 @@
-@extends('layouts.public')
+﻿@extends('layouts.public')
 
 @section('content')
 <section id="features" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
@@ -120,7 +120,7 @@
         </div>
 
         <div class="mt-16 flex flex-col items-center gap-5 section-fade" style="transition-delay: 0.5s">
-            <p class="text-gray-500 text-sm text-center">All features included in a single one-time license of <span class="text-white font-semibold">$4,999</span>. No monthly fees. No hidden costs. No subscriptions.</p>
+            <p class="text-gray-500 text-sm text-center">All features included in a single one-time license of <span class="text-white font-semibold">$1,999</span>. No monthly fees. No hidden costs. No subscriptions.</p>
             <div class="flex flex-col sm:flex-row items-center gap-3">
                 <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
                    class="wa-hero-cta inline-flex items-center gap-2.5 font-bold px-6 py-3 rounded-xl text-[13.5px] text-white flex-shrink-0"
@@ -139,3 +139,4 @@
     </div>
 </section>
 @endsection
+

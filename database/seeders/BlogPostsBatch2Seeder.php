@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 namespace Database\Seeders;
 
@@ -53,7 +53,7 @@ class BlogPostsBatch2Seeder extends Seeder
 <h3>What makes self-hosted software better for corporate clients than standard cloud platforms?</h3>
 <p>Self-hosting ensures absolute data privacy. Because your software and databases are deployed on your own private VPS, no third-party software provider can ever view, trace, or leak your corporate clients' sensitive operational data.</p>
 <h3>Does LimoSchedule charge extra fees for adding unlimited dispatchers or vehicles?</h3>
-<p>No. Unlike standard SaaS models that charge you more as your fleet scales, LimoSchedule provides a single, one-time lifetime license fee of $4,999. You can add unlimited vehicles, drivers, and team seats with zero extra costs.</p>
+<p>No. Unlike standard SaaS models that charge you more as your fleet scales, LimoSchedule provides a single, one-time lifetime license fee of $1,999. You can add unlimited vehicles, drivers, and team seats with zero extra costs.</p>
 <p>Secure your high-ticket corporate accounts with unshakeable technology. Stop risking your reputation on basic booking apps. Visit LimoSchedule to explore our Platform Capabilities and claim full tech ownership today.</p>
 HTML,
             ],
@@ -83,7 +83,7 @@ HTML,
 <p>You do not need to lease a payment pipeline. LimoSchedule offers a revolutionary, uncompromised alternative.</p>
 <p>As a private, self-hosted limousine management software delivered with full, unencrypted source code, LimoSchedule comes with a native, enterprise-grade Stripe integration built straight into its core architecture.</p>
 <p>When you deploy LimoSchedule onto your private VPS server via the 30-minute web installer, you simply paste your private Stripe API keys directly into your secure admin control panel.</p>
-<p>The checkout experience becomes beautifully embedded into your 100% white-labeled booking engine. When customers book online or confirm their trip using the conversational AI Booking Agent, the money goes directly from the passenger's card straight into your Stripe account. No middleware, no third-party interference, and absolutely zero booking commissions. One system, one payment of $4,999, and the platform asset is yours forever.</p>
+<p>The checkout experience becomes beautifully embedded into your 100% white-labeled booking engine. When customers book online or confirm their trip using the conversational AI Booking Agent, the money goes directly from the passenger's card straight into your Stripe account. No middleware, no third-party interference, and absolutely zero booking commissions. One system, one payment of $1,999, and the platform asset is yours forever.</p>
 
 <h2>Frequently Asked Questions (FAQs)</h2>
 <h3>Does LimoSchedule take a percentage or transaction fee on card payments?</h3>
@@ -118,7 +118,7 @@ HTML,
 <p>You don't need to slow down your luxury WordPress site with clumsy, vulnerable plugins. Instead, you can run your marketing site on WordPress while embedding the ultra-secure, standalone engine of LimoSchedule seamlessly into your brand domain.</p>
 <p>LimoSchedule is a self-hosted, enterprise-level transport software that integrates flawlessly with any frontend framework, including WordPress. It delivers a modern, high-converting, premium booking widget that looks incredibly sleek, responsive, and matches your luxury brand colors and aesthetics with zero attribution required.</p>
 <p>With LimoSchedule, your WordPress site gains next-generation capabilities. Wealthy clients can interact with your booking engine using natural language commands via AI Voice Interface modules. The system computes real-time flat rates or mileage boundaries, coordinates directly with your secure backend driver panels, and processes payments safely via Stripe—all driven from an isolated, lightning-fast private database on your server.</p>
-<p>By investing in a single one-time license fee of $4,999, you walk away from slow plugins and lifetime subscription software rentals, establishing a highly customized digital asset that your transportation brand owns forever.</p>
+<p>By investing in a single one-time license fee of $1,999, you walk away from slow plugins and lifetime subscription software rentals, establishing a highly customized digital asset that your transportation brand owns forever.</p>
 
 <h2>Frequently Asked Questions (FAQs)</h2>
 <h3>Why is a standalone booking engine better than a native WordPress plugin?</h3>
@@ -157,7 +157,7 @@ HTML,
 
 <h2>Why LimoSchedule is the Premium Fleet Choice</h2>
 <p>You don't need to pay high monthly per-vehicle tracking commissions to expensive cloud software aggregators to get this level of technology. LimoSchedule embeds an enterprise-grade fleet management and live tracking dispatch grid directly into its sovereign, self-hosted architecture.</p>
-<p>Purchased for a single, one-time lifetime license fee of $4,999, LimoSchedule provides a robust, fully white-labeled admin control panel that tracks your drivers, monitors live job activity statuses, and handles customer reservation pipelines smoothly.</p>
+<p>Purchased for a single, one-time lifetime license fee of $1,999, LimoSchedule provides a robust, fully white-labeled admin control panel that tracks your drivers, monitors live job activity statuses, and handles customer reservation pipelines smoothly.</p>
 <p>Furthermore, your clients can bypass standard technical friction using our built-in AI Voice Search Booking Agent, which automates trip configurations via simple voice dictation. The system processes the request, matches it against available vehicles on your live tracking grid, and handles the dispatch loop flawlessly. No recurring subscription bills, no cloud lock-ins, and absolute data privacy on your own secure server.</p>
 
 <h2>Frequently Asked Questions (FAQs)</h2>
@@ -200,14 +200,14 @@ HTML,
 
 <h2>The Smart Alternative: Complete Tech Ownership with LimoSchedule</h2>
 <p>Why should you choose between an ineffective cheap template, a lifetime subscription rental trap, or a massively expensive custom agency build? LimoSchedule delivers a game-changing alternative for the modern ground transportation market.</p>
-<p>LimoSchedule is an enterprise-grade, self-hosted limousine booking and dispatch system delivered with full, unencrypted open-source code for a single, one-time license fee of $4,999.</p>
+<p>LimoSchedule is an enterprise-grade, self-hosted limousine booking and dispatch system delivered with full, unencrypted open-source code for a single, one-time license fee of $1,999.</p>
 <p>By choosing LimoSchedule, you secure an advanced, high-converting digital storefront that you own completely forever. There are absolutely no monthly subscription fees, no user caps, and no booking commissions.</p>
 <p>Your luxury brand gains immediate access to premium features that traditional custom builds take months to develop, including an autonomous AI Booking Agent, natural language AI Voice Search capabilities, automated real-time fare calculators, secure Stripe checkout integrations, and a robust backend administrative management console.</p>
 <p>The entire software stack deploys onto your private hosting server in under 30 minutes, allowing you to establish a permanent corporate asset that builds real financial equity for your transportation brand.</p>
 
 <h2>Frequently Asked Questions (FAQs)</h2>
 <h3>Why is a one-time license fee more cost-effective than a cheap subscription platform?</h3>
-<p>Subscription platforms represent a permanent operational drain. A SaaS fee of $300 a month costs you $18,000 over five years, and you own nothing. A one-time purchase of LimoSchedule costs $4,999 once, giving you total asset ownership forever.</p>
+<p>Subscription platforms represent a permanent operational drain. A SaaS fee of $300 a month costs you $18,000 over five years, and you own nothing. A one-time purchase of LimoSchedule costs $1,999 once, giving you total asset ownership forever.</p>
 <h3>Can LimoSchedule's booking infrastructure handle multiple world currencies and regions?</h3>
 <p>Yes. LimoSchedule features a highly adaptable backend panel where you can fully customize localized currency settings, geographical map parameters, specialized terminal fees, and custom vehicle asset tiers seamlessly.</p>
 <h3>Do I need to pay ongoing developer fees to maintain my LimoSchedule server?</h3>
@@ -231,3 +231,4 @@ HTML,
         }
     }
 }
+

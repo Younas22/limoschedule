@@ -444,7 +444,7 @@
         <div class="inline-flex flex-wrap items-center justify-center gap-3 mb-8 px-5 py-3 rounded-2xl" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
             <span class="text-[13.5px] font-semibold text-white">One-Time License &mdash;</span>
-            <span class="text-[22px] font-black text-blue-400 leading-none">$4,999</span>
+            <span class="text-[22px] font-black text-blue-400 leading-none">$1,999</span>
             <span class="w-px h-4 bg-white/15"></span>
             <span class="text-[11px] font-bold text-gray-400 uppercase tracking-wider">No Subscriptions · No Monthly Fees · Own It Forever</span>
         </div>
@@ -897,7 +897,7 @@
         <!-- â”€â”€ Bottom CTA strip â”€â”€ -->
         <div class="mt-16 flex flex-col items-center gap-5 section-fade" style="transition-delay: 0.5s">
             <p class="text-gray-500 text-sm text-center">
-                All features included in a single one-time license of <span class="text-white font-semibold">$4,999</span>. No monthly fees. No hidden costs. No subscriptions.
+                All features included in a single one-time license of <span class="text-white font-semibold">$1,999</span>. No monthly fees. No hidden costs. No subscriptions.
             </p>
             <div class="flex flex-col sm:flex-row items-center gap-3">
                 <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
@@ -2903,7 +2903,7 @@
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
                     <span class="text-[13px] font-semibold text-white">One-Time License</span>
                     <span class="w-px h-4 bg-white/15"></span>
-                    <span class="text-[22px] font-black text-blue-400 leading-none">$4,999</span>
+                    <span class="text-[22px] font-black text-blue-400 leading-none">$1,999</span>
                     <span class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Fixed</span>
                 </div>
 
@@ -3103,7 +3103,7 @@
                             <!-- Submit -->
                             <div class="pt-1">
                                 <button type="submit" id="cfSubmitBtn" class="btn-cta w-full flex items-center justify-center gap-2.5 px-6 py-[14px] rounded-xl font-bold text-[15px] text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); box-shadow: 0 4px 24px rgba(59,130,246,0.4);">
-                                    <span>Get My Private Demo &mdash; $4,999 One-Time</span>
+                                    <span>Get My Private Demo &mdash; $1,999 One-Time</span>
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                                 </button>
                                 <p class="text-center text-[11.5px] text-gray-600 mt-2.5">No obligation Â· We respond within 4 hours Â· 100% private</p>
@@ -3196,7 +3196,7 @@
 
                 <div class="px-4 py-3 text-white font-bold">LimoSchedule</div>
                 <div class="px-4 py-3 text-center text-red-400 font-bold border-l" style="border-color: rgba(255,255,255,0.05);">All of the above</div>
-                <div class="px-4 py-3 text-center font-black text-blue-400 text-[16px] border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">$4,999 once</div>
+                <div class="px-4 py-3 text-center font-black text-blue-400 text-[16px] border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">$1,999 once</div>
             </div>
             <p class="text-center text-gray-600 text-[11.5px] mt-3">Pay once. Own it forever. The system pays for itself in the first month.</p>
         </div>
@@ -3301,7 +3301,7 @@
                 </a>
 
                 <p class="text-gray-500 text-[13.5px] leading-relaxed max-w-[270px]">
-                    The professional self-hosted limo booking platform. One-time license &mdash; $4,999 fixed. Full source code. Zero recurring fees.
+                    The professional self-hosted limo booking platform. One-time license &mdash; $1,999 fixed. Full source code. Zero recurring fees.
                 </p>
 
 
@@ -3447,4 +3447,5 @@ $(function () {
 
 </body>
 </html>
+
 

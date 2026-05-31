@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -347,7 +347,7 @@
                     <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" class="h-[30px] w-auto block" loading="lazy" decoding="async">
                 </a>
                 <p class="text-gray-500 text-[13.5px] leading-relaxed max-w-[270px]">
-                    The professional self-hosted limo booking platform. One-time license — $4,999 fixed. Full source code. Zero recurring fees.
+                    The professional self-hosted limo booking platform. One-time license — $1,999 fixed. Full source code. Zero recurring fees.
                 </p>
             </div>
 
@@ -418,3 +418,4 @@
 @stack('scripts')
 </body>
 </html>
+
