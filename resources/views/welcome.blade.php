@@ -41,6 +41,27 @@
     <!-- Select2 -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
     <style>
+        /* Waveform bars for hero audio player */
+        .vw-bar {
+            width: 3px;
+            border-radius: 2px;
+            background: #3B82F6;
+            animation: vw-idle 1.4s ease-in-out infinite;
+            transition: background 0.2s;
+        }
+        @keyframes vw-idle {
+            0%, 100% { opacity: 0.35; transform: scaleY(1); }
+            50%       { opacity: 0.65; transform: scaleY(0.5); }
+        }
+        .vw-bar.playing {
+            animation: vw-wave 0.9s ease-in-out infinite;
+            background: #60a5fa;
+        }
+        @keyframes vw-wave {
+            0%, 100% { transform: scaleY(0.4); }
+            50%       { transform: scaleY(1.1); }
+        }
+
         /* Select2 dark theme override */
         .select2-container--default .select2-selection--single {
             background: rgba(255,255,255,0.04) !important;
@@ -482,10 +503,11 @@
         <div class="mt-10 max-w-md mx-auto">
             <div class="relative flex items-center gap-4 px-5 py-4 rounded-2xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(12px);">
                 <!-- Play button -->
-                <button id="heroAudioBtn" type="button" onclick="document.getElementById('heroAudio').paused ? (document.getElementById('heroAudio').play(), this.innerHTML='<svg width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;currentColor&quot;><rect x=&quot;6&quot; y=&quot;4&quot; width=&quot;4&quot; height=&quot;16&quot;/><rect x=&quot;14&quot; y=&quot;4&quot; width=&quot;4&quot; height=&quot;16&quot;/></svg>') : (document.getElementById('heroAudio').pause(), this.innerHTML='<svg width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;currentColor&quot;><polygon points=&quot;5 3 19 12 5 21 5 3&quot;/></svg>')"
+                <button id="heroAudioBtn" type="button"
                     class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105"
                     style="background: #3B82F6; box-shadow: 0 0 20px rgba(59,130,246,0.4);">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <svg id="heroPlayIcon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <svg id="heroPauseIcon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="hidden"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
                 </button>
                 <!-- Waveform bars (decorative) -->
                 <div class="flex-1 flex items-center gap-[2.5px]" style="height: 28px;">
@@ -516,7 +538,7 @@
                     <div class="text-[10px] text-gray-500 mt-0.5">2 min Â· English</div>
                 </div>
                 <audio id="heroAudio" preload="none">
-                    <source src="{{ url('public/assets/audio/overview.mp3') }}" type="audio/mpeg">
+                    <source src="{{ asset('public/assets/mp3/main-voice.mp3') }}" type="audio/mpeg">
                 </audio>
             </div>
         </div>
@@ -3442,6 +3464,31 @@ $(function () {
         btn.addEventListener('mouseenter', function(){ tip.style.opacity='1'; });
         btn.addEventListener('mouseleave', function(){ tip.style.opacity='0'; });
     }
+})();
+
+// Hero audio player
+(function(){
+    var audio   = document.getElementById('heroAudio');
+    var btn     = document.getElementById('heroAudioBtn');
+    var playIco = document.getElementById('heroPlayIcon');
+    var pausIco = document.getElementById('heroPauseIcon');
+    var bars    = document.querySelectorAll('#heroAudioBtn').length ? document.querySelectorAll('.vw-bar') : [];
+    if (!audio || !btn) return;
+
+    function setPlaying(playing) {
+        playIco.classList.toggle('hidden', playing);
+        pausIco.classList.toggle('hidden', !playing);
+        bars.forEach(function(b){ b.classList.toggle('playing', playing); });
+    }
+
+    btn.addEventListener('click', function(){
+        if (audio.paused) { audio.play(); }
+        else              { audio.pause(); }
+    });
+
+    audio.addEventListener('play',  function(){ setPlaying(true);  });
+    audio.addEventListener('pause', function(){ setPlaying(false); });
+    audio.addEventListener('ended', function(){ setPlaying(false); });
 })();
 </script>
 

@@ -179,7 +179,7 @@
                     <div class="text-[10px] text-gray-500 mt-0.5">2 min Â· English</div>
                 </div>
                 <audio id="heroAudio" preload="none">
-                    <source src="{{ url('public/assets/audio/overview.mp3') }}" type="audio/mpeg">
+                    <source src="{{ asset('public/assets/mp3/main-voice.mp3') }}" type="audio/mpeg">
                 </audio>
             </div>
         </div>
