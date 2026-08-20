@@ -119,7 +119,7 @@
                 </div>
 
                 <!-- Trust indicators -->
-                <div id="pricing" class="flex flex-wrap items-center justify-center sm:justify-start gap-x-5 gap-y-2 section-fade" style="transition-delay: 0.2s;">
+                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-x-5 gap-y-2 section-fade" style="transition-delay: 0.2s;">
                     <span class="inline-flex items-center gap-1.5 text-[12.5px] font-medium text-gray-300">
                         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                         One-Time Payment
@@ -344,2194 +344,1066 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     SECTION &mdash; PAIN / PROBLEM (inserted before features)
+     SECTION — LAUNCH PROCESS (From Setup to First Booking)
 ═══════════════════════════════════════════════════════════════ -->
-<section id="the-problem" class="relative py-24 lg:py-32 overflow-hidden" style="background: #060606;">
+<section id="launch-process" class="relative py-24 lg:py-32 overflow-hidden" style="background: #0A0A0A;">
 
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(239,68,68,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(239,68,68,0.02) 1px, transparent 1px); background-size: 56px 56px;"></div>
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(239,68,68,0.06) 0%, transparent 70%);"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[420px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.06) 0%, transparent 68%);"></div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+    <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
 
         <!-- Header -->
-        <div class="text-center max-w-3xl mx-auto mb-16 section-fade">
-            <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2);">
-                <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-red-400">The Real Cost of Doing Nothing</span>
+        <div class="text-center max-w-2xl mx-auto mb-20 lg:mb-24 section-fade">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-5" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #3B82F6;">
+                <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+                Done-For-You Launch
             </div>
-            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
-                Every day without this system,<br>
-                <span style="background: linear-gradient(135deg, #ef4444, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    you're losing money.
-                </span>
+            <h2 class="text-[30px] sm:text-[38px] lg:text-[44px] font-bold leading-[1.14] tracking-tight text-white mb-5">
+                From Setup to Your First Booking &mdash; Fast.
             </h2>
-            <p class="text-gray-400 text-[17px] leading-relaxed">
-                Limo business owners running manual operations are hemorrhaging revenue every single day &mdash; through missed calls, double bookings, dispatch chaos, and a poor customer experience that sends clients to your competitors.
+            <p class="text-[15px] sm:text-[15.5px] text-gray-400 leading-relaxed max-w-xl mx-auto">
+                We handle the setup so you can focus on running your business.
             </p>
         </div>
 
-        <!-- Pain cards grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
-
-            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.05s">
-                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        <!-- Step number timeline -->
+        <div class="relative mb-10 lg:mb-14">
+            <div class="hidden lg:block absolute top-1/2 left-[16.6%] right-[16.6%] h-[1.5px] -translate-y-1/2 pointer-events-none" style="background: linear-gradient(90deg, rgba(59,130,246,0.12), rgba(59,130,246,0.9));"></div>
+            <div class="relative grid grid-cols-3 gap-5 lg:gap-7">
+                <div class="flex justify-center">
+                    <span class="relative z-10 w-11 h-11 rounded-full flex items-center justify-center text-[13px] font-black text-white flex-shrink-0" style="background:#0A0A0A; border: 2px solid rgba(59,130,246,0.4); box-shadow: 0 0 14px rgba(59,130,246,0.18);">01</span>
                 </div>
-                <h3 class="text-white font-bold text-[16px] mb-2">Missed Calls = Missed Revenue</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Every unanswered call is a booking going straight to your competitor. No system, no second chances.</p>
-            </div>
-
-            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.10s">
-                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <div class="flex justify-center">
+                    <span class="relative z-10 w-11 h-11 rounded-full flex items-center justify-center text-[13px] font-black text-white flex-shrink-0" style="background:#0A0A0A; border: 2px solid rgba(59,130,246,0.65); box-shadow: 0 0 20px rgba(59,130,246,0.3);">02</span>
                 </div>
-                <h3 class="text-white font-bold text-[16px] mb-2">Dispatch Chaos Destroys Reputation</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Double bookings, wrong vehicles, late drivers &mdash; manual dispatch is a ticking time bomb for your 5-star rating.</p>
-            </div>
-
-            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.15s">
-                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div class="flex justify-center">
+                    <span class="relative z-10 w-11 h-11 rounded-full flex items-center justify-center text-[13px] font-black text-white flex-shrink-0" style="background:#3B82F6; border: 2px solid #60a5fa; box-shadow: 0 0 28px rgba(59,130,246,0.55);">03</span>
                 </div>
-                <h3 class="text-white font-bold text-[16px] mb-2">Staff Dependency Caps Your Growth</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Your business stops when your staff stops. Sick days, late nights, holiday gaps &mdash; it all bleeds revenue.</p>
             </div>
+        </div>
 
-            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.20s">
-                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
-                </div>
-                <h3 class="text-white font-bold text-[16px] mb-2">Manual Bookings Waste Hours Daily</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Hours spent on spreadsheets, calls, and WhatsApp messages that an automated system handles in seconds.</p>
-            </div>
+        <!-- Steps -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-7">
 
-            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.25s">
-                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            <!-- ═══ STEP 1 — Choose Your Setup ═══ -->
+            <div class="section-fade" style="transition-delay: 0.06s;">
+                <!-- Branding config preview -->
+                <div class="rounded-xl p-4" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(59,130,246,0.16);">
+                    <div class="flex items-center gap-2.5 mb-3.5">
+                        <span class="w-9 h-9 rounded-lg flex items-center justify-center text-[13px] font-black text-white flex-shrink-0" style="background: linear-gradient(135deg, #3B82F6, #1d4ed8);">Y</span>
+                        <div>
+                            <div class="text-[12px] font-bold text-white leading-tight">Your Brand</div>
+                            <div class="text-[9px] text-gray-500">Logo &amp; identity</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 mb-3.5">
+                        <span class="w-5 h-5 rounded-full ring-2 ring-white/40" style="background:#3B82F6;"></span>
+                        <span class="w-5 h-5 rounded-full" style="background:#0A0A0A; border:1px solid rgba(255,255,255,0.15);"></span>
+                        <span class="w-5 h-5 rounded-full" style="background:#60a5fa;"></span>
+                        <span class="w-5 h-5 rounded-full" style="background:#1d4ed8;"></span>
+                        <span class="text-[9px] text-gray-500 ml-1">Brand colors</span>
+                    </div>
+                    <div class="flex items-center gap-2 rounded-lg px-3 py-2" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20 15.3 15.3 0 010-20z"/></svg>
+                        <span class="text-[10px] text-gray-400">yourcompany.com</span>
+                    </div>
                 </div>
-                <h3 class="text-white font-bold text-[16px] mb-2">Poor Customer Experience Kills Loyalty</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Slow responses, no confirmations, no tracking &mdash; premium clients expect a premium experience. Are you delivering it?</p>
-            </div>
+                <div class="mt-5 text-center lg:text-left">
+                    <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 01 &mdash; Choose Your Setup</div>
+                    <h3 class="text-[19px] font-bold text-white leading-tight">Make It Yours</h3>
+                </div>
+            </div><!-- /step 1 -->
 
-            <div class="rounded-2xl p-6 section-fade" style="background: rgba(239,68,68,0.04); border: 1px solid rgba(239,68,68,0.14); transition-delay: 0.30s">
-                <div class="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            <!-- ═══ STEP 2 — We Set It Up ═══ -->
+            <div class="section-fade" style="transition-delay: 0.16s;">
+                <!-- Four-module build preview -->
+                <div class="rounded-xl p-4" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(59,130,246,0.16);">
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="rounded-lg p-2.5 text-center" style="background: rgba(59,130,246,0.06); border:1px solid rgba(59,130,246,0.18);">
+                            <svg class="mx-auto" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20 15.3 15.3 0 010-20z"/></svg>
+                            <div class="text-[9.5px] font-semibold text-gray-300 mt-1.5">Website</div>
+                        </div>
+                        <div class="rounded-lg p-2.5 text-center" style="background: rgba(59,130,246,0.06); border:1px solid rgba(59,130,246,0.18);">
+                            <svg class="mx-auto" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            <div class="text-[9.5px] font-semibold text-gray-300 mt-1.5">Customer</div>
+                        </div>
+                        <div class="rounded-lg p-2.5 text-center" style="background: rgba(59,130,246,0.06); border:1px solid rgba(59,130,246,0.18);">
+                            <svg class="mx-auto" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 01-2-2v-2l2-5h14l2 5v2a2 2 0 01-2 2M5 17v2a1 1 0 001 1h1a1 1 0 001-1v-2m8 0v2a1 1 0 001 1h1a1 1 0 001-1v-2"/></svg>
+                            <div class="text-[9.5px] font-semibold text-gray-300 mt-1.5">Driver</div>
+                        </div>
+                        <div class="rounded-lg p-2.5 text-center" style="background: rgba(59,130,246,0.06); border:1px solid rgba(59,130,246,0.18);">
+                            <svg class="mx-auto" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                            <div class="text-[9.5px] font-semibold text-gray-300 mt-1.5">Admin</div>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="text-white font-bold text-[16px] mb-2">Operational Costs That Never Stop</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">SaaS subscriptions, booking platform commissions, dispatcher salaries &mdash; the costs compound while your margin shrinks.</p>
-            </div>
+                <div class="mt-5 text-center lg:text-left">
+                    <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 02 &mdash; We Set It Up</div>
+                    <h3 class="text-[19px] font-bold text-white leading-tight">We Handle the Setup</h3>
+                </div>
+            </div><!-- /step 2 -->
+
+            <!-- ═══ STEP 3 — Start Taking Bookings ═══ -->
+            <div class="section-fade" style="transition-delay: 0.26s;">
+                <!-- Live booking confirmation preview -->
+                <div class="rounded-xl p-4" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(34,197,94,0.22);">
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <span class="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(34,197,94,0.15); border:1px solid rgba(34,197,94,0.4); box-shadow: 0 0 16px rgba(34,197,94,0.25);">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        </span>
+                        <div>
+                            <div class="text-[12px] font-bold text-white leading-tight">Booking Confirmed</div>
+                            <div class="text-[9px] text-gray-500">#LS-1001</div>
+                        </div>
+                    </div>
+                    <div class="text-[10px] text-gray-400 leading-snug mb-2">JFK Airport &rarr; Manhattan, NY</div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[9.5px] text-gray-500">Executive Sedan</span>
+                        <span class="text-[13px] font-bold text-white">$120.00</span>
+                    </div>
+                </div>
+                <div class="mt-5 text-center lg:text-left">
+                    <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 03 &mdash; Start Taking Bookings</div>
+                    <h3 class="text-[19px] font-bold text-white leading-tight">Go Live &amp; Take Bookings</h3>
+                </div>
+            </div><!-- /step 3 -->
 
         </div>
 
-        <!-- Solution transition -->
-        <div class="text-center section-fade" style="transition-delay: 0.35s">
-            <div class="inline-block px-8 py-5 rounded-2xl mb-6" style="background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.2);">
-                <p class="text-[18px] sm:text-[22px] font-bold text-white leading-snug">
-                    LimoSchedule eliminates every one of these problems.<br>
-                    <span class="text-blue-400">One system. One payment. Zero recurring costs.</span>
-                </p>
-            </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
-                   class="wa-hero-cta inline-flex items-center gap-2.5 font-bold px-7 py-3.5 rounded-xl text-[14px] text-white"
-                   style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
-                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
-                    Get Instant Demo on WhatsApp
-                </a>
-                <a href="#features" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-[14px] text-gray-300 hover:text-white transition-colors duration-200" style="border: 1px solid rgba(255,255,255,0.1);">
-                    See All Features &rarr;
-                </a>
+        <!-- Highlight callout -->
+        <div class="mt-16 lg:mt-20 relative rounded-2xl overflow-hidden text-center px-8 py-12 sm:py-14 section-fade" style="background: rgba(59,130,246,0.05); border: 1px solid rgba(59,130,246,0.28);">
+            <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.2) 0%, transparent 70%);"></div>
+            <div class="relative z-10">
+                <svg class="mx-auto mb-4" width="18" height="18" viewBox="0 0 24 24" fill="#3B82F6"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+                <div class="text-[24px] sm:text-[32px] lg:text-[38px] font-black uppercase tracking-tight leading-tight mb-3" style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Ready in as Little as 30 Minutes
+                </div>
+                <p class="text-gray-400 text-[15px] sm:text-[16px]">No lengthy development process. No complicated setup.</p>
             </div>
         </div>
 
     </div>
 </section>
-<!-- â•â•â•â• END PAIN SECTION â•â•â•â• -->
 
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION — CAPABILITIES (Premium asymmetric feature grid)
+═══════════════════════════════════════════════════════════════ -->
+<section id="capabilities" class="relative py-24 lg:py-32 overflow-hidden" style="background: #060606;">
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     SECTION 2 &mdash; FEATURES GRID
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section id="features" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
-
-    <!-- Faint section grid -->
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 56px 56px;"></div>
-
-    <!-- Ambient glow &mdash; top center -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[340px] pointer-events-none"
-         style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.10) 0%, transparent 70%);"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.025) 1px, transparent 1px); background-size: 56px 56px;"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[340px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.09) 0%, transparent 70%);"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
-        <!-- â”€â”€ Section Header â”€â”€ -->
+        <!-- Header -->
         <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20 section-fade">
-
-            <!-- Eyebrow -->
-            <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full"
-                 style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                </svg>
-                <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">Platform Capabilities</span>
+            <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">Complete Feature Set</span>
             </div>
-
-            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5">
-                Stop losing bookings.<br>
-                <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 45%, #3B82F6 90%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    Start running on autopilot.
-                </span>
+            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+                Built for the Way Transportation Businesses Operate
             </h2>
-
             <p class="text-gray-400 text-[16.5px] leading-relaxed">
-                One system. One license. Built for premium transportation companies that want to automate operations, eliminate staff dependency, and deliver a five-star customer experience &mdash; 24/7, automatically.
+                Everything your team needs to manage bookings, customers, drivers and daily operations from one platform.
             </p>
         </div>
 
-        <!-- â”€â”€ Feature Cards Grid â”€â”€ -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
+        <!-- Asymmetric feature grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-5">
 
-            <!-- 1. Open Source Code Access -->
-            <div class="feature-card section-fade" style="transition-delay: 0.05s">
+            <!-- ═══ LARGE 1: Advanced Booking ═══ -->
+            <div class="feature-card featured section-fade lg:col-span-7" style="transition-delay: 0.05s">
                 <div class="feat-icon-wrap">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="16 18 22 12 16 6"/>
-                        <polyline points="8 6 2 12 8 18"/>
-                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Open Source Code Access</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Full, unencrypted source code delivered with your license. Read, modify, and extend every line &mdash; no runtime fees, no black boxes.
+                <h3 class="text-white text-[19px] font-bold mb-2 leading-snug">Advanced Booking</h3>
+                <p class="text-gray-400 text-[13.5px] leading-relaxed mb-5 max-w-md">
+                    Create and manage complex transportation bookings with an intuitive booking experience.
                 </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 2. White Label System -->
-            <div class="feature-card section-fade" style="transition-delay: 0.10s">
-                <div class="feat-icon-wrap">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 20h9"/>
-                        <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
-                    </svg>
-                </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">White Label System</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Replace every trace of our branding with yours. Custom domain, logo, colors, and app name &mdash; zero attribution required. Full white-label customization allowed.
-                </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 3. Self-Hosted Deployment -->
-            <div class="feature-card section-fade" style="transition-delay: 0.15s">
-                <div class="feat-icon-wrap">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="8" rx="2"/>
-                        <rect x="2" y="14" width="20" height="8" rx="2"/>
-                        <line x1="6" y1="6" x2="6.01" y2="6"/>
-                        <line x1="6" y1="18" x2="6.01" y2="18"/>
-                    </svg>
-                </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Self-Hosted &amp; Private</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Deploy on any VPS, dedicated server, or private cloud. Your data, your infrastructure, your rules &mdash; no third-party ever touches your records.
-                </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 4. 30-Min Installation -->
-            <div class="feature-card section-fade" style="transition-delay: 0.20s">
-                <div class="feat-icon-wrap">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polyline points="12 6 12 12 16 14"/>
-                    </svg>
-                </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">30-Min Installation</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Our automated installer handles the entire stack. From a blank server to a live, production-ready booking system in under 30 minutes.
-                </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 5. AI Booking Agent &mdash; FEATURED -->
-            <div class="feature-card featured section-fade" style="transition-delay: 0.25s">
-                <!-- Featured label -->
-                <div class="absolute top-4 right-4">
-                    <span class="inline-flex items-center gap-1 text-[10px] font-bold tracking-widest uppercase text-blue-400 px-2 py-0.5 rounded-full"
-                          style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-                        AI-Powered
-                    </span>
-                </div>
-                <div class="feat-icon-wrap" style="background: rgba(59,130,246,0.12); border-color: rgba(59,130,246,0.25);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2a4 4 0 014 4v1h1a3 3 0 013 3v6a3 3 0 01-3 3H7a3 3 0 01-3-3v-6a3 3 0 013-3h1V6a4 4 0 014-4z"/>
-                        <circle cx="9" cy="13" r="1" fill="#3B82F6" stroke="none"/>
-                        <circle cx="15" cy="13" r="1" fill="#3B82F6" stroke="none"/>
-                        <path d="M9 17s1 1 3 1 3-1 3-1"/>
-                    </svg>
-                </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">AI Booking Agent</h3>
-                <p class="text-gray-400 text-[13.5px] leading-relaxed pr-8">
-                    Intelligent AI agent handles customer enquiries, confirms bookings, upsells upgrades, and optimizes schedules autonomously &mdash; 24/7, zero staff required.
-                </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 6. Voice Search Booking &mdash; FEATURED -->
-            <div class="feature-card featured section-fade" style="transition-delay: 0.30s">
-                <div class="absolute top-4 right-4">
-                    <span class="inline-flex items-center gap-1 text-[10px] font-bold tracking-widest uppercase text-blue-400 px-2 py-0.5 rounded-full"
-                          style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-                        AI-Powered
-                    </span>
-                </div>
-                <div class="feat-icon-wrap" style="background: rgba(59,130,246,0.12); border-color: rgba(59,130,246,0.25);">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/>
-                        <path d="M19 10v2a7 7 0 01-14 0v-2"/>
-                        <line x1="12" y1="19" x2="12" y2="23"/>
-                        <line x1="8"  y1="23" x2="16" y2="23"/>
-                    </svg>
-                </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Voice Search Booking</h3>
-                <p class="text-gray-400 text-[13.5px] leading-relaxed pr-8">
-                    Customers book rides with natural voice commands in any language. No typing, no friction &mdash; just speak the destination and the system handles the rest.
-                </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 7. Fleet Management -->
-            <div class="feature-card section-fade" style="transition-delay: 0.35s">
-                <div class="feat-icon-wrap">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3"/>
-                        <rect x="9" y="11" width="14" height="10" rx="2"/>
-                        <circle cx="12" cy="21" r="1" fill="#3B82F6" stroke="none"/>
-                        <circle cx="20" cy="21" r="1" fill="#3B82F6" stroke="none"/>
-                    </svg>
-                </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Fleet Management</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Real-time vehicle tracking, driver assignment, availability management, and intelligent route optimization across your entire fleet &mdash; from one dashboard.
-                </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 8. Admin Control Panel -->
-            <div class="feature-card section-fade" style="transition-delay: 0.40s">
-                <div class="feat-icon-wrap">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="3" width="7" height="7" rx="1.5"/>
-                        <rect x="14" y="3" width="7" height="7" rx="1.5"/>
-                        <rect x="3" y="14" width="7" height="7" rx="1.5"/>
-                        <rect x="14" y="14" width="7" height="7" rx="1.5"/>
-                    </svg>
-                </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Admin Control Panel</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Comprehensive dashboard for bookings, drivers, pricing rules, revenue reports, and customer management &mdash; all in one powerful and intuitive interface.
-                </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- 9. Team Management -->
-            <div class="feature-card section-fade" style="transition-delay: 0.45s">
-                <div class="feat-icon-wrap">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M23 21v-2a4 4 0 00-3-3.87"/>
-                        <path d="M16 3.13a4 4 0 010 7.75"/>
-                    </svg>
-                </div>
-                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Team Management</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed pr-8">
-                    Role-based access control with granular permissions. Add dispatchers, operators, and support staff with exactly the access level each role requires.
-                </p>
-                <div class="feat-arrow">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </div>
-
-        </div><!-- /grid -->
-
-        <!-- â”€â”€ Bottom CTA strip â”€â”€ -->
-        <div class="mt-16 flex flex-col items-center gap-5 section-fade" style="transition-delay: 0.5s">
-            <p class="text-gray-500 text-sm text-center">
-                All features included in a single one-time license of <span class="text-white font-semibold">$1,999</span>. No monthly fees. No hidden costs. No subscriptions.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center gap-3">
-                <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
-                   class="wa-hero-cta inline-flex items-center gap-2.5 font-bold px-6 py-3 rounded-xl text-[13.5px] text-white flex-shrink-0"
-                   style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
-                    See Live Admin Panel on WhatsApp
-                </a>
-                <a href="#contact"
-                   class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white font-semibold px-6 py-3 rounded-xl text-[13.5px] border border-blue-500/30 flex-shrink-0">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
-                    <span>Request Private Demo</span>
-                </a>
-            </div>
-        </div>
-
-    </div><!-- /container -->
-</section>
-<!-- â•â•â•â• END FEATURES â•â•â•â• -->
-
-
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     SECTION 3 &mdash; VOICE SEARCH BOOKING
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section id="voice-search" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
-
-    <!-- Section grid -->
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 56px 56px;"></div>
-
-    <!-- Bottom ambient glow -->
-    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[420px] pointer-events-none"
-         style="background: radial-gradient(ellipse at 50% 100%, rgba(59,130,246,0.09) 0%, transparent 68%);"></div>
-
-    <!-- Top ambient glow -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[280px] pointer-events-none"
-         style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.07) 0%, transparent 70%);"></div>
-
-    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-
-        <!-- â”€â”€ Section Header â”€â”€ -->
-        <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20 section-fade">
-
-            <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full"
-                 style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/>
-                    <path d="M19 10v2a7 7 0 01-14 0v-2"/>
-                    <line x1="12" y1="19" x2="12" y2="23"/>
-                    <line x1="8"  y1="23" x2="16" y2="23"/>
-                </svg>
-                <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">AI Voice Interface</span>
-            </div>
-
-            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5">
-                Your customers speak.<br>
-                <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 45%, #3B82F6 90%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    Revenue appears instantly.
-                </span>
-            </h2>
-
-            <p class="text-gray-400 text-[16.5px] leading-relaxed">
-                The world's most frictionless booking experience &mdash; passengers speak a single voice command in any language, and the AI instantly finds vehicles, quotes fares, and confirms bookings. Faster bookings mean higher conversion rates and a luxury experience that keeps clients coming back.
-            </p>
-        </div>
-
-        <!-- â”€â”€ Main 2-col layout â”€â”€ -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
-
-            <!-- â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-                 â•‘  LEFT: VOICE UI  â•‘
-                 â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-            <div class="voice-panel-reveal">
-                <div class="relative rounded-2xl overflow-hidden"
-                     style="background: rgba(14,14,18,0.9); border: 1px solid rgba(255,255,255,0.08); backdrop-filter: blur(16px);">
-
-                    <!-- Scan line effect -->
-                    <div class="vs-scan-line"></div>
-
-                    <!-- Terminal top bar -->
-                    <div class="flex items-center justify-between px-5 py-3.5 border-b"
-                         style="border-color: rgba(255,255,255,0.06); background: rgba(255,255,255,0.015);">
-                        <div class="flex items-center gap-2">
-                            <span class="w-2.5 h-2.5 rounded-full" style="background: rgba(239,68,68,0.7);"></span>
-                            <span class="w-2.5 h-2.5 rounded-full" style="background: rgba(234,179,8,0.7);"></span>
-                            <span class="w-2.5 h-2.5 rounded-full" style="background: rgba(34,197,94,0.7);"></span>
+                <!-- UI snippet: booking form -->
+                <div class="rounded-lg p-3.5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                    <div class="grid grid-cols-2 gap-2 mb-2">
+                        <div class="flex items-center gap-1.5 rounded-md px-2.5 py-2 text-[10.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                            JFK Airport
                         </div>
-                        <span class="text-[10.5px] font-medium text-gray-600 tracking-[0.1em] uppercase select-none">Voice Interface Â· LimoSchedule AI</span>
-                        <div class="flex items-center gap-1.5">
-                            <span class="w-1.5 h-1.5 rounded-full bg-green-400" style="box-shadow: 0 0 7px rgba(74,222,128,0.9);"></span>
-                            <span class="text-[10px] text-green-400 font-bold tracking-wider">LIVE</span>
+                        <div class="flex items-center gap-1.5 rounded-md px-2.5 py-2 text-[10.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                            Manhattan, NY
                         </div>
                     </div>
-
-                    <!-- Panel body -->
-                    <div class="p-6 lg:p-8">
-
-                        <!-- Status badge -->
-                        <div class="flex items-center justify-center mb-7">
-                            <div id="vs-status-badge" class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full"
-                                 style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.22);">
-                                <span class="ping-dot relative w-2 h-2 rounded-full bg-[#3B82F6] flex-shrink-0"></span>
-                                <span id="vs-status-text" class="text-[11.5px] font-bold text-blue-400 tracking-[0.14em] uppercase">Listening</span>
-                            </div>
-                        </div>
-
-                        <!-- Mic button + rings -->
-                        <div class="flex justify-center mb-7">
-                            <div class="relative w-24 h-24">
-                                <!-- Expanding rings (staggered) -->
-                                <div class="mic-ring" style="animation-delay: 0s;"></div>
-                                <div class="mic-ring" style="animation-delay: 0.7s;"></div>
-                                <div class="mic-ring" style="animation-delay: 1.4s;"></div>
-
-                                <!-- Core button -->
-                                <button
-                                    id="mic-btn"
-                                    type="button"
-                                    aria-label="Toggle voice input"
-                                    class="mic-btn-listening relative w-full h-full rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95 select-none"
-                                    style="background: linear-gradient(135deg, rgba(59,130,246,0.22) 0%, rgba(59,130,246,0.09) 100%); border: 2px solid rgba(59,130,246,0.4);">
-                                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/>
-                                        <path d="M19 10v2a7 7 0 01-14 0v-2"/>
-                                        <line x1="12" y1="19" x2="12" y2="23"/>
-                                        <line x1="8"  y1="23" x2="16" y2="23"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Voice waveform -->
-                        <div id="voice-waveform" class="flex items-end justify-center gap-[3.5px] mb-7" style="height: 36px;">
-                            <div class="vw-bar" style="animation-delay:0.00s;animation-duration:0.85s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.07s;animation-duration:1.10s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.14s;animation-duration:0.78s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.21s;animation-duration:1.25s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.06s;animation-duration:0.92s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.28s;animation-duration:1.05s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.13s;animation-duration:0.70s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.35s;animation-duration:1.30s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.04s;animation-duration:0.95s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.42s;animation-duration:0.80s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.19s;animation-duration:1.15s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.49s;animation-duration:0.68s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.08s;animation-duration:1.35s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.56s;animation-duration:0.90s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.25s;animation-duration:1.00s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.63s;animation-duration:0.75s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.11s;animation-duration:1.20s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.38s;animation-duration:0.88s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.70s;animation-duration:1.08s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.17s;animation-duration:0.73s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.44s;animation-duration:1.18s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.03s;animation-duration:0.82s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.51s;animation-duration:1.40s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.22s;animation-duration:0.66s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.60s;animation-duration:0.98s;"></div>
-                            <div class="vw-bar" style="animation-delay:0.09s;animation-duration:1.12s;"></div>
-                        </div>
-
-                        <!-- Transcript glass card -->
-                        <div class="rounded-xl p-4 mb-5" style="background: rgba(59,130,246,0.05); border: 1px solid rgba(59,130,246,0.16);">
-                            <div class="flex items-start gap-3">
-                                <div class="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center mt-0.5"
-                                     style="background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.28);">
-                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/>
-                                        <path d="M19 10v2a7 7 0 01-14 0v-2"/>
-                                    </svg>
-                                </div>
-                                <div class="flex-1 min-w-0">
-                                    <div class="text-[10px] font-bold text-blue-400 tracking-[0.14em] uppercase mb-1.5">Detected Speech</div>
-                                    <div class="text-white text-[18px] font-semibold leading-snug">
-                                        "Airport to City Center"<span class="cursor-blink text-blue-400 ml-0.5 font-light">|</span>
-                                    </div>
-                                    <!-- Confidence bar -->
-                                    <div class="flex items-center gap-2 mt-2.5">
-                                        <span class="text-[11px] text-gray-600 flex-shrink-0">Confidence</span>
-                                        <div class="flex-1 h-[3px] rounded-full" style="background: rgba(255,255,255,0.06);">
-                                            <div class="h-full rounded-full" style="width: 96%; background: linear-gradient(90deg, #3B82F6, #60a5fa);"></div>
-                                        </div>
-                                        <span class="text-[11px] text-blue-400 font-bold flex-shrink-0">96%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- AI processing checks -->
-                        <div class="space-y-2 mb-6">
-                            <div class="flex items-center gap-2.5">
-                                <div class="flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center" style="background: rgba(59,130,246,0.15);">
-                                    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                </div>
-                                <span class="text-[12px] text-gray-500">Route analyzed: <span class="text-gray-300">Airport Terminal &rarr; City Center Â· 14.2 km</span></span>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <div class="flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center" style="background: rgba(59,130,246,0.15);">
-                                    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                </div>
-                                <span class="text-[12px] text-gray-500">Fleet queried: <span class="text-gray-300">3 vehicles available nearby</span></span>
-                            </div>
-                            <div class="flex items-center gap-2.5">
-                                <div class="flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center" style="background: rgba(59,130,246,0.15);">
-                                    <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                </div>
-                                <span class="text-[12px] text-gray-500">Pricing computed: <span class="text-gray-300">Dynamic rates applied</span></span>
-                            </div>
-                        </div>
-
-                        <!-- Try saying chips -->
-                        <div>
-                            <div class="text-[10.5px] text-gray-600 font-semibold tracking-[0.12em] uppercase mb-2.5">Try saying</div>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="vs-chip text-[12px] text-gray-400 px-3 py-1.5 rounded-lg select-none" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">"Hotel to Downtown"</span>
-                                <span class="vs-chip text-[12px] text-gray-400 px-3 py-1.5 rounded-lg select-none" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">"JFK to Manhattan"</span>
-                                <span class="vs-chip text-[12px] text-gray-400 px-3 py-1.5 rounded-lg select-none" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">"Pick me up at Hilton"</span>
-                            </div>
-                        </div>
-
-                    </div><!-- /panel body -->
-                </div><!-- /panel -->
-            </div><!-- /LEFT -->
-
-            <!-- â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—
-                 â•‘  RIGHT: RESULTS   â•‘
-                 â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-            <div class="flex flex-col gap-4">
-
-                <!-- Results header -->
-                <div class="flex items-center justify-between mb-1 section-fade" style="transition-delay: 0.1s">
-                    <div>
-                        <div class="text-white font-bold text-[17px]">Available Now</div>
-                        <div class="text-gray-500 text-[12.5px] mt-0.5">3 vehicles Â· Airport &rarr; City Center Â· Tonight</div>
+                    <div class="grid grid-cols-3 gap-2 mb-2.5">
+                        <div class="rounded-md px-2 py-1.5 text-[9.5px] text-gray-500 text-center" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">May 15, 10:30 AM</div>
+                        <div class="rounded-md px-2 py-1.5 text-[9.5px] text-gray-500 text-center" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">Executive Sedan</div>
+                        <div class="rounded-md px-2 py-1.5 text-[9.5px] text-gray-500 text-center" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">2 Passengers</div>
                     </div>
-                    <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full flex-shrink-0"
-                         style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="#3B82F6" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <span class="text-[10.5px] font-semibold text-blue-400">AI Sorted</span>
+                    <div class="flex items-center justify-between rounded-md px-3 py-2" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
+                        <span class="text-[10.5px] text-gray-400">Estimated Fare</span>
+                        <span class="text-[15px] font-bold text-white">$120.00</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- â”€â”€ Card 1: Executive Sedan â”€â”€ -->
-                <div class="voice-result-card voice-result-reveal p-5" style="transition-delay: 0.25s">
-                    <div class="flex items-start gap-4">
-                        <!-- Vehicle icon -->
-                        <div class="flex-shrink-0 w-[58px] h-[58px] rounded-xl flex items-center justify-center"
-                             style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.14);">
-                            <svg width="38" height="22" viewBox="0 0 76 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M8 28 L14 13 Q20 8 38 8 Q56 8 62 13 L68 28 Q72 28 74 31 L74 35 Q74 37 72 37 L62 37 Q60 37 60 35 L60 33 L16 33 L16 35 Q16 37 14 37 L4 37 Q2 37 2 35 L2 31 Q4 28 8 28Z" fill="rgba(59,130,246,0.13)" stroke="#3B82F6" stroke-width="1.2"/>
-                                <circle cx="18" cy="34" r="5" fill="#0d1f3c" stroke="#3B82F6" stroke-width="1.3"/>
-                                <circle cx="18" cy="34" r="2" fill="#3B82F6"/>
-                                <circle cx="58" cy="34" r="5" fill="#0d1f3c" stroke="#3B82F6" stroke-width="1.3"/>
-                                <circle cx="58" cy="34" r="2" fill="#3B82F6"/>
-                                <path d="M16 24 L22 13 Q28 9 38 9 Q48 9 54 13 L60 24 Z" fill="rgba(59,130,246,0.08)" stroke="rgba(59,130,246,0.28)" stroke-width="0.9"/>
-                                <line x1="38" y1="9" x2="38" y2="24" stroke="rgba(59,130,246,0.2)" stroke-width="0.7"/>
-                            </svg>
-                        </div>
-                        <!-- Info -->
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-start justify-between gap-2 mb-1.5">
-                                <div>
-                                    <h4 class="text-white font-bold text-[14.5px] leading-snug">Executive Sedan</h4>
-                                    <p class="text-gray-500 text-[12px] mt-0.5">Mercedes E-Class Â· Up to 3 pax</p>
-                                </div>
-                                <div class="text-right flex-shrink-0">
-                                    <div class="text-white font-black text-[22px] leading-none">$85</div>
-                                    <div class="text-gray-600 text-[10px] mt-0.5">flat rate</div>
-                                </div>
-                            </div>
-                            <!-- Meta row -->
-                            <div class="flex items-center gap-3 mb-3 flex-wrap">
-                                <span class="flex items-center gap-1.5 text-[11.5px] text-gray-400">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                    ETA 4 min
-                                </span>
-                                <span class="w-px h-3 bg-white/10"></span>
-                                <span class="flex items-center gap-1.5 text-[11.5px] text-gray-400">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                    0.8 mi away
-                                </span>
-                                <span class="w-px h-3 bg-white/10"></span>
-                                <div class="flex items-center gap-1">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                                    <span class="text-[11.5px] text-gray-400">4.9</span>
-                                </div>
-                            </div>
-                            <button class="btn-cta w-full flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-4 py-2.5 rounded-xl border border-blue-500/30">
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                <span>Book Now Â· $85</span>
-                            </button>
-                        </div>
+            <!-- ═══ LARGE 2: Fare Calculator ═══ -->
+            <div class="feature-card featured section-fade lg:col-span-5" style="transition-delay: 0.1s">
+                <div class="feat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="10" y2="11"/><line x1="13" y1="11" x2="15" y2="11"/><line x1="8" y1="15" x2="10" y2="15"/><line x1="13" y1="15" x2="15" y2="15"/></svg>
+                </div>
+                <h3 class="text-white text-[19px] font-bold mb-2 leading-snug">Fare Calculator</h3>
+                <p class="text-gray-400 text-[13.5px] leading-relaxed mb-5">
+                    Calculate trip pricing quickly based on your configured business rules.
+                </p>
+                <!-- UI snippet: fare breakdown -->
+                <div class="rounded-lg p-3.5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                    <div class="flex items-center justify-between text-[11px] text-gray-500 mb-2"><span>Base Fare</span><span class="text-gray-300">$45.00</span></div>
+                    <div class="flex items-center justify-between text-[11px] text-gray-500 mb-2"><span>Distance (12.4 mi)</span><span class="text-gray-300">$38.60</span></div>
+                    <div class="flex items-center justify-between text-[11px] text-gray-500 mb-3"><span>Peak Time Surcharge</span><span class="text-gray-300">$12.00</span></div>
+                    <div class="pt-3 flex items-center justify-between" style="border-top: 1px solid rgba(255,255,255,0.08);">
+                        <span class="text-[12px] font-semibold text-white">Total Fare</span>
+                        <span class="text-[18px] font-black text-blue-400">$95.60</span>
                     </div>
                 </div>
+            </div>
 
-                <!-- â”€â”€ Card 2: Premium SUV &mdash; AI Recommended â”€â”€ -->
-                <div class="voice-result-card voice-result-reveal p-5" style="transition-delay: 0.40s; border-color: rgba(59,130,246,0.22); background: rgba(59,130,246,0.035);">
-                    <!-- AI recommended badge -->
-                    <div class="flex items-center justify-between mb-3">
-                        <span class="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-[0.14em] uppercase text-blue-300 px-2.5 py-1 rounded-full"
-                              style="background: rgba(59,130,246,0.14); border: 1px solid rgba(59,130,246,0.3);">
-                            <svg width="9" height="9" viewBox="0 0 24 24" fill="#60a5fa" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                            AI Recommended
+            <!-- ═══ MEDIUM 1: Booking Management ═══ -->
+            <div class="feature-card section-fade lg:col-span-4" style="transition-delay: 0.15s">
+                <div class="feat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                </div>
+                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Booking Management</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed mb-4">
+                    Manage your complete booking workflow from the admin platform.
+                </p>
+                <!-- UI snippet: mini booking rows -->
+                <div class="rounded-lg overflow-hidden" style="border: 1px solid rgba(255,255,255,0.08);">
+                    <div class="flex items-center justify-between px-3 py-2 text-[10px]" style="background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06);">
+                        <span class="text-gray-400">#LS-7842</span>
+                        <span class="px-1.5 py-0.5 rounded text-[8px] font-semibold" style="background: rgba(34,197,94,0.12); color:#4ade80;">Confirmed</span>
+                    </div>
+                    <div class="flex items-center justify-between px-3 py-2 text-[10px]">
+                        <span class="text-gray-400">#LS-7841</span>
+                        <span class="px-1.5 py-0.5 rounded text-[8px] font-semibold" style="background: rgba(59,130,246,0.12); color:#60a5fa;">On The Way</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ═══ MEDIUM 2: Customer Management ═══ -->
+            <div class="feature-card section-fade lg:col-span-4" style="transition-delay: 0.2s">
+                <div class="feat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Customer Management</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed mb-4">
+                    Keep customer information and booking history organized.
+                </p>
+                <!-- UI snippet: mini customer rows -->
+                <div class="space-y-1.5">
+                    <div class="flex items-center gap-2 rounded-lg px-2.5 py-1.5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                        <span class="w-5 h-5 rounded-full flex-shrink-0" style="background: linear-gradient(135deg, #3B82F6, #1d4ed8);"></span>
+                        <span class="text-[10.5px] text-gray-300 flex-1">John Smith</span>
+                        <span class="text-[9px] text-gray-500">12 rides</span>
+                    </div>
+                    <div class="flex items-center gap-2 rounded-lg px-2.5 py-1.5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                        <span class="w-5 h-5 rounded-full flex-shrink-0" style="background: linear-gradient(135deg, #60a5fa, #3B82F6);"></span>
+                        <span class="text-[10.5px] text-gray-300 flex-1">Sarah Johnson</span>
+                        <span class="text-[9px] text-gray-500">8 rides</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ═══ MEDIUM 3: Driver Management ═══ -->
+            <div class="feature-card section-fade lg:col-span-4" style="transition-delay: 0.25s">
+                <div class="feat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 01-2-2v-2l2-5h14l2 5v2a2 2 0 01-2 2M5 17v2a1 1 0 001 1h1a1 1 0 001-1v-2m8 0v2a1 1 0 001 1h1a1 1 0 001-1v-2"/></svg>
+                </div>
+                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Driver Management</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed mb-4">
+                    Manage drivers, assignments and trip information.
+                </p>
+                <!-- UI snippet: mini driver rows -->
+                <div class="space-y-1.5">
+                    <div class="flex items-center gap-2 rounded-lg px-2.5 py-1.5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                        <span class="relative flex-shrink-0 w-5 h-5 rounded-full" style="background: rgba(255,255,255,0.08);">
+                            <span class="absolute -right-0.5 -bottom-0.5 w-2 h-2 rounded-full" style="background:#22c55e; box-shadow: 0 0 0 1.5px #0A0A0A;"></span>
                         </span>
-                        <span class="text-[10.5px] text-gray-600">Best match for your route</span>
+                        <span class="text-[10.5px] text-gray-300 flex-1">Michael Brown</span>
+                        <span class="text-[9px] text-gray-500">On Trip</span>
                     </div>
-                    <div class="flex items-start gap-4">
-                        <!-- SUV icon -->
-                        <div class="flex-shrink-0 w-[58px] h-[58px] rounded-xl flex items-center justify-center"
-                             style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.26);">
-                            <svg width="38" height="24" viewBox="0 0 76 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 30 L11 11 Q18 6 38 6 Q58 6 65 11 L70 30 Q73 30 75 33 L75 38 Q75 40 73 40 L63 40 Q61 40 61 38 L61 34 L15 34 L15 38 Q15 40 13 40 L3 40 Q1 40 1 38 L1 33 Q3 30 6 30Z" fill="rgba(59,130,246,0.16)" stroke="#3B82F6" stroke-width="1.2"/>
-                                <circle cx="19" cy="36" r="5" fill="#0d1f3c" stroke="#3B82F6" stroke-width="1.3"/>
-                                <circle cx="19" cy="36" r="2" fill="#3B82F6"/>
-                                <circle cx="57" cy="36" r="5" fill="#0d1f3c" stroke="#3B82F6" stroke-width="1.3"/>
-                                <circle cx="57" cy="36" r="2" fill="#3B82F6"/>
-                                <path d="M14 25 L19 8 Q24 6 38 6 Q52 6 57 8 L62 25 Z" fill="rgba(59,130,246,0.10)" stroke="rgba(59,130,246,0.32)" stroke-width="0.9"/>
-                                <line x1="38" y1="6" x2="38" y2="25" stroke="rgba(59,130,246,0.22)" stroke-width="0.7"/>
-                                <line x1="24" y1="6" x2="24" y2="25" stroke="rgba(59,130,246,0.15)" stroke-width="0.6"/>
-                                <line x1="52" y1="6" x2="52" y2="25" stroke="rgba(59,130,246,0.15)" stroke-width="0.6"/>
-                            </svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-start justify-between gap-2 mb-1.5">
-                                <div>
-                                    <h4 class="text-white font-bold text-[14.5px] leading-snug">Premium SUV</h4>
-                                    <p class="text-gray-500 text-[12px] mt-0.5">Cadillac Escalade Â· Up to 6 pax</p>
-                                </div>
-                                <div class="text-right flex-shrink-0">
-                                    <div class="text-white font-black text-[22px] leading-none">$120</div>
-                                    <div class="text-gray-600 text-[10px] mt-0.5">flat rate</div>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3 mb-3 flex-wrap">
-                                <span class="flex items-center gap-1.5 text-[11.5px] text-gray-400">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                    ETA 7 min
-                                </span>
-                                <span class="w-px h-3 bg-white/10"></span>
-                                <span class="flex items-center gap-1.5 text-[11.5px] text-gray-400">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                    1.2 mi away
-                                </span>
-                                <span class="w-px h-3 bg-white/10"></span>
-                                <div class="flex items-center gap-1">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                                    <span class="text-[11.5px] text-gray-400">4.8</span>
-                                </div>
-                            </div>
-                            <button class="btn-cta w-full flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-4 py-2.5 rounded-xl border border-blue-500/30">
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                <span>Book Now Â· $120</span>
-                            </button>
-                        </div>
+                    <div class="flex items-center gap-2 rounded-lg px-2.5 py-1.5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                        <span class="relative flex-shrink-0 w-5 h-5 rounded-full" style="background: rgba(255,255,255,0.08);">
+                            <span class="absolute -right-0.5 -bottom-0.5 w-2 h-2 rounded-full" style="background:#3B82F6; box-shadow: 0 0 0 1.5px #0A0A0A;"></span>
+                        </span>
+                        <span class="text-[10.5px] text-gray-300 flex-1">David Wilson</span>
+                        <span class="text-[9px] text-gray-500">Active</span>
                     </div>
                 </div>
-
-                <!-- â”€â”€ Card 3: Luxury Van â”€â”€ -->
-                <div class="voice-result-card voice-result-reveal p-5" style="transition-delay: 0.55s">
-                    <div class="flex items-start gap-4">
-                        <!-- Van icon -->
-                        <div class="flex-shrink-0 w-[58px] h-[58px] rounded-xl flex items-center justify-center"
-                             style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.14);">
-                            <svg width="40" height="22" viewBox="0 0 80 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 28 L4 14 Q4 9 9 9 L50 9 L66 16 L76 24 L76 32 Q76 36 72 36 L64 36 Q62 37 60 36 L18 36 Q16 37 14 36 L8 36 Q4 36 4 32 Z" fill="rgba(59,130,246,0.11)" stroke="#3B82F6" stroke-width="1.2"/>
-                                <circle cx="17" cy="34" r="5" fill="#0d1f3c" stroke="#3B82F6" stroke-width="1.3"/>
-                                <circle cx="17" cy="34" r="2" fill="#3B82F6"/>
-                                <circle cx="63" cy="34" r="5" fill="#0d1f3c" stroke="#3B82F6" stroke-width="1.3"/>
-                                <circle cx="63" cy="34" r="2" fill="#3B82F6"/>
-                                <!-- Windows -->
-                                <rect x="8"  y="11" width="18" height="10" rx="2" fill="rgba(59,130,246,0.13)" stroke="rgba(59,130,246,0.28)" stroke-width="0.8"/>
-                                <rect x="29" y="11" width="16" height="10" rx="2" fill="rgba(59,130,246,0.13)" stroke="rgba(59,130,246,0.28)" stroke-width="0.8"/>
-                                <!-- Cab window -->
-                                <path d="M50 9 L66 16 L76 24 L76 23 L50 9Z" fill="rgba(59,130,246,0.09)" stroke="rgba(59,130,246,0.25)" stroke-width="0.7"/>
-                            </svg>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <div class="flex items-start justify-between gap-2 mb-1.5">
-                                <div>
-                                    <h4 class="text-white font-bold text-[14.5px] leading-snug">Luxury Van</h4>
-                                    <p class="text-gray-500 text-[12px] mt-0.5">Mercedes Sprinter Â· Up to 8 pax</p>
-                                </div>
-                                <div class="text-right flex-shrink-0">
-                                    <div class="text-white font-black text-[22px] leading-none">$165</div>
-                                    <div class="text-gray-600 text-[10px] mt-0.5">flat rate</div>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3 mb-3 flex-wrap">
-                                <span class="flex items-center gap-1.5 text-[11.5px] text-gray-400">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                    ETA 12 min
-                                </span>
-                                <span class="w-px h-3 bg-white/10"></span>
-                                <span class="flex items-center gap-1.5 text-[11.5px] text-gray-400">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                    2.1 mi away
-                                </span>
-                                <span class="w-px h-3 bg-white/10"></span>
-                                <div class="flex items-center gap-1">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="#f59e0b" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                                    <span class="text-[11.5px] text-gray-400">4.7</span>
-                                </div>
-                            </div>
-                            <button class="w-full flex items-center justify-center gap-2 text-gray-300 hover:text-white text-[13px] font-semibold px-4 py-2.5 rounded-xl border transition-all duration-200 hover:border-white/25 hover:bg-white/[0.04]"
-                                    style="border-color: rgba(255,255,255,0.1);">
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                <span>Book Now Â· $165</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Trust footer -->
-                <div class="flex items-center justify-center gap-2 mt-1 voice-result-reveal" style="transition-delay: 0.66s">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    <span class="text-[12px] text-gray-600">Secure payment Â· Free cancellation Â· Confirmed in seconds</span>
-                </div>
-
-            </div><!-- /RIGHT -->
-
-        </div><!-- /2-col grid -->
-
-    </div><!-- /container -->
-</section>
-<!-- â•â•â•â• END VOICE SEARCH â•â•â•â• -->
-
-
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     SECTION 4 &mdash; AI LIMO CALL AGENT
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section id="ai-call-agent" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
-
-    <!-- Grid overlay -->
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 56px 56px;"></div>
-
-    <!-- Top ambient glow -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[420px] pointer-events-none"
-         style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.09) 0%, transparent 65%);"></div>
-
-    <!-- Bottom ambient glow -->
-    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[320px] pointer-events-none"
-         style="background: radial-gradient(ellipse at 50% 100%, rgba(59,130,246,0.06) 0%, transparent 65%);"></div>
-
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-
-        <!-- Section header -->
-        <div class="text-center mb-16 lg:mb-22 ai-call-fade">
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full mb-7"
-                 style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
-                <div class="w-1.5 h-1.5 rounded-full bg-blue-400" style="box-shadow: 0 0 6px #3B82F6; animation: ai-pulse 1.4s ease-in-out infinite;"></div>
-                <span class="text-[11px] font-bold text-blue-400 tracking-[0.16em] uppercase">AI Voice Agent</span>
             </div>
-            <h2 class="text-[36px] sm:text-[48px] lg:text-[58px] font-black text-white leading-[1.06] tracking-tight mb-6">
-                Fire your dispatcher.<br class="hidden sm:block">
-                <span style="background: linear-gradient(135deg, #3B82F6 30%, #93c5fd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Your AI never sleeps.</span>
+
+            <!-- ═══ SMALL 1: Multi-Language ═══ -->
+            <div class="feature-card section-fade lg:col-span-4" style="transition-delay: 0.3s">
+                <div class="feat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20 15.3 15.3 0 010-20z"/></svg>
+                </div>
+                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Multi-Language</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed mb-4">
+                    Serve customers in multiple languages.
+                </p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">EN</span>
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">ES</span>
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">FR</span>
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">AR</span>
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">ZH</span>
+                </div>
+            </div>
+
+            <!-- ═══ SMALL 2: Multi-Currency ═══ -->
+            <div class="feature-card section-fade lg:col-span-4" style="transition-delay: 0.35s">
+                <div class="feat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M14.5 9a2.5 2.5 0 00-2.5-1.5c-1.66 0-3 .9-3 2s1.34 2 3 2 3 .9 3 2-1.34 2-3 2a2.5 2.5 0 01-2.5-1.5M12 6v1.5M12 16.5V18"/></svg>
+                </div>
+                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Multi-Currency</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed mb-4">
+                    Accept and display pricing in multiple currencies.
+                </p>
+                <div class="flex flex-wrap gap-1.5">
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">$ USD</span>
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">&euro; EUR</span>
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">&pound; GBP</span>
+                    <span class="px-2 py-1 rounded text-[9.5px] font-semibold text-blue-300" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.18);">AED</span>
+                </div>
+            </div>
+
+            <!-- ═══ SMALL 3: Mobile Responsive ═══ -->
+            <div class="feature-card section-fade lg:col-span-4" style="transition-delay: 0.4s">
+                <div class="feat-icon-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </div>
+                <h3 class="text-white text-[16px] font-bold mb-2 leading-snug">Mobile Responsive</h3>
+                <p class="text-gray-500 text-[13.5px] leading-relaxed mb-4">
+                    Give customers and staff a seamless experience across desktop, tablet and mobile.
+                </p>
+                <div class="flex items-center gap-3">
+                    <svg width="20" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
+                    <svg width="14" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/></svg>
+                    <svg width="10" height="16" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION — INDUSTRIES (Built for Transportation Businesses)
+═══════════════════════════════════════════════════════════════ -->
+<section id="industries" class="relative py-24 lg:py-32 overflow-hidden" style="background: #0A0A0A;">
+
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[340px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 100%, rgba(59,130,246,0.08) 0%, transparent 70%);"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20 section-fade">
+            <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="8" rx="2"/><path d="M5 11l1.5-5h11L19 11"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></svg>
+                <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">Industries We Serve</span>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+                Built for Transportation Businesses
             </h2>
-            <p class="text-gray-400 text-[17px] leading-relaxed max-w-2xl mx-auto">
-                Every call answered instantly &mdash; 2 AM, Christmas morning, every weekend. The AI collects trip details, quotes real-time pricing, checks availability, and confirms bookings automatically. No human delays. No missed bookings. No staff dependency. Your operation runs 24/7 on autopilot.
+            <p class="text-gray-400 text-[16.5px] leading-relaxed">
+                Whether you run a private chauffeur service or a growing transportation company, LimoSchedule gives you the technology to operate professionally.
             </p>
         </div>
 
-        <!-- 2-col layout -->
-        <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+        <!-- Industry cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
-            <!-- â”€â”€ LEFT: Step-by-step flow â”€â”€ -->
-            <div class="ai-call-left-reveal">
-                <div class="flex flex-col gap-0">
-
-                    <!-- Step 1 -->
-                    <div class="ai-step-item flex items-start gap-5 group">
-                        <div class="flex flex-col items-center flex-shrink-0">
-                            <div class="ai-step-icon w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300"
-                                 style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
-                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
-                                </svg>
-                            </div>
-                            <div class="w-px flex-1 min-h-[36px] my-2" style="background: linear-gradient(to bottom, rgba(59,130,246,0.28), rgba(59,130,246,0.05));"></div>
-                        </div>
-                        <div class="pb-6 pt-1">
-                            <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Customer Calls In</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">Your AI agent answers every call instantly &mdash; 24/7, no hold music, no waiting. Fully branded to your company.</p>
-                        </div>
+            <!-- 1. Limo Services -->
+            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.05s">
+                <img src="{{ asset('public/assets/images/industries/limo-services.jpg') }}" alt="Limo Services — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
+                <div class="absolute inset-x-0 bottom-0 p-5">
+                    <h3 class="text-white text-[16.5px] font-bold mb-1.5">Limo Services</h3>
+                    <p class="text-gray-300 text-[13px] leading-relaxed mb-3">Launch a professional branded booking experience.</p>
+                    <div class="inline-flex items-center gap-1.5 text-[12px] font-semibold text-blue-400">
+                        Learn more
+                        <svg class="transition-transform duration-300 group-hover:translate-x-1" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </div>
-
-                    <!-- Step 2 -->
-                    <div class="ai-step-item flex items-start gap-5 group">
-                        <div class="flex flex-col items-center flex-shrink-0">
-                            <div class="ai-step-icon w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300"
-                                 style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
-                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
-                                </svg>
-                            </div>
-                            <div class="w-px flex-1 min-h-[36px] my-2" style="background: linear-gradient(to bottom, rgba(59,130,246,0.28), rgba(59,130,246,0.05));"></div>
-                        </div>
-                        <div class="pb-6 pt-1">
-                            <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Collects Trip Details</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">Pickup location, drop-off address, date, time, and passenger count &mdash; gathered naturally through conversation.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="ai-step-item flex items-start gap-5 group">
-                        <div class="flex flex-col items-center flex-shrink-0">
-                            <div class="ai-step-icon w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300"
-                                 style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
-                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
-                                </svg>
-                            </div>
-                            <div class="w-px flex-1 min-h-[36px] my-2" style="background: linear-gradient(to bottom, rgba(59,130,246,0.28), rgba(59,130,246,0.05));"></div>
-                        </div>
-                        <div class="pb-6 pt-1">
-                            <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Instant Pricing Quote</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">AI calculates the exact fare and presents clear pricing options &mdash; sedan, SUV, stretch, or whatever your fleet offers.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 4 -->
-                    <div class="ai-step-item flex items-start gap-5 group">
-                        <div class="flex flex-col items-center flex-shrink-0">
-                            <div class="ai-step-icon w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300"
-                                 style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
-                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-                                </svg>
-                            </div>
-                            <div class="w-px flex-1 min-h-[36px] my-2" style="background: linear-gradient(to bottom, rgba(59,130,246,0.28), rgba(59,130,246,0.05));"></div>
-                        </div>
-                        <div class="pb-6 pt-1">
-                            <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Live Availability Check</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">Connects to your fleet in real-time and confirms exactly which vehicles are free for the requested date and time.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 5 &mdash; final, no connector line -->
-                    <div class="ai-step-item flex items-start gap-5 group">
-                        <div class="flex-shrink-0">
-                            <div class="ai-step-icon w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300"
-                                 style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.32); box-shadow: 0 0 22px rgba(59,130,246,0.18);">
-                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="20 6 9 17 4 12"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="pt-1">
-                            <h3 class="text-white font-bold text-[17px] mb-1.5 group-hover:text-blue-300 transition-colors duration-200">Booking Confirmed Automatically</h3>
-                            <p class="text-gray-500 text-[14px] leading-relaxed">Booking created, driver notified, SMS confirmation sent to the customer &mdash; all before the call ends.</p>
-                        </div>
-                    </div>
-
                 </div>
-            </div><!-- /LEFT -->
+            </a>
 
-            <!-- â”€â”€ RIGHT: Call UI mockup â”€â”€ -->
-            <div class="ai-call-right-reveal">
-                <div class="relative">
-
-                    <!-- Outer glow halo -->
-                    <div class="absolute -inset-6 rounded-3xl pointer-events-none" style="background: radial-gradient(ellipse at 50% 50%, rgba(59,130,246,0.12) 0%, transparent 68%);"></div>
-
-                    <!-- Call card -->
-                    <div class="ai-call-card relative rounded-2xl overflow-hidden"
-                         style="background: rgba(12,12,20,0.98); border: 1px solid rgba(255,255,255,0.07); box-shadow: 0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(59,130,246,0.05);">
-
-                        <!-- â”€â”€ Call header â”€â”€ -->
-                        <div class="px-5 py-4 flex items-center justify-between"
-                             style="background: rgba(59,130,246,0.04); border-bottom: 1px solid rgba(255,255,255,0.06);">
-                            <div class="flex items-center gap-3">
-                                <!-- AI avatar -->
-                                <div class="relative w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
-                                     style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); box-shadow: 0 0 18px rgba(59,130,246,0.45);">
-                                    <svg width="17" height="17" viewBox="0 0 24 24" fill="white" stroke="none">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/>
-                                    </svg>
-                                    <!-- Live dot -->
-                                    <div class="absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full bg-green-400 border-2 border-[#0c0c14]"
-                                         style="animation: ai-pulse 1.4s ease-in-out infinite;"></div>
-                                </div>
-                                <div>
-                                    <div class="text-white font-bold text-[14px] leading-none mb-1">LimoAgent AI</div>
-                                    <div class="flex items-center gap-1.5">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-green-400"
-                                             style="animation: ai-pulse 1.4s ease-in-out infinite 0.2s;"></div>
-                                        <span class="text-green-400 text-[10.5px] font-bold tracking-widest uppercase">Live Call</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Duration + end-call -->
-                            <div class="flex items-center gap-3">
-                                <div id="ai-call-duration" class="text-[12.5px] font-mono text-gray-400 tabular-nums">0:42</div>
-                                <button class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-200"
-                                        style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.22);"
-                                        onmouseenter="this.style.background='rgba(239,68,68,0.2)'"
-                                        onmouseleave="this.style.background='rgba(239,68,68,0.1)'"
-                                        title="End call">
-                                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.3" stroke-linecap="round">
-                                        <path d="M10.68 13.31a16 16 0 003.41 2.6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91"/>
-                                        <line x1="23" y1="1" x2="1" y2="23"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- â”€â”€ Conversation â”€â”€ -->
-                        <div id="ai-chat-area" class="px-5 py-5 flex flex-col gap-3.5 overflow-hidden" style="min-height: 360px;">
-
-                            <!-- AI: greeting -->
-                            <div class="flex items-end gap-2.5 ai-bubble-reveal" style="transition-delay: 0.05s">
-                                <div class="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center"
-                                     style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
-                                </div>
-                                <div class="max-w-[80%]">
-                                    <div class="px-4 py-3 rounded-2xl rounded-bl-sm text-[13px] text-white leading-relaxed"
-                                         style="background: rgba(59,130,246,0.09); border: 1px solid rgba(59,130,246,0.16);">
-                                        Hello! Thank you for calling. I'm your AI booking agent. Where would you like to be picked up today?
-                                    </div>
-                                    <div class="text-[10px] text-gray-600 mt-1 ml-1">LimoAgent Â· just now</div>
-                                </div>
-                            </div>
-
-                            <!-- Customer: pickup request -->
-                            <div class="flex items-end justify-end gap-2.5 ai-bubble-reveal" style="transition-delay: 0.22s">
-                                <div class="max-w-[74%]">
-                                    <div class="px-4 py-3 rounded-2xl rounded-br-sm text-[13px] text-white leading-relaxed"
-                                         style="background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.09);">
-                                        JFK Airport, Terminal 4. I need a ride to Midtown Manhattan tonight at 9 PM.
-                                    </div>
-                                    <div class="text-[10px] text-gray-600 mt-1 mr-1 text-right">Customer</div>
-                                </div>
-                                <div class="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center"
-                                     style="background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.09);">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                                </div>
-                            </div>
-
-                            <!-- AI: pricing + availability -->
-                            <div class="flex items-end gap-2.5 ai-bubble-reveal" style="transition-delay: 0.44s">
-                                <div class="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center"
-                                     style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
-                                </div>
-                                <div class="max-w-[84%]">
-                                    <div class="px-4 py-3 rounded-2xl rounded-bl-sm text-[13px] text-white leading-relaxed"
-                                         style="background: rgba(59,130,246,0.09); border: 1px solid rgba(59,130,246,0.16);">
-                                        Got it! Checking availability for 9 PM JFK &rarr; Midtown&hellip;
-                                        <!-- Pricing card inside bubble -->
-                                        <div class="mt-3 rounded-xl overflow-hidden"
-                                             style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.16);">
-                                            <div class="px-3.5 py-2.5 flex items-center justify-between hover:bg-white/5 transition-colors cursor-default">
-                                                <div>
-                                                    <div class="text-white font-semibold text-[12.5px]">Executive Sedan</div>
-                                                    <div class="text-gray-500 text-[10.5px] mt-0.5">Mercedes E-Class Â· up to 3 pax</div>
-                                                </div>
-                                                <div class="text-white font-black text-[18px]">$95</div>
-                                            </div>
-                                            <div class="h-px" style="background: rgba(255,255,255,0.05);"></div>
-                                            <div class="px-3.5 py-2.5 flex items-center justify-between hover:bg-white/5 transition-colors cursor-default">
-                                                <div>
-                                                    <div class="text-white font-semibold text-[12.5px]">Luxury SUV</div>
-                                                    <div class="text-gray-500 text-[10.5px] mt-0.5">Cadillac Escalade Â· up to 6 pax</div>
-                                                </div>
-                                                <div class="text-white font-black text-[18px]">$135</div>
-                                            </div>
-                                            <div class="h-px" style="background: rgba(255,255,255,0.05);"></div>
-                                            <div class="px-3.5 py-2 flex items-center gap-1.5">
-                                                <div class="w-1.5 h-1.5 rounded-full bg-green-400"
-                                                     style="animation: ai-pulse 1.2s ease-in-out infinite;"></div>
-                                                <span class="text-green-400 text-[10.5px] font-semibold">3 vehicles available tonight</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-[10px] text-gray-600 mt-1 ml-1">LimoAgent Â· just now</div>
-                                </div>
-                            </div>
-
-                            <!-- Customer: confirm -->
-                            <div class="flex items-end justify-end gap-2.5 ai-bubble-reveal" style="transition-delay: 0.62s">
-                                <div class="max-w-[68%]">
-                                    <div class="px-4 py-3 rounded-2xl rounded-br-sm text-[13px] text-white leading-relaxed"
-                                         style="background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.09);">
-                                        The sedan sounds perfect. Go ahead and book it.
-                                    </div>
-                                </div>
-                                <div class="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center"
-                                     style="background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.09);">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                                </div>
-                            </div>
-
-                            <!-- AI: booking confirmed -->
-                            <div class="flex items-end gap-2.5 ai-bubble-reveal" style="transition-delay: 0.82s">
-                                <div class="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center"
-                                     style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">
-                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
-                                </div>
-                                <div class="max-w-[84%]">
-                                    <div class="px-4 py-3.5 rounded-2xl rounded-bl-sm text-[13px] text-white leading-relaxed"
-                                         style="background: rgba(59,130,246,0.09); border: 1px solid rgba(59,130,246,0.16);">
-                                        <div class="flex items-center gap-2 mb-2.5">
-                                            <div class="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0"
-                                                 style="box-shadow: 0 0 10px rgba(34,197,94,0.4);">
-                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                            </div>
-                                            <span class="text-green-400 font-bold text-[13px] tracking-wide">Booking Confirmed!</span>
-                                        </div>
-                                        Executive Sedan booked for tonight at 9:00 PM. Your driver will arrive 5 minutes early. Confirmation SMS sent to your phone!
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div><!-- /conversation -->
-
-                        <!-- â”€â”€ Waveform + controls â”€â”€ -->
-                        <div class="px-5 pb-5 pt-3" style="border-top: 1px solid rgba(255,255,255,0.05);">
-
-                            <!-- Active call waveform -->
-                            <div id="ai-call-waveform" class="flex items-center justify-center gap-[3.5px] mb-4" style="height: 30px;"></div>
-
-                            <!-- Control buttons -->
-                            <div class="flex items-center justify-center gap-4">
-
-                                <!-- Mute button -->
-                                <button class="w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200"
-                                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);"
-                                        onmouseenter="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='rgba(255,255,255,0.15)'"
-                                        onmouseleave="this.style.background='rgba(255,255,255,0.05)'; this.style.borderColor='rgba(255,255,255,0.09)'"
-                                        title="Mute">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/>
-                                        <path d="M19 10v2a7 7 0 01-14 0v-2"/>
-                                        <line x1="12" y1="19" x2="12" y2="23"/>
-                                        <line x1="8" y1="23" x2="16" y2="23"/>
-                                    </svg>
-                                </button>
-
-                                <!-- End call (large red) -->
-                                <button id="ai-end-call-btn"
-                                        class="w-[58px] h-[58px] rounded-full flex items-center justify-center transition-all duration-200"
-                                        style="background: linear-gradient(135deg, #dc2626, #ef4444); box-shadow: 0 0 24px rgba(239,68,68,0.35);"
-                                        onmouseenter="this.style.boxShadow='0 0 36px rgba(239,68,68,0.55)'; this.style.transform='scale(1.07)'"
-                                        onmouseleave="this.style.boxShadow='0 0 24px rgba(239,68,68,0.35)'; this.style.transform='scale(1)'"
-                                        title="End call">
-                                    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M10.68 13.31a16 16 0 003.41 2.6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91"/>
-                                        <line x1="23" y1="1" x2="1" y2="23"/>
-                                    </svg>
-                                </button>
-
-                                <!-- Speaker button -->
-                                <button class="w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200"
-                                        style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09);"
-                                        onmouseenter="this.style.background='rgba(255,255,255,0.1)'; this.style.borderColor='rgba(255,255,255,0.15)'"
-                                        onmouseleave="this.style.background='rgba(255,255,255,0.05)'; this.style.borderColor='rgba(255,255,255,0.09)'"
-                                        title="Speaker">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                                        <path d="M19.07 4.93a10 10 0 010 14.14"/>
-                                        <path d="M15.54 8.46a5 5 0 010 7.07"/>
-                                    </svg>
-                                </button>
-
-                            </div>
-                        </div>
-
-                    </div><!-- /call card -->
+            <!-- 2. Black Car Services -->
+            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.1s">
+                <img src="{{ asset('public/assets/images/industries/black-car-services.jpg') }}" alt="Black Car Services — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
+                <div class="absolute inset-x-0 bottom-0 p-5">
+                    <h3 class="text-white text-[16.5px] font-bold mb-1.5">Black Car Services</h3>
+                    <p class="text-gray-300 text-[13px] leading-relaxed mb-3">Give premium clients a seamless reservation experience.</p>
+                    <div class="inline-flex items-center gap-1.5 text-[12px] font-semibold text-blue-400">
+                        Learn more
+                        <svg class="transition-transform duration-300 group-hover:translate-x-1" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
                 </div>
-            </div><!-- /RIGHT -->
+            </a>
 
-        </div><!-- /2-col grid -->
+            <!-- 3. Taxi Companies -->
+            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.15s">
+                <img src="{{ asset('public/assets/images/industries/taxi-companies.jpg') }}" alt="Taxi Companies — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
+                <div class="absolute inset-x-0 bottom-0 p-5">
+                    <h3 class="text-white text-[16.5px] font-bold mb-1.5">Taxi Companies</h3>
+                    <p class="text-gray-300 text-[13px] leading-relaxed mb-3">Manage bookings and daily operations from one platform.</p>
+                    <div class="inline-flex items-center gap-1.5 text-[12px] font-semibold text-blue-400">
+                        Learn more
+                        <svg class="transition-transform duration-300 group-hover:translate-x-1" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </a>
 
-        <!-- WhatsApp nudge below AI agent section -->
-        <div class="mt-16 text-center section-fade" style="transition-delay: 0.3s">
-            <p class="text-gray-500 text-[14px] mb-4">Want to see the AI agent in action? Watch a live demo on WhatsApp.</p>
-            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
-               class="wa-hero-cta inline-flex items-center gap-2.5 font-bold px-7 py-3.5 rounded-xl text-[14px] text-white"
-               style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
-                Get Instant Demo on WhatsApp
+            <!-- 4. Chauffeur Services -->
+            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.2s">
+                <img src="{{ asset('public/assets/images/industries/chauffeur-services.jpg') }}" alt="Chauffeur Services — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
+                <div class="absolute inset-x-0 bottom-0 p-5">
+                    <h3 class="text-white text-[16.5px] font-bold mb-1.5">Chauffeur Services</h3>
+                    <p class="text-gray-300 text-[13px] leading-relaxed mb-3">Connect customers, drivers and bookings in one system.</p>
+                    <div class="inline-flex items-center gap-1.5 text-[12px] font-semibold text-blue-400">
+                        Learn more
+                        <svg class="transition-transform duration-300 group-hover:translate-x-1" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 5. Airport Transfer Services -->
+            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.25s">
+                <img src="{{ asset('public/assets/images/industries/airport-transfer.jpg') }}" alt="Airport Transfer Services — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
+                <div class="absolute inset-x-0 bottom-0 p-5">
+                    <h3 class="text-white text-[16.5px] font-bold mb-1.5">Airport Transfer Services</h3>
+                    <p class="text-gray-300 text-[13px] leading-relaxed mb-3">Deliver reliable, on-time airport pickups and drop-offs.</p>
+                    <div class="inline-flex items-center gap-1.5 text-[12px] font-semibold text-blue-400">
+                        Learn more
+                        <svg class="transition-transform duration-300 group-hover:translate-x-1" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 6. Corporate Travel -->
+            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.3s">
+                <img src="{{ asset('public/assets/images/industries/corporate-travel.jpg') }}" alt="Corporate Travel — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
+                <div class="absolute inset-x-0 bottom-0 p-5">
+                    <h3 class="text-white text-[16.5px] font-bold mb-1.5">Corporate Travel</h3>
+                    <p class="text-gray-300 text-[13px] leading-relaxed mb-3">Give business clients a professional, always-on booking experience.</p>
+                    <div class="inline-flex items-center gap-1.5 text-[12px] font-semibold text-blue-400">
+                        Learn more
+                        <svg class="transition-transform duration-300 group-hover:translate-x-1" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION — COMPARISON (Why Keep Renting Your Software?)
+═══════════════════════════════════════════════════════════════ -->
+<section id="comparison" class="relative py-24 lg:py-32 overflow-hidden" style="background: #060606;">
+
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.025) 1px, transparent 1px); background-size: 56px 56px;"></div>
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.08) 0%, transparent 68%);"></div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20 section-fade">
+            <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">Own It, Don&rsquo;t Rent It</span>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+                Why Keep Renting Your Software?
+            </h2>
+            <p class="text-gray-400 text-[16.5px] leading-relaxed">
+                Get a complete white-label platform designed for your business &mdash; without building everything from scratch.
+            </p>
+        </div>
+
+        <!-- Comparison columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-14 lg:mb-16">
+
+            <!-- LEFT: Typical SaaS Platform (muted) -->
+            <div class="section-fade rounded-2xl p-7 sm:p-8" style="background: rgba(255,255,255,0.018); border: 1px solid rgba(255,255,255,0.07);">
+                <div class="flex items-center gap-2.5 mb-6">
+                    <span class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="3" y1="9" x2="21" y2="9"/></svg>
+                    </span>
+                    <h3 class="text-gray-400 text-[17px] font-bold">Typical SaaS Platform</h3>
+                </div>
+                <ul class="space-y-3.5">
+                    <li class="flex items-center gap-3">
+                        <span class="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.05);"><span class="block w-1.5 h-px" style="background:#6b7280;"></span></span>
+                        <span class="text-gray-500 text-[14px]">Monthly subscription</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.05);"><span class="block w-1.5 h-px" style="background:#6b7280;"></span></span>
+                        <span class="text-gray-500 text-[14px]">Recurring software costs</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.05);"><span class="block w-1.5 h-px" style="background:#6b7280;"></span></span>
+                        <span class="text-gray-500 text-[14px]">Generic platform experience</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.05);"><span class="block w-1.5 h-px" style="background:#6b7280;"></span></span>
+                        <span class="text-gray-500 text-[14px]">Limited branding flexibility</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.05);"><span class="block w-1.5 h-px" style="background:#6b7280;"></span></span>
+                        <span class="text-gray-500 text-[14px]">Ongoing dependency</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-4 h-4 rounded-full flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.05);"><span class="block w-1.5 h-px" style="background:#6b7280;"></span></span>
+                        <span class="text-gray-500 text-[14px]">Pay more as your business grows</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- RIGHT: LimoSchedule (highlighted) -->
+            <div class="section-fade relative rounded-2xl p-7 sm:p-9 lg:-mt-4 lg:-mb-4" style="background: #F8FAFC; box-shadow: 0 30px 80px rgba(59,130,246,0.22), 0 0 0 1px rgba(59,130,246,0.25); transition-delay: 0.1s">
+                <!-- Recommended ribbon -->
+                <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full text-[10.5px] font-bold tracking-[0.1em] uppercase text-white" style="background: linear-gradient(135deg, #3B82F6, #1d4ed8); box-shadow: 0 8px 24px rgba(59,130,246,0.4);">
+                    Complete Solution
+                </span>
+                <div class="flex items-center gap-2.5 mb-6 mt-1.5">
+                    <span class="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #3B82F6, #1d4ed8);">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+                    </span>
+                    <h3 class="text-[#0A0A0A] text-[17px] font-black">LimoSchedule</h3>
+                </div>
+                <ul class="space-y-3.5">
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:#3B82F6;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span class="text-[#1a1f2b] text-[14px] font-semibold">One-time payment</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:#3B82F6;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span class="text-[#1a1f2b] text-[14px] font-semibold">Complete white-label platform</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:#3B82F6;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span class="text-[#1a1f2b] text-[14px] font-semibold">Your brand, your business</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:#3B82F6;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span class="text-[#1a1f2b] text-[14px] font-semibold">Website + Customer + Driver + Admin</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:#3B82F6;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span class="text-[#1a1f2b] text-[14px] font-semibold">Complete setup</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:#3B82F6;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+                        <span class="text-[#1a1f2b] text-[14px] font-semibold">Ready to launch quickly</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom message + CTA -->
+        <div class="text-center section-fade" style="transition-delay: 0.15s">
+            <h3 class="text-white text-2xl sm:text-[28px] font-black tracking-tight leading-tight mb-7 max-w-2xl mx-auto">
+                Stop paying for access. Start with a complete business solution.
+            </h3>
+            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%27s%20complete%20white-label%20platform.%20Can%20I%20speak%20with%20a%20limo%20software%20expert%3F" target="_blank" rel="noopener"
+               class="btn-cta inline-flex items-center justify-center gap-2.5 bg-[#3B82F6] text-white font-bold px-8 py-4 rounded-xl text-[15px] border border-blue-500/30">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
+                <span>Talk to a Limo Software Expert</span>
             </a>
         </div>
 
-    </div><!-- /container -->
+    </div>
 </section>
-<!-- â•â•â•â• END AI CALL AGENT â•â•â•â• -->
 
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION — FAST LAUNCH (Ready in 30 Minutes — conversion moment)
+═══════════════════════════════════════════════════════════════ -->
+<section id="fast-launch" class="relative py-24 lg:py-32 overflow-hidden" style="background: #030303;">
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     SECTION &mdash; ADMIN PANEL SHOWCASE
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section id="admin-panel" class="relative py-28 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 56px 56px;"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.12) 0%, transparent 70%);"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[400px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 100%, rgba(59,130,246,0.08) 0%, transparent 70%);"></div>
 
-    <!-- Background -->
-    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59,130,246,0.055) 0%, transparent 65%);"></div>
-    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse 50% 35% at 15% 85%, rgba(59,130,246,0.04) 0%, transparent 60%);"></div>
+    <div class="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
 
-    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative">
-
-        <!-- â”€â”€ Section Header â”€â”€ -->
-        <div class="text-center mb-14">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] font-semibold tracking-[0.1em] uppercase text-blue-400 mb-6"
-                 style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2);">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
-                </svg>
-                Enterprise Admin Panel
-            </div>
-            <h2 class="text-4xl sm:text-5xl font-bold text-white tracking-tight leading-tight mb-5">
-                Complete Control.<br class="hidden sm:block"> Zero Limitations.
+        <!-- Header -->
+        <div class="section-fade mb-14 lg:mb-16">
+            <h2 class="text-white text-[34px] sm:text-[46px] lg:text-[54px] font-black tracking-tight leading-[1.06] mb-5">
+                Your Booking Platform.<br>Ready in 30 Minutes.
             </h2>
-            <p class="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                A fully-featured operations dashboard &mdash; manage bookings, fleet, pricing,
-                analytics and your entire team from one powerful interface. Fully yours, fully branded.
+            <p class="text-gray-400 text-[16.5px] sm:text-[17.5px] leading-relaxed max-w-xl mx-auto">
+                Skip months of development. We configure the complete platform so you can get your business online fast.
             </p>
         </div>
 
-        <!-- â”€â”€ Tab Navigation â”€â”€ -->
-        <div class="flex items-center justify-center mb-8 overflow-x-auto pb-1">
-            <div class="flex items-center gap-1 p-1 rounded-xl flex-shrink-0"
-                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
-                <button class="admin-tab active-tab" data-panel="ap-dashboard">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-                    Dashboard
-                </button>
-                <button class="admin-tab" data-panel="ap-bookings">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
-                    Bookings
-                </button>
-                <button class="admin-tab" data-panel="ap-fleet">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/><circle cx="16" cy="19" r="2"/><circle cx="9" cy="19" r="2"/><path d="M21 19h2v-6l-3-4H7v9M7 19h2"/></svg>
-                    Fleet
-                </button>
-                <button class="admin-tab" data-panel="ap-pricing">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-                    Pricing
-                </button>
-                <button class="admin-tab" data-panel="ap-analytics">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                    Analytics
-                </button>
-                <button class="admin-tab" data-panel="ap-team">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-                    Team
-                </button>
+        <!-- Main visual: Brand -> Configure -> Launch -> LIVE -->
+        <div class="section-fade relative rounded-3xl overflow-hidden text-left mb-16 lg:mb-20" style="transition-delay: 0.05s; background: rgba(255,255,255,0.025); border: 1px solid rgba(59,130,246,0.18); box-shadow: 0 40px 120px rgba(0,0,0,0.6), 0 0 90px rgba(59,130,246,0.08);">
+
+            <!-- top bar -->
+            <div class="flex items-center justify-between px-6 py-4" style="border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full" style="background: rgba(239,68,68,0.5);"></span>
+                    <span class="w-2 h-2 rounded-full" style="background: rgba(234,179,8,0.5);"></span>
+                    <span class="w-2 h-2 rounded-full" style="background: rgba(34,197,94,0.5);"></span>
+                    <span class="ml-3 text-[11px] font-semibold text-gray-500 uppercase tracking-wide">System Configuration</span>
+                </div>
+                <span class="inline-flex items-center gap-1.5 text-[10px] font-bold text-gray-500 uppercase tracking-wide">
+                    <span class="relative flex h-1.5 w-1.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-blue-400"></span>
+                    </span>
+                    Configuring
+                </span>
+            </div>
+
+            <div class="p-7 sm:p-10 lg:p-12">
+
+                <!-- Flow: Brand -> Configure -> Launch -> LIVE -->
+                <div class="relative flex items-center justify-between max-w-2xl mx-auto mb-10 sm:mb-12">
+                    <div class="absolute left-0 right-0 top-6 sm:top-7 h-[2px]" style="background: linear-gradient(90deg, rgba(59,130,246,0.85) 0%, rgba(59,130,246,0.85) 68%, rgba(34,197,94,0.85) 100%);"></div>
+
+                    <div class="relative z-10 flex flex-col items-center gap-2.5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center" style="background:#0A0A0A; border:2px solid #3B82F6; box-shadow: 0 0 22px rgba(59,130,246,0.4);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        </div>
+                        <span class="text-[10.5px] sm:text-[11px] font-bold text-white">Brand</span>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center gap-2.5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center" style="background:#0A0A0A; border:2px solid #3B82F6; box-shadow: 0 0 22px rgba(59,130,246,0.4);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                        </div>
+                        <span class="text-[10.5px] sm:text-[11px] font-bold text-white">Configure</span>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center gap-2.5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center" style="background:#0A0A0A; border:2px solid #3B82F6; box-shadow: 0 0 22px rgba(59,130,246,0.4);">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>
+                        </div>
+                        <span class="text-[10.5px] sm:text-[11px] font-bold text-white">Launch</span>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center gap-2.5">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center" style="background:#22c55e; box-shadow: 0 0 30px rgba(34,197,94,0.55);">
+                            <span class="relative flex h-2.5 w-2.5">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+                            </span>
+                        </div>
+                        <span class="text-[10.5px] sm:text-[11px] font-bold" style="color:#4ade80;">LIVE</span>
+                    </div>
+                </div>
+
+                <!-- Config chips row -->
+                <div class="flex flex-wrap items-center justify-center gap-2.5">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium text-gray-300" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        Logo &amp; Branding
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium text-gray-300" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+                        Booking Settings
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium text-gray-300" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                        Currency
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium text-gray-300" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20 15.3 15.3 0 010-20z"/></svg>
+                        Language
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium text-gray-300" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8" width="17" height="12" rx="1.5"/><path d="M8.5 8V6a1.5 1.5 0 011.5-1.5h4A1.5 1.5 0 0115.5 6v2"/></svg>
+                        Business Configuration
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium text-gray-300" style="background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.09);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg>
+                        Website Preview
+                    </span>
+                </div>
+
             </div>
         </div>
 
-        <!-- â”€â”€ Browser Frame Wrapper (horizontal scroll on mobile) â”€â”€ -->
-        <div class="overflow-x-auto rounded-2xl" style="box-shadow: 0 40px 100px rgba(0,0,0,0.55), 0 0 0 1px rgba(59,130,246,0.06);">
-        <div class="min-w-[900px] rounded-2xl overflow-hidden" style="background: rgba(12,12,12,0.95); border: 1px solid rgba(255,255,255,0.08); box-shadow: inset 0 1px 0 rgba(255,255,255,0.06);">
-
-            <!-- Browser Chrome Bar -->
-            <div class="flex items-center gap-3 px-4 py-3" style="background: rgba(255,255,255,0.025); border-bottom: 1px solid rgba(255,255,255,0.06);">
-                <div class="flex items-center gap-1.5 flex-shrink-0">
-                    <div class="w-3 h-3 rounded-full" style="background: #FF5F57;"></div>
-                    <div class="w-3 h-3 rounded-full" style="background: #FFBD2E;"></div>
-                    <div class="w-3 h-3 rounded-full" style="background: #28C840;"></div>
-                </div>
-                <div class="flex-1 flex justify-center">
-                    <div class="flex items-center gap-2 px-4 py-1.5 rounded-lg text-[11.5px] text-gray-500 max-w-xs w-full"
-                         style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        yourbrand.com/admin/dashboard
-                    </div>
-                </div>
-                <div class="flex-shrink-0">
-                    <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-semibold text-green-400"
-                         style="background: rgba(34,197,94,0.08); border: 1px solid rgba(34,197,94,0.15);">
-                        <div class="w-1.5 h-1.5 rounded-full bg-green-400 admin-live-dot"></div>
-                        Live
-                    </div>
-                </div>
+        <!-- Large highlight -->
+        <div class="section-fade mb-10" style="transition-delay: 0.1s">
+            <div class="text-[64px] sm:text-[90px] lg:text-[104px] font-black tracking-tight leading-none mb-3" style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 45%, #3B82F6 90%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 40px rgba(59,130,246,0.35));">
+                30 MINUTES
             </div>
-
-            <!-- Admin App: Sidebar + Main -->
-            <div class="flex" style="height: 580px;">
-
-                <!-- â”€â”€â”€ Sidebar â”€â”€â”€ -->
-                <div class="flex-shrink-0 flex flex-col" style="width: 196px; background: rgba(7,7,7,0.98); border-right: 1px solid rgba(255,255,255,0.05);">
-
-                    <!-- Brand mark -->
-                    <div class="flex items-center gap-2.5 px-4 py-4" style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                        </div>
-                        <div>
-                            <div class="text-[12px] font-bold text-white leading-none">LimoAdmin</div>
-                            <div class="text-[10px] text-gray-500 mt-0.5">v2.4 Enterprise</div>
-                        </div>
-                    </div>
-
-                    <!-- Nav -->
-                    <nav class="flex-1 px-2.5 py-3 flex flex-col gap-0.5">
-                        <div class="sidebar-nav-item active-nav" data-nav="ap-dashboard">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-                            <span>Dashboard</span>
-                        </div>
-                        <div class="sidebar-nav-item" data-nav="ap-bookings">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
-                            <span>Bookings</span>
-                            <span class="ml-auto text-[10px] px-1.5 py-0.5 rounded-full font-bold" style="background: rgba(59,130,246,0.2); color: #60a5fa;">12</span>
-                        </div>
-                        <div class="sidebar-nav-item" data-nav="ap-fleet">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/><circle cx="16" cy="19" r="2"/><circle cx="9" cy="19" r="2"/><path d="M21 19h2v-6l-3-4H7v9M7 19h2"/></svg>
-                            <span>Fleet</span>
-                        </div>
-                        <div class="sidebar-nav-item" data-nav="ap-pricing">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-                            <span>Pricing</span>
-                        </div>
-                        <div class="sidebar-nav-item" data-nav="ap-analytics">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                            <span>Analytics</span>
-                        </div>
-                        <div class="sidebar-nav-item" data-nav="ap-team">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-                            <span>Team</span>
-                        </div>
-                        <div class="mt-2 pt-2" style="border-top: 1px solid rgba(255,255,255,0.05);">
-                            <div class="sidebar-nav-item">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M22 12h-2M19.07 19.07l-1.41-1.41M12 22v-2M4.93 19.07l1.41-1.41M2 12h2M4.93 4.93l1.41 1.41M12 2v2"/></svg>
-                                <span>Settings</span>
-                            </div>
-                        </div>
-                    </nav>
-
-                    <!-- User -->
-                    <div class="px-3 py-3 flex items-center gap-2.5" style="border-top: 1px solid rgba(255,255,255,0.05);">
-                        <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-[11px] font-bold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">A</div>
-                        <div class="min-w-0">
-                            <div class="text-[11.5px] font-semibold text-white truncate">Admin</div>
-                            <div class="text-[10px] text-gray-500 truncate">Super Admin</div>
-                        </div>
-                    </div>
-                </div><!-- /sidebar -->
-
-                <!-- â”€â”€â”€ Main Content â”€â”€â”€ -->
-                <div class="flex-1 flex flex-col overflow-hidden" style="background: rgba(10,10,12,0.99);">
-
-                    <!-- Top Bar -->
-                    <div class="flex items-center justify-between px-5 py-3 flex-shrink-0" style="border-bottom: 1px solid rgba(255,255,255,0.05);">
-                        <div class="ap-page-title text-[14px] font-bold text-white">Overview</div>
-                        <div class="flex items-center gap-3">
-                            <div class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-[11.5px] text-gray-500"
-                                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
-                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                                Search...
-                            </div>
-                            <div class="relative w-7 h-7 rounded-lg flex items-center justify-center"
-                                 style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
-                                <div class="absolute top-1 right-1 w-2 h-2 rounded-full bg-blue-500" style="border: 1.5px solid rgba(10,10,12,0.99);"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Scrollable Panel Area -->
-                    <div class="flex-1 overflow-y-auto admin-content-scroll">
-
-                        <!-- â•â•â•â• DASHBOARD PANEL â•â•â•â• -->
-                        <div id="ap-dashboard" class="admin-panel p-5 space-y-4">
-
-                            <!-- KPI Cards -->
-                            <div class="grid grid-cols-4 gap-3">
-
-                                <div class="admin-kpi-card p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-center justify-between mb-3">
-                                        <div class="text-[11px] text-gray-500 font-medium">Total Revenue</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.1);">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-                                        </div>
-                                    </div>
-                                    <div class="text-[20px] font-bold text-white mb-1.5">$48,290</div>
-                                    <div class="flex items-center gap-1 text-[10.5px] text-green-400">
-                                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
-                                        +12.4% this month
-                                    </div>
-                                </div>
-
-                                <div class="admin-kpi-card p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-center justify-between mb-3">
-                                        <div class="text-[11px] text-gray-500 font-medium">Active Bookings</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.1);">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>
-                                        </div>
-                                    </div>
-                                    <div class="text-[20px] font-bold text-white mb-1.5">247</div>
-                                    <div class="flex items-center gap-1 text-[10.5px] text-green-400">
-                                        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>
-                                        +8 since yesterday
-                                    </div>
-                                </div>
-
-                                <div class="admin-kpi-card p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-center justify-between mb-3">
-                                        <div class="text-[11px] text-gray-500 font-medium">Fleet Utilization</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.1);">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/><circle cx="16" cy="19" r="2"/><circle cx="9" cy="19" r="2"/></svg>
-                                        </div>
-                                    </div>
-                                    <div class="text-[20px] font-bold text-white mb-2">84%</div>
-                                    <div class="w-full h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);">
-                                        <div class="h-full rounded-full" style="width: 84%; background: linear-gradient(90deg, #1d4ed8, #3B82F6);"></div>
-                                    </div>
-                                </div>
-
-                                <div class="admin-kpi-card p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-center justify-between mb-3">
-                                        <div class="text-[11px] text-gray-500 font-medium">Team Online</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.1);">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg>
-                                        </div>
-                                    </div>
-                                    <div class="text-[20px] font-bold text-white mb-1.5">18 / 24</div>
-                                    <div class="flex items-center gap-1.5 text-[10.5px] text-gray-400">
-                                        <div class="w-1.5 h-1.5 rounded-full bg-green-400"></div>
-                                        6 drivers available
-                                    </div>
-                                </div>
-
-                            </div><!-- /kpi -->
-
-                            <!-- Revenue Chart + Activity Feed -->
-                            <div class="grid grid-cols-3 gap-3">
-
-                                <div class="col-span-2 p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-center justify-between mb-4">
-                                        <div>
-                                            <div class="text-[13px] font-bold text-white">Revenue Overview</div>
-                                            <div class="text-[11px] text-gray-500 mt-0.5">Last 7 months</div>
-                                        </div>
-                                        <div class="px-2.5 py-1 rounded-lg text-[11px] font-medium text-blue-400"
-                                             style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">Monthly</div>
-                                    </div>
-                                    <svg viewBox="0 0 360 90" class="w-full" style="height: 100px;" preserveAspectRatio="none">
-                                        <defs>
-                                            <linearGradient id="rev-grad" x1="0" y1="0" x2="0" y2="1">
-                                                <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.22"/>
-                                                <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
-                                            </linearGradient>
-                                        </defs>
-                                        <line x1="0" y1="22" x2="360" y2="22" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-                                        <line x1="0" y1="45" x2="360" y2="45" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-                                        <line x1="0" y1="68" x2="360" y2="68" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-                                        <path d="M0 78 L51 63 L103 70 L154 45 L206 52 L257 28 L308 18 L360 12 L360 90 L0 90Z" fill="url(#rev-grad)"/>
-                                        <path d="M0 78 L51 63 L103 70 L154 45 L206 52 L257 28 L308 18 L360 12" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <circle cx="0"   cy="78" r="3" fill="#3B82F6"/>
-                                        <circle cx="51"  cy="63" r="3" fill="#3B82F6"/>
-                                        <circle cx="103" cy="70" r="3" fill="#3B82F6"/>
-                                        <circle cx="154" cy="45" r="3" fill="#3B82F6"/>
-                                        <circle cx="206" cy="52" r="3" fill="#3B82F6"/>
-                                        <circle cx="257" cy="28" r="3" fill="#3B82F6"/>
-                                        <circle cx="308" cy="18" r="3" fill="#3B82F6"/>
-                                        <circle cx="360" cy="12" r="3" fill="#3B82F6"/>
-                                    </svg>
-                                    <div class="flex justify-between mt-1">
-                                        <span class="text-[9.5px] text-gray-600">Nov</span>
-                                        <span class="text-[9.5px] text-gray-600">Dec</span>
-                                        <span class="text-[9.5px] text-gray-600">Jan</span>
-                                        <span class="text-[9.5px] text-gray-600">Feb</span>
-                                        <span class="text-[9.5px] text-gray-600">Mar</span>
-                                        <span class="text-[9.5px] text-gray-600">Apr</span>
-                                        <span class="text-[9.5px] text-gray-600">May</span>
-                                    </div>
-                                </div>
-
-                                <!-- Live Activity -->
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="text-[13px] font-bold text-white mb-3.5">Live Activity</div>
-                                    <div class="space-y-3">
-                                        <div class="flex items-start gap-2.5">
-                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.2);">
-                                                <div class="w-1.5 h-1.5 rounded-full bg-green-400"></div>
-                                            </div>
-                                            <div><div class="text-[11px] text-gray-300 leading-tight">Booking #4892 confirmed</div><div class="text-[10px] text-gray-600 mt-0.5">2 min ago</div></div>
-                                        </div>
-                                        <div class="flex items-start gap-2.5">
-                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
-                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/></svg>
-                                            </div>
-                                            <div><div class="text-[11px] text-gray-300 leading-tight">Vehicle #7 dispatched</div><div class="text-[10px] text-gray-600 mt-0.5">5 min ago</div></div>
-                                        </div>
-                                        <div class="flex items-start gap-2.5">
-                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(234,179,8,0.1); border: 1px solid rgba(234,179,8,0.2);">
-                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#EAB308" stroke-width="2.5" stroke-linecap="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                                            </div>
-                                            <div><div class="text-[11px] text-gray-300 leading-tight">Driver late alert #3041</div><div class="text-[10px] text-gray-600 mt-0.5">8 min ago</div></div>
-                                        </div>
-                                        <div class="flex items-start gap-2.5">
-                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.2);">
-                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-                                            </div>
-                                            <div><div class="text-[11px] text-gray-300 leading-tight">Payment received $240</div><div class="text-[10px] text-gray-600 mt-0.5">12 min ago</div></div>
-                                        </div>
-                                        <div class="flex items-start gap-2.5">
-                                            <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
-                                                <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-                                            </div>
-                                            <div><div class="text-[11px] text-gray-300 leading-tight">New driver registered</div><div class="text-[10px] text-gray-600 mt-0.5">18 min ago</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div><!-- /chart row -->
-
-                        </div><!-- /ap-dashboard -->
-
-                        <!-- â•â•â•â• BOOKINGS PANEL â•â•â•â• -->
-                        <div id="ap-bookings" class="admin-panel p-5 hidden">
-
-                            <!-- Toolbar -->
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex items-center gap-2 flex-wrap">
-                                    <div class="px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white cursor-pointer" style="background: rgba(59,130,246,0.15); border: 1px solid rgba(59,130,246,0.25);">All (247)</div>
-                                    <div class="px-3 py-1.5 rounded-lg text-[11.5px] text-gray-400 cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Pending (12)</div>
-                                    <div class="px-3 py-1.5 rounded-lg text-[11.5px] text-gray-400 cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Active (38)</div>
-                                    <div class="px-3 py-1.5 rounded-lg text-[11.5px] text-gray-400 cursor-pointer" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Done (197)</div>
-                                </div>
-                                <button class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white flex-shrink-0" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); border: 1px solid rgba(59,130,246,0.5);">
-                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                                    New Booking
-                                </button>
-                            </div>
-
-                            <!-- Table -->
-                            <div class="rounded-xl overflow-hidden" style="border: 1px solid rgba(255,255,255,0.07);">
-                                <div class="grid text-[10px] font-semibold text-gray-500 uppercase tracking-[0.08em] px-4 py-2.5" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.07);">
-                                    <div>ID</div><div>Customer</div><div>Route</div><div>Vehicle</div><div>Status</div><div>Fare</div><div></div>
-                                </div>
-                                <div class="divide-y divide-white/[0.04]">
-
-                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
-                                        <div class="text-[11px] font-mono text-gray-500">#4892</div>
-                                        <div><div class="text-[12px] font-medium text-white">James Carter</div><div class="text-[10px] text-gray-500">+1 555 234 8900</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">JFK &rarr; Manhattan Hotel</div><div class="text-[10px] text-gray-500">Today, 9:30 PM</div></div>
-                                        <div class="text-[11px] text-gray-400">Exec Sedan #04</div>
-                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Active</span></div>
-                                        <div class="text-[12px] font-semibold text-white">$145</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-                                    </div>
-
-                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
-                                        <div class="text-[11px] font-mono text-gray-500">#4891</div>
-                                        <div><div class="text-[12px] font-medium text-white">Sarah Williamson</div><div class="text-[10px] text-gray-500">+1 555 872 3100</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Midtown &rarr; LaGuardia</div><div class="text-[10px] text-gray-500">Today, 11:00 PM</div></div>
-                                        <div class="text-[11px] text-gray-400">SUV Premium #09</div>
-                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Pending</span></div>
-                                        <div class="text-[12px] font-semibold text-white">$210</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-                                    </div>
-
-                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
-                                        <div class="text-[11px] font-mono text-gray-500">#4889</div>
-                                        <div><div class="text-[12px] font-medium text-white">Michael Torres</div><div class="text-[10px] text-gray-500">+1 555 431 2200</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Newark EWR &rarr; Downtown</div><div class="text-[10px] text-gray-500">Tomorrow, 7:00 AM</div></div>
-                                        <div class="text-[11px] text-gray-400">Stretch Limo #02</div>
-                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">Confirmed</span></div>
-                                        <div class="text-[12px] font-semibold text-white">$380</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-                                    </div>
-
-                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
-                                        <div class="text-[11px] font-mono text-gray-500">#4888</div>
-                                        <div><div class="text-[12px] font-medium text-white">Emily Chen</div><div class="text-[10px] text-gray-500">+1 555 128 9900</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Chelsea &rarr; JFK Airport</div><div class="text-[10px] text-gray-500">Today, 6:45 PM</div></div>
-                                        <div class="text-[11px] text-gray-400">Exec Sedan #07</div>
-                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-gray-400" style="background: rgba(255,255,255,0.06);">Completed</span></div>
-                                        <div class="text-[12px] font-semibold text-white">$175</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-                                    </div>
-
-                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
-                                        <div class="text-[11px] font-mono text-gray-500">#4885</div>
-                                        <div><div class="text-[12px] font-medium text-white">David Osei</div><div class="text-[10px] text-gray-500">+1 555 667 4400</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Upper East Side &rarr; Boston</div><div class="text-[10px] text-gray-500">Tomorrow, 9:00 AM</div></div>
-                                        <div class="text-[11px] text-gray-400">Van Premium #11</div>
-                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Pending</span></div>
-                                        <div class="text-[12px] font-semibold text-white">$520</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-                                    </div>
-
-                                    <div class="grid items-center px-4 py-2.5 hover:bg-white/[0.02] transition-colors" style="grid-template-columns: 70px 1fr 1fr 110px 78px 65px 55px;">
-                                        <div class="text-[11px] font-mono text-gray-500">#4882</div>
-                                        <div><div class="text-[12px] font-medium text-white">Priya Sharma</div><div class="text-[10px] text-gray-500">+1 555 303 7700</div></div>
-                                        <div><div class="text-[11px] text-gray-300 truncate">Wall Street &rarr; Newark EWR</div><div class="text-[10px] text-gray-500">Today, 4:15 PM</div></div>
-                                        <div class="text-[11px] text-gray-400">Exec Sedan #12</div>
-                                        <div><span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Active</span></div>
-                                        <div class="text-[12px] font-semibold text-white">$290</div>
-                                        <div class="w-6 h-6 rounded-lg flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div><!-- /ap-bookings -->
-
-                        <!-- â•â•â•â• FLEET PANEL â•â•â•â• -->
-                        <div id="ap-fleet" class="admin-panel p-5 hidden">
-
-                            <!-- Fleet Stats -->
-                            <div class="grid grid-cols-4 gap-3 mb-4">
-                                <div class="p-3 rounded-xl flex items-center gap-3" style="background: rgba(34,197,94,0.05); border: 1px solid rgba(34,197,94,0.15);">
-                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(34,197,94,0.1);"><div class="w-2 h-2 rounded-full bg-green-400"></div></div>
-                                    <div><div class="text-[17px] font-bold text-white">18</div><div class="text-[10.5px] text-green-400 font-medium">Available</div></div>
-                                </div>
-                                <div class="p-3 rounded-xl flex items-center gap-3" style="background: rgba(59,130,246,0.05); border: 1px solid rgba(59,130,246,0.15);">
-                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1);"><div class="w-2 h-2 rounded-full bg-blue-400"></div></div>
-                                    <div><div class="text-[17px] font-bold text-white">24</div><div class="text-[10.5px] text-blue-400 font-medium">On Ride</div></div>
-                                </div>
-                                <div class="p-3 rounded-xl flex items-center gap-3" style="background: rgba(234,179,8,0.05); border: 1px solid rgba(234,179,8,0.15);">
-                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(234,179,8,0.1);"><div class="w-2 h-2 rounded-full bg-yellow-400"></div></div>
-                                    <div><div class="text-[17px] font-bold text-white">3</div><div class="text-[10.5px] text-yellow-400 font-medium">Maintenance</div></div>
-                                </div>
-                                <div class="p-3 rounded-xl flex items-center gap-3" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(255,255,255,0.05);">
-                                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v3"/><circle cx="16" cy="19" r="2"/><circle cx="9" cy="19" r="2"/></svg>
-                                    </div>
-                                    <div><div class="text-[17px] font-bold text-white">45</div><div class="text-[10.5px] text-gray-400 font-medium">Total Fleet</div></div>
-                                </div>
-                            </div>
-
-                            <!-- Vehicle Cards -->
-                            <div class="grid grid-cols-3 gap-3">
-
-                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">Executive Sedan</div><div class="text-[10.5px] text-gray-500 mt-0.5">Mercedes S-Class Â· #04</div></div>
-                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Available</span>
-                                    </div>
-                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
-                                        <svg viewBox="0 0 140 48" class="w-28" fill="none"><path d="M8 36 L24 20 L46 14 L94 14 L112 22 L132 28 L132 36 Q125 43 112 43 L24 43 Q12 43 8 36Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="32" cy="43" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="108" cy="43" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M44 14 L46 26 L94 26 L96 14" stroke="rgba(59,130,246,0.3)" stroke-width="1" fill="rgba(59,130,246,0.03)"/></svg>
-                                    </div>
-                                    <div class="flex items-center justify-between text-[10.5px]">
-                                        <span class="text-gray-500">ODO: 42,180 km</span>
-                                        <span class="text-gray-500">Service in 8 days</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.12);">
-                                    <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">SUV Premium</div><div class="text-[10.5px] text-gray-500 mt-0.5">Cadillac Escalade Â· #09</div></div>
-                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">On Ride</span>
-                                    </div>
-                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
-                                        <svg viewBox="0 0 150 52" class="w-32" fill="none"><path d="M6 38 L22 18 L50 12 L100 12 L118 20 L144 28 L144 38 Q136 46 120 46 L22 46 Q12 46 6 38Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="34" cy="46" r="9" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="116" cy="46" r="9" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M48 12 L50 26 L100 26 L102 12" stroke="rgba(59,130,246,0.35)" stroke-width="1" fill="rgba(59,130,246,0.04)"/></svg>
-                                    </div>
-                                    <div class="flex items-center justify-between text-[10.5px]">
-                                        <span class="text-gray-500">ODO: 28,450 km</span>
-                                        <span class="text-blue-400/70">En route Â· ETA 14 min</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(234,179,8,0.12);">
-                                    <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">Stretch Limousine</div><div class="text-[10.5px] text-gray-500 mt-0.5">Lincoln Continental Â· #02</div></div>
-                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-yellow-400" style="background: rgba(234,179,8,0.1);">Maintenance</span>
-                                    </div>
-                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
-                                        <svg viewBox="0 0 190 48" class="w-full max-w-[140px]" fill="none"><path d="M5 36 L20 22 L40 14 L150 14 L170 22 L185 28 L185 36 Q178 44 165 44 L20 44 Q10 44 5 36Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="30" cy="44" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="158" cy="44" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M38 14 L40 26 L150 26 L152 14" stroke="rgba(59,130,246,0.3)" stroke-width="1" fill="rgba(59,130,246,0.03)"/></svg>
-                                    </div>
-                                    <div class="flex items-center justify-between text-[10.5px]">
-                                        <span class="text-yellow-600/80">Brake service needed</span>
-                                        <span class="text-gray-500">ODO: 71,200 km</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">Luxury Van</div><div class="text-[10.5px] text-gray-500 mt-0.5">Mercedes Sprinter Â· #11</div></div>
-                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-green-400" style="background: rgba(34,197,94,0.1);">Available</span>
-                                    </div>
-                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
-                                        <svg viewBox="0 0 155 50" class="w-32" fill="none"><path d="M8 36 L22 16 L52 10 L108 10 L125 18 L147 28 L147 36 Q140 44 125 44 L22 44 Q12 44 8 36Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="34" cy="44" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="120" cy="44" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M50 10 L52 22 L108 22 L110 10" stroke="rgba(59,130,246,0.3)" stroke-width="1" fill="rgba(59,130,246,0.03)"/></svg>
-                                    </div>
-                                    <div class="flex items-center justify-between text-[10.5px]">
-                                        <span class="text-gray-500">ODO: 18,930 km</span>
-                                        <span class="text-gray-500">Service in 30 days</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-3.5 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.12);">
-                                    <div class="flex items-start justify-between mb-3">
-                                        <div><div class="text-[12.5px] font-bold text-white">Executive Sedan</div><div class="text-[10.5px] text-gray-500 mt-0.5">BMW 7 Series Â· #07</div></div>
-                                        <span class="px-2 py-0.5 rounded-full text-[10px] font-bold text-blue-400" style="background: rgba(59,130,246,0.1);">On Ride</span>
-                                    </div>
-                                    <div class="h-12 rounded-lg mb-3 flex items-center justify-center" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.05);">
-                                        <svg viewBox="0 0 140 48" class="w-28" fill="none"><path d="M8 36 L24 20 L46 14 L94 14 L112 22 L132 28 L132 36 Q125 43 112 43 L24 43 Q12 43 8 36Z" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="rgba(255,255,255,0.035)"/><circle cx="32" cy="43" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="108" cy="43" r="8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/><path d="M44 14 L46 26 L94 26 L96 14" stroke="rgba(59,130,246,0.35)" stroke-width="1" fill="rgba(59,130,246,0.04)"/></svg>
-                                    </div>
-                                    <div class="flex items-center justify-between text-[10.5px]">
-                                        <span class="text-gray-500">ODO: 55,640 km</span>
-                                        <span class="text-blue-400/70">En route Â· ETA 7 min</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-3.5 rounded-xl flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.03); border: 1px dashed rgba(59,130,246,0.18); min-height: 140px;">
-                                    <div class="text-center">
-                                        <div class="w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-2" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                                        </div>
-                                        <div class="text-[11.5px] font-medium text-blue-400">Add Vehicle</div>
-                                        <div class="text-[10px] text-gray-600 mt-0.5">40 more in fleet</div>
-                                    </div>
-                                </div>
-
-                            </div><!-- /vehicle grid -->
-
-                        </div><!-- /ap-fleet -->
-
-                        <!-- â•â•â•â• PRICING PANEL â•â•â•â• -->
-                        <div id="ap-pricing" class="admin-panel p-5 hidden">
-
-                            <div class="flex items-center justify-between mb-4">
-                                <div>
-                                    <div class="text-[14px] font-bold text-white">Pricing Configuration</div>
-                                    <div class="text-[11.5px] text-gray-500 mt-0.5">Base rates, per-mile fares, and surge multipliers</div>
-                                </div>
-                                <button class="px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); border: 1px solid rgba(59,130,246,0.5);">Save Changes</button>
-                            </div>
-
-                            <div class="rounded-xl overflow-hidden mb-4" style="border: 1px solid rgba(255,255,255,0.07);">
-                                <div class="grid text-[10px] font-semibold text-gray-500 uppercase tracking-[0.08em] px-5 py-3" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px; background: rgba(255,255,255,0.03); border-bottom: 1px solid rgba(255,255,255,0.07);">
-                                    <div>Service Type</div><div>Base Fare</div><div>Per Mile</div><div>Min Fare</div><div>Wait Time</div><div>Surge</div>
-                                </div>
-                                <div class="divide-y divide-white/[0.04]">
-
-                                    <div class="grid items-center px-5 py-3.5 hover:bg-white/[0.015] transition-colors" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px;">
-                                        <div class="flex items-center gap-2.5">
-                                            <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
-                                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8"/><path d="M5 5l14 14"/></svg>
-                                            </div>
-                                            <div><div class="text-[12px] font-semibold text-white">Airport Transfer</div><div class="text-[10.5px] text-gray-500">All major airports</div></div>
-                                        </div>
-                                        <div class="text-[12px] text-white font-mono">$35.00</div><div class="text-[12px] text-white font-mono">$3.20</div><div class="text-[12px] text-white font-mono">$75.00</div><div class="text-[12px] text-white font-mono">$0.50/min</div>
-                                        <div class="w-9 h-5 rounded-full flex items-center px-0.5 cursor-pointer" style="background: #3B82F6;"><div class="w-4 h-4 rounded-full bg-white ml-auto shadow-sm"></div></div>
-                                    </div>
-
-                                    <div class="grid items-center px-5 py-3.5 hover:bg-white/[0.015] transition-colors" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px;">
-                                        <div class="flex items-center gap-2.5">
-                                            <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
-                                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                                            </div>
-                                            <div><div class="text-[12px] font-semibold text-white">City Transfer</div><div class="text-[10.5px] text-gray-500">Point-to-point urban</div></div>
-                                        </div>
-                                        <div class="text-[12px] text-white font-mono">$20.00</div><div class="text-[12px] text-white font-mono">$2.80</div><div class="text-[12px] text-white font-mono">$40.00</div><div class="text-[12px] text-white font-mono">$0.40/min</div>
-                                        <div class="w-9 h-5 rounded-full flex items-center px-0.5 cursor-pointer" style="background: #3B82F6;"><div class="w-4 h-4 rounded-full bg-white ml-auto shadow-sm"></div></div>
-                                    </div>
-
-                                    <div class="grid items-center px-5 py-3.5 hover:bg-white/[0.015] transition-colors" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px;">
-                                        <div class="flex items-center gap-2.5">
-                                            <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
-                                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                            </div>
-                                            <div><div class="text-[12px] font-semibold text-white">Hourly Charter</div><div class="text-[10.5px] text-gray-500">Billed per hour</div></div>
-                                        </div>
-                                        <div class="text-[12px] text-white font-mono">$90.00</div><div class="text-[12px] text-gray-500 font-mono">N/A</div><div class="text-[12px] text-white font-mono">$90.00</div><div class="text-[12px] text-gray-500 font-mono">Included</div>
-                                        <div class="w-9 h-5 rounded-full flex items-center px-0.5 cursor-pointer" style="background: rgba(255,255,255,0.1);"><div class="w-4 h-4 rounded-full bg-white/40 shadow-sm"></div></div>
-                                    </div>
-
-                                    <div class="grid items-center px-5 py-3.5 hover:bg-white/[0.015] transition-colors" style="grid-template-columns: 1fr 95px 95px 95px 95px 75px;">
-                                        <div class="flex items-center gap-2.5">
-                                            <div class="w-7 h-7 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
-                                                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6l9-3 9 3M3 18l9 3 9-3"/></svg>
-                                            </div>
-                                            <div><div class="text-[12px] font-semibold text-white">Long Distance</div><div class="text-[10.5px] text-gray-500">Interstate / 50+ miles</div></div>
-                                        </div>
-                                        <div class="text-[12px] text-white font-mono">$50.00</div><div class="text-[12px] text-white font-mono">$2.40</div><div class="text-[12px] text-white font-mono">$200.00</div><div class="text-[12px] text-white font-mono">$0.35/min</div>
-                                        <div class="w-9 h-5 rounded-full flex items-center px-0.5 cursor-pointer" style="background: #3B82F6;"><div class="w-4 h-4 rounded-full bg-white ml-auto shadow-sm"></div></div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- Surge Rules -->
-                            <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                <div class="text-[12.5px] font-bold text-white mb-3">Dynamic Surge Multipliers</div>
-                                <div class="grid grid-cols-3 gap-3">
-                                    <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
-                                        <div class="text-[10.5px] text-gray-500 mb-1.5">Peak Hours (6&ndash;9AM, 5&ndash;8PM)</div>
-                                        <div class="text-[18px] font-bold text-blue-400">1.5Ã—</div>
-                                    </div>
-                                    <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
-                                        <div class="text-[10.5px] text-gray-500 mb-1.5">High Demand (&gt;85% fleet)</div>
-                                        <div class="text-[18px] font-bold text-yellow-400">2.0Ã—</div>
-                                    </div>
-                                    <div class="p-3 rounded-lg" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
-                                        <div class="text-[10.5px] text-gray-500 mb-1.5">Late Night (11PM&ndash;4AM)</div>
-                                        <div class="text-[18px] font-bold text-purple-400">1.25Ã—</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div><!-- /ap-pricing -->
-
-                        <!-- â•â•â•â• ANALYTICS PANEL â•â•â•â• -->
-                        <div id="ap-analytics" class="admin-panel p-5 hidden">
-
-                            <div class="grid grid-cols-3 gap-3 mb-4">
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="text-[11px] text-gray-500 mb-2">Monthly Revenue</div>
-                                    <div class="text-[22px] font-bold text-white">$48,290</div>
-                                    <div class="flex items-center gap-1 mt-1.5 text-[10.5px] text-green-400"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>+12.4% vs last month</div>
-                                </div>
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="text-[11px] text-gray-500 mb-2">Avg. Booking Value</div>
-                                    <div class="text-[22px] font-bold text-white">$195.60</div>
-                                    <div class="flex items-center gap-1 mt-1.5 text-[10.5px] text-green-400"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>+$18.40 vs last month</div>
-                                </div>
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="text-[11px] text-gray-500 mb-2">Repeat Customer Rate</div>
-                                    <div class="text-[22px] font-bold text-white">68%</div>
-                                    <div class="flex items-center gap-1 mt-1.5 text-[10.5px] text-green-400"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="18 15 12 9 6 15"/></svg>+5% vs last month</div>
-                                </div>
-                            </div>
-
-                            <div class="grid grid-cols-3 gap-3">
-
-                                <div class="col-span-2 p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="text-[13px] font-bold text-white mb-4">Weekly Bookings</div>
-                                    <div class="flex items-end gap-3" style="height: 120px;">
-                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 55%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Mon</div></div>
-                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 72%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Tue</div></div>
-                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 67%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Wed</div></div>
-                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 88%; background: linear-gradient(180deg, #60a5fa, #3B82F6);"></div><div class="text-[9.5px] text-gray-600">Thu</div></div>
-                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 96%; background: linear-gradient(180deg, #93c5fd, #3B82F6); box-shadow: 0 0 12px rgba(59,130,246,0.3);"></div><div class="text-[9.5px] text-blue-400">Fri</div></div>
-                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 82%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Sat</div></div>
-                                        <div class="flex flex-col items-center gap-1 flex-1"><div class="w-full rounded-t-md" style="height: 58%; background: linear-gradient(180deg, #3B82F6, rgba(59,130,246,0.4));"></div><div class="text-[9.5px] text-gray-600">Sun</div></div>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="text-[13px] font-bold text-white mb-4">Booking Sources</div>
-                                    <div class="space-y-3.5">
-                                        <div>
-                                            <div class="flex items-center justify-between mb-1.5"><span class="text-[11.5px] text-gray-400">Website</span><span class="text-[11.5px] text-white font-semibold">42%</span></div>
-                                            <div class="h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);"><div class="h-full rounded-full bg-blue-500" style="width: 42%;"></div></div>
-                                        </div>
-                                        <div>
-                                            <div class="flex items-center justify-between mb-1.5"><span class="text-[11.5px] text-gray-400">Mobile App</span><span class="text-[11.5px] text-white font-semibold">35%</span></div>
-                                            <div class="h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);"><div class="h-full rounded-full" style="width: 35%; background: #6366f1;"></div></div>
-                                        </div>
-                                        <div>
-                                            <div class="flex items-center justify-between mb-1.5"><span class="text-[11.5px] text-gray-400">AI Phone Agent</span><span class="text-[11.5px] text-white font-semibold">15%</span></div>
-                                            <div class="h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);"><div class="h-full rounded-full" style="width: 15%; background: #22d3ee;"></div></div>
-                                        </div>
-                                        <div>
-                                            <div class="flex items-center justify-between mb-1.5"><span class="text-[11.5px] text-gray-400">Manual / Phone</span><span class="text-[11.5px] text-white font-semibold">8%</span></div>
-                                            <div class="h-1.5 rounded-full" style="background: rgba(255,255,255,0.06);"><div class="h-full rounded-full" style="width: 8%; background: #a3e635;"></div></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div><!-- /ap-analytics -->
-
-                        <!-- â•â•â•â• TEAM PANEL â•â•â•â• -->
-                        <div id="ap-team" class="admin-panel p-5 hidden">
-
-                            <div class="flex items-center justify-between mb-4">
-                                <div>
-                                    <div class="text-[14px] font-bold text-white">Team Management</div>
-                                    <div class="text-[11.5px] text-gray-500 mt-0.5">24 members Â· Role-based access control</div>
-                                </div>
-                                <button class="flex items-center gap-2 px-3 py-1.5 rounded-lg text-[11.5px] font-semibold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); border: 1px solid rgba(59,130,246,0.5);">
-                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                                    Invite Member
-                                </button>
-                            </div>
-
-                            <div class="grid grid-cols-3 gap-3">
-
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-start gap-3 mb-3">
-                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6);">A</div>
-                                        <div class="min-w-0 flex-1">
-                                            <div class="text-[12.5px] font-bold text-white truncate">Alex Morgan</div>
-                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.2);">Super Admin</span>
-                                        </div>
-                                        <div class="w-2 h-2 rounded-full bg-green-400 flex-shrink-0 mt-1.5"></div>
-                                    </div>
-                                    <div class="text-[10.5px] text-gray-500 mb-3">alex@yourbrand.com</div>
-                                    <div class="flex flex-wrap gap-1">
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Fleet</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Pricing</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Team</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-blue-400" style="background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.15);">+4 more</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-start gap-3 mb-3">
-                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #6d28d9, #7c3aed);">S</div>
-                                        <div class="min-w-0 flex-1">
-                                            <div class="text-[12.5px] font-bold text-white truncate">Sarah Kim</div>
-                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(124,58,237,0.15); color: #a78bfa; border: 1px solid rgba(124,58,237,0.2);">Dispatcher</span>
-                                        </div>
-                                        <div class="w-2 h-2 rounded-full bg-green-400 flex-shrink-0 mt-1.5"></div>
-                                    </div>
-                                    <div class="text-[10.5px] text-gray-500 mb-3">sarah@yourbrand.com</div>
-                                    <div class="flex flex-wrap gap-1">
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Bookings</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Fleet</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Drivers</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-start gap-3 mb-3">
-                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #065f46, #059669);">R</div>
-                                        <div class="min-w-0 flex-1">
-                                            <div class="text-[12.5px] font-bold text-white truncate">Ryan Osei</div>
-                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(5,150,105,0.15); color: #34d399; border: 1px solid rgba(5,150,105,0.2);">Driver</span>
-                                        </div>
-                                        <div class="w-2 h-2 rounded-full bg-gray-600 flex-shrink-0 mt-1.5"></div>
-                                    </div>
-                                    <div class="text-[10.5px] text-gray-500 mb-3">ryan.osei@drivers.com</div>
-                                    <div class="flex flex-wrap gap-1">
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">My Rides</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Schedule</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-start gap-3 mb-3">
-                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #92400e, #d97706);">M</div>
-                                        <div class="min-w-0 flex-1">
-                                            <div class="text-[12.5px] font-bold text-white truncate">Maria Santos</div>
-                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(217,119,6,0.15); color: #fbbf24; border: 1px solid rgba(217,119,6,0.2);">Manager</span>
-                                        </div>
-                                        <div class="w-2 h-2 rounded-full bg-green-400 flex-shrink-0 mt-1.5"></div>
-                                    </div>
-                                    <div class="text-[10.5px] text-gray-500 mb-3">m.santos@yourbrand.com</div>
-                                    <div class="flex flex-wrap gap-1">
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Reports</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Analytics</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Team</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                                    <div class="flex items-start gap-3 mb-3">
-                                        <div class="w-9 h-9 rounded-xl flex-shrink-0 flex items-center justify-center text-[13px] font-bold text-white" style="background: linear-gradient(135deg, #1e1b4b, #4338ca);">J</div>
-                                        <div class="min-w-0 flex-1">
-                                            <div class="text-[12.5px] font-bold text-white truncate">Jordan Lee</div>
-                                            <span class="inline-block px-1.5 py-0.5 rounded mt-0.5 text-[9.5px] font-bold uppercase tracking-wide" style="background: rgba(67,56,202,0.15); color: #818cf8; border: 1px solid rgba(67,56,202,0.2);">Dispatcher</span>
-                                        </div>
-                                        <div class="w-2 h-2 rounded-full bg-yellow-400 flex-shrink-0 mt-1.5"></div>
-                                    </div>
-                                    <div class="text-[10.5px] text-gray-500 mb-3">j.lee@yourbrand.com</div>
-                                    <div class="flex flex-wrap gap-1">
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Bookings</span>
-                                        <span class="px-1.5 py-0.5 rounded text-[9.5px] text-gray-400" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07);">Fleet</span>
-                                    </div>
-                                </div>
-
-                                <div class="p-4 rounded-xl flex items-center justify-center cursor-pointer" style="background: rgba(59,130,246,0.03); border: 1px dashed rgba(59,130,246,0.18);">
-                                    <div class="text-center">
-                                        <div class="w-9 h-9 rounded-full flex items-center justify-center mx-auto mb-2" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);">
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-                                        </div>
-                                        <div class="text-[11.5px] font-medium text-blue-400">Invite Member</div>
-                                        <div class="text-[10px] text-gray-600 mt-0.5">+19 more in team</div>
-                                    </div>
-                                </div>
-
-                            </div><!-- /team grid -->
-
-                        </div><!-- /ap-team -->
-
-                    </div><!-- /scroll area -->
-
-                </div><!-- /main content -->
-
-            </div><!-- /admin app layout -->
-
-        </div><!-- /browser frame inner -->
-        </div><!-- /overflow wrapper -->
-
-        <!-- â”€â”€ Feature Pills â”€â”€ -->
-        <div class="flex flex-wrap items-center justify-center gap-3 mt-10">
-            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                Role-based access control
-            </div>
-            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                Real-time live updates
-            </div>
-            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Fully white-label UI
-            </div>
-            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-                Unlimited team seats
-            </div>
-            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                Export &amp; reporting
-            </div>
-            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Dynamic surge pricing
-            </div>
+            <div class="text-[13px] font-bold tracking-[0.16em] uppercase text-gray-500">Complete Setup</div>
         </div>
 
-    </div><!-- /container -->
+        <!-- CTA -->
+        <div class="section-fade" style="transition-delay: 0.15s">
+            <a href="{{ route('contact') }}"
+               class="btn-cta inline-flex items-center justify-center gap-2.5 bg-[#3B82F6] text-white font-bold px-9 py-4 rounded-xl text-[15.5px] border border-blue-500/30">
+                <span>Get My Setup Started</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+
+    </div>
 </section>
-<!-- â•â•â•â• END ADMIN PANEL â•â•â•â• -->
 
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION — PRODUCT SHOWCASE (Complete Control. Zero Limitations.)
+═══════════════════════════════════════════════════════════════ -->
+<section id="product-showcase" class="relative py-24 lg:py-32 overflow-hidden" style="background: #0A0A0A;">
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     SECTION &mdash; HOW IT WORKS
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section id="how-it-works" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.025) 1px, transparent 1px); background-size: 56px 56px;"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[400px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.09) 0%, transparent 70%);"></div>
 
-    <!-- Subtle section grid -->
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
-    <!-- Centre glow -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[400px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.055) 0%, transparent 68%);"></div>
-
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
-
-        <!-- â”€â”€ Section Header â”€â”€ -->
-        <div class="text-center max-w-2xl mx-auto mb-20 lg:mb-24 section-fade">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-5" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25); color: #3B82F6;">
-                <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
-                Quick Setup
-            </div>
-            <h2 class="text-[30px] sm:text-[38px] lg:text-[44px] font-bold leading-[1.14] tracking-tight text-white mb-5">
-                Up and running in<br>
-                <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">under 30 minutes</span>
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-14 section-fade">
+            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+                Complete Control.<br>Zero Limitations.
             </h2>
-            <p class="text-[15px] sm:text-[15.5px] text-gray-400 leading-relaxed max-w-xl mx-auto">
-                No cloud lock-in. No recurring fees. Install once on your own server and own your booking system forever.
+            <p class="text-gray-400 text-[16.5px] leading-relaxed">
+                A complete digital experience for your customers, drivers and operations team.
             </p>
         </div>
 
-        <!-- â”€â”€ Steps Grid â”€â”€ -->
-        <div class="relative">
+        <!-- Navigation tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-16 lg:mb-20 section-fade" style="transition-delay: 0.05s">
+            <button type="button" class="showcase-tab px-5 py-2.5 rounded-xl text-[13.5px] font-semibold text-gray-400" data-showcase="website" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">Booking Website</button>
+            <button type="button" class="showcase-tab px-5 py-2.5 rounded-xl text-[13.5px] font-semibold text-gray-400" data-showcase="customer" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">Customer</button>
+            <button type="button" class="showcase-tab px-5 py-2.5 rounded-xl text-[13.5px] font-semibold text-gray-400" data-showcase="driver" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">Driver</button>
+            <button type="button" class="showcase-tab showcase-tab-active px-5 py-2.5 rounded-xl text-[13.5px] font-semibold text-white" data-showcase="admin" style="background: rgba(59,130,246,0.16); border: 1px solid rgba(59,130,246,0.45);">Admin</button>
+        </div>
 
-            <!-- Desktop dashed connector line -->
-            <div class="hiw-connector-line hidden lg:block"></div>
+        <!-- Layered composition -->
+        <div class="relative section-fade" style="transition-delay: 0.1s">
+            <div class="relative max-w-3xl mx-auto py-8 sm:py-12">
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-7">
-
-                <!-- â•â•â• STEP 1 â•â•â• -->
-                <div class="hiw-step section-fade" style="transition-delay: 0.06s;">
-                    <div class="hiw-step-inner">
-
-                        <!-- Icon -->
-                        <div class="flex lg:justify-center mb-6">
-                            <div class="hiw-step-icon relative w-[80px] h-[80px] rounded-2xl flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25);">
-                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <polyline points="4 17 10 11 4 5"/>
-                                    <line x1="12" y1="19" x2="20" y2="19"/>
-                                </svg>
-                                <span class="absolute -top-2.5 -right-2.5 w-[22px] h-[22px] rounded-full flex items-center justify-center text-[10px] font-bold text-white" style="background: #3B82F6; box-shadow: 0 0 12px rgba(59,130,246,0.65);">1</span>
-                            </div>
+                <!-- ADMIN DASHBOARD — main, large -->
+                <div class="showcase-panel showcase-panel-active relative z-20 rounded-2xl overflow-hidden mx-auto" data-showcase-panel="admin"
+                     style="max-width: 620px; background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.22); box-shadow: 0 0 0 2px rgba(59,130,246,0.55), 0 30px 90px rgba(59,130,246,0.2);">
+                    <div class="flex items-center justify-between px-5 py-3.5" style="border-bottom: 1px solid rgba(255,255,255,0.07);">
+                        <div class="flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-md flex items-center justify-center" style="background: #3B82F6;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                            </span>
+                            <span class="text-white font-bold text-[13px]">Admin Dashboard</span>
                         </div>
-
-                        <!-- Text -->
-                        <div class="lg:text-center">
-                            <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 01</div>
-                            <h3 class="text-[18px] sm:text-[19px] font-bold text-white mb-3 leading-tight">Install in 30 Minutes</h3>
-                            <p class="text-[13.5px] text-gray-400 leading-relaxed mb-5">
-                                Upload the files to your server, run the web installer, and your limo booking system is live. No DevOps expertise required.
-                            </p>
-                            <div class="space-y-2.5 lg:inline-flex lg:flex-col lg:items-start">
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Works on any PHP / MySQL hosting
-                                </div>
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    One-click web installer included
-                                </div>
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Full setup documentation provided
-                                </div>
-                            </div>
+                        <div class="flex items-center gap-2.5">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 00-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+                            <span class="w-6 h-6 rounded-full" style="background: linear-gradient(135deg, #3B82F6, #1d4ed8);"></span>
                         </div>
-
                     </div>
-                </div><!-- /step 1 -->
-
-                <!-- â•â•â• STEP 2 â•â•â• -->
-                <div class="hiw-step section-fade" style="transition-delay: 0.16s;">
-                    <div class="hiw-step-inner">
-
-                        <!-- Icon -->
-                        <div class="flex lg:justify-center mb-6">
-                            <div class="hiw-step-icon relative w-[80px] h-[80px] rounded-2xl flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25);">
-                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="4" y1="21" x2="4" y2="14"/>
-                                    <line x1="4" y1="10" x2="4" y2="3"/>
-                                    <line x1="12" y1="21" x2="12" y2="12"/>
-                                    <line x1="12" y1="8" x2="12" y2="3"/>
-                                    <line x1="20" y1="21" x2="20" y2="16"/>
-                                    <line x1="20" y1="12" x2="20" y2="3"/>
-                                    <line x1="1" y1="14" x2="7" y2="14"/>
-                                    <line x1="9" y1="8" x2="15" y2="8"/>
-                                    <line x1="17" y1="16" x2="23" y2="16"/>
-                                </svg>
-                                <span class="absolute -top-2.5 -right-2.5 w-[22px] h-[22px] rounded-full flex items-center justify-center text-[10px] font-bold text-white" style="background: #3B82F6; box-shadow: 0 0 12px rgba(59,130,246,0.65);">2</span>
-                            </div>
+                    <div class="flex">
+                        <div class="hidden md:flex flex-col items-center gap-2.5 px-3 py-4 flex-shrink-0" style="border-right: 1px solid rgba(255,255,255,0.06);">
+                            <span class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.15); border:1px solid rgba(59,130,246,0.35);">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+                            </span>
+                            <span class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: rgba(255,255,255,0.03);">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
+                            </span>
+                            <span class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: rgba(255,255,255,0.03);">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 01-2-2v-2l2-5h14l2 5v2a2 2 0 01-2 2M5 17v2a1 1 0 001 1h1a1 1 0 001-1v-2m8 0v2a1 1 0 001 1h1a1 1 0 001-1v-2"/></svg>
+                            </span>
+                            <span class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: rgba(255,255,255,0.03);">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            </span>
+                            <span class="w-8 h-8 rounded-lg flex items-center justify-center" style="background: rgba(255,255,255,0.03);">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+                            </span>
                         </div>
-
-                        <!-- Text -->
-                        <div class="lg:text-center">
-                            <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 02</div>
-                            <h3 class="text-[18px] sm:text-[19px] font-bold text-white mb-3 leading-tight">Setup Branding &amp; Pricing</h3>
-                            <p class="text-[13.5px] text-gray-400 leading-relaxed mb-5">
-                                Upload your logo, set brand colors, configure vehicle classes, and define all pricing rules &mdash; straight from the admin panel.
-                            </p>
-                            <div class="space-y-2.5 lg:inline-flex lg:flex-col lg:items-start">
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Full white-label &mdash; your brand &amp; domain
+                        <div class="flex-1 p-5 min-w-0">
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-4">
+                                <div class="rounded-lg p-2.5" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[9px] text-gray-500 mb-1">Total Bookings</div>
+                                    <div class="text-[15px] font-bold text-white">1,248</div>
                                 </div>
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Custom vehicle classes &amp; fare rules
+                                <div class="rounded-lg p-2.5" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[9px] text-gray-500 mb-1">Revenue</div>
+                                    <div class="text-[15px] font-bold text-white">$24,860</div>
                                 </div>
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Dynamic surge pricing controls
+                                <div class="rounded-lg p-2.5" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[9px] text-gray-500 mb-1">Total Drivers</div>
+                                    <div class="text-[15px] font-bold text-white">156</div>
+                                </div>
+                                <div class="rounded-lg p-2.5" style="background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);">
+                                    <div class="text-[9px] text-gray-500 mb-1">Active Rides</div>
+                                    <div class="text-[15px] font-bold text-white">24</div>
                                 </div>
                             </div>
+                            <div class="rounded-lg overflow-hidden" style="border: 1px solid rgba(255,255,255,0.07);">
+                                <div class="hidden sm:grid grid-cols-[1fr_1.3fr_1fr_0.9fr_0.8fr] gap-2 px-3 py-2 text-[8.5px] font-semibold text-gray-500 uppercase tracking-wide" style="background: rgba(255,255,255,0.02); border-bottom: 1px solid rgba(255,255,255,0.06);">
+                                    <span>Booking</span><span>Customer</span><span>Vehicle</span><span>Status</span><span class="text-right">Amount</span>
+                                </div>
+                                <div class="grid grid-cols-2 sm:grid-cols-[1fr_1.3fr_1fr_0.9fr_0.8fr] gap-2 px-3 py-2 text-[10px] items-center" style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                                    <span class="text-gray-500">#LS-7842</span><span class="text-gray-300">John Smith</span><span class="text-gray-500 hidden sm:inline">S-Class</span><span class="px-1.5 py-0.5 rounded text-[8px] font-semibold inline-block w-fit" style="background: rgba(34,197,94,0.12); color:#4ade80;">Confirmed</span><span class="text-white text-right font-semibold hidden sm:inline">$120</span>
+                                </div>
+                                <div class="grid grid-cols-2 sm:grid-cols-[1fr_1.3fr_1fr_0.9fr_0.8fr] gap-2 px-3 py-2 text-[10px] items-center">
+                                    <span class="text-gray-500">#LS-7841</span><span class="text-gray-300">Sarah Johnson</span><span class="text-gray-500 hidden sm:inline">SUV</span><span class="px-1.5 py-0.5 rounded text-[8px] font-semibold inline-block w-fit" style="background: rgba(59,130,246,0.12); color:#60a5fa;">On The Way</span><span class="text-white text-right font-semibold hidden sm:inline">$95</span>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
-                </div><!-- /step 2 -->
+                </div>
 
-                <!-- â•â•â• STEP 3 â•â•â• -->
-                <div class="hiw-step section-fade" style="transition-delay: 0.26s;">
-                    <div class="hiw-step-inner">
-
-                        <!-- Icon -->
-                        <div class="flex lg:justify-center mb-6">
-                            <div class="hiw-step-icon relative w-[80px] h-[80px] rounded-2xl flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.25);">
-                                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                    <polyline points="22 4 12 14.01 9 11.01"/>
-                                </svg>
-                                <span class="absolute -top-2.5 -right-2.5 w-[22px] h-[22px] rounded-full flex items-center justify-center text-[10px] font-bold text-white" style="background: #3B82F6; box-shadow: 0 0 12px rgba(59,130,246,0.65);">3</span>
-                            </div>
-                        </div>
-
-                        <!-- Text -->
-                        <div class="lg:text-center">
-                            <div class="text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-500 mb-2">Step 03</div>
-                            <h3 class="text-[18px] sm:text-[19px] font-bold text-white mb-3 leading-tight">Start Taking Bookings</h3>
-                            <p class="text-[13.5px] text-gray-400 leading-relaxed mb-5">
-                                Customers book online, pay instantly, and receive AI confirmation calls &mdash; while you manage everything from one clean dashboard.
-                            </p>
-                            <div class="space-y-2.5 lg:inline-flex lg:flex-col lg:items-start">
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Automated booking confirmations
-                                </div>
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Driver dispatch &amp; GPS tracking
-                                </div>
-                                <div class="flex items-center gap-2.5 text-[12px] text-gray-500">
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                                    Payments, invoicing &amp; receipts
-                                </div>
-                            </div>
-                        </div>
-
+                <!-- BOOKING WEBSITE — satellite, top-left -->
+                <div class="showcase-panel showcase-panel-dim relative z-10 mt-4 sm:mt-0 sm:absolute sm:top-[-8%] sm:-left-6 w-full sm:w-[230px] rounded-xl overflow-hidden" data-showcase-panel="website" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
+                    <div class="flex items-center gap-1.5 px-3 py-2" style="border-bottom: 1px solid rgba(255,255,255,0.07);">
+                        <span class="w-1.5 h-1.5 rounded-full bg-red-400/50"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-yellow-400/50"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-green-400/50"></span>
+                        <span class="ml-1 text-[9px] text-gray-500 truncate">yourcompany.com</span>
                     </div>
-                </div><!-- /step 3 -->
+                    <div class="p-3.5">
+                        <div class="rounded-md px-2.5 py-1.5 text-[9.5px] text-gray-500 mb-1.5" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">Pickup Location</div>
+                        <div class="rounded-md px-2.5 py-1.5 text-[9.5px] text-gray-500 mb-2" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">Drop-off Location</div>
+                        <div class="w-full rounded-md text-center text-[9.5px] font-semibold text-white py-2" style="background: #3B82F6;">Get Instant Fare &rarr;</div>
+                    </div>
+                </div>
 
-            </div><!-- /grid -->
-        </div><!-- /steps -->
+                <!-- CUSTOMER PORTAL — satellite, top-right -->
+                <div class="showcase-panel showcase-panel-dim relative z-10 mt-4 sm:mt-0 sm:absolute sm:top-[-6%] sm:-right-6 w-full sm:w-[200px] rounded-xl p-3.5" data-showcase-panel="customer" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
+                    <div class="flex items-center gap-1.5 mb-2.5">
+                        <span class="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.25);">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        </span>
+                        <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-wide">Upcoming Ride</span>
+                    </div>
+                    <div class="text-[10px] text-gray-300 leading-snug mb-1">May 15 &middot; 10:30 AM</div>
+                    <div class="text-[10px] text-gray-500 leading-snug">JFK Airport &rarr; Manhattan</div>
+                    <span class="inline-block mt-2 px-2 py-0.5 rounded text-[8.5px] font-semibold" style="background: rgba(59,130,246,0.12); color:#60a5fa;">Executive Sedan</span>
+                </div>
 
-        <!-- â”€â”€ Bottom CTA â”€â”€ -->
-        <div class="mt-16 lg:mt-20 flex flex-col items-center gap-5 section-fade" style="transition-delay: 0.36s;">
-            <!-- Trust chip -->
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[12px] text-gray-400" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                No subscriptions &nbsp;Â·&nbsp; No vendor lock-in &nbsp;Â·&nbsp; Full source code ownership
-            </div>
-            <!-- Buttons -->
-            <div class="flex flex-col sm:flex-row items-center gap-3">
-                <a href="#contact" class="btn-cta inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-[14px] text-white" style="background: #3B82F6;">
-                    <span>Get LimoSchedule</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </a>
-                <a href="#features" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium text-[14px] text-gray-300 hover:text-white transition-colors duration-200" style="border: 1px solid rgba(255,255,255,0.1);">
-                    Explore Features
-                </a>
+                <!-- DRIVER PANEL — satellite, bottom -->
+                <div class="showcase-panel showcase-panel-dim relative z-10 mt-4 sm:mt-0 sm:absolute sm:bottom-[-10%] sm:left-6 w-full sm:w-[220px] rounded-xl p-3.5" data-showcase-panel="driver" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
+                    <div class="flex items-center gap-1.5 mb-2.5">
+                        <span class="w-5 h-5 rounded-md flex items-center justify-center flex-shrink-0" style="background: rgba(59,130,246,0.12); border:1px solid rgba(59,130,246,0.25);">
+                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 01-2-2v-2l2-5h14l2 5v2a2 2 0 01-2 2M5 17v2a1 1 0 001 1h1a1 1 0 001-1v-2m8 0v2a1 1 0 001 1h1a1 1 0 001-1v-2"/></svg>
+                        </span>
+                        <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-wide">Today's Trips</span>
+                    </div>
+                    <div class="text-[10px] text-gray-300 leading-snug">10:30 AM &middot; JFK &rarr; Manhattan</div>
+                    <span class="inline-block mt-1 mb-1.5 px-1.5 py-0.5 rounded text-[8px] font-semibold" style="background: rgba(34,197,94,0.12); color:#4ade80;">On The Way</span>
+                    <div class="text-[10px] text-gray-500 leading-snug">12:45 PM &middot; Manhattan &rarr; LGA</div>
+                </div>
+
             </div>
         </div>
 
-    </div><!-- /container -->
+    </div>
 </section>
-<!-- â•â•â•â• END HOW IT WORKS â•â•â•â• -->
 
+@push('scripts')
+<script>
+(function () {
+    'use strict';
+    var tabs = document.querySelectorAll('.showcase-tab');
+    var panels = document.querySelectorAll('[data-showcase-panel]');
+    if (!tabs.length || !panels.length) return;
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     SECTION &mdash; FAQ
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section id="faq" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
+    function activate(key) {
+        tabs.forEach(function (t) {
+            t.classList.toggle('showcase-tab-active', t.getAttribute('data-showcase') === key);
+        });
+        panels.forEach(function (p) {
+            var isActive = p.getAttribute('data-showcase-panel') === key;
+            p.classList.toggle('showcase-panel-active', isActive);
+            p.classList.toggle('showcase-panel-dim', !isActive);
+        });
+    }
 
-    <!-- Grid texture -->
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            activate(tab.getAttribute('data-showcase'));
+        });
+    });
+})();
+</script>
+@endpush
 
-    <!-- Center ambient glow -->
-    <div class="absolute top-1/2 left-1/2 w-[900px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.06) 0%, transparent 65%); transform: translate(-50%, -50%);"></div>
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION — PRICING (Launch Your Platform. Pay Once.)
+═══════════════════════════════════════════════════════════════ -->
+<section id="pricing" class="relative py-24 lg:py-32 overflow-hidden" style="background: #060606;">
 
-    <div class="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.025) 1px, transparent 1px); background-size: 56px 56px;"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[420px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.1) 0%, transparent 70%);"></div>
 
-        <!-- Section header -->
-        <div class="text-center mb-16 section-fade">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-semibold tracking-widest uppercase text-blue-400 mb-6" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.2); letter-spacing: 0.12em;">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                FAQ
-            </div>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight" style="letter-spacing: -0.03em;">
-                Everything you need<br class="hidden sm:block"> to know
+    <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-10 lg:mb-12 section-fade">
+            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+                Launch Your Platform. Pay Once.
             </h2>
-            <p class="text-gray-400 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
-                Clear answers to the questions every serious buyer asks before they commit.
+            <p class="text-gray-400 text-[16.5px] leading-relaxed">
+                Choose the setup that fits your transportation business and get your complete white-label platform ready to launch.
+            </p>
+        </div>
+
+        <!-- Reassurance strip -->
+        <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-16 lg:mb-20 section-fade" style="transition-delay: 0.05s">
+            <span class="inline-flex items-center gap-1.5 text-[13px] font-medium text-gray-400">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                One-Time Payment
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] font-medium text-gray-400">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                No Monthly Fees
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-[13px] font-medium text-gray-400">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                No Hidden Costs
+            </span>
+        </div>
+
+        <!-- Pricing cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+
+            <!-- FEATURED: Complete Platform License -->
+            <div class="section-fade relative rounded-2xl p-8 sm:p-10" style="transition-delay: 0.1s; background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.35); box-shadow: 0 30px 90px rgba(59,130,246,0.16), 0 0 0 1px rgba(59,130,246,0.12);">
+
+                <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[10.5px] font-bold tracking-[0.12em] uppercase text-blue-400 mb-6" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.3);">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    One-Time Payment
+                </span>
+
+                <h3 class="text-white text-[22px] font-black mb-2">Complete Platform License</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed mb-8 max-w-sm">
+                    Everything you need to launch and run your transportation business &mdash; under your own brand.
+                </p>
+
+                <div class="flex items-end gap-2.5 mb-1.5">
+                    <span class="text-[52px] sm:text-[58px] font-black text-white leading-none">$1,999</span>
+                </div>
+                <div class="text-[13px] text-gray-500 font-medium mb-8">One-time payment &middot; No subscriptions, ever</div>
+
+                <a href="{{ route('contact') }}"
+                   class="btn-cta w-full inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-bold px-7 py-4 rounded-xl text-[15px] border border-blue-500/30 mb-8">
+                    <span>Get Started Today</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+
+                <div class="pt-7" style="border-top: 1px solid rgba(255,255,255,0.08);">
+                    <div class="text-[11px] font-bold tracking-[0.1em] uppercase text-gray-500 mb-4">What&rsquo;s Included</div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-300 text-[13.5px] leading-snug">Complete white-label platform &mdash; Website + Customer + Driver + Admin</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-300 text-[13.5px] leading-snug">Full source code included</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-300 text-[13.5px] leading-snug">Self-hosted &mdash; your data, your infrastructure</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-300 text-[13.5px] leading-snug">White-label branding freedom</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-300 text-[13.5px] leading-snug">30-minute setup</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-300 text-[13.5px] leading-snug">Multi-language &amp; multi-currency support</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-300 text-[13.5px] leading-snug">Unlimited bookings, forever</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SECONDARY: Custom requirements (no fabricated price) -->
+            <div class="section-fade rounded-2xl p-8 sm:p-10" style="transition-delay: 0.15s; background: rgba(255,255,255,0.015); border: 1px solid rgba(255,255,255,0.07);">
+
+                <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[10.5px] font-bold tracking-[0.12em] uppercase text-gray-400 mb-6" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);">
+                    Custom Requirements
+                </span>
+
+                <h3 class="text-gray-300 text-[22px] font-black mb-2">Need Something Custom?</h3>
+                <p class="text-gray-500 text-[14px] leading-relaxed mb-8 max-w-sm">
+                    Multi-fleet deployments, custom integrations, or specific business requirements &mdash; let&rsquo;s talk about what your business needs.
+                </p>
+
+                <div class="text-[15px] text-gray-400 font-semibold mb-8">Let&rsquo;s discuss your requirements</div>
+
+                <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%27s%20complete%20white-label%20platform.%20Can%20I%20talk%20to%20an%20expert%20about%20my%20requirements%3F" target="_blank" rel="noopener"
+                   class="w-full inline-flex items-center justify-center gap-2 font-semibold px-7 py-4 rounded-xl text-[15px] text-white transition-all duration-200 hover:bg-white/10 mb-8"
+                   style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.18);">
+                    <span>Talk to an Expert</span>
+                </a>
+
+                <div class="pt-7" style="border-top: 1px solid rgba(255,255,255,0.07);">
+                    <div class="text-[11px] font-bold tracking-[0.1em] uppercase text-gray-600 mb-4">How It Works</div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-500 text-[13.5px] leading-snug">Tell us about your business and requirements</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-500 text-[13.5px] leading-snug">We&rsquo;ll walk you through what&rsquo;s included and how it fits</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <svg class="flex-shrink-0 mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span class="text-gray-500 text-[13.5px] leading-snug">No pressure &mdash; get clear answers before you decide</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION — QUICK FAQ (Questions Before You Launch?)
+═══════════════════════════════════════════════════════════════ -->
+<section id="quick-faq" class="relative py-24 lg:py-32 overflow-hidden" style="background: #0A0A0A;">
+
+    <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <!-- Header -->
+        <div class="text-center mb-16 lg:mb-20 section-fade">
+            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+                Questions Before You Launch?
+            </h2>
+            <p class="text-gray-400 text-[16.5px] leading-relaxed">
+                Everything you need to know before getting your LimoSchedule platform.
             </p>
         </div>
 
         <!-- Accordion -->
-        <div class="flex flex-col gap-3 section-fade" style="transition-delay: 0.1s;" id="faq-accordion">
+        <div class="flex flex-col gap-3 section-fade" style="transition-delay: 0.1s;" id="quick-faq-accordion">
 
             <!-- Q1 -->
             <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
                 <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
                     <span class="flex items-center gap-4">
                         <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">01</span>
-                        <span class="text-white font-semibold text-[15px] leading-snug">Is this a SaaS product?</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">What is included in LimoSchedule?</span>
                     </span>
                     <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -2539,7 +1411,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">No &mdash; LimoSchedule is <span class="text-white font-medium">not SaaS</span>. There are no monthly fees, no subscriptions, and no data sent to our servers. You purchase a one-time license and receive the full source code to deploy on your own infrastructure. Your data stays on your server, always.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">A complete white-label platform: a branded booking website, a Customer Portal, a Driver Panel, and a full Admin Dashboard &mdash; all included in a single one-time license.</p>
                     </div>
                 </div>
             </div>
@@ -2549,7 +1421,7 @@
                 <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
                     <span class="flex items-center gap-4">
                         <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">02</span>
-                        <span class="text-white font-semibold text-[15px] leading-snug">Can I self-host it on my own server?</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Is LimoSchedule white-label?</span>
                     </span>
                     <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -2557,7 +1429,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Absolutely. LimoSchedule is built to be self-hosted on any VPS, dedicated server, or cloud provider &mdash; AWS, DigitalOcean, Hetzner, or your own hardware. You get complete control over your environment, database, and backups. <span class="text-white font-medium">No vendor dependency whatsoever.</span></p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. LimoSchedule is fully white-label &mdash; your logo, your brand colors, your domain. There&rsquo;s no LimoSchedule branding on the platform your customers see.</p>
                     </div>
                 </div>
             </div>
@@ -2567,7 +1439,7 @@
                 <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
                     <span class="flex items-center gap-4">
                         <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">03</span>
-                        <span class="text-white font-semibold text-[15px] leading-snug">Can I white-label it for my clients?</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">How quickly can my platform be set up?</span>
                     </span>
                     <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -2575,7 +1447,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes &mdash; LimoSchedule is fully white-label ready. Replace the logo, colors, domain, and product name to match any limo or transportation brand. Agencies and developers can <span class="text-white font-medium">deploy it under their own brand</span> for multiple clients under a single license. Full white-label &amp; branding freedom included.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Most businesses are fully configured and ready to launch in as little as 30 minutes once your branding and business settings are in place.</p>
                     </div>
                 </div>
             </div>
@@ -2585,7 +1457,7 @@
                 <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
                     <span class="flex items-center gap-4">
                         <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">04</span>
-                        <span class="text-white font-semibold text-[15px] leading-snug">Is the AI Voice Agent included?</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Is this a monthly SaaS subscription?</span>
                     </span>
                     <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -2593,7 +1465,7 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. The <span class="text-white font-medium">AI Voice Call Agent</span> is built into the platform &mdash; it answers inbound calls, qualifies leads, collects booking details, and confirms reservations automatically, 24/7. You connect your own AI provider keys (OpenAI, ElevenLabs, or compatible) so you pay usage costs directly, with no markup from us.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">No. LimoSchedule is a <span class="text-white font-medium">one-time payment of $1,999</span> &mdash; there are no recurring subscription fees to use the platform.</p>
                     </div>
                 </div>
             </div>
@@ -2603,7 +1475,7 @@
                 <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
                     <span class="flex items-center gap-4">
                         <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">05</span>
-                        <span class="text-white font-semibold text-[15px] leading-snug">How fast is the installation process?</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Does it support multiple languages?</span>
                     </span>
                     <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -2611,30 +1483,153 @@
                 </button>
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
-                        <p class="text-gray-400 text-[14px] leading-relaxed">Most installs go live in <span class="text-white font-medium">under 30 minutes</span>. Upload the files, configure your <code class="text-blue-400 text-[13px] px-1.5 py-0.5 rounded" style="background: rgba(59,130,246,0.1);">.env</code>, run the installer, and you're done. The step-by-step documentation covers every major hosting environment. No developer experience required &mdash; if you can set up a WordPress site, you can install LimoSchedule.</p>
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. LimoSchedule includes multi-language support, so you can serve customers in the language they&rsquo;re most comfortable with.</p>
                     </div>
                 </div>
             </div>
 
-        </div><!-- /accordion -->
+            <!-- Q6 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">06</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Does it support multiple currencies?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. You can accept and display pricing in multiple currencies to match how your customers actually pay.</p>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Bottom nudge -->
-        <div class="mt-14 text-center section-fade" style="transition-delay: 0.22s;">
-            <p class="text-gray-500 text-[13px] mb-5">Still have questions? We respond within a few hours.</p>
-            <a href="#contact" class="btn-cta inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold text-[14px] text-white" style="background: #3B82F6;">
-                <span>Talk to the team</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
+            <!-- Q7 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">07</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Does it include a booking website?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. Your license includes a complete, branded booking website where customers can search, book and manage their rides.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">08</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Does it include customer and driver panels?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. LimoSchedule includes a dedicated Customer Portal for bookings and trip history, and a Driver Panel for assigned trips and trip details &mdash; alongside the Admin Dashboard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">09</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Can I customize my branding?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. Because LimoSchedule is white-label, you can fully customize your branding &mdash; logo, colors and domain &mdash; so the platform looks and feels like your own product.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">10</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">How does the setup process work?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">We configure your branding, business settings, currency, language and platform details for you, so your complete platform is ready to launch without you having to build anything yourself.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-    </div><!-- /container -->
+    </div>
 </section>
-<!-- â•â•â•â• END FAQ â•â•â•â• -->
+
+@push('scripts')
+<script>
+(function () {
+    'use strict';
+    var accordion = document.getElementById('quick-faq-accordion');
+    if (!accordion) { return; }
+
+    function closeItem(item) {
+        var body    = item.querySelector('.faq-body');
+        var trigger = item.querySelector('.faq-trigger');
+        var chevron = item.querySelector('.faq-chevron');
+        body.style.maxHeight = '0';
+        trigger.setAttribute('aria-expanded', 'false');
+        chevron.style.transform = 'rotate(0deg)';
+        item.style.borderColor = 'rgba(255,255,255,0.07)';
+    }
+
+    function openItem(item) {
+        var body    = item.querySelector('.faq-body');
+        var trigger = item.querySelector('.faq-trigger');
+        var chevron = item.querySelector('.faq-chevron');
+        body.style.maxHeight = body.scrollHeight + 'px';
+        trigger.setAttribute('aria-expanded', 'true');
+        chevron.style.transform = 'rotate(180deg)';
+        item.style.borderColor = 'rgba(59,130,246,0.35)';
+    }
+
+    accordion.querySelectorAll('.faq-trigger').forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+            var item   = trigger.closest('.faq-item');
+            var isOpen = trigger.getAttribute('aria-expanded') === 'true';
+
+            accordion.querySelectorAll('.faq-item').forEach(closeItem);
+
+            if (!isOpen) { openItem(item); }
+        });
+    });
+}());
+</script>
+@endpush
 
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+
+<!-- ═══════════════════════════════════════════════════════════════
      SECTION &mdash; CONTACT / LEAD GENERATION
-â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+═══════════════════════════════════════════════════════════════ -->
 <section id="contact" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
 
     <!-- Grid texture -->
@@ -2646,6 +1641,13 @@
     <!-- Right ambient glow -->
     <div class="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.04) 0%, transparent 65%); transform: translateY(-50%) translateX(35%);"></div>
 
+    <!-- Subtle luxury chauffeur vehicle watermark -->
+    <svg class="absolute bottom-[-8%] left-[-6%] w-[480px] sm:w-[600px] h-auto opacity-[0.035] pointer-events-none" viewBox="0 0 920 280" aria-hidden="true">
+        <path d="M55,215 C48,215 45,205 48,190 C55,170 80,168 120,165 C150,130 175,110 200,105 C280,95 560,95 680,100 C715,102 735,112 760,140 C785,150 810,155 830,168 C855,182 868,190 868,205 L868,215 Z" fill="#3B82F6"/>
+        <circle cx="175" cy="222" r="40" fill="#3B82F6"/>
+        <circle cx="755" cy="222" r="40" fill="#3B82F6"/>
+    </svg>
+
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
 
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-14 xl:gap-20 items-start">
@@ -2653,114 +1655,42 @@
             <!-- â•â• LEFT: Value Proposition â•â• -->
             <div class="lg:pt-3 section-fade">
 
-                <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-6" style="background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.25); color: #ef4444;">
-                    <span class="relative flex h-2 w-2 flex-shrink-0">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-                    </span>
-                    Limited Licenses Available &mdash; Act Now
+                <!-- Eyebrow -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-7" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25); color: #3B82F6;">
+                    <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+                    Ready to Launch?
                 </div>
 
                 <!-- Headline -->
-                <h2 class="text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[46px] font-bold leading-[1.12] tracking-tight text-white mb-5">
-                    Stop Losing Bookings.<br>Get the System That<br>
-                    <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Runs Itself.</span>
+                <h2 class="text-[32px] sm:text-[38px] lg:text-[42px] font-bold leading-[1.18] tracking-tight text-white mb-6 max-w-[480px]">
+                    Launch Your Limo Business With a
+                    <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Complete Booking Platform.</span>
                 </h2>
 
-                <p class="text-[15px] text-gray-400 leading-relaxed mb-6 max-w-[420px]">
-                    Cheaper than hiring a dispatcher. Cheaper than building custom software. Cheaper than losing one more month of bookings to manual chaos.
+                <p class="text-[15px] text-gray-400 leading-relaxed mb-9 max-w-[420px]">
+                    Get a complete white-label platform for limo, black car, taxi and chauffeur businesses &mdash; fully configured and ready to launch.
                 </p>
 
-                <!-- WhatsApp contact option -->
-                <div class="mb-6 p-4 rounded-xl" style="background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2);">
-                    <div class="flex items-center gap-3 mb-3">
-                        <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background: rgba(34,197,94,0.15);">
-                            <svg width="17" height="17" viewBox="0 0 24 24" fill="#22c55e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
-                        </div>
-                        <div>
-                            <div class="text-white font-semibold text-[13.5px]">Prefer a faster response?</div>
-                            <div class="text-gray-500 text-[12px]">Talk to a real person on WhatsApp right now.</div>
-                        </div>
-                    </div>
+                <!-- Primary CTA -->
+                <a href="#contactForm"
+                   class="btn-cta inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-bold px-8 py-4 rounded-xl text-[15px] border border-blue-500/30 mb-5">
+                    <span>Get Started</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+
+                <!-- Reassurance -->
+                <p class="text-[12.5px] text-gray-500 mb-9">
+                    30-minute setup &middot; One-time payment &middot; No monthly SaaS fee
+                </p>
+
+                <!-- WhatsApp text link -->
+                <div class="text-[13px] leading-relaxed">
+                    <span class="text-gray-500 block mb-0.5">Prefer WhatsApp?</span>
                     <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
-                       class="wa-hero-cta w-full flex items-center justify-center gap-2.5 font-bold py-2.5 rounded-lg text-[13px] text-white"
-                       style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
-                        Message Us on WhatsApp &mdash; Instant Reply
+                       class="inline-flex items-center gap-1 font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                        Talk to us directly
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
-                </div>
-
-                <!-- Price callout -->
-                <div class="inline-flex items-center gap-3 mb-9 px-5 py-3 rounded-2xl" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
-                    <span class="text-[13px] font-semibold text-white">One-Time License</span>
-                    <span class="w-px h-4 bg-white/15"></span>
-                    <span class="text-[22px] font-black text-blue-400 leading-none">$1,999</span>
-                    <span class="text-[11px] font-bold text-gray-500 uppercase tracking-wider">Fixed</span>
-                </div>
-
-                <!-- Trust points -->
-                <div class="space-y-4 mb-9">
-
-                    <div class="contact-trust-item">
-                        <div class="contact-trust-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </div>
-                        <div>
-                            <div class="text-[13.5px] font-semibold text-white leading-snug">One-time license &mdash; no subscriptions</div>
-                            <div class="text-[12px] text-gray-500 mt-0.5">Pay once, use forever. Zero recurring charges.</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-trust-item">
-                        <div class="contact-trust-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-                        </div>
-                        <div>
-                            <div class="text-[13.5px] font-semibold text-white leading-snug">Fully self-hosted on your own server</div>
-                            <div class="text-[12px] text-gray-500 mt-0.5">Your data, your infrastructure, your complete control.</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-trust-item">
-                        <div class="contact-trust-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                        </div>
-                        <div>
-                            <div class="text-[13.5px] font-semibold text-white leading-snug">Complete source code included</div>
-                            <div class="text-[12px] text-gray-500 mt-0.5">Modify, extend, and white-label without restriction.</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-trust-item">
-                        <div class="contact-trust-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-                        </div>
-                        <div>
-                            <div class="text-[13.5px] font-semibold text-white leading-snug">White-label branding freedom</div>
-                            <div class="text-[12px] text-gray-500 mt-0.5">Full white-label customization allowed. Deploy as your own brand.</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Stats row -->
-                <div class="flex items-center gap-6 pt-7" style="border-top: 1px solid rgba(255,255,255,0.07);">
-                    <div>
-                        <div class="text-[24px] font-bold text-white leading-none">30 min</div>
-                        <div class="text-[11.5px] text-gray-500 mt-1">Avg. setup time</div>
-                    </div>
-                    <div class="w-px h-9 flex-shrink-0" style="background: rgba(255,255,255,0.08);"></div>
-                    <div>
-                        <div class="text-[24px] font-bold text-white leading-none">100%</div>
-                        <div class="text-[11.5px] text-gray-500 mt-1">Source code access</div>
-                    </div>
-                    <div class="w-px h-9 flex-shrink-0" style="background: rgba(255,255,255,0.08);"></div>
-                    <div>
-                        <div class="text-[24px] font-bold text-white leading-none">&infin;</div>
-                        <div class="text-[11.5px] text-gray-500 mt-1">Bookings / month</div>
-                    </div>
                 </div>
 
             </div><!-- /left -->
@@ -2769,17 +1699,19 @@
             <div class="section-fade" style="transition-delay: 0.12s;">
                 <div class="contact-form-card">
 
+                    <!-- Pricing highlight -->
+                    <div class="flex items-start justify-between gap-4 mb-6 pb-6 relative z-10" style="border-bottom: 1px solid rgba(255,255,255,0.08);">
+                        <div>
+                            <div class="text-[30px] sm:text-[34px] font-black text-white leading-none">$1,999</div>
+                            <div class="text-[12.5px] font-semibold text-blue-400 mt-1.5">One-Time Payment</div>
+                        </div>
+                        <div class="text-[11.5px] text-gray-500 text-right leading-snug max-w-[130px] pt-1">No monthly SaaS subscription</div>
+                    </div>
+
                     <!-- Form header -->
                     <div class="mb-6 relative z-10">
-                        <div class="flex items-center gap-2 mb-3">
-                            <div class="relative flex h-2 w-2 flex-shrink-0">
-                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-                            </div>
-                            <span class="text-[11px] font-bold text-blue-400 tracking-[0.12em] uppercase">We reply within 4 hours &mdash; usually faster</span>
-                        </div>
-                        <h3 class="text-[22px] font-bold text-white mb-1.5">Request Your Private Demo</h3>
-                        <p class="text-[13px] text-gray-400">See the live admin panel, AI agent, and full system &mdash; tailored to your limo business. No obligation.</p>
+                        <h3 class="text-[21px] font-bold text-white mb-1.5">Let&rsquo;s Get Your Business Live</h3>
+                        <p class="text-[13px] text-gray-400">Tell us a little about your business and we&rsquo;ll show you how LimoSchedule can fit your operation.</p>
                     </div>
 
                     <!-- Form wrap (hidden when success shown) -->
@@ -2896,10 +1828,10 @@
                             <!-- Submit -->
                             <div class="pt-1">
                                 <button type="submit" id="cfSubmitBtn" class="btn-cta w-full flex items-center justify-center gap-2.5 px-6 py-[14px] rounded-xl font-bold text-[15px] text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); box-shadow: 0 4px 24px rgba(59,130,246,0.4);">
-                                    <span>Get My Private Demo &mdash; $1,999 One-Time</span>
+                                    <span>Get Started Today</span>
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                                 </button>
-                                <p class="text-center text-[11.5px] text-gray-600 mt-2.5">No obligation Â· We respond within 4 hours Â· 100% private</p>
+                                <p class="text-center text-[11.5px] text-gray-600 mt-2.5">No obligation &middot; We respond within 4 hours</p>
                             </div>
 
                         </form>
@@ -2924,141 +1856,87 @@
             </div><!-- /right -->
 
         </div><!-- /grid -->
+
     </div><!-- /container -->
 
 </section>
-<!-- â•â•â•â• END CONTACT â•â•â•â• -->
+<!-- ═════ END CONTACT ═════ -->
 
 
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
      SECTION &mdash; FINAL CTA
 â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
-<section id="cta-final" class="relative overflow-hidden" style="background: #0A0A0A; padding: 120px 0 140px;">
+<section id="cta-final" class="relative overflow-hidden" style="background: #030303; padding: 120px 0 130px;">
 
-    <!-- Grid texture -->
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.016) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.016) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <!-- Subtle background: faint grid + top glow + abstract route lines + limo watermark -->
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="absolute inset-0 opacity-[0.4]" style="background-image: linear-gradient(rgba(59,130,246,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.02) 1px, transparent 1px); background-size: 64px 64px;"></div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px]" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.15) 0%, transparent 70%);"></div>
 
-    <!-- Top separator line -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px" style="background: linear-gradient(90deg, transparent, rgba(59,130,246,0.4), transparent);"></div>
+        <!-- Abstract route lines -->
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1600 800" preserveAspectRatio="none">
+            <path d="M-50,600 C300,500 500,650 800,500 C1100,350 1300,480 1650,380" fill="none" stroke="rgba(59,130,246,0.14)" stroke-width="2" stroke-dasharray="2 14"/>
+            <path d="M-50,250 C250,320 550,150 850,260 C1150,370 1350,220 1650,300" fill="none" stroke="rgba(59,130,246,0.08)" stroke-width="1.5" stroke-dasharray="2 14"/>
+        </svg>
 
-    <!-- Massive center glow -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[600px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.18) 0%, rgba(59,130,246,0.06) 40%, transparent 70%);"></div>
+        <!-- Subtle luxury chauffeur vehicle watermark -->
+        <svg class="absolute bottom-[-6%] right-[-4%] w-[560px] sm:w-[720px] h-auto opacity-[0.05]" viewBox="0 0 920 280">
+            <path d="M55,215 C48,215 45,205 48,190 C55,170 80,168 120,165 C150,130 175,110 200,105 C280,95 560,95 680,100 C715,102 735,112 760,140 C785,150 810,155 830,168 C855,182 868,190 868,205 L868,215 Z" fill="#3B82F6"/>
+            <circle cx="175" cy="222" r="40" fill="#3B82F6"/>
+            <circle cx="755" cy="222" r="40" fill="#3B82F6"/>
+        </svg>
+    </div>
 
-    <!-- Noise overlay -->
-    <div class="absolute inset-0 pointer-events-none opacity-[0.025]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E&quot;);"></div>
-
-    <div class="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10 text-center">
-
-        <!-- Eyebrow badge -->
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-[11px] font-bold tracking-[0.12em] uppercase mb-8 section-fade" style="background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.3); color: #ef4444;">
-            <span class="relative flex h-2 w-2 flex-shrink-0">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
-            </span>
-            Limited Licenses Available &mdash; Don't Miss Your Spot
-        </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
 
         <!-- Headline -->
-        <h2 class="font-bold text-white leading-[1.08] tracking-tight mb-6 section-fade" style="font-size: clamp(2.4rem, 5.5vw, 4.25rem); letter-spacing: -0.035em; transition-delay: 0.06s;">
-            Your competitors won't wait.<br>
-            <span style="background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Neither should you.</span>
+        <h2 class="font-black text-white leading-[1.05] tracking-tight mb-6 section-fade" style="font-size: clamp(2.6rem, 6vw, 4.5rem); letter-spacing: -0.02em;">
+            Ready to Launch Your Limo Business?
         </h2>
 
-        <!-- Value comparison table -->
-        <div class="max-w-2xl mx-auto mb-10 section-fade" style="transition-delay: 0.09s;">
-            <div class="grid grid-cols-3 rounded-2xl overflow-hidden text-[12.5px]" style="border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.02);">
-                <div class="px-4 py-3 font-bold text-gray-500 border-b" style="border-color: rgba(255,255,255,0.06);"></div>
-                <div class="px-4 py-3 text-center font-bold text-gray-500 border-b border-l" style="border-color: rgba(255,255,255,0.06);">Others</div>
-                <div class="px-4 py-3 text-center font-bold text-blue-400 border-b border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">LimoSchedule</div>
+        <!-- Supporting text -->
+        <p class="text-gray-400 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto mb-10 section-fade" style="transition-delay: 0.05s;">
+            Get your complete white-label booking platform and start your operation with a professional system built for transportation businesses.
+        </p>
 
-                <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">Full-time dispatcher</div>
-                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">~$45,000/yr</div>
-                <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Not needed</div>
-
-                <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">Custom dev build</div>
-                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$10k&ndash;$15k</div>
-                <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Included</div>
-
-                <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">SaaS booking platform</div>
-                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$300&ndash;$1,000/mo</div>
-                <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">$0/mo forever</div>
-
-                <div class="px-4 py-2.5 text-gray-400 border-b" style="border-color: rgba(255,255,255,0.05);">Lost bookings (monthly)</div>
-                <div class="px-4 py-2.5 text-center text-red-400 border-b border-l" style="border-color: rgba(255,255,255,0.05);">$2,000+</div>
-                <div class="px-4 py-2.5 text-center text-green-400 font-bold border-b border-l" style="border-color: rgba(59,130,246,0.15); background: rgba(59,130,246,0.03);">Eliminated</div>
-
-                <div class="px-4 py-3 text-white font-bold">LimoSchedule</div>
-                <div class="px-4 py-3 text-center text-red-400 font-bold border-l" style="border-color: rgba(255,255,255,0.05);">All of the above</div>
-                <div class="px-4 py-3 text-center font-black text-blue-400 text-[16px] border-l" style="border-color: rgba(59,130,246,0.2); background: rgba(59,130,246,0.05);">$1,999 once</div>
-            </div>
-            <p class="text-center text-gray-600 text-[11.5px] mt-3">Pay once. Own it forever. The system pays for itself in the first month.</p>
-        </div>
-
-        <!-- CTA Buttons &mdash; WhatsApp DOMINANT -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 section-fade" style="transition-delay: 0.18s;">
-
-            <!-- Primary: WhatsApp -->
-            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
-               class="wa-hero-cta group inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-bold text-[15px] text-white"
-               style="background: linear-gradient(135deg, #16a34a, #22c55e); animation: wa-pulse-glow 2.5s ease-in-out infinite;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
-                <span>Message Us Now &mdash; Instant Response</span>
+        <!-- CTA row -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-8 section-fade" style="transition-delay: 0.1s;">
+            <a href="{{ route('contact') }}"
+               class="btn-cta w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#3B82F6] text-white font-bold px-9 py-4 rounded-xl text-[15.5px] border border-blue-500/30">
+                <span>Get Started Today</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-
-            <!-- Secondary: Request Demo -->
-            <a href="#contact" class="cta-final-btn-primary group relative inline-flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-[15px] text-white overflow-hidden" style="background: #3B82F6; box-shadow: 0 0 0 1px rgba(59,130,246,0.5), 0 8px 32px rgba(59,130,246,0.35);">
-                <span class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background: linear-gradient(135deg, #2563EB, #3B82F6);"></span>
-                <svg class="relative z-10 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="M21 2l-9.6 9.6"/><path d="M15.5 7.5l3 3L22 7l-3-3"/></svg>
-                <span class="relative z-10">Request Private Demo</span>
+            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%27s%20complete%20white-label%20platform.%20Can%20I%20talk%20to%20an%20expert%3F" target="_blank" rel="noopener"
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-semibold px-9 py-4 rounded-xl text-[15.5px] text-white transition-all duration-200 hover:bg-white/10"
+               style="background: #000; border: 1px solid rgba(255,255,255,0.28);">
+                <span>Talk to an Expert</span>
             </a>
         </div>
 
-        <!-- Trust strip -->
-        <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 section-fade" style="transition-delay: 0.24s;">
-            <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                No monthly fees
+        <!-- Supporting lines -->
+        <div class="section-fade" style="transition-delay: 0.15s;">
+            <div class="text-[13px] font-semibold text-gray-500 tracking-wide mb-3">
+                Website &middot; Customer &middot; Driver &middot; Admin
             </div>
-            <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
-            <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
-                Full source code included
-            </div>
-            <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
-            <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-                Self-hosted & private
-            </div>
-            <div class="w-px h-3.5 bg-white/10 hidden sm:block"></div>
-            <div class="flex items-center gap-2 text-gray-500 text-[12.5px]">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                White-label branding freedom
-            </div>
-        </div>
-
-        <!-- Stats row -->
-        <div class="mt-16 pt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 section-fade" style="border-top: 1px solid rgba(255,255,255,0.05); transition-delay: 0.3s;">
-            <div class="text-center">
-                <div class="text-2xl sm:text-3xl font-bold text-white mb-1" style="letter-spacing: -0.03em;">30<span class="text-blue-400">min</span></div>
-                <div class="text-[11.5px] text-gray-500 uppercase tracking-wider">Install time</div>
-            </div>
-            <div class="text-center">
-                <div class="text-2xl sm:text-3xl font-bold text-white mb-1" style="letter-spacing: -0.03em;">100<span class="text-blue-400">%</span></div>
-                <div class="text-[11.5px] text-gray-500 uppercase tracking-wider">White-label</div>
-            </div>
-            <div class="text-center">
-                <div class="text-2xl sm:text-3xl font-bold text-white mb-1" style="letter-spacing: -0.03em;">0<span class="text-blue-400">$</span></div>
-                <div class="text-[11.5px] text-gray-500 uppercase tracking-wider">Monthly fee</div>
-            </div>
-            <div class="text-center">
-                <div class="text-2xl sm:text-3xl font-bold text-white mb-1" style="letter-spacing: -0.03em;">24<span class="text-blue-400">/7</span></div>
-                <div class="text-[11.5px] text-gray-500 uppercase tracking-wider">AI Voice Agent</div>
+            <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+                <span class="inline-flex items-center gap-1.5 text-[12.5px] font-medium text-gray-400">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    One-Time Payment
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-[12.5px] font-medium text-gray-400">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    White-Label
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-[12.5px] font-medium text-gray-400">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    30-Minute Setup
+                </span>
             </div>
         </div>
 
     </div><!-- /container -->
 </section>
-<!-- â•â•â•â• END FINAL CTA â•â•â•â• -->
+<!-- ═════ END FINAL CTA ═════ -->
 
 
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•

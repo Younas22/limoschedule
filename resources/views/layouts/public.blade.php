@@ -309,80 +309,97 @@
 
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-px pointer-events-none" style="background: linear-gradient(90deg, transparent, rgba(59,130,246,0.3), transparent);"></div>
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <svg class="absolute top-0 right-0 w-[420px] h-[220px] pointer-events-none opacity-[0.05]" viewBox="0 0 420 220" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-20,180 C100,140 180,200 300,120 C360,80 400,100 440,60" fill="none" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="2 10"/>
+    </svg>
 
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
-        <!-- Top: logo + columns -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.8fr_1fr_1fr] gap-10 lg:gap-8 pt-16 pb-12">
+        <!-- Top: 5-column layout -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1.3fr] gap-10 lg:gap-8 pt-16 pb-14">
 
-            <!-- Brand column -->
-            <div class="flex flex-col gap-6">
+            <!-- Column 1: Brand -->
+            <div class="flex flex-col gap-5">
                 <a href="{{ url('/') }}" class="inline-block" aria-label="LimoSchedule — Home">
-                    <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" class="h-[30px] w-auto block" loading="lazy" decoding="async">
+                    <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" class="h-[28px] w-auto block" loading="lazy" decoding="async">
                 </a>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed max-w-[270px]">
-                    The professional self-hosted limo booking platform. One-time license — $1,999 fixed. Full source code. Zero recurring fees.
+                <p class="text-gray-500 text-[13px] leading-relaxed max-w-[250px]">
+                    Complete booking technology for limo, black car, taxi and chauffeur businesses.
+                </p>
+                <p class="text-gray-600 text-[12px] leading-relaxed max-w-[250px]">
+                    Built to help transportation businesses launch, manage and grow.
                 </p>
             </div>
 
-            <!-- Product column -->
+            <!-- Column 2: Platform -->
             <div>
-                <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Product</h4>
-                <ul class="flex flex-col gap-3.5">
-                    <li><a href="{{ url('/') }}#features"     class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Features</a></li>
-                    <li><a href="{{ url('/') }}#voice-search" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Voice Search</a></li>
-                    <li><a href="{{ url('/') }}#ai-call-agent"class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">AI Voice Agent</a></li>
-                    <li><a href="{{ url('/') }}#admin-panel"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Panel</a></li>
-                    <li><a href="{{ url('/') }}#how-it-works" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">How It Works</a></li>
+                <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Platform</h4>
+                <ul class="flex flex-col gap-3">
+                    <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Booking Website</a></li>
+                    <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Customer Portal</a></li>
+                    <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Driver Panel</a></li>
+                    <li><a href="{{ route('admin-panel') }}"       class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Dashboard</a></li>
+                    <li><a href="{{ url('/') }}#platform-overview" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">White-Label Platform</a></li>
+                    <li><a href="{{ route('features') }}"          class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Features</a></li>
                 </ul>
             </div>
 
-            <!-- Company column -->
+            <!-- Column 3: Solutions -->
+            <div>
+                <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Solutions</h4>
+                <ul class="flex flex-col gap-3">
+                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Limo Services</a></li>
+                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Black Car Services</a></li>
+                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Taxi Companies</a></li>
+                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Chauffeur Services</a></li>
+                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Airport Transfers</a></li>
+                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Corporate Travel</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Company -->
             <div>
                 <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Company</h4>
-                <ul class="flex flex-col gap-3.5 mb-6">
-                    <li><a href="{{ url('/') }}#faq"         class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">FAQ</a></li>
-                    <li><a href="{{ url('/') }}#contact"     class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Contact</a></li>
-                    <li><a href="{{ route('blogs.index') }}" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Blog</a></li>
+                <ul class="flex flex-col gap-3">
+                    <li><a href="{{ route('contact') }}"      class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Contact</a></li>
+                    <li><a href="{{ route('faq') }}"          class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">FAQ</a></li>
+                    <li><a href="{{ route('blogs.index') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Blog</a></li>
                 </ul>
-                <div class="flex flex-col gap-3">
-                    <a href="mailto:support@limoschedule.com" class="footer-contact-link group inline-flex items-center gap-3 text-gray-400 hover:text-white text-[13px] transition-colors duration-200">
-                        <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:border-blue-500/40 group-hover:bg-blue-500/10" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        </span>
-                        support@limoschedule.com
-                    </a>
-                    <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%20%E2%80%94%20the%20self-hosted%20limo%20booking%20system.%20Can%20you%20please%20provide%20more%20details%3F"
-                       target="_blank" rel="noopener"
-                       class="footer-contact-link group inline-flex items-center gap-3 text-gray-400 hover:text-white text-[13px] transition-colors duration-200">
-                        <span class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors duration-200 group-hover:border-green-500/40 group-hover:bg-green-500/10" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                        </span>
-                        +92 346 0820722
-                    </a>
-                </div>
+                <a href="mailto:support@limoschedule.com" class="inline-block mt-5 text-gray-500 hover:text-white text-[12.5px] transition-colors duration-200">support@limoschedule.com</a>
             </div>
 
+            <!-- Column 5: Get Started -->
+            <div>
+                <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-blue-400 mb-4">Ready to Launch?</h4>
+                <p class="text-gray-500 text-[13px] leading-relaxed mb-5 max-w-[220px]">
+                    Launch your transportation business with a complete white-label booking platform.
+                </p>
+                <a href="{{ url('/') }}#contactForm"
+                   class="btn-cta inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[13.5px] font-semibold px-5 py-2.5 rounded-xl border border-blue-500/30 mb-4">
+                    <span>Get Started</span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
+                   class="block text-gray-500 hover:text-blue-400 text-[13px] font-medium transition-colors duration-200">
+                    Talk to an Expert &rarr;
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Brand statement -->
+        <div class="text-center pb-8">
+            <span class="text-[11px] font-semibold tracking-[0.2em] uppercase text-gray-700">Your Business. Your Brand. Your Booking Platform.</span>
         </div>
 
         <!-- Divider -->
         <div class="h-px w-full" style="background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07) 30%, rgba(255,255,255,0.07) 70%, transparent);"></div>
 
         <!-- Bottom bar -->
-        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 py-7">
-            <p class="text-gray-600 text-[12.5px] text-center sm:text-left">
-                &copy; {{ date('Y') }} LimoSchedule. All rights reserved. Self-hosted &amp; white-label limo booking software.
+        <div class="py-6 text-center">
+            <p class="text-gray-600 text-[12px]">
+                &copy; {{ date('Y') }} LimoSchedule. All rights reserved.
             </p>
-            <div class="flex items-center gap-4">
-                <span class="inline-flex items-center gap-1.5 text-gray-600 text-[12px]">
-                    <svg width="11" height="11" viewBox="0 0 24 24" fill="#3B82F6"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
-                    Built for operators, by operators
-                </span>
-                <span class="w-px h-3.5 bg-white/10"></span>
-                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[11px] font-medium text-blue-400" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
-                    v2.0 &mdash; Self-Hosted
-                </span>
-            </div>
         </div>
 
     </div>
