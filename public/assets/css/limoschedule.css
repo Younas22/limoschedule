@@ -104,6 +104,77 @@ body { background: #0A0A0A; color: #fff; -webkit-font-smoothing: antialiased; }
 .mob-nav-item { transition: background 0.15s ease, color 0.15s ease, padding-left 0.2s ease; }
 .mob-nav-item:hover { padding-left: 1.25rem; }
 
+/* ── Desktop nav dropdown ── */
+.nav-dropdown-item { position: relative; }
+.nav-dropdown-trigger {
+    display: flex; align-items: center; gap: 4px;
+    background: none; border: none; cursor: pointer; font: inherit;
+}
+.nav-dropdown-chevron { transition: transform 0.2s ease; flex-shrink: 0; }
+.nav-dropdown-item.is-open .nav-dropdown-chevron { transform: rotate(180deg); }
+.nav-dropdown-panel {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    min-width: 240px;
+    background: #111111;
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.02);
+    padding: 8px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+    z-index: 60;
+}
+.nav-dropdown-item.is-open .nav-dropdown-panel {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+.nav-dropdown-link {
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    padding: 9px 12px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #9ca3af;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+.nav-dropdown-link:hover { background: rgba(59,130,246,0.1); color: #fff; }
+.nav-dropdown-link-featured {
+    color: #60a5fa; font-weight: 600;
+    background: rgba(59,130,246,0.06);
+}
+.nav-dropdown-link-featured:hover { background: rgba(59,130,246,0.14); }
+.nav-dropdown-divider { height: 1px; background: rgba(255,255,255,0.07); margin: 6px 4px; }
+
+/* ── "We're Hiring" badge (used next to Careers) ── */
+.hiring-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-size: 9.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+    color: #fff;
+    background: rgb(59 130 246);
+    border-radius: 20px;
+    padding: 2px 7px;
+    line-height: 1.5;
+}
+.hiring-badge-dot {
+    width: 5px; height: 5px; border-radius: 50%; background: #fff;
+    animation: hiring-badge-pulse 1.8s ease-in-out infinite;
+}
+@keyframes hiring-badge-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+/* ── Mobile nav accordion ── */
+.mob-accordion-panel { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.mob-accordion-item.is-open .mob-accordion-panel { max-height: 480px; }
+.mob-accordion-chevron { transition: transform 0.25s ease; }
+.mob-accordion-item.is-open .mob-accordion-chevron { transform: rotate(180deg); }
+
 /* ══════════════════════════════════════════════════════
    SECTION 1 — HERO
 ══════════════════════════════════════════════════════ */
@@ -662,6 +733,33 @@ html:not(.js-ready) .ai-bubble-reveal {
     padding-right: 38px;
     cursor: pointer;
 }
+.budget-radio-card {
+    display: flex; align-items: center; gap: 10px;
+    padding: 11px 13px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.04);
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+.budget-radio-card:hover { border-color: rgba(255,255,255,0.2); }
+.budget-radio-card.is-checked { border-color: rgba(59,130,246,0.6); background: rgba(59,130,246,0.08); }
+.budget-radio-dot {
+    position: relative; flex-shrink: 0;
+    width: 16px; height: 16px; border-radius: 50%;
+    border: 1.5px solid rgba(255,255,255,0.25);
+    transition: border-color 0.2s ease;
+}
+.budget-radio-card.is-checked .budget-radio-dot { border-color: #3B82F6; }
+.budget-radio-card.is-checked .budget-radio-dot::after {
+    content: ''; position: absolute; top: 50%; left: 50%;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #3B82F6; transform: translate(-50%, -50%);
+}
+.budget-radio-label { font-size: 13px; color: #d1d5db; }
+.budget-radio-card.is-checked .budget-radio-label { color: #fff; font-weight: 600; }
+.budget-radio-card input:focus-visible ~ .budget-radio-dot { outline: 2px solid #3B82F6; outline-offset: 2px; }
+
 .contact-fieldset {
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 16px;

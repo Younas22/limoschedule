@@ -237,13 +237,40 @@
                                 </div>
                             </div>
                             <div class="mt-4">
-                                <label class="contact-label" for="cf_budget">System Setup Budget <span class="text-blue-500 ml-0.5">*</span></label>
-                                <select id="cf_budget" name="budget" class="contact-input contact-select" required>
-                                    <option value="" disabled selected style="background:#111111;">What is your budget?&hellip;</option>
-                                    <option value="$1500" style="background:#111111;">$1,500</option>
-                                    <option value="$2500" style="background:#111111;">$2,500</option>
-                                    <option value="$5000" style="background:#111111;">$5,000</option>
-                                </select>
+                                <label class="contact-label" style="color: #e5e7eb; font-size: 13px; font-weight: 600; margin-bottom: 3px;">How Much Are You Planning to Invest? <span class="text-blue-500 ml-0.5">*</span></label>
+                                <p class="text-gray-500 text-[11.5px] mb-3">Your budget helps us tailor the right solution for your business.</p>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" role="radiogroup" aria-label="System setup budget">
+                                    <label class="budget-radio-card">
+                                        <input type="radio" name="budget" value="USD — Under 1000" class="sr-only" required>
+                                        <span class="budget-radio-dot"></span>
+                                        <span class="budget-radio-label">USD &mdash; Under 1000</span>
+                                    </label>
+                                    <label class="budget-radio-card">
+                                        <input type="radio" name="budget" value="USD — 1500 – 2000" class="sr-only" required>
+                                        <span class="budget-radio-dot"></span>
+                                        <span class="budget-radio-label">USD &mdash; 1500 &ndash; 2000</span>
+                                    </label>
+                                    <label class="budget-radio-card">
+                                        <input type="radio" name="budget" value="USD — 2000 – 2500" class="sr-only" required>
+                                        <span class="budget-radio-dot"></span>
+                                        <span class="budget-radio-label">USD &mdash; 2000 &ndash; 2500</span>
+                                    </label>
+                                    <label class="budget-radio-card">
+                                        <input type="radio" name="budget" value="USD — 2500 – 3000" class="sr-only" required>
+                                        <span class="budget-radio-dot"></span>
+                                        <span class="budget-radio-label">USD &mdash; 2500 &ndash; 3000</span>
+                                    </label>
+                                    <label class="budget-radio-card">
+                                        <input type="radio" name="budget" value="USD — 3000 – 3500" class="sr-only" required>
+                                        <span class="budget-radio-dot"></span>
+                                        <span class="budget-radio-label">USD &mdash; 3000 &ndash; 3500</span>
+                                    </label>
+                                    <label class="budget-radio-card">
+                                        <input type="radio" name="budget" value="USD — 5000+" class="sr-only" required>
+                                        <span class="budget-radio-dot"></span>
+                                        <span class="budget-radio-label">USD &mdash; 5000+</span>
+                                    </label>
+                                </div>
                             </div>
                         </fieldset>
 

@@ -139,11 +139,61 @@
             <!-- Desktop Nav links -->
             <nav class="hidden xl:flex items-center" aria-label="Primary navigation">
                 <ul class="flex items-center gap-0.5 list-none m-0 p-0">
-                    <li><a href="{{ route('platform') }}"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Platform</a></li>
-                    <li><a href="{{ route('solutions') }}"        class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Solutions</a></li>
-                    <li><a href="{{ route('features') }}"         class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Features</a></li>
-                    <li><a href="{{ route('pricing') }}"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Pricing</a></li>
-                    <li><a href="{{ route('faq') }}"              class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">FAQ</a></li>
+
+                    <li class="nav-dropdown-item">
+                        <button type="button" class="nav-dropdown-trigger nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg" aria-haspopup="true" aria-expanded="false" data-dropdown-trigger="platform">
+                            <span>Platform</span>
+                            <svg class="nav-dropdown-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="nav-dropdown-panel" data-dropdown-panel="platform" role="menu" aria-label="Platform">
+                            <a href="{{ route('platform') }}" class="nav-dropdown-link nav-dropdown-link-featured" role="menuitem">Platform Overview</a>
+                            <div class="nav-dropdown-divider"></div>
+                            <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">Booking Website</a>
+                            <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">Customer Portal</a>
+                            <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">Driver Panel</a>
+                            <a href="{{ route('admin-panel') }}" class="nav-dropdown-link" role="menuitem">Admin Dashboard</a>
+                            <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">White-Label Platform</a>
+                            <a href="{{ route('features') }}" class="nav-dropdown-link" role="menuitem">Features</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-dropdown-item">
+                        <button type="button" class="nav-dropdown-trigger nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg" aria-haspopup="true" aria-expanded="false" data-dropdown-trigger="solutions">
+                            <span>Solutions</span>
+                            <svg class="nav-dropdown-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="nav-dropdown-panel" data-dropdown-panel="solutions" role="menu" aria-label="Solutions">
+                            <a href="{{ route('solutions') }}" class="nav-dropdown-link nav-dropdown-link-featured" role="menuitem">All Solutions</a>
+                            <div class="nav-dropdown-divider"></div>
+                            <a href="{{ route('solutions') }}#solution-limo-heading" class="nav-dropdown-link" role="menuitem">Limo Services</a>
+                            <a href="{{ route('solutions') }}#solution-blackcar-heading" class="nav-dropdown-link" role="menuitem">Black Car Services</a>
+                            <a href="{{ route('solutions') }}#solution-taxi-heading" class="nav-dropdown-link" role="menuitem">Taxi Companies</a>
+                            <a href="{{ route('solutions') }}#solution-chauffeur-heading" class="nav-dropdown-link" role="menuitem">Chauffeur Services</a>
+                            <a href="{{ route('solutions') }}#solution-airport-heading" class="nav-dropdown-link" role="menuitem">Airport Transfers</a>
+                            <a href="{{ route('solutions') }}#solution-corporate-heading" class="nav-dropdown-link" role="menuitem">Corporate Travel</a>
+                        </div>
+                    </li>
+
+                    <li><a href="{{ route('pricing') }}" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Pricing</a></li>
+
+                    <li class="nav-dropdown-item">
+                        <button type="button" class="nav-dropdown-trigger nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg" aria-haspopup="true" aria-expanded="false" data-dropdown-trigger="company">
+                            <span>Company</span>
+                            <svg class="nav-dropdown-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        </button>
+                        <div class="nav-dropdown-panel" data-dropdown-panel="company" role="menu" aria-label="Company">
+                            <a href="{{ route('about') }}" class="nav-dropdown-link" role="menuitem">About</a>
+                            <a href="{{ route('team') }}" class="nav-dropdown-link" role="menuitem">Team</a>
+                            <a href="{{ route('careers') }}" class="nav-dropdown-link" role="menuitem">
+                                <span>Careers</span>
+                                <span class="hiring-badge"><span class="hiring-badge-dot"></span>Hiring</span>
+                            </a>
+                            <a href="{{ route('contact') }}" class="nav-dropdown-link" role="menuitem">Contact</a>
+                            <a href="{{ route('faq') }}" class="nav-dropdown-link" role="menuitem">FAQ</a>
+                            <a href="{{ route('blogs.index') }}" class="nav-dropdown-link" role="menuitem">Blog</a>
+                        </div>
+                    </li>
+
                 </ul>
             </nav>
 
@@ -189,42 +239,54 @@
          role="dialog" aria-label="Mobile navigation">
         <div class="max-w-7xl mx-auto px-5 sm:px-6 py-3 pb-4">
             <ul class="list-none m-0 p-0 flex flex-col gap-0.5">
-                <li>
-                    <a href="{{ route('platform') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+
+                <!-- Platform (accordion) -->
+                <li class="mob-accordion-item">
+                    <button type="button" class="mob-nav-item w-full flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group" data-mob-accordion-trigger="platform" aria-expanded="false">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </span>
-                        <div>
+                        <div class="text-left flex-1">
                             <div class="font-semibold text-[14px] text-gray-200">Platform</div>
                             <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Website, Customer, Driver &amp; Admin</div>
                         </div>
-                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-                    </a>
+                        <svg class="mob-accordion-chevron ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="mob-accordion-panel pl-[46px]">
+                        <a href="{{ route('platform') }}" class="block py-2.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300">Platform Overview &rarr;</a>
+                        <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Booking Website</a>
+                        <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Customer Portal</a>
+                        <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Driver Panel</a>
+                        <a href="{{ route('admin-panel') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Admin Dashboard</a>
+                        <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">White-Label Platform</a>
+                        <a href="{{ route('features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Features</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="{{ route('solutions') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+
+                <!-- Solutions (accordion) -->
+                <li class="mob-accordion-item">
+                    <button type="button" class="mob-nav-item w-full flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group" data-mob-accordion-trigger="solutions" aria-expanded="false">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="8" rx="2"/><path d="M5 11l1.5-5h11L19 11"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></svg>
                         </span>
-                        <div>
+                        <div class="text-left flex-1">
                             <div class="font-semibold text-[14px] text-gray-200">Solutions</div>
                             <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Limo, taxi, chauffeur &amp; more</div>
                         </div>
-                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-                    </a>
+                        <svg class="mob-accordion-chevron ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="mob-accordion-panel pl-[46px]">
+                        <a href="{{ route('solutions') }}" class="block py-2.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300">All Solutions &rarr;</a>
+                        <a href="{{ route('solutions') }}#solution-limo-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Limo Services</a>
+                        <a href="{{ route('solutions') }}#solution-blackcar-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Black Car Services</a>
+                        <a href="{{ route('solutions') }}#solution-taxi-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Taxi Companies</a>
+                        <a href="{{ route('solutions') }}#solution-chauffeur-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Chauffeur Services</a>
+                        <a href="{{ route('solutions') }}#solution-airport-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Airport Transfers</a>
+                        <a href="{{ route('solutions') }}#solution-corporate-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Corporate Travel</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="{{ route('features') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
-                        <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                        </span>
-                        <div>
-                            <div class="font-semibold text-[14px] text-gray-200">Features</div>
-                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Full platform overview</div>
-                        </div>
-                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-                    </a>
-                </li>
+
+                <!-- Pricing -->
                 <li>
                     <a href="{{ route('pricing') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
@@ -237,30 +299,32 @@
                         <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
                     </a>
                 </li>
-                <li>
-                    <a href="{{ route('faq') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+
+                <!-- Company (accordion) -->
+                <li class="mob-accordion-item">
+                    <button type="button" class="mob-nav-item w-full flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group" data-mob-accordion-trigger="company" aria-expanded="false">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="9" y1="7" x2="9" y2="7"/><line x1="15" y1="7" x2="15" y2="7"/><line x1="9" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="15" y2="12"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
                         </span>
-                        <div>
-                            <div class="font-semibold text-[14px] text-gray-200">FAQ</div>
-                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Common questions answered</div>
+                        <div class="text-left flex-1">
+                            <div class="font-semibold text-[14px] text-gray-200">Company</div>
+                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">About, careers, contact &amp; more</div>
                         </div>
-                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-                    </a>
+                        <svg class="mob-accordion-chevron ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="mob-accordion-panel pl-[46px]">
+                        <a href="{{ route('about') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">About</a>
+                        <a href="{{ route('team') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Team</a>
+                        <a href="{{ route('careers') }}" class="flex items-center gap-2 py-2.5 text-[13.5px] text-gray-400 hover:text-white">
+                            <span>Careers</span>
+                            <span class="hiring-badge"><span class="hiring-badge-dot"></span>Hiring</span>
+                        </a>
+                        <a href="{{ route('contact') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Contact</a>
+                        <a href="{{ route('faq') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">FAQ</a>
+                        <a href="{{ route('blogs.index') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Blog</a>
+                    </div>
                 </li>
-                <li>
-                    <a href="{{ route('blogs.index') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
-                        <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
-                        </span>
-                        <div>
-                            <div class="font-semibold text-[14px] text-gray-200">Blog</div>
-                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Articles & guides</div>
-                        </div>
-                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-                    </a>
-                </li>
+
             </ul>
 
             <!-- Mobile CTA block -->
@@ -364,7 +428,7 @@
                 <ul class="flex flex-col gap-3">
                     <li><a href="{{ route('about') }}"        class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">About</a></li>
                     <li><a href="{{ route('team') }}"         class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Team</a></li>
-                    <li><a href="{{ route('careers') }}"      class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Careers</a></li>
+                    <li><a href="{{ route('careers') }}"      class="footer-nav-link inline-flex items-center gap-2 text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Careers <span class="hiring-badge"><span class="hiring-badge-dot"></span>Hiring</span></a></li>
                     <li><a href="{{ route('contact') }}"      class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Contact</a></li>
                     <li><a href="{{ route('faq') }}"          class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">FAQ</a></li>
                     <li><a href="{{ route('blogs.index') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Blog</a></li>

@@ -70,6 +70,96 @@ setTimeout(function () {
         });
     }
 
+    /* Desktop nav dropdowns (Platform / Solutions / Company) */
+    const dropdownItems = document.querySelectorAll('.nav-dropdown-item');
+    if (dropdownItems.length) {
+        let closeTimer = null;
+
+        function closeAllDropdowns(except) {
+            dropdownItems.forEach(function (item) {
+                if (item === except) return;
+                item.classList.remove('is-open');
+                const trigger = item.querySelector('[data-dropdown-trigger]');
+                if (trigger) trigger.setAttribute('aria-expanded', 'false');
+            });
+        }
+
+        function openDropdown(item) {
+            clearTimeout(closeTimer);
+            closeAllDropdowns(item);
+            item.classList.add('is-open');
+            const trigger = item.querySelector('[data-dropdown-trigger]');
+            if (trigger) trigger.setAttribute('aria-expanded', 'true');
+        }
+
+        function scheduleClose(item) {
+            clearTimeout(closeTimer);
+            closeTimer = setTimeout(function () {
+                item.classList.remove('is-open');
+                const trigger = item.querySelector('[data-dropdown-trigger]');
+                if (trigger) trigger.setAttribute('aria-expanded', 'false');
+            }, 180);
+        }
+
+        dropdownItems.forEach(function (item) {
+            const trigger = item.querySelector('[data-dropdown-trigger]');
+            if (!trigger) return;
+
+            trigger.addEventListener('click', function () {
+                if (item.classList.contains('is-open')) {
+                    item.classList.remove('is-open');
+                    trigger.setAttribute('aria-expanded', 'false');
+                } else {
+                    openDropdown(item);
+                }
+            });
+
+            item.addEventListener('mouseenter', function () { openDropdown(item); });
+            item.addEventListener('mouseleave', function () { scheduleClose(item); });
+        });
+
+        document.addEventListener('click', function (e) {
+            const insideAnyDropdown = Array.prototype.some.call(dropdownItems, function (item) {
+                return item.contains(e.target);
+            });
+            if (!insideAnyDropdown) closeAllDropdowns();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeAllDropdowns();
+        });
+    }
+
+    /* Mobile nav accordions (Platform / Solutions / Company) */
+    document.querySelectorAll('[data-mob-accordion-trigger]').forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+            const item = trigger.closest('.mob-accordion-item');
+            if (!item) return;
+            const isOpen = item.classList.contains('is-open');
+
+            document.querySelectorAll('.mob-accordion-item.is-open').forEach(function (openItem) {
+                if (openItem !== item) {
+                    openItem.classList.remove('is-open');
+                    const t = openItem.querySelector('[data-mob-accordion-trigger]');
+                    if (t) t.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            item.classList.toggle('is-open', !isOpen);
+            trigger.setAttribute('aria-expanded', String(!isOpen));
+        });
+    });
+
+    /* Budget radio-cards — sync visual checked state */
+    document.querySelectorAll('.budget-radio-card input[type="radio"]').forEach(function (input) {
+        input.addEventListener('change', function () {
+            document.querySelectorAll('input[name="' + input.name + '"]').forEach(function (sibling) {
+                var card = sibling.closest('.budget-radio-card');
+                if (card) card.classList.toggle('is-checked', sibling.checked);
+            });
+        });
+    });
+
     /* Active nav link highlight on scroll */
     const sections = document.querySelectorAll('[id]');
     const navLinks = document.querySelectorAll('.nav-link');
