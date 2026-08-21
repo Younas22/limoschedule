@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Country;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PublicController extends Controller
 {
@@ -265,6 +266,66 @@ class PublicController extends Controller
             'og_section'         => $blog->category?->name,
         ];
 
-        return view('blogs.show', compact('blog', 'seo'));
+        [$contentHtml, $tableOfContents] = $this->buildTableOfContents($blog->content ?? '');
+
+        return view('blogs.show', compact('blog', 'seo', 'contentHtml', 'tableOfContents'));
+    }
+
+    /**
+     * Inject ids into every heading (H2–H6) in a blog post's content and
+     * build a matching table-of-contents array, so the ToC always reflects
+     * every real heading in the post — nothing invented or manually maintained.
+     */
+    private function buildTableOfContents(string $html): array
+    {
+        if (trim($html) === '') {
+            return [$html, []];
+        }
+
+        $dom = new \DOMDocument();
+        libxml_use_internal_errors(true);
+        $dom->loadHTML(
+            '<?xml encoding="UTF-8"><div id="__toc_root">' . $html . '</div>',
+            LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD
+        );
+        libxml_clear_errors();
+
+        $xpath = new \DOMXPath($dom);
+        $headings = $xpath->query('//h2 | //h3 | //h4 | //h5 | //h6');
+
+        $toc = [];
+        $usedSlugs = [];
+
+        foreach ($headings as $heading) {
+            $text = trim($heading->textContent);
+            if ($text === '') {
+                continue;
+            }
+
+            $slug = Str::slug($text) ?: 'section';
+            $base = $slug;
+            $i = 2;
+            while (in_array($slug, $usedSlugs, true)) {
+                $slug = $base . '-' . $i;
+                $i++;
+            }
+            $usedSlugs[] = $slug;
+
+            $heading->setAttribute('id', $slug);
+
+            $toc[] = [
+                'level' => (int) substr($heading->nodeName, 1),
+                'text'  => $text,
+                'id'    => $slug,
+            ];
+        }
+
+        $root = $xpath->query('//div[@id="__toc_root"]')->item(0);
+        $newHtml = '';
+        foreach ($root->childNodes as $node) {
+            $newHtml .= $dom->saveHTML($node);
+        }
+
+        return [$newHtml, $toc];
     }
 }
