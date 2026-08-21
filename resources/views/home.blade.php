@@ -1352,148 +1352,98 @@
 <!-- ═══════════════════════════════════════════════════════════════
      SECTION &mdash; CONTACT / LEAD GENERATION
 ═══════════════════════════════════════════════════════════════ -->
-<section id="contact" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
+<section id="contact" class="relative overflow-hidden" style="background: #0A0A0A;">
 
     <!-- Grid texture -->
-    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 56px 56px;"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.1) 0%, transparent 70%);"></div>
 
-    <!-- Left ambient glow -->
-    <div class="absolute top-1/2 left-0 w-[650px] h-[650px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.07) 0%, transparent 65%); transform: translateY(-50%) translateX(-35%);"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-14 xl:gap-20 items-start">
 
-    <!-- Right ambient glow -->
-    <div class="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.04) 0%, transparent 65%); transform: translateY(-50%) translateX(35%);"></div>
-
-    <!-- Subtle luxury chauffeur vehicle watermark -->
-    <svg class="absolute bottom-[-8%] left-[-6%] w-[480px] sm:w-[600px] h-auto opacity-[0.035] pointer-events-none" viewBox="0 0 920 280" aria-hidden="true">
-        <path d="M55,215 C48,215 45,205 48,190 C55,170 80,168 120,165 C150,130 175,110 200,105 C280,95 560,95 680,100 C715,102 735,112 760,140 C785,150 810,155 830,168 C855,182 868,190 868,205 L868,215 Z" fill="#3B82F6"/>
-        <circle cx="175" cy="222" r="40" fill="#3B82F6"/>
-        <circle cx="755" cy="222" r="40" fill="#3B82F6"/>
-    </svg>
-
-    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
-
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-14 xl:gap-20 items-start">
-
-            <!-- â•â• LEFT: Value Proposition â•â• -->
+            <!-- LEFT: Heading + reassurance -->
             <div class="lg:pt-3 section-fade">
-
-                <!-- Eyebrow -->
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-[0.1em] uppercase mb-7" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25); color: #3B82F6;">
-                    <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
-                    Ready to Launch?
+                <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.6L21 10l-5 4.6L17.4 21 12 17.4 6.6 21 8 14.6 3 10l6.6-1.4L12 2z"/></svg>
+                    <span class="text-blue-400 text-[11px] font-bold tracking-[0.16em] uppercase">Contact</span>
                 </div>
 
-                <!-- Headline -->
-                <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-6 max-w-[520px] text-white">
-                    Launch Your Limo Business With a
-                    <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Complete Booking Platform.</span>
+                <h2 class="text-white text-4xl sm:text-5xl font-black tracking-tight leading-[1.08] mb-5">
+                    Get Started With LimoSchedule
                 </h2>
 
-                <p class="text-[15px] text-gray-400 leading-relaxed mb-9 max-w-[420px]">
-                    Get a complete white-label platform for limo, black car, taxi and chauffeur businesses &mdash; fully configured and ready to launch.
+                <p class="text-gray-400 text-[16px] leading-relaxed max-w-md mb-8">
+                    Tell us about your transportation business and we&rsquo;ll show you how LimoSchedule fits your operations &mdash; no obligation.
                 </p>
 
-                <!-- Primary CTA -->
-                <a href="#contactForm"
-                   class="btn-cta inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-bold px-8 py-4 rounded-xl text-[15px] border border-blue-500/30 mb-5">
-                    <span>Get Started</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
+                <div class="flex flex-col gap-3 mb-8">
+                    <span class="inline-flex items-center gap-2 text-[13.5px] font-medium text-gray-300">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        $1,999 one-time payment &mdash; no monthly SaaS fee
+                    </span>
+                    <span class="inline-flex items-center gap-2 text-[13.5px] font-medium text-gray-300">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        We reply within 4 hours &mdash; usually faster
+                    </span>
+                    <span class="inline-flex items-center gap-2 text-[13.5px] font-medium text-gray-300">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                        Complete white-label platform &mdash; no obligation
+                    </span>
+                </div>
 
-                <!-- Reassurance -->
-                <p class="text-[12.5px] text-gray-500 mb-9">
-                    30-minute setup &middot; One-time payment &middot; No monthly SaaS fee
-                </p>
-
-                <!-- WhatsApp text link -->
-                <div class="text-[13px] leading-relaxed">
-                    <span class="text-gray-500 block mb-0.5">Prefer WhatsApp?</span>
+                <div class="text-[13px]">
+                    <span class="text-gray-500">Prefer WhatsApp?</span>
                     <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F" target="_blank" rel="noopener"
-                       class="inline-flex items-center gap-1 font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200">
-                        Talk to us directly
+                       class="inline-flex items-center gap-1 font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200 ml-1">
+                        Talk to an Expert
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
-
             </div><!-- /left -->
 
-            <!-- â•â• RIGHT: Form Card â•â• -->
+            <!-- RIGHT: Form (visible immediately, no scrolling required) -->
             <div class="section-fade" style="transition-delay: 0.12s;">
-                <div class="contact-form-card">
+                <div class="rounded-2xl p-6 sm:p-8" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 30px 90px rgba(0,0,0,0.4);">
 
-                    <!-- Pricing highlight -->
-                    <div class="flex items-start justify-between gap-4 mb-6 pb-6 relative z-10" style="border-bottom: 1px solid rgba(255,255,255,0.08);">
-                        <div>
-                            <div class="text-[30px] sm:text-[34px] font-black text-white leading-none">$1,999</div>
-                            <div class="text-[12.5px] font-semibold text-blue-400 mt-1.5">One-Time Payment</div>
-                        </div>
-                        <div class="text-[11.5px] text-gray-500 text-right leading-snug max-w-[130px] pt-1">No monthly SaaS subscription</div>
+                    <div class="mb-6">
+                        <h3 class="text-[21px] font-bold text-white mb-1.5">Request Your Private Demo</h3>
+                        <p class="text-[13px] text-gray-400">Share a few details about your business and we&rsquo;ll walk you through how LimoSchedule can run it.</p>
                     </div>
 
-                    <!-- Form header -->
-                    <div class="mb-6 relative z-10">
-                        <h3 class="text-[21px] font-bold text-white mb-1.5">Let&rsquo;s Get Your Business Live</h3>
-                        <p class="text-[13px] text-gray-400">Tell us a little about your business and we&rsquo;ll show you how LimoSchedule can fit your operation.</p>
-                    </div>
+                    <form id="contactForm" action="{{ route('demo.store') }}" method="POST" class="space-y-5">
+                        @csrf
 
-                    <!-- Form wrap (hidden when success shown) -->
-                    <div id="cfFormWrap" class="relative z-10">
-                        <form id="contactForm" action="{{ route('demo.store') }}" method="POST" class="space-y-4">
-                            @csrf
-
-                            <!-- Row 1: Name + Company -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Contact Information -->
+                        <fieldset class="contact-fieldset">
+                            <legend class="contact-legend">Contact Information</legend>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
                                 <div>
-                                    <label class="contact-label" for="cf_name">
-                                        <span class="inline-flex items-center gap-1.5">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                                            Full Name <span class="text-blue-500 ml-0.5">*</span>
-                                        </span>
-                                    </label>
+                                    <label class="contact-label" for="cf_name">Full Name <span class="text-blue-500 ml-0.5">*</span></label>
                                     <input type="text" id="cf_name" name="name" class="contact-input" placeholder="John Smith" autocomplete="name" required>
                                 </div>
                                 <div>
-                                    <label class="contact-label" for="cf_company">
-                                        <span class="inline-flex items-center gap-1.5">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
-                                            Company
-                                        </span>
-                                    </label>
+                                    <label class="contact-label" for="cf_company">Company</label>
                                     <input type="text" id="cf_company" name="company" class="contact-input" placeholder="Acme Limo Co." autocomplete="organization">
                                 </div>
                             </div>
-
-                            <!-- Row 2: Email + WhatsApp -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
                                 <div>
-                                    <label class="contact-label" for="cf_email">
-                                        <span class="inline-flex items-center gap-1.5">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                                            Email Address <span class="text-blue-500 ml-0.5">*</span>
-                                        </span>
-                                    </label>
+                                    <label class="contact-label" for="cf_email">Email Address <span class="text-blue-500 ml-0.5">*</span></label>
                                     <input type="email" id="cf_email" name="email" class="contact-input" placeholder="john@example.com" autocomplete="email" required>
                                 </div>
                                 <div>
-                                    <label class="contact-label" for="cf_whatsapp">
-                                        <span class="inline-flex items-center gap-1.5">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-                                            WhatsApp
-                                        </span>
-                                    </label>
+                                    <label class="contact-label" for="cf_whatsapp">WhatsApp</label>
                                     <input type="tel" id="cf_whatsapp" name="whatsapp" class="contact-input" placeholder="+1 (555) 000-0000" autocomplete="tel">
                                 </div>
                             </div>
+                        </fieldset>
 
-                            <!-- Row 3: Country + Total Employees -->
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Business Details -->
+                        <fieldset class="contact-fieldset">
+                            <legend class="contact-legend">Business Details</legend>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
                                 <div>
-                                    <label class="contact-label" for="cf_country">
-                                        <span class="inline-flex items-center gap-1.5">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
-                                            Country <span class="text-blue-500 ml-0.5">*</span>
-                                        </span>
-                                    </label>
+                                    <label class="contact-label" for="cf_country">Country <span class="text-blue-500 ml-0.5">*</span></label>
                                     <select id="cf_country" name="country" required>
                                         <option value="">Select your country&hellip;</option>
                                         @foreach($countries as $country)
@@ -1502,32 +1452,20 @@
                                     </select>
                                 </div>
                                 <div>
-                                    <label class="contact-label" for="cf_employees">
-                                        <span class="inline-flex items-center gap-1.5">
-                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-                                            Total Employees <span class="text-blue-500 ml-0.5">*</span>
-                                        </span>
-                                    </label>
+                                    <label class="contact-label" for="cf_employees">Total Employees <span class="text-blue-500 ml-0.5">*</span></label>
                                     <select id="cf_employees" name="total_employees" class="contact-input contact-select" required>
                                         <option value="" disabled selected style="background:#111111;">Select range&hellip;</option>
-                                        <option value="1-5"    style="background:#111111;">1 &ndash; 5</option>
-                                        <option value="6-10"   style="background:#111111;">6 &ndash; 10</option>
-                                        <option value="11-25"  style="background:#111111;">11 &ndash; 25</option>
-                                        <option value="26-50"  style="background:#111111;">26 &ndash; 50</option>
+                                        <option value="1-5" style="background:#111111;">1 &ndash; 5</option>
+                                        <option value="6-10" style="background:#111111;">6 &ndash; 10</option>
+                                        <option value="11-25" style="background:#111111;">11 &ndash; 25</option>
+                                        <option value="26-50" style="background:#111111;">26 &ndash; 50</option>
                                         <option value="51-100" style="background:#111111;">51 &ndash; 100</option>
-                                        <option value="100+"   style="background:#111111;">100+</option>
+                                        <option value="100+" style="background:#111111;">100+</option>
                                     </select>
                                 </div>
                             </div>
-
-                            <!-- Row 4: Budget -->
-                            <div>
-                                <label class="contact-label" for="cf_budget">
-                                    <span class="inline-flex items-center gap-1.5">
-                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
-                                        System Setup Budget <span class="text-blue-500 ml-0.5">*</span>
-                                    </span>
-                                </label>
+                            <div class="mt-4">
+                                <label class="contact-label" for="cf_budget">System Setup Budget <span class="text-blue-500 ml-0.5">*</span></label>
                                 <select id="cf_budget" name="budget" class="contact-input contact-select" required>
                                     <option value="" disabled selected style="background:#111111;">What is your budget?&hellip;</option>
                                     <option value="$1500" style="background:#111111;">$1,500</option>
@@ -1535,51 +1473,34 @@
                                     <option value="$5000" style="background:#111111;">$5,000</option>
                                 </select>
                             </div>
+                        </fieldset>
 
-                            <!-- Row 4: Message -->
-                            <div>
-                                <label class="contact-label" for="cf_message">
-                                    <span class="inline-flex items-center gap-1.5">
-                                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-                                        Message
-                                    </span>
-                                </label>
-                                <textarea id="cf_message" name="message" class="contact-input" rows="4" placeholder="Tell us about your limo business and what you're looking to build&hellip;" style="resize: vertical; min-height: 112px;"></textarea>
+                        <!-- Message -->
+                        <fieldset class="contact-fieldset">
+                            <legend class="contact-legend">Message</legend>
+                            <div class="mt-3">
+                                <label class="contact-label" for="cf_message">Tell us about your business</label>
+                                <textarea id="cf_message" name="message" class="contact-input" rows="3" placeholder="Tell us about your transportation business and what you're looking to build&hellip;" style="resize: vertical; min-height: 90px;"></textarea>
                             </div>
+                        </fieldset>
 
-                            <!-- Submit -->
-                            <div class="pt-1">
-                                <button type="submit" id="cfSubmitBtn" class="btn-cta w-full flex items-center justify-center gap-2.5 px-6 py-[14px] rounded-xl font-bold text-[15px] text-white" style="background: linear-gradient(135deg, #1d4ed8, #3B82F6); box-shadow: 0 4px 24px rgba(59,130,246,0.4);">
-                                    <span>Get Started Today</span>
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                                </button>
-                                <p class="text-center text-[11.5px] text-gray-600 mt-2.5">No obligation &middot; We respond within 4 hours</p>
-                            </div>
-
-                        </form>
-                    </div><!-- /cfFormWrap -->
-
-                    <!-- Success state (hidden by default) -->
-                    <div id="cfSuccess" class="hidden relative z-10 text-center py-6">
-                        <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.3);">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <div class="pt-1">
+                            <button type="submit" id="cfSubmitBtn" class="btn-cta w-full inline-flex items-center justify-center gap-2.5 bg-[#3B82F6] text-white font-bold px-7 py-4 rounded-xl text-[15.5px] border border-blue-500/30">
+                                <span>Get Started</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
                         </div>
-                        <h4 class="text-[18px] font-bold text-white mb-2">Request Sent!</h4>
-                        <p class="text-[13.5px] text-gray-400 max-w-[280px] mx-auto">We've received your request and will get back to you within 24 hours.</p>
-                    </div>
+                    </form>
 
-                    <!-- Privacy note -->
-                    <div class="mt-5 flex items-center justify-center gap-1.5 text-[11.5px] text-gray-600 relative z-10">
-                        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-                        Your information is private and never shared with third parties.
-                    </div>
+                    <p class="text-center text-gray-600 text-[11.5px] mt-5">
+                        Your information is private and never shared with third parties. See our <a href="{{ route('privacy-policy') }}" class="text-gray-500 hover:text-white transition-colors duration-200">Privacy Policy</a>.
+                    </p>
 
-                </div><!-- /contact-form-card -->
+                </div>
             </div><!-- /right -->
 
-        </div><!-- /grid -->
-
-    </div><!-- /container -->
+        </div>
+    </div>
 
 </section>
 <!-- ═════ END CONTACT ═════ -->

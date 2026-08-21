@@ -662,6 +662,20 @@ html:not(.js-ready) .ai-bubble-reveal {
     padding-right: 38px;
     cursor: pointer;
 }
+.contact-fieldset {
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 22px 20px 24px;
+    background: rgba(255,255,255,0.015);
+}
+.contact-legend {
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #60a5fa;
+}
 
 .contact-trust-item {
     display: flex;
