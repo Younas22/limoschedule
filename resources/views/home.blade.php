@@ -1,6 +1,48 @@
 ﻿@extends('layouts.public')
 
 @push('styles')
+<script type="application/ld+json">
+{
+    "@@context": "https://schema.org",
+    "@@graph": [
+        {
+            "@@type": "Organization",
+            "@@id": "{{ url('/') }}#organization",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "logo": "{{ url('public/logo/logo-white.png') }}",
+            "contactPoint": {
+                "@@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "support@limoschedule.com",
+                "telephone": "+923460820722"
+            }
+        },
+        {
+            "@@type": "WebSite",
+            "@@id": "{{ url('/') }}#website",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "SoftwareApplication",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "White-label transportation booking software with a booking website, customer panel, driver panel and admin dashboard.",
+            "offers": {
+                "@@type": "Offer",
+                "price": "1999",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+            },
+            "publisher": { "@@id": "{{ url('/') }}#organization" }
+        }
+    ]
+}
+</script>
     <!-- Select2 -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
     <style>
@@ -72,6 +114,7 @@
     <!-- Photographic centerpiece: luxury chauffeur car + white-label booking platform (Customer / Driver / Admin) -->
     <img src="{{ asset('public/assets/images/hero/hero-luxury-dashboard.jpg') }}?v={{ filemtime(public_path('assets/images/hero/hero-luxury-dashboard.jpg')) }}"
          alt="LimoSchedule white-label chauffeur booking platform with customer, driver and admin dashboards, and a luxury black chauffeur car"
+         width="1672" height="941"
          class="absolute inset-0 w-full h-full object-contain"
          style="object-position: center;"
          loading="eager" fetchpriority="high" decoding="sync">
@@ -537,7 +580,7 @@
 
             <!-- 1. Limo Services -->
             <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.05s">
-                <img src="{{ asset('public/assets/images/industries/limo-services.jpg') }}" alt="Limo Services — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('public/assets/images/industries/limo-services.jpg') }}" alt="Limo Services — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Limo Services</h3>
@@ -551,7 +594,7 @@
 
             <!-- 2. Black Car Services -->
             <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.1s">
-                <img src="{{ asset('public/assets/images/industries/black-car-services.jpg') }}" alt="Black Car Services — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('public/assets/images/industries/black-car-services.jpg') }}" alt="Black Car Services — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Black Car Services</h3>
@@ -565,7 +608,7 @@
 
             <!-- 3. Taxi Companies -->
             <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.15s">
-                <img src="{{ asset('public/assets/images/industries/taxi-companies.jpg') }}" alt="Taxi Companies — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('public/assets/images/industries/taxi-companies.jpg') }}" alt="Taxi Companies — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Taxi Companies</h3>
@@ -579,7 +622,7 @@
 
             <!-- 4. Chauffeur Services -->
             <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.2s">
-                <img src="{{ asset('public/assets/images/industries/chauffeur-services.jpg') }}" alt="Chauffeur Services — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('public/assets/images/industries/chauffeur-services.jpg') }}" alt="Chauffeur Services — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Chauffeur Services</h3>
@@ -593,7 +636,7 @@
 
             <!-- 5. Airport Transfer Services -->
             <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.25s">
-                <img src="{{ asset('public/assets/images/industries/airport-transfer.jpg') }}" alt="Airport Transfer Services — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('public/assets/images/industries/airport-transfer.jpg') }}" alt="Airport Transfer Services — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Airport Transfer Services</h3>
@@ -607,7 +650,7 @@
 
             <!-- 6. Corporate Travel -->
             <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.3s">
-                <img src="{{ asset('public/assets/images/industries/corporate-travel.jpg') }}" alt="Corporate Travel — LimoSchedule booking platform" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <img src="{{ asset('public/assets/images/industries/corporate-travel.jpg') }}" alt="Corporate Travel — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Corporate Travel</h3>

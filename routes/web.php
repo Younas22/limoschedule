@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DemoRequestController;
+use App\Http\Controllers\JobApplicationController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
@@ -14,7 +15,17 @@ Route::post('/demo-request', [DemoRequestController::class, 'store'])->name('dem
 Route::get('/demo-thankyou', fn() => view('demo-thankyou'))->name('demo.thankyou');
 
 // Public section pages
+Route::get('/platform', [PublicController::class, 'platform'])->name('platform');
+Route::get('/solutions', [PublicController::class, 'solutions'])->name('solutions');
 Route::get('/features', [PublicController::class, 'features'])->name('features');
+Route::get('/pricing', [PublicController::class, 'pricing'])->name('pricing');
+Route::get('/demo', [PublicController::class, 'demo'])->name('demo');
+Route::get('/about', [PublicController::class, 'about'])->name('about');
+Route::get('/team', [PublicController::class, 'team'])->name('team');
+Route::get('/careers', [PublicController::class, 'careers'])->name('careers');
+Route::redirect('/jobs', '/careers', 301);
+Route::post('/careers/apply', [JobApplicationController::class, 'store'])->name('careers.apply')->middleware('throttle:5,1');
+Route::get('/privacy-policy', [PublicController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/voice-search', [PublicController::class, 'voiceSearch'])->name('voice-search');
 Route::get('/ai-agent', [PublicController::class, 'aiAgent'])->name('ai-agent');
 Route::get('/admin-panel', [PublicController::class, 'adminPanel'])->name('admin-panel');
@@ -34,6 +45,11 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::delete('/requests/{id}', [DashboardController::class, 'destroy'])->name('requests.destroy');
+
+    // Job Applications
+    Route::get('/job-applications', [JobApplicationController::class, 'index'])->name('job-applications.index');
+    Route::get('/job-applications/{id}/resume', [JobApplicationController::class, 'downloadResume'])->name('job-applications.resume');
+    Route::delete('/job-applications/{id}', [JobApplicationController::class, 'destroy'])->name('job-applications.destroy');
 
     // Blog CRUD
     Route::post('/blogs/upload-image', [AdminBlogController::class, 'uploadImage'])->name('blogs.upload-image');
@@ -71,7 +87,15 @@ Route::get('/sitemap.xml', function () {
     $urls = collect();
 
     $urls->push(['loc' => url('/'),                    'lastmod' => now()->toDateString(), 'priority' => '1.0', 'changefreq' => 'weekly']);
+    $urls->push(['loc' => route('platform'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('solutions'),          'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('features'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('pricing'),            'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('demo'),                'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('about'),               'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('team'),                'lastmod' => now()->toDateString(), 'priority' => '0.6', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('careers'),             'lastmod' => now()->toDateString(), 'priority' => '0.6', 'changefreq' => 'weekly']);
+    $urls->push(['loc' => route('privacy-policy'),      'lastmod' => now()->toDateString(), 'priority' => '0.3', 'changefreq' => 'yearly']);
     $urls->push(['loc' => route('ai-agent'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('admin-panel'),        'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('voice-search'),       'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);

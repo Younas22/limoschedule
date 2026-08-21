@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('partials._seo')
 
     <!-- Fonts -->
@@ -132,16 +133,16 @@
 
             <!-- Logo -->
             <a href="{{ url('/') }}" class="flex-shrink-0 block" aria-label="LimoSchedule — Home">
-                <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule — Automated Limo Booking System" class="h-[30px] w-auto block" loading="eager" decoding="sync">
+                <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" width="890" height="130" class="h-[30px] w-auto block" loading="eager" decoding="sync">
             </a>
 
             <!-- Desktop Nav links -->
             <nav class="hidden xl:flex items-center" aria-label="Primary navigation">
                 <ul class="flex items-center gap-0.5 list-none m-0 p-0">
-                    <li><a href="{{ url('/') }}#product-showcase" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Platform</a></li>
-                    <li><a href="{{ url('/') }}#industries"       class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Solutions</a></li>
+                    <li><a href="{{ route('platform') }}"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Platform</a></li>
+                    <li><a href="{{ route('solutions') }}"        class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Solutions</a></li>
                     <li><a href="{{ route('features') }}"         class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Features</a></li>
-                    <li><a href="{{ url('/') }}#pricing"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Pricing</a></li>
+                    <li><a href="{{ route('pricing') }}"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Pricing</a></li>
                     <li><a href="{{ route('faq') }}"              class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">FAQ</a></li>
                 </ul>
             </nav>
@@ -189,7 +190,7 @@
         <div class="max-w-7xl mx-auto px-5 sm:px-6 py-3 pb-4">
             <ul class="list-none m-0 p-0 flex flex-col gap-0.5">
                 <li>
-                    <a href="{{ url('/') }}#product-showcase" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('platform') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </span>
@@ -201,7 +202,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#industries" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('solutions') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="8" rx="2"/><path d="M5 11l1.5-5h11L19 11"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></svg>
                         </span>
@@ -225,7 +226,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('/') }}#pricing" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ route('pricing') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
                         </span>
@@ -321,7 +322,7 @@
             <!-- Column 1: Brand -->
             <div class="flex flex-col gap-5">
                 <a href="{{ url('/') }}" class="inline-block" aria-label="LimoSchedule — Home">
-                    <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" class="h-[28px] w-auto block" loading="lazy" decoding="async">
+                    <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" width="890" height="130" class="h-[28px] w-auto block" loading="lazy" decoding="async">
                 </a>
                 <p class="text-gray-500 text-[13px] leading-relaxed max-w-[250px]">
                     Complete booking technology for limo, black car, taxi and chauffeur businesses.
@@ -348,12 +349,12 @@
             <div>
                 <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Solutions</h4>
                 <ul class="flex flex-col gap-3">
-                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Limo Services</a></li>
-                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Black Car Services</a></li>
-                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Taxi Companies</a></li>
-                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Chauffeur Services</a></li>
-                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Airport Transfers</a></li>
-                    <li><a href="{{ url('/') }}#industries" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Corporate Travel</a></li>
+                    <li><a href="{{ route('solutions') }}#solution-limo-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Limo Services</a></li>
+                    <li><a href="{{ route('solutions') }}#solution-blackcar-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Black Car Services</a></li>
+                    <li><a href="{{ route('solutions') }}#solution-taxi-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Taxi Companies</a></li>
+                    <li><a href="{{ route('solutions') }}#solution-chauffeur-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Chauffeur Services</a></li>
+                    <li><a href="{{ route('solutions') }}#solution-airport-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Airport Transfers</a></li>
+                    <li><a href="{{ route('solutions') }}#solution-corporate-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Corporate Travel</a></li>
                 </ul>
             </div>
 
@@ -361,6 +362,9 @@
             <div>
                 <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Company</h4>
                 <ul class="flex flex-col gap-3">
+                    <li><a href="{{ route('about') }}"        class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">About</a></li>
+                    <li><a href="{{ route('team') }}"         class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Team</a></li>
+                    <li><a href="{{ route('careers') }}"      class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Careers</a></li>
                     <li><a href="{{ route('contact') }}"      class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Contact</a></li>
                     <li><a href="{{ route('faq') }}"          class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">FAQ</a></li>
                     <li><a href="{{ route('blogs.index') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Blog</a></li>
@@ -396,10 +400,12 @@
         <div class="h-px w-full" style="background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07) 30%, rgba(255,255,255,0.07) 70%, transparent);"></div>
 
         <!-- Bottom bar -->
-        <div class="py-6 text-center">
+        <div class="py-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
             <p class="text-gray-600 text-[12px]">
                 &copy; {{ date('Y') }} LimoSchedule. All rights reserved.
             </p>
+            <span class="hidden sm:inline text-gray-700">&middot;</span>
+            <a href="{{ route('privacy-policy') }}" class="text-gray-600 hover:text-white text-[12px] transition-colors duration-200">Privacy Policy</a>
         </div>
 
     </div>

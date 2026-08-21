@@ -1,6 +1,33 @@
 ﻿@extends('layouts.public')
 
 @push('styles')
+<script type="application/ld+json">
+{
+    "@@context": "https://schema.org",
+    "@@graph": [
+        {
+            "@@type": "Organization",
+            "@@id": "{{ url('/') }}#organization",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "logo": "{{ url('public/logo/logo-white.png') }}",
+            "contactPoint": {
+                "@@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "support@limoschedule.com",
+                "telephone": "+923460820722"
+            }
+        },
+        {
+            "@@type": "WebSite",
+            "@@id": "{{ url('/') }}#website",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "publisher": { "@@id": "{{ url('/') }}#organization" }
+        }
+    ]
+}
+</script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
     <style>
         /* Prevent horizontal scrollbar when dropdown opens near viewport edge */
@@ -122,6 +149,14 @@
 
 @section('content')
 <section id="contact" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
+@php
+    $breadcrumbs = [
+        ['label' => 'Home', 'url' => url('/')],
+        ['label' => 'Contact', 'url' => null],
+    ];
+@endphp
+@include('partials._breadcrumbs')
+
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px); background-size: 60px 60px;"></div>
     <div class="absolute top-1/2 left-0 w-[650px] h-[650px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.07) 0%, transparent 65%); transform: translateY(-50%) translateX(-35%);"></div>
     <div class="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.04) 0%, transparent 65%); transform: translateY(-50%) translateX(35%);"></div>
@@ -135,10 +170,10 @@
                     </span>
                     Limited Licenses Available &mdash; Act Now
                 </div>
-                <h2 class="text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[46px] font-bold leading-[1.12] tracking-tight text-white mb-5">
+                <h1 class="text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[46px] font-bold leading-[1.12] tracking-tight text-white mb-5">
                     Stop Losing Bookings.<br>Get the System That<br>
                     <span style="background: linear-gradient(135deg, #ffffff 20%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Runs Itself.</span>
-                </h2>
+                </h1>
                 <p class="text-[15px] text-gray-400 leading-relaxed mb-6 max-w-[420px]">
                     Cheaper than hiring a dispatcher. Cheaper than building custom software. Cheaper than losing one more month of bookings to manual chaos.
                 </p>

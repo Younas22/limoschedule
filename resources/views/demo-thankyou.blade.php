@@ -55,7 +55,7 @@
     <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-[62px]">
         <a href="{{ url('/') }}" class="flex items-center gap-2.5" aria-label="LimoSchedule Home">
             <div style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2); border-radius: 10px; padding: 6px 12px;">
-                <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" class="h-[26px] w-auto block">
+                <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" width="890" height="130" class="h-[26px] w-auto block" loading="eager" decoding="sync">
             </div>
         </a>
         <a href="{{ url('/') }}" class="text-[13px] font-medium text-gray-400 hover:text-white transition-colors duration-200 flex items-center gap-1.5">

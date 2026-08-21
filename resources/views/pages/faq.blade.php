@@ -1,15 +1,101 @@
 @extends('layouts.public')
 
+@push('styles')
+<script type="application/ld+json">
+{
+    "@@context": "https://schema.org",
+    "@@graph": [
+        {
+            "@@type": "Organization",
+            "@@id": "{{ url('/') }}#organization",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "logo": "{{ url('public/logo/logo-white.png') }}"
+        },
+        {
+            "@@type": "WebSite",
+            "@@id": "{{ url('/') }}#website",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@@type": "Question",
+                    "name": "What is included in LimoSchedule?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "A complete white-label platform: a branded booking website, a Customer Portal, a Driver Panel, and a full Admin Dashboard — all included in a single one-time license." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Is LimoSchedule white-label?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule is fully white-label — your logo, your brand colors, your domain. There's no LimoSchedule branding on the platform your customers see." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "How quickly can my platform be set up?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Most businesses are fully configured and ready to launch in as little as 30 minutes once your branding and business settings are in place." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Is this a monthly SaaS subscription?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "No. LimoSchedule is a one-time payment of $1,999 — there are no recurring subscription fees to use the platform." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Does it support multiple languages?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule includes multi-language support, so you can serve customers in the language they're most comfortable with." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Does it support multiple currencies?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Yes. You can accept and display pricing in multiple currencies to match how your customers actually pay." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Does it include a booking website?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Your license includes a complete, branded booking website where customers can search, book and manage their rides." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Does it include customer and driver panels?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule includes a dedicated Customer Portal for bookings and trip history, and a Driver Panel for assigned trips and trip details — alongside the Admin Dashboard." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Can I customize my branding?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Because LimoSchedule is white-label, you can fully customize your branding — logo, colors and domain — so the platform looks and feels like your own product." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "How does the setup process work?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "We configure your branding, business settings, currency, language and platform details for you, so your complete platform is ready to launch without you having to build anything yourself." }
+                }
+            ]
+        }
+    ]
+}
+</script>
+@endpush
+
 @section('content')
 <section id="faq" class="relative py-28 lg:py-36 overflow-hidden" style="background: #0A0A0A;">
+@php
+    $breadcrumbs = [
+        ['label' => 'Home', 'url' => url('/')],
+        ['label' => 'FAQ', 'url' => null],
+    ];
+@endphp
+@include('partials._breadcrumbs')
 
     <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
 
         <!-- Header -->
         <div class="text-center mb-16 lg:mb-20 section-fade">
-            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+            <h1 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
                 Questions Before You Launch?
-            </h2>
+            </h1>
             <p class="text-gray-400 text-[16.5px] leading-relaxed">
                 Everything you need to know before getting your LimoSchedule platform.
             </p>

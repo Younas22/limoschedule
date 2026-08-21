@@ -5,8 +5,9 @@
         @if ($blog->featured_image)
             <img src="{{ url('public/' . $blog->featured_image) }}"
                  alt="{{ $blog->title }}"
+                 width="640" height="360"
                  class="blog-card-img"
-                 loading="lazy">
+                 loading="lazy" decoding="async">
         @else
             <div class="blog-card-img-placeholder">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(59,130,246,0.3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">

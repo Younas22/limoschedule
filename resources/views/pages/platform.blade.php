@@ -22,10 +22,10 @@
         {
             "@@type": "SoftwareApplication",
             "name": "LimoSchedule",
-            "url": "{{ route('features') }}",
+            "url": "{{ route('platform') }}",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
-            "description": "White-label transportation booking software with online reservations, a customer panel, a driver panel and an admin dashboard.",
+            "description": "White-label limo, black car, taxi and chauffeur booking software with a booking website, customer panel, driver panel and admin dashboard.",
             "offers": {
                 "@@type": "Offer",
                 "price": "1999",
@@ -48,69 +48,129 @@
 @php
     $breadcrumbs = [
         ['label' => 'Home', 'url' => url('/')],
-        ['label' => 'Features', 'url' => null],
+        ['label' => 'Platform', 'url' => null],
     ];
 @endphp
 @include('partials._breadcrumbs')
 
+
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 56px 56px;"></div>
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.12) 0%, transparent 70%);"></div>
 
-    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-24 pb-20 lg:pt-32 lg:pb-24 text-center">
+    <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-24 pb-16 lg:pt-32 lg:pb-24">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-14 lg:gap-16 items-center">
 
-        <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
-            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.6L21 10l-5 4.6L17.4 21 12 17.4 6.6 21 8 14.6 3 10l6.6-1.4L12 2z"/></svg>
-            <span class="text-blue-400 text-[11px] font-bold tracking-[0.16em] uppercase">Platform Features</span>
+            <!-- Copy -->
+            <div class="text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25);">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.6L21 10l-5 4.6L17.4 21 12 17.4 6.6 21 8 14.6 3 10l6.6-1.4L12 2z"/></svg>
+                    <span class="text-blue-400 text-[11px] font-bold tracking-[0.16em] uppercase">White-Label Transportation Platform</span>
+                </div>
+
+                <h1 class="text-white text-4xl sm:text-5xl lg:text-[54px] font-black tracking-tight leading-[1.05] mb-6">
+                    One Platform. Your Entire Transportation Business.
+                </h1>
+
+                <p class="text-gray-400 text-[17px] sm:text-[18px] leading-relaxed max-w-xl mx-auto lg:mx-0 mb-9">
+                    Manage bookings, customers, drivers and daily operations with a complete white-label platform built for transportation businesses.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+                    <a href="{{ route('contact') }}"
+                       class="btn-cta w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-bold px-8 py-4 rounded-xl text-[15px] border border-blue-500/30">
+                        <span>Get Started</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%27s%20white-label%20platform.%20Can%20I%20talk%20to%20an%20expert%3F" target="_blank" rel="noopener"
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-semibold px-7 py-4 rounded-xl text-[15px] text-white transition-all duration-200 hover:bg-white/10"
+                       style="background: #000; border: 1px solid rgba(255,255,255,0.28);">
+                        <span>Talk to an Expert</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product visual -->
+            <div class="relative">
+                <div class="rounded-2xl overflow-hidden" style="border: 1px solid rgba(59,130,246,0.25); box-shadow: 0 30px 90px rgba(0,0,0,0.6), 0 0 60px rgba(59,130,246,0.1);">
+                    <img
+                        src="{{ asset('public/assets/images/hero/hero-luxury-dashboard.jpg') }}?v={{ filemtime(public_path('assets/images/hero/hero-luxury-dashboard.jpg')) }}"
+                        alt="LimoSchedule white-label transportation booking platform admin dashboard with a luxury chauffeur vehicle"
+                        width="1672" height="941"
+                        class="w-full h-auto block"
+                        loading="eager" fetchpriority="high" decoding="sync">
+                </div>
+            </div>
+
         </div>
-
-        <h1 class="text-white text-4xl sm:text-5xl lg:text-[54px] font-black tracking-tight leading-[1.05] mb-6">
-            Everything You Need to Run a Modern Transportation Business
-        </h1>
-
-        <p class="text-gray-400 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto mb-9">
-            From online reservations to driver operations, LimoSchedule brings your essential transportation workflows into one complete platform.
-        </p>
-
-        <a href="{{ route('platform') }}"
-           class="btn-cta inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-bold px-8 py-4 rounded-xl text-[15px] border border-blue-500/30">
-            <span>Explore the Platform</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
     </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     1. BOOKING & RESERVATIONS
+     PLATFORM OVERVIEW
 ═══════════════════════════════════════════════════════════════ -->
-<article aria-labelledby="booking-reservations-heading">
-<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #0A0A0A;">
+<section class="relative py-20 lg:py-28 overflow-hidden" style="background: #060606;">
+    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+
+        <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.2);">
+            <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">The Complete Ecosystem</span>
+        </div>
+
+        <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-7 text-white">
+            Everything Your Transportation Business Needs &mdash; In One Platform
+        </h2>
+
+        <!-- Equation -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-x-3 gap-y-3 mb-8 text-[14px] sm:text-[15px] font-bold">
+            <span class="px-4 py-2 rounded-xl text-white" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.2);">Booking Website</span>
+            <span class="text-blue-500 text-[18px]">+</span>
+            <span class="px-4 py-2 rounded-xl text-white" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.2);">Customer Panel</span>
+            <span class="text-blue-500 text-[18px]">+</span>
+            <span class="px-4 py-2 rounded-xl text-white" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.2);">Driver Panel</span>
+            <span class="text-blue-500 text-[18px]">+</span>
+            <span class="px-4 py-2 rounded-xl text-white" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.2);">Admin Dashboard</span>
+            <span class="text-gray-500 text-[18px]">=</span>
+            <span class="px-4 py-2 rounded-xl text-white" style="background: rgba(59,130,246,0.14); border: 1px solid rgba(59,130,246,0.4);">Complete Transportation Booking Platform</span>
+        </div>
+
+        <p class="text-gray-400 text-[16px] leading-relaxed max-w-2xl mx-auto">
+            LimoSchedule brings your booking website, customer experience, driver operations and business management together &mdash; so limo, black car, taxi and chauffeur companies can run their entire operation from one connected system, instead of stitching together separate tools.
+        </p>
+        <p class="text-gray-500 text-[14px] mt-5">
+            See how it all fits together in our <a href="{{ route('how-it-works') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">How It Works guide</a>.
+        </p>
+
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     BOOKING WEBSITE
+═══════════════════════════════════════════════════════════════ -->
+<article aria-labelledby="booking-website-heading">
+<section class="relative py-20 lg:py-28 overflow-hidden" style="background: #0A0A0A;">
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.025) 1px, transparent 1px); background-size: 56px 56px;"></div>
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-16 items-center">
 
             <div class="text-center lg:text-left">
-                <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">Booking &amp; Reservations</div>
-                <h2 id="booking-reservations-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-6 text-white">
-                    Take Bookings Online, Automatically
+                <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">Booking Website</div>
+                <h2 id="booking-website-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-5 text-white">
+                    A Branded Booking Website That Converts Visitors Into Rides
                 </h2>
+                <p class="text-gray-400 text-[16px] leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
+                    Your customers book directly from a professional, branded booking website &mdash; no app download, no phone tag. Every booking flows straight into your admin dashboard and driver panel automatically.
+                </p>
 
-                <div class="space-y-5 max-w-lg mx-auto lg:mx-0 text-left">
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Advanced Booking</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Customers book online in a few steps &mdash; pickup, drop-off, date and vehicle type.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Fare Calculator</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Instant, transparent pricing shown before the customer confirms a booking.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Reservation Management</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Every reservation is organized and searchable, so nothing gets lost as booking volume grows.</p>
-                    </div>
-                </div>
+                <ul class="grid grid-cols-2 gap-3 max-w-md mx-auto lg:mx-0 text-left">
+                    <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Advanced Booking</span></li>
+                    <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Fare Calculator</span></li>
+                    <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Mobile Responsive</span></li>
+                    <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Multi-Language</span></li>
+                    <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Multi-Currency</span></li>
+                    <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">White-Label Branding</span></li>
+                </ul>
             </div>
 
-            <!-- Screenshot: booking form -->
+            <!-- Visual -->
             <div class="max-w-md mx-auto lg:max-w-none">
                 <div class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.2); box-shadow: 0 30px 90px rgba(0,0,0,0.5), 0 0 50px rgba(59,130,246,0.08);">
                     <div class="flex items-center gap-2 px-4 py-3" style="border-bottom: 1px solid rgba(255,255,255,0.08);">
@@ -149,14 +209,14 @@
 </article>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     2. CUSTOMER EXPERIENCE
+     CUSTOMER PANEL
 ═══════════════════════════════════════════════════════════════ -->
-<article aria-labelledby="customer-experience-heading">
-<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #060606;">
+<article aria-labelledby="customer-panel-heading">
+<section class="relative py-20 lg:py-28 overflow-hidden" style="background: #060606;">
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 lg:gap-16 items-center">
 
-            <!-- Screenshot: customer panel -->
+            <!-- Visual -->
             <div class="max-w-sm mx-auto lg:max-w-none lg:order-1 order-2">
                 <div class="rounded-2xl p-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.2); box-shadow: 0 30px 90px rgba(0,0,0,0.5), 0 0 50px rgba(59,130,246,0.08);">
                     <div class="flex items-center gap-2.5 mb-5">
@@ -177,33 +237,13 @@
             </div>
 
             <div class="text-center lg:text-left lg:order-2 order-1">
-                <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">Customer Experience</div>
-                <h2 id="customer-experience-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-6 text-white">
-                    A Professional Experience for Every Customer
+                <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">Customer Panel</div>
+                <h2 id="customer-panel-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-5 text-white">
+                    Give Customers Control Over Every Booking
                 </h2>
-
-                <div class="space-y-5 max-w-lg mx-auto lg:mx-0 text-left">
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Booking Website</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">A professional, branded website where customers book directly &mdash; no app download required.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Customer Panel</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Customers view upcoming rides, trip history and manage their account in one place.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Mobile Responsive</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Looks and works great on any device, from desktop to mobile.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Multi-Language</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Serve customers in their preferred language, wherever your business operates.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Multi-Currency</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Display pricing in the currency your customers expect.</p>
-                    </div>
-                </div>
+                <p class="text-gray-400 text-[16px] leading-relaxed max-w-lg mx-auto lg:mx-0">
+                    From the customer panel, riders can view upcoming trips, review their booking history, and manage their account &mdash; creating a self-service experience that reduces phone calls and no-shows for your team.
+                </p>
             </div>
 
         </div>
@@ -212,36 +252,24 @@
 </article>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     3. DRIVER OPERATIONS
+     DRIVER PANEL
 ═══════════════════════════════════════════════════════════════ -->
-<article aria-labelledby="driver-operations-heading">
-<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #0A0A0A;">
+<article aria-labelledby="driver-panel-heading">
+<section class="relative py-20 lg:py-28 overflow-hidden" style="background: #0A0A0A;">
     <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-16 items-center">
 
             <div class="text-center lg:text-left">
-                <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">Driver Operations</div>
-                <h2 id="driver-operations-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-6 text-white">
-                    Keep Drivers Connected and On Schedule
+                <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">Driver Panel</div>
+                <h2 id="driver-panel-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-5 text-white">
+                    Keep Every Driver Connected and On Schedule
                 </h2>
-
-                <div class="space-y-5 max-w-lg mx-auto lg:mx-0 text-left">
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Driver Panel</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Drivers see assigned trips, pickup and drop-off details, and status updates in real time.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Driver Management</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Add, organize and manage your driver roster from one place.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-white text-[15px] font-bold mb-1">Booking Assignment</h3>
-                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Assign bookings to the right driver quickly, without phone calls or manual coordination.</p>
-                    </div>
-                </div>
+                <p class="text-gray-400 text-[16px] leading-relaxed max-w-lg mx-auto lg:mx-0">
+                    Drivers see their assigned trips, pickup and drop-off details, and real-time status updates from the driver panel &mdash; so dispatch stays organized without a single phone call.
+                </p>
             </div>
 
-            <!-- Screenshot: driver panel -->
+            <!-- Visual -->
             <div class="max-w-sm mx-auto lg:max-w-none">
                 <div class="rounded-2xl p-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.2); box-shadow: 0 30px 90px rgba(0,0,0,0.5), 0 0 50px rgba(59,130,246,0.08);">
                     <div class="flex items-center gap-2.5 mb-5">
@@ -269,35 +297,24 @@
 </article>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     4. BUSINESS MANAGEMENT
+     ADMIN DASHBOARD
 ═══════════════════════════════════════════════════════════════ -->
-<article aria-labelledby="business-management-heading">
-<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #060606;">
+<article aria-labelledby="admin-dashboard-heading">
+<section class="relative py-20 lg:py-28 overflow-hidden" style="background: #060606;">
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.025) 1px, transparent 1px); background-size: 56px 56px;"></div>
     <div class="relative z-10 max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
 
         <div class="text-center max-w-2xl mx-auto mb-14 lg:mb-16">
-            <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">Business Management</div>
-            <h2 id="business-management-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-6 text-white">
+            <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">Admin Dashboard</div>
+            <h2 id="admin-dashboard-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-5 text-white">
                 Run Your Entire Operation From One Admin Dashboard
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-3xl mx-auto mt-8">
-                <div>
-                    <h3 class="text-white text-[15px] font-bold mb-1">Admin Dashboard</h3>
-                    <p class="text-gray-500 text-[13.5px] leading-relaxed">A complete view of bookings, revenue and daily operations from a single screen.</p>
-                </div>
-                <div>
-                    <h3 class="text-white text-[15px] font-bold mb-1">Booking Management</h3>
-                    <p class="text-gray-500 text-[13.5px] leading-relaxed">Track every booking from request to completion, with full visibility for your team.</p>
-                </div>
-                <div>
-                    <h3 class="text-white text-[15px] font-bold mb-1">Customer Management</h3>
-                    <p class="text-gray-500 text-[13.5px] leading-relaxed">Keep customer details, booking history and preferences organized in one system.</p>
-                </div>
-            </div>
+            <p class="text-gray-400 text-[16px] leading-relaxed">
+                Bookings, customers, drivers and daily operations all come together in the admin dashboard &mdash; giving your team full visibility and control over the business, from a single screen.
+            </p>
         </div>
 
-        <!-- Screenshot: admin dashboard -->
+        <!-- Admin hub visual -->
         <div class="rounded-2xl overflow-hidden max-w-3xl mx-auto" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.22); box-shadow: 0 30px 90px rgba(0,0,0,0.5), 0 0 60px rgba(59,130,246,0.08);">
             <div class="flex items-center justify-between px-5 py-3.5" style="border-bottom: 1px solid rgba(255,255,255,0.07);">
                 <div class="flex items-center gap-2">
@@ -369,57 +386,94 @@
 </article>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     5. WHITE-LABEL & OWNERSHIP
+     HOW EVERYTHING CONNECTS
 ═══════════════════════════════════════════════════════════════ -->
-<article aria-labelledby="white-label-heading">
-<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #0A0A0A;">
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.07) 0%, transparent 68%);"></div>
+<section class="relative py-20 lg:py-28 overflow-hidden" style="background: #0A0A0A;">
+    <div class="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 lg:px-8">
 
-    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
-        <div class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400 mb-4">White-Label &amp; Ownership</div>
-        <h2 id="white-label-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-6 text-white">
-            Your Brand. Your Platform. Yours to Keep.
-        </h2>
+        <div class="text-center max-w-2xl mx-auto mb-16 lg:mb-20">
+            <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.2);">
+                <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">One Connected Workflow</span>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-5 text-white">
+                From Booking to Completed Ride &mdash; Automatically
+            </h2>
+            <p class="text-gray-400 text-[16px] leading-relaxed">
+                Every booking moves through one connected workflow &mdash; no manual re-entry, no lost bookings, no confusion between your team and your customers.
+            </p>
+        </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left max-w-3xl mx-auto mb-10">
-            <div>
-                <h3 class="text-white text-[15px] font-bold mb-1">White-Label Branding</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Your logo, your colors &mdash; customers and drivers only ever see your brand.</p>
-            </div>
-            <div>
-                <h3 class="text-white text-[15px] font-bold mb-1">Your Domain</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Run the platform on your own domain &mdash; yourcompany.com, not ours.</p>
-            </div>
-            <div>
-                <h3 class="text-white text-[15px] font-bold mb-1">One-Time Payment</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Pay once for the platform &mdash; no recurring software bills to manage.</p>
-            </div>
-            <div>
-                <h3 class="text-white text-[15px] font-bold mb-1">No Monthly SaaS Fee</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">Unlike typical booking SaaS tools, there&rsquo;s no monthly subscription eating into your margins.</p>
-            </div>
-            <div>
-                <h3 class="text-white text-[15px] font-bold mb-1">Your Brand</h3>
-                <p class="text-gray-500 text-[13.5px] leading-relaxed">LimoSchedule disappears into the background; your business is what customers see.</p>
+        <!-- Flow -->
+        <div class="relative">
+            <div class="hidden lg:block absolute top-9 left-[8%] right-[8%] h-[1.5px]" style="background: linear-gradient(90deg, rgba(59,130,246,0.15), rgba(59,130,246,0.7) 50%, rgba(34,197,94,0.7));"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-4">
+
+                <div class="flex flex-col items-center text-center">
+                    <span class="relative z-10 w-[72px] h-[72px] rounded-2xl flex items-center justify-center mb-4" style="background:#0A0A0A; border: 2px solid rgba(59,130,246,0.4); box-shadow: 0 0 16px rgba(59,130,246,0.2);">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </span>
+                    <h3 class="text-white font-bold text-[14px] mb-1">Customer</h3>
+                    <p class="text-gray-500 text-[12px] leading-snug">Books a ride online</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <span class="relative z-10 w-[72px] h-[72px] rounded-2xl flex items-center justify-center mb-4" style="background:#0A0A0A; border: 2px solid rgba(59,130,246,0.5); box-shadow: 0 0 18px rgba(59,130,246,0.25);">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20 15.3 15.3 0 010-20z"/></svg>
+                    </span>
+                    <h3 class="text-white font-bold text-[14px] mb-1">Booking Website</h3>
+                    <p class="text-gray-500 text-[12px] leading-snug">Captures trip details</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <span class="relative z-10 w-[72px] h-[72px] rounded-2xl flex items-center justify-center mb-4" style="background:#0A0A0A; border: 2px solid rgba(59,130,246,0.6); box-shadow: 0 0 20px rgba(59,130,246,0.3);">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                    </span>
+                    <h3 class="text-white font-bold text-[14px] mb-1">Admin</h3>
+                    <p class="text-gray-500 text-[12px] leading-snug">Assigns the trip</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <span class="relative z-10 w-[72px] h-[72px] rounded-2xl flex items-center justify-center mb-4" style="background:#0A0A0A; border: 2px solid rgba(59,130,246,0.7); box-shadow: 0 0 22px rgba(59,130,246,0.35);">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 01-2-2v-2l2-5h14l2 5v2a2 2 0 01-2 2M5 17v2a1 1 0 001 1h1a1 1 0 001-1v-2m8 0v2a1 1 0 001 1h1a1 1 0 001-1v-2"/></svg>
+                    </span>
+                    <h3 class="text-white font-bold text-[14px] mb-1">Driver</h3>
+                    <p class="text-gray-500 text-[12px] leading-snug">Completes the pickup</p>
+                </div>
+
+                <div class="flex flex-col items-center text-center">
+                    <span class="relative z-10 w-[72px] h-[72px] rounded-2xl flex items-center justify-center mb-4" style="background:#22c55e; box-shadow: 0 0 26px rgba(34,197,94,0.5);">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                    </span>
+                    <h3 class="text-white font-bold text-[14px] mb-1">Completed Ride</h3>
+                    <p class="text-gray-500 text-[12px] leading-snug">Recorded automatically</p>
+                </div>
+
             </div>
         </div>
 
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     WHITE-LABEL
+═══════════════════════════════════════════════════════════════ -->
+<section class="relative py-20 lg:py-28 overflow-hidden" style="background: #060606;">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse at center, rgba(59,130,246,0.07) 0%, transparent 68%);"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.2);">
+            <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">White-Label Platform</span>
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-black tracking-tight leading-[1.1] mb-6 text-white">
+            Your Brand. Your Platform.
+        </h2>
+        <p class="text-gray-400 text-[17px] leading-relaxed mb-8">
+            LimoSchedule is white-label booking software &mdash; your logo, your colors, your domain. Customers and drivers only ever see your brand, giving your limo, black car, taxi or chauffeur business a professional booking platform that looks and feels entirely your own.
+        </p>
         <div class="inline-flex items-center gap-3 px-5 py-3 rounded-xl" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(59,130,246,0.2);">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20 15.3 15.3 0 010-20z"/></svg>
             <span class="text-[13px] text-gray-400">yourcompany.com &mdash; no LimoSchedule branding, anywhere</span>
         </div>
-    </div>
-</section>
-</article>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     MORE TO EXPLORE
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-16 overflow-hidden" style="background: #060606;">
-    <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
-        <p class="text-gray-500 text-[14px]">
-            See how these features come together for your industry on our <a href="{{ route('solutions') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">solutions page</a>, or check <a href="{{ route('pricing') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">pricing</a> for the full breakdown.
-        </p>
     </div>
 </section>
 
@@ -432,7 +486,7 @@
 
     <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
         <h2 class="font-black text-white leading-[1.1] tracking-tight mb-5" style="font-size: clamp(2.2rem, 5vw, 3.5rem);">
-            See LimoSchedule in Action
+            Ready to Run Your Transportation Business on One Platform?
         </h2>
         <p class="text-gray-400 text-[15px] mb-9">
             One complete platform &middot; <a href="{{ route('pricing') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">$1,999 one-time payment</a> &middot; no monthly SaaS fee
@@ -440,13 +494,13 @@
 
         <a href="{{ route('contact') }}"
            class="btn-cta inline-flex items-center justify-center gap-2.5 bg-[#3B82F6] text-white font-bold px-9 py-4 rounded-xl text-[15.5px] border border-blue-500/30 mb-5">
-            <span>Request a Demo</span>
+            <span>Get Started</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
 
         <div class="text-[13px]">
             <span class="text-gray-500">Prefer WhatsApp?</span>
-            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%27s%20features.%20Can%20I%20talk%20to%20an%20expert%3F" target="_blank" rel="noopener"
+            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%27s%20white-label%20platform.%20Can%20I%20talk%20to%20an%20expert%3F" target="_blank" rel="noopener"
                class="inline-flex items-center gap-1 font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200 ml-1">
                 Talk to an Expert
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -454,8 +508,9 @@
         </div>
 
         <p class="text-gray-600 text-[12.5px] mt-10">
-            <a href="{{ route('platform') }}" class="text-gray-500 hover:text-white transition-colors duration-200">See the full platform</a> &middot;
-            <a href="{{ route('solutions') }}" class="text-gray-500 hover:text-white transition-colors duration-200">Find your solution</a>
+            See how LimoSchedule fits your business &mdash;
+            <a href="{{ url('/') }}#industries" class="text-gray-500 hover:text-white transition-colors duration-200">explore solutions</a> &middot;
+            <a href="{{ route('features') }}" class="text-gray-500 hover:text-white transition-colors duration-200">view all features</a>
         </p>
     </div>
 </section>

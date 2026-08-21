@@ -30,8 +30,10 @@
     <div class="flex items-center gap-2.5 mb-8 pb-8" style="border-bottom: 1px solid rgba(255,255,255,0.07);">
         <img src="{{ url('public/logo/favicon.png') }}"
              alt="LimoSchedule"
+             width="48" height="48"
              class="w-8 h-8 rounded-full object-cover"
-             style="border: 1px solid rgba(255,255,255,0.1);">
+             style="border: 1px solid rgba(255,255,255,0.1);"
+             loading="lazy" decoding="async">
         <div>
             <div class="text-gray-200 text-[13px] font-semibold leading-none mb-0.5">LimoSchedule</div>
             <div class="text-gray-600 text-[11.5px]">
@@ -42,11 +44,17 @@
 
     <!-- Featured Image -->
     @if ($blog->featured_image)
+        @php
+            $featuredImagePath = public_path($blog->featured_image);
+            $featuredImageSize = is_file($featuredImagePath) ? @getimagesize($featuredImagePath) : false;
+        @endphp
         <div class="mb-8 rounded-2xl overflow-hidden" style="border: 1px solid rgba(255,255,255,0.08);">
             <img src="{{ url('public/' . $blog->featured_image) }}"
                  alt="{{ $blog->title }}"
+                 @if($featuredImageSize) width="{{ $featuredImageSize[0] }}" height="{{ $featuredImageSize[1] }}" @endif
                  class="w-full object-cover"
-                 style="max-height: 480px;">
+                 style="max-height: 480px;"
+                 loading="eager" fetchpriority="high" decoding="async">
         </div>
     @endif
 

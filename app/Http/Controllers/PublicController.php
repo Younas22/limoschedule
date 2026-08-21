@@ -13,28 +13,133 @@ class PublicController extends Controller
         $countries = Country::orderBy('name')->get();
 
         $seo = [
-            'title'       => 'LimoSchedule — Self-Hosted Automated Limo Booking System',
-            'description' => 'Self-hosted, white-label limo booking system. Install on your own server in 30 minutes. Full source code included. One-time license.',
+            'title'       => 'LimoSchedule — White-Label Limo & Transportation Booking Platform',
+            'description' => "LimoSchedule is a complete white-label transportation booking platform — booking website, customer panel, driver panel and admin dashboard, one-time payment.",
             'canonical'   => url('/'),
             'og_type'     => 'website',
-            'og_image'    => url('public/logo/favicon.png'),
-            'twitter_card'=> 'summary',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
         ];
 
         return view('home', compact('countries', 'seo'));
     }
 
+    public function platform()
+    {
+        $seo = [
+            'title'       => 'Limo Booking Software & White-Label Transportation Platform | LimoSchedule',
+            'description' => 'Complete white-label limo, black car, taxi and chauffeur booking software — booking website, customer panel, driver panel and admin dashboard in one platform.',
+            'canonical'   => route('platform'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.platform', compact('seo'));
+    }
+
+    public function solutions()
+    {
+        $seo = [
+            'title'       => 'Transportation Booking Solutions for Limo, Taxi & Chauffeur Businesses | LimoSchedule',
+            'description' => 'White-label transportation booking software for limo services, black car, taxi, chauffeur, airport transfer and corporate travel businesses — built around you.',
+            'canonical'   => route('solutions'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/industries/limo-services.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.solutions', compact('seo'));
+    }
+
     public function features()
     {
         $seo = [
-            'title'       => 'Features — LimoSchedule',
-            'description' => 'Explore all features of LimoSchedule: AI voice booking, automated dispatch, fleet management, white-label admin panel, and more.',
+            'title'       => 'Limo & Transportation Booking Software Features | LimoSchedule',
+            'description' => "Explore LimoSchedule's transportation booking software features — online reservations, customer and driver panels, admin dashboard and white-label branding.",
             'canonical'   => route('features'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.features', compact('seo'));
+    }
+
+    public function pricing()
+    {
+        $seo = [
+            'title'       => 'Limo Booking Software Pricing — One-Time Payment | LimoSchedule',
+            'description' => "LimoSchedule limo booking software pricing — a one-time \$1,999 payment for a complete white-label transportation platform, no monthly SaaS fee.",
+            'canonical'   => route('pricing'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.pricing', compact('seo'));
+    }
+
+    public function demo()
+    {
+        $seo = [
+            'title'       => 'Limo Booking Software Demo | See LimoSchedule in Action',
+            'description' => "See LimoSchedule in action — a transportation booking software demo covering the booking website, customer panel, driver panel and admin dashboard.",
+            'canonical'   => route('demo'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.demo', compact('seo'));
+    }
+
+    public function about()
+    {
+        $seo = [
+            'title'       => 'About LimoSchedule | Transportation Booking Technology',
+            'description' => "LimoSchedule is a transportation technology company providing white-label limo booking software — a complete platform for transportation businesses.",
+            'canonical'   => route('about'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.about', compact('seo'));
+    }
+
+    public function team()
+    {
+        $seo = [
+            'title'       => 'LimoSchedule Team | Transportation Technology Experts',
+            'description' => "Meet the LimoSchedule team — the people building white-label transportation booking technology for limo, taxi and chauffeur businesses.",
+            'canonical'   => route('team'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/team/team-hamza-malik.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.team', compact('seo'));
+    }
+
+    public function careers()
+    {
+        $countries = Country::orderBy('name')->get();
+        $seo = [
+            'title'       => 'Careers at LimoSchedule | Join Our Team',
+            'description' => "Join LimoSchedule and help build practical technology for the transportation industry — explore open roles or submit your resume.",
+            'canonical'   => route('careers'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.careers', compact('seo', 'countries'));
+    }
+
+    public function privacyPolicy()
+    {
+        $seo = [
+            'title'       => 'Privacy Policy — LimoSchedule',
+            'description' => 'How LimoSchedule collects, uses and protects information submitted through this website, including contact, demo and job application forms.',
+            'canonical'   => route('privacy-policy'),
             'og_type'     => 'website',
             'og_image'    => url('public/logo/favicon.png'),
             'twitter_card'=> 'summary',
         ];
-        return view('pages.features', compact('seo'));
+        return view('pages.privacy-policy', compact('seo'));
     }
 
     public function voiceSearch()
@@ -44,8 +149,8 @@ class PublicController extends Controller
             'description' => 'Let customers book limo rides by speaking naturally. LimoSchedule\'s AI voice search understands pickup, drop-off, date, and vehicle preference instantly.',
             'canonical'   => route('voice-search'),
             'og_type'     => 'website',
-            'og_image'    => url('public/logo/favicon.png'),
-            'twitter_card'=> 'summary',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
         ];
         return view('pages.voice-search', compact('seo'));
     }
@@ -57,8 +162,8 @@ class PublicController extends Controller
             'description' => 'Your AI dispatcher answers every call 24/7, collects trip details, quotes pricing, checks availability, and confirms bookings automatically.',
             'canonical'   => route('ai-agent'),
             'og_type'     => 'website',
-            'og_image'    => url('public/logo/favicon.png'),
-            'twitter_card'=> 'summary',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
         ];
         return view('pages.ai-agent', compact('seo'));
     }
@@ -70,8 +175,8 @@ class PublicController extends Controller
             'description' => 'Manage bookings, fleet, pricing, analytics, and your team from one powerful white-label admin dashboard. Complete control, zero limitations.',
             'canonical'   => route('admin-panel'),
             'og_type'     => 'website',
-            'og_image'    => url('public/logo/favicon.png'),
-            'twitter_card'=> 'summary',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
         ];
         return view('pages.admin-panel', compact('seo'));
     }
@@ -79,12 +184,12 @@ class PublicController extends Controller
     public function howItWorks()
     {
         $seo = [
-            'title'       => 'How It Works — LimoSchedule',
-            'description' => 'See how LimoSchedule works in 3 simple steps: install on your server, configure your fleet and pricing, then go live and start taking automated bookings.',
+            'title'       => 'How LimoSchedule Works — Launch Your Limo Booking Platform',
+            'description' => "See how LimoSchedule works — choose your platform, configure your settings, apply your branding, and launch your limo booking platform in simple steps.",
             'canonical'   => route('how-it-works'),
             'og_type'     => 'website',
-            'og_image'    => url('public/logo/favicon.png'),
-            'twitter_card'=> 'summary',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
         ];
         return view('pages.how-it-works', compact('seo'));
     }
@@ -92,12 +197,12 @@ class PublicController extends Controller
     public function faq()
     {
         $seo = [
-            'title'       => 'FAQ — LimoSchedule',
-            'description' => 'Answers to common questions about LimoSchedule: licensing, self-hosting, white-labeling, AI voice agent, and installation.',
+            'title'       => 'FAQ — LimoSchedule White-Label Booking Platform',
+            'description' => 'Answers to common questions about LimoSchedule: what\'s included, one-time pricing, white-labeling, setup time, and platform features.',
             'canonical'   => route('faq'),
             'og_type'     => 'website',
-            'og_image'    => url('public/logo/favicon.png'),
-            'twitter_card'=> 'summary',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
         ];
         return view('pages.faq', compact('seo'));
     }
@@ -106,12 +211,12 @@ class PublicController extends Controller
     {
         $countries = Country::orderBy('name')->get();
         $seo = [
-            'title'       => 'Contact — LimoSchedule',
-            'description' => 'Get in touch with the LimoSchedule team. Request a demo, ask questions, or discuss your limo business needs.',
+            'title'       => 'Contact LimoSchedule — Request a Demo',
+            'description' => 'Get in touch with the LimoSchedule team. Request a demo, ask questions, or discuss your transportation business needs.',
             'canonical'   => route('contact'),
             'og_type'     => 'website',
-            'og_image'    => url('public/logo/favicon.png'),
-            'twitter_card'=> 'summary',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
         ];
         return view('pages.contact', compact('countries', 'seo'));
     }
@@ -135,8 +240,8 @@ class PublicController extends Controller
             'description' => 'Read the latest articles, guides and news about limo booking automation, dispatch software, and the limo industry on the LimoSchedule blog.',
             'canonical'   => route('blogs.index'),
             'og_type'     => 'website',
-            'og_image'    => url('public/logo/favicon.png'),
-            'twitter_card'=> 'summary',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
         ];
 
         return view('blogs.index', compact('blogs', 'seo'));
@@ -154,7 +259,7 @@ class PublicController extends Controller
             'description'        => $blog->meta_description ?: ($blog->excerpt ?: 'Read this article on the LimoSchedule blog.'),
             'canonical'          => route('blog.show', $blog->slug),
             'og_type'            => 'article',
-            'og_image'           => $blog->featured_image ? url('public/' . $blog->featured_image) : url('public/logo/favicon.png'),
+            'og_image'           => $blog->featured_image ? url('public/' . $blog->featured_image) : url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
             'twitter_card'       => 'summary_large_image',
             'og_published_time'  => $blog->published_at?->toIso8601String(),
             'og_section'         => $blog->category?->name,
