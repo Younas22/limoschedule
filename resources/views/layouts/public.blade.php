@@ -106,7 +106,7 @@
     </style>
 
     @stack('styles')
-    <script src="https://chat.limoschedule.com/widget.js"></script>
+    <!-- <script src="https://chat.limoschedule.com/widget.js"></script> -->
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMFKF24L1V"></script>
@@ -138,11 +138,11 @@
             <!-- Desktop Nav links -->
             <nav class="hidden xl:flex items-center" aria-label="Primary navigation">
                 <ul class="flex items-center gap-0.5 list-none m-0 p-0">
-                    <li><a href="{{ route('features') }}"     class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Product</a></li>
-                    <li><a href="{{ route('how-it-works') }}" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">How It Works</a></li>
-                    <li><a href="{{ url('/') }}#pricing"      class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Pricing</a></li>
-                    <li><a href="{{ route('admin-panel') }}"  class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Admin Panel</a></li>
-                    <li><a href="{{ route('faq') }}"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">FAQ</a></li>
+                    <li><a href="{{ url('/') }}#product-showcase" class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Platform</a></li>
+                    <li><a href="{{ url('/') }}#industries"       class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Solutions</a></li>
+                    <li><a href="{{ route('features') }}"         class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Features</a></li>
+                    <li><a href="{{ url('/') }}#pricing"          class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">Pricing</a></li>
+                    <li><a href="{{ route('faq') }}"              class="nav-link text-[13.5px] font-medium text-gray-400 hover:text-white px-3.5 py-2 rounded-lg block whitespace-nowrap">FAQ</a></li>
                 </ul>
             </nav>
 
@@ -161,12 +161,12 @@
                    class="inline-flex items-center gap-2 text-gray-300 hover:text-white text-[13px] font-semibold px-4 py-2 rounded-xl transition-all duration-200 hover:border-green-500/30"
                    style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12);">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#22c55e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
-                    <span>WhatsApp Us</span>
+                    <span>Talk to an Expert</span>
                 </a>
                 <a href="{{ route('contact') }}"
                    class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-4 py-2 rounded-xl border border-blue-500/30">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                    <span>Talk to an Expert</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    <span>Get Started</span>
                 </a>
             </div>
 
@@ -189,25 +189,37 @@
         <div class="max-w-7xl mx-auto px-5 sm:px-6 py-3 pb-4">
             <ul class="list-none m-0 p-0 flex flex-col gap-0.5">
                 <li>
-                    <a href="{{ route('features') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ url('/') }}#product-showcase" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         </span>
                         <div>
-                            <div class="font-semibold text-[14px] text-gray-200">Product</div>
-                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Full platform overview</div>
+                            <div class="font-semibold text-[14px] text-gray-200">Platform</div>
+                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Website, Customer, Driver &amp; Admin</div>
                         </div>
                         <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('how-it-works') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                    <a href="{{ url('/') }}#industries" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
                         <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12A10 10 0 1112 2"/><polyline points="22 2 22 8 16 8"/><path d="M12 12l3-3"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="8" rx="2"/><path d="M5 11l1.5-5h11L19 11"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></svg>
                         </span>
                         <div>
-                            <div class="font-semibold text-[14px] text-gray-200">How It Works</div>
-                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">30-min setup guide</div>
+                            <div class="font-semibold text-[14px] text-gray-200">Solutions</div>
+                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Limo, taxi, chauffeur &amp; more</div>
+                        </div>
+                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('features') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
+                        <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </span>
+                        <div>
+                            <div class="font-semibold text-[14px] text-gray-200">Features</div>
+                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Full platform overview</div>
                         </div>
                         <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
                     </a>
@@ -220,18 +232,6 @@
                         <div>
                             <div class="font-semibold text-[14px] text-gray-200">Pricing</div>
                             <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">One-time payment, no SaaS fees</div>
-                        </div>
-                        <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('admin-panel') }}" class="mob-nav-item flex items-center gap-3 text-[14px] font-medium text-gray-400 hover:text-white px-3 py-3 rounded-xl group">
-                        <span class="flex-shrink-0 w-[34px] h-[34px] rounded-lg flex items-center justify-center" style="background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15);">
-                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-                        </span>
-                        <div>
-                            <div class="font-semibold text-[14px] text-gray-200">Admin Panel</div>
-                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">Full control dashboard</div>
                         </div>
                         <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
                     </a>
@@ -276,12 +276,12 @@
                    class="flex items-center justify-center gap-2 text-gray-300 text-[14px] font-semibold px-4 py-3 rounded-xl transition-all duration-200"
                    style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12);">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="#22c55e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
-                    WhatsApp Us
+                    Talk to an Expert
                 </a>
                 <a href="{{ route('contact') }}"
                    class="btn-cta flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[14px] font-semibold px-4 py-3 rounded-xl border border-blue-500/30">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                    <span>Talk to an Expert</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    <span>Get Started</span>
                 </a>
             </div>
         </div>
@@ -339,7 +339,7 @@
                     <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Customer Portal</a></li>
                     <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Driver Panel</a></li>
                     <li><a href="{{ route('admin-panel') }}"       class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Dashboard</a></li>
-                    <li><a href="{{ url('/') }}#platform-overview" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">White-Label Platform</a></li>
+                    <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">White-Label Platform</a></li>
                     <li><a href="{{ route('features') }}"          class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Features</a></li>
                 </ul>
             </div>
