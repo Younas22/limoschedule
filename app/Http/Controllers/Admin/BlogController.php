@@ -26,10 +26,22 @@ class BlogController extends Controller
             $query->where('category_id', $request->category);
         }
 
-        $blogs      = $query->paginate(15)->withQueryString();
+        $perPage = (int) $request->input('per_page', 15);
+        if (!in_array($perPage, [10, 15, 25, 50, 100], true)) {
+            $perPage = 15;
+        }
+
+        $blogs      = $query->paginate($perPage)->withQueryString();
         $categories = BlogCategory::orderBy('name')->get();
 
-        return view('admin.blogs.index', compact('blogs', 'categories'));
+        $publishedCount = Blog::where('status', 'published')->count();
+        $draftCount     = Blog::where('status', 'draft')->count();
+        $scheduledCount = Blog::where('status', 'scheduled')->count();
+
+        return view('admin.blogs.index', compact(
+            'blogs', 'categories', 'perPage',
+            'publishedCount', 'draftCount', 'scheduledCount'
+        ));
     }
 
     public function create()

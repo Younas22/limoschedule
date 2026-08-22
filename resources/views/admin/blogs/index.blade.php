@@ -24,6 +24,25 @@
         </div>
     @endif
 
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+        <a href="{{ route('admin.blogs.index', array_merge(request()->except('page'), ['status' => 'published'])) }}"
+           class="bg-white rounded-xl shadow-sm p-5 border border-gray-100 hover:border-green-300 transition {{ request('status') === 'published' ? 'ring-2 ring-green-300' : '' }}">
+            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Published</p>
+            <p class="text-3xl font-bold text-green-600 mt-1">{{ $publishedCount }}</p>
+        </a>
+        <a href="{{ route('admin.blogs.index', array_merge(request()->except('page'), ['status' => 'draft'])) }}"
+           class="bg-white rounded-xl shadow-sm p-5 border border-gray-100 hover:border-gray-300 transition {{ request('status') === 'draft' ? 'ring-2 ring-gray-300' : '' }}">
+            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Draft</p>
+            <p class="text-3xl font-bold text-gray-600 mt-1">{{ $draftCount }}</p>
+        </a>
+        <a href="{{ route('admin.blogs.index', array_merge(request()->except('page'), ['status' => 'scheduled'])) }}"
+           class="bg-white rounded-xl shadow-sm p-5 border border-gray-100 hover:border-blue-300 transition {{ request('status') === 'scheduled' ? 'ring-2 ring-blue-300' : '' }}">
+            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide">Scheduled</p>
+            <p class="text-3xl font-bold text-blue-600 mt-1">{{ $scheduledCount }}</p>
+        </a>
+    </div>
+
     <!-- Filters -->
     <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4 mb-4">
         <form method="GET" action="{{ route('admin.blogs.index') }}" class="flex flex-wrap gap-3">
@@ -48,10 +67,15 @@
                 <option value="draft"     {{ request('status') === 'draft'     ? 'selected' : '' }}>Draft</option>
                 <option value="scheduled" {{ request('status') === 'scheduled' ? 'selected' : '' }}>Scheduled</option>
             </select>
+            <select name="per_page" class="px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400" title="Posts per page">
+                @foreach([10, 15, 25, 50, 100] as $option)
+                    <option value="{{ $option }}" {{ $perPage === $option ? 'selected' : '' }}>{{ $option }} / page</option>
+                @endforeach
+            </select>
             <button type="submit" class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-medium px-5 py-2 rounded-lg text-sm transition">
                 Filter
             </button>
-            @if(request()->hasAny(['search', 'status', 'category']))
+            @if(request()->hasAny(['search', 'status', 'category', 'per_page']))
                 <a href="{{ route('admin.blogs.index') }}" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium px-4 py-2 rounded-lg text-sm transition">
                     Reset
                 </a>
@@ -123,6 +147,11 @@
                             </td>
                             <td class="px-5 py-3">
                                 <div class="flex items-center gap-3">
+                                    @if($blog->status === 'published')
+                                        <a href="{{ route('blog.show', $blog->slug) }}" target="_blank" rel="noopener" class="text-gray-500 hover:text-gray-700 text-xs font-medium transition">View</a>
+                                    @else
+                                        <span class="text-gray-300 text-xs font-medium cursor-not-allowed" title="Only published posts have a live page">View</span>
+                                    @endif
                                     <a href="{{ route('admin.blogs.edit', $blog) }}" class="text-blue-500 hover:text-blue-700 text-xs font-medium transition">Edit</a>
                                     <form method="POST" action="{{ route('admin.blogs.destroy', $blog) }}" onsubmit="return confirm('Delete this blog post?')">
                                         @csrf
