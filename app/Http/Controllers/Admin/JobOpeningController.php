@@ -56,7 +56,7 @@ class JobOpeningController extends Controller
 
         JobOpening::create($data);
 
-        return redirect()->route('admin.jobs.index')->with('success', 'Job opening create ho gaya!');
+        return redirect()->route('admin.jobs.index')->with('success', 'Job opening created successfully!');
     }
 
     public function edit(JobOpening $job)
@@ -89,12 +89,29 @@ class JobOpeningController extends Controller
 
         $job->update($data);
 
-        return redirect()->route('admin.jobs.index')->with('success', 'Job opening update ho gaya!');
+        return redirect()->route('admin.jobs.index')->with('success', 'Job opening updated successfully!');
     }
 
     public function destroy(JobOpening $job)
     {
         $job->delete();
-        return back()->with('success', 'Job opening delete ho gaya.');
+        return back()->with('success', 'Job opening deleted successfully.');
+    }
+
+    /**
+     * Duplicate a job opening so an admin can quickly post a similar role.
+     * The copy is created as closed (not visible on the Careers page) so it
+     * can be reviewed and edited before being opened.
+     */
+    public function duplicate(JobOpening $job)
+    {
+        $copy = $job->replicate();
+        $copy->title = $job->title . ' (Copy)';
+        $copy->slug = JobOpening::generateSlug($copy->title);
+        $copy->status = 'closed';
+        $copy->published_at = null;
+        $copy->save();
+
+        return redirect()->route('admin.jobs.edit', $copy)->with('success', 'Job opening duplicated — review and save to publish it.');
     }
 }

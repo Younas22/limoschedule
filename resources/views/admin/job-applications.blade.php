@@ -90,6 +90,8 @@
                                 {{ $app->created_at ? $app->created_at->format('d M Y') : '—' }}
                             </td>
                             <td class="px-5 py-3">
+                                <div class="flex items-center gap-3">
+                                <a href="{{ route('admin.job-applications.show', $app->id) }}" class="text-blue-600 hover:text-blue-800 text-xs font-medium transition">View</a>
                                 <form method="POST" action="{{ route('admin.job-applications.destroy', $app->id) }}" onsubmit="return confirm('Delete this application?')">
                                     @csrf
                                     @method('DELETE')
@@ -97,6 +99,7 @@
                                         Delete
                                     </button>
                                 </form>
+                                </div>
                             </td>
                         </tr>
                         @endforeach

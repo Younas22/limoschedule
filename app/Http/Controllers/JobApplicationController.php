@@ -95,6 +95,15 @@ class JobApplicationController extends Controller
     }
 
     /**
+     * Admin: view a single application's full details.
+     */
+    public function show($id)
+    {
+        $application = JobApplication::findOrFail($id);
+        return view('admin.job-applications-show', compact('application'));
+    }
+
+    /**
      * Admin: securely download a resume (never publicly accessible).
      */
     public function downloadResume($id)

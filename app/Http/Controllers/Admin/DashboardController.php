@@ -29,9 +29,15 @@ class DashboardController extends Controller
         return view('admin.dashboard', compact('requests', 'total', 'today', 'thisWeek'));
     }
 
+    public function show($id)
+    {
+        $request = DemoRequest::findOrFail($id);
+        return view('admin.dashboard-show', compact('request'));
+    }
+
     public function destroy($id)
     {
         DemoRequest::findOrFail($id)->delete();
-        return back()->with('success', 'Record delete ho gaya.');
+        return back()->with('success', 'Record deleted successfully.');
     }
 }

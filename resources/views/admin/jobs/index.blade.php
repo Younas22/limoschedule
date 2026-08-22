@@ -88,6 +88,10 @@
                             <td class="px-5 py-3">
                                 <div class="flex items-center gap-3">
                                     <a href="{{ route('admin.jobs.edit', $job) }}" class="text-blue-600 hover:text-blue-800 text-xs font-medium transition">Edit</a>
+                                    <form method="POST" action="{{ route('admin.jobs.duplicate', $job) }}">
+                                        @csrf
+                                        <button type="submit" class="text-gray-500 hover:text-gray-700 text-xs font-medium transition">Duplicate</button>
+                                    </form>
                                     <form method="POST" action="{{ route('admin.jobs.destroy', $job) }}" onsubmit="return confirm('Delete this job opening?')">
                                         @csrf
                                         @method('DELETE')

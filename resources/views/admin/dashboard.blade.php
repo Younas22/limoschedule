@@ -95,6 +95,8 @@
                                 {{ $req->created_at ? $req->created_at->format('d M Y') : '—' }}
                             </td>
                             <td class="px-5 py-3">
+                                <div class="flex items-center gap-3">
+                                <a href="{{ route('admin.requests.show', $req->id) }}" class="text-blue-600 hover:text-blue-800 text-xs font-medium transition">View</a>
                                 <form method="POST" action="{{ route('admin.requests.destroy', $req->id) }}" onsubmit="return confirm('Delete this record?')">
                                     @csrf
                                     @method('DELETE')
@@ -102,6 +104,7 @@
                                         Delete
                                     </button>
                                 </form>
+                                </div>
                             </td>
                         </tr>
                         @endforeach

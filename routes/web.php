@@ -46,10 +46,12 @@ Route::post('/admin/login', [AuthController::class, 'login'])->name('admin.login
 Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/requests/{id}', [DashboardController::class, 'show'])->name('requests.show');
     Route::delete('/requests/{id}', [DashboardController::class, 'destroy'])->name('requests.destroy');
 
     // Job Applications
     Route::get('/job-applications', [JobApplicationController::class, 'index'])->name('job-applications.index');
+    Route::get('/job-applications/{id}', [JobApplicationController::class, 'show'])->name('job-applications.show');
     Route::get('/job-applications/{id}/resume', [JobApplicationController::class, 'downloadResume'])->name('job-applications.resume');
     Route::delete('/job-applications/{id}', [JobApplicationController::class, 'destroy'])->name('job-applications.destroy');
 
@@ -59,6 +61,7 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
 
     // Job Openings CRUD
     Route::resource('jobs', AdminJobOpeningController::class)->except(['show']);
+    Route::post('/jobs/{job}/duplicate', [AdminJobOpeningController::class, 'duplicate'])->name('jobs.duplicate');
 });
 
 // Webhook – publish scheduled posts (called every hour via cron/external scheduler)

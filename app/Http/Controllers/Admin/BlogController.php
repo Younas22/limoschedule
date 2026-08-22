@@ -64,7 +64,7 @@ class BlogController extends Controller
 
         Blog::create($data);
 
-        return redirect()->route('admin.blogs.index')->with('success', 'Blog post create ho gaya!');
+        return redirect()->route('admin.blogs.index')->with('success', 'Blog post created successfully!');
     }
 
     public function edit(Blog $blog)
@@ -102,7 +102,7 @@ class BlogController extends Controller
 
         $blog->update($data);
 
-        return redirect()->route('admin.blogs.index')->with('success', 'Blog post update ho gaya!');
+        return redirect()->route('admin.blogs.index')->with('success', 'Blog post updated successfully!');
     }
 
     public function destroy(Blog $blog)
@@ -111,7 +111,7 @@ class BlogController extends Controller
             @unlink(public_path($blog->featured_image));
         }
         $blog->delete();
-        return back()->with('success', 'Blog post delete ho gaya.');
+        return back()->with('success', 'Blog post deleted successfully.');
     }
 
     public function uploadImage(Request $request)
