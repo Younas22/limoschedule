@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Country;
+use App\Models\JobOpening;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -119,6 +120,8 @@ class PublicController extends Controller
     public function careers()
     {
         $countries = Country::orderBy('name')->get();
+        $openJobs = JobOpening::open()->orderBy('published_at', 'desc')->get();
+
         $seo = [
             'title'       => 'Careers at LimoSchedule | Join Our Team',
             'description' => "Join LimoSchedule and help build practical technology for the transportation industry — explore open roles or submit your resume.",
@@ -127,7 +130,22 @@ class PublicController extends Controller
             'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
             'twitter_card'=> 'summary_large_image',
         ];
-        return view('pages.careers', compact('seo', 'countries'));
+        return view('pages.careers', compact('seo', 'countries', 'openJobs'));
+    }
+
+    public function careerJob(string $slug)
+    {
+        $job = JobOpening::where('slug', $slug)->where('status', 'open')->firstOrFail();
+
+        $seo = [
+            'title'       => $job->title . ' at LimoSchedule | Careers',
+            'description' => Str::limit($job->short_description, 155),
+            'canonical'   => route('careers.job', $job->slug),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.career-job', compact('seo', 'job'));
     }
 
     public function privacyPolicy()

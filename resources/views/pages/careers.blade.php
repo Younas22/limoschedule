@@ -25,6 +25,27 @@
             "url": "{{ url('/') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
         }
+@if($openJobs->count())
+        ,
+        @foreach($openJobs as $job)
+        {
+            "@@type": "JobPosting",
+            "title": {!! json_encode($job->title) !!},
+            "description": {!! json_encode($job->short_description) !!},
+            "datePosted": "{{ $job->published_at?->toDateString() }}",
+            "employmentType": "{{ $job->schemaEmploymentType() }}",
+            "hiringOrganization": { "@@id": "{{ url('/') }}#organization" },
+            "jobLocation": {
+                "@@type": "Place",
+                "address": {
+                    "@@type": "PostalAddress",
+                    "addressLocality": {!! json_encode($job->location) !!}
+                }
+            },
+            "url": "{{ route('careers.job', $job->slug) }}"
+        }@if(!$loop->last),@endif
+        @endforeach
+@endif
     ]
 }
 </script>
@@ -165,6 +186,42 @@
 ═══════════════════════════════════════════════════════════════ -->
 <section id="open-positions" class="relative py-20 lg:py-24 overflow-hidden" style="background: #0A0A0A;">
     <div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(rgba(59,130,246,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.025) 1px, transparent 1px); background-size: 56px 56px;"></div>
+
+    @if($openJobs->count())
+    <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-10 text-white text-center">
+            Open Positions
+        </h2>
+
+        <div class="flex flex-col gap-4">
+            @foreach($openJobs as $job)
+            <article class="rounded-2xl p-6 sm:p-7" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
+                <h3 class="text-white text-[18px] font-bold mb-1.5">{{ $job->title }}</h3>
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-[12.5px] text-gray-500 mb-4">
+                    <span>{{ $job->department }}</span>
+                    <span class="w-1 h-1 rounded-full bg-gray-700"></span>
+                    <span>{{ $job->location }}</span>
+                    <span class="w-1 h-1 rounded-full bg-gray-700"></span>
+                    <span>{{ $job->employment_type }}</span>
+                    <span class="w-1 h-1 rounded-full bg-gray-700"></span>
+                    <span>{{ $job->experience_level }}</span>
+                </div>
+                <p class="text-gray-400 text-[14px] leading-relaxed mb-5">{{ $job->short_description }}</p>
+                <a href="{{ route('careers.job', $job->slug) }}" class="inline-flex items-center gap-1.5 text-blue-400 hover:text-blue-300 font-semibold text-[13.5px] transition-colors duration-200">
+                    View Details &amp; Apply
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </article>
+            @endforeach
+        </div>
+
+        <p class="text-center text-gray-500 text-[13.5px] mt-10">
+            Don&rsquo;t see a fit? <a href="#apply" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Send your resume anyway</a> and we&rsquo;ll keep it on file.
+        </p>
+
+    </div>
+    @else
     <div class="relative z-10 max-w-2xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
 
         <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-10 text-white">
@@ -187,6 +244,7 @@
         </div>
 
     </div>
+    @endif
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
@@ -263,7 +321,10 @@
                         <div>
                             <label class="contact-label" for="cr_position">Position Applying For <span class="text-blue-500 ml-0.5">*</span></label>
                             <select id="cr_position" name="position" class="contact-input contact-select" required aria-describedby="err_position">
-                                <option value="General Application" style="background:#111111;">General Application</option>
+                                @foreach($openJobs as $job)
+                                    <option value="{{ $job->title }}" {{ request('position') === $job->title ? 'selected' : '' }} style="background:#111111;">{{ $job->title }}</option>
+                                @endforeach
+                                <option value="General Application" {{ !request('position') || request('position') === 'General Application' ? 'selected' : '' }} style="background:#111111;">General Application</option>
                             </select>
                             <p class="careers-field-error" id="err_position" role="alert"></p>
                         </div>

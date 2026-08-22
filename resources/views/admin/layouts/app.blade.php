@@ -30,6 +30,10 @@
                    class="px-3 py-1.5 rounded-lg text-sm transition {{ request()->routeIs('admin.job-applications*') ? 'bg-yellow-500 text-gray-900 font-medium' : 'text-gray-300 hover:bg-gray-700' }}">
                     Job Applications
                 </a>
+                <a href="{{ route('admin.jobs.index') }}"
+                   class="px-3 py-1.5 rounded-lg text-sm transition {{ request()->routeIs('admin.jobs*') ? 'bg-yellow-500 text-gray-900 font-medium' : 'text-gray-300 hover:bg-gray-700' }}">
+                    Job Openings
+                </a>
                 <a href="{{ route('admin.blogs.index') }}"
                    class="px-3 py-1.5 rounded-lg text-sm transition {{ request()->routeIs('admin.blogs*') ? 'bg-yellow-500 text-gray-900 font-medium' : 'text-gray-300 hover:bg-gray-700' }}">
                     Blogs

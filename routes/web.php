@@ -6,6 +6,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
+use App\Http\Controllers\Admin\JobOpeningController as AdminJobOpeningController;
 use App\Models\Blog;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,7 @@ Route::get('/team', [PublicController::class, 'team'])->name('team');
 Route::get('/careers', [PublicController::class, 'careers'])->name('careers');
 Route::redirect('/jobs', '/careers', 301);
 Route::post('/careers/apply', [JobApplicationController::class, 'store'])->name('careers.apply')->middleware('throttle:5,1');
+Route::get('/careers/{slug}', [PublicController::class, 'careerJob'])->name('careers.job');
 Route::get('/privacy-policy', [PublicController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/voice-search', [PublicController::class, 'voiceSearch'])->name('voice-search');
 Route::get('/ai-agent', [PublicController::class, 'aiAgent'])->name('ai-agent');
@@ -54,6 +56,9 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
     // Blog CRUD
     Route::post('/blogs/upload-image', [AdminBlogController::class, 'uploadImage'])->name('blogs.upload-image');
     Route::resource('blogs', AdminBlogController::class);
+
+    // Job Openings CRUD
+    Route::resource('jobs', AdminJobOpeningController::class)->except(['show']);
 });
 
 // Webhook – publish scheduled posts (called every hour via cron/external scheduler)
@@ -84,6 +89,10 @@ Route::get('/sitemap.xml', function () {
         ->orderBy('updated_at', 'desc')
         ->get(['slug', 'updated_at']);
 
+    $openJobs = \App\Models\JobOpening::where('status', 'open')
+        ->orderBy('updated_at', 'desc')
+        ->get(['slug', 'updated_at']);
+
     $urls = collect();
 
     $urls->push(['loc' => url('/'),                    'lastmod' => now()->toDateString(), 'priority' => '1.0', 'changefreq' => 'weekly']);
@@ -106,6 +115,10 @@ Route::get('/sitemap.xml', function () {
 
     foreach ($blogs as $blog) {
         $urls->push(['loc' => route('blog.show', $blog->slug), 'lastmod' => $blog->updated_at->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);
+    }
+
+    foreach ($openJobs as $job) {
+        $urls->push(['loc' => route('careers.job', $job->slug), 'lastmod' => $job->updated_at->toDateString(), 'priority' => '0.6', 'changefreq' => 'weekly']);
     }
 
     $xml = view('sitemap', compact('urls'));
