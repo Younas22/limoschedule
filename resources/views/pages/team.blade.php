@@ -27,50 +27,50 @@
         },
         {
             "@@type": "Person",
-            "name": "Hamza Malik",
-            "jobTitle": "Co-Founder & Chief Technology Officer",
-            "description": "Full-stack technology leader focused on building scalable travel platforms, automation systems, and API-driven booking solutions.",
-            "image": "{{ url('public/assets/images/team/team-hamza-malik.jpg') }}",
-            "worksFor": { "@@id": "{{ url('/') }}#organization" }
-        },
-        {
-            "@@type": "Person",
-            "name": "Ayesha Khan",
-            "jobTitle": "Product & Operations Manager",
-            "description": "Experienced in travel technology operations, product coordination, and creating efficient digital experiences for travel businesses.",
-            "image": "{{ url('public/assets/images/team/team-ayesha-khan.jpg') }}",
-            "worksFor": { "@@id": "{{ url('/') }}#organization" }
-        },
-        {
-            "@@type": "Person",
-            "name": "Michael Anderson",
+            "name": "Younas",
             "jobTitle": "Chief Executive Officer",
-            "description": "Travel technology executive focused on helping agencies and operators modernize their booking operations through smarter digital solutions.",
-            "image": "{{ url('public/assets/images/team/team-michael-anderson.jpg') }}",
+            "description": "Leads LimoSchedule's strategy and vision for transportation businesses worldwide.",
+            "image": "{{ url('public/assets/images/team/team-younas.jpg') }}",
+            "worksFor": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "Person",
+            "name": "Ayesha Rahman",
+            "jobTitle": "Customer Success Manager",
+            "description": "Helps transportation businesses get the most out of the LimoSchedule platform.",
+            "image": "{{ url('public/assets/images/team/team-ayesha-rahman.jpg') }}",
             "worksFor": { "@@id": "{{ url('/') }}#organization" }
         },
         {
             "@@type": "Person",
             "name": "Emily Carter",
-            "jobTitle": "Head of Customer Success",
-            "description": "Customer experience specialist dedicated to helping travel businesses adopt technology and improve operational efficiency.",
+            "jobTitle": "Marketing & Growth Manager",
+            "description": "Drives marketing and growth strategy for LimoSchedule.",
             "image": "{{ url('public/assets/images/team/team-emily-carter.jpg') }}",
             "worksFor": { "@@id": "{{ url('/') }}#organization" }
         },
         {
             "@@type": "Person",
-            "name": "Daniel Brooks",
-            "jobTitle": "Head of Product",
-            "description": "Product strategist focused on intuitive booking experiences, automation, and innovative SaaS solutions for the travel industry.",
-            "image": "{{ url('public/assets/images/team/team-daniel-brooks.jpg') }}",
+            "name": "Sophia Anderson",
+            "jobTitle": "Business Development Executive",
+            "description": "Builds partnerships and new business opportunities for LimoSchedule.",
+            "image": "{{ url('public/assets/images/team/team-sophia-anderson.jpg') }}",
             "worksFor": { "@@id": "{{ url('/') }}#organization" }
         },
         {
             "@@type": "Person",
-            "name": "Jessica Morgan",
-            "jobTitle": "Marketing & Partnerships Director",
-            "description": "Marketing and partnerships professional focused on building strategic relationships and expanding travel technology solutions across the US and international markets.",
-            "image": "{{ url('public/assets/images/team/team-jessica-morgan.jpg') }}",
+            "name": "Omar Hassan",
+            "jobTitle": "Lead Software Engineer",
+            "description": "Leads engineering on the LimoSchedule booking platform.",
+            "image": "{{ url('public/assets/images/team/team-omar-hassan.jpg') }}",
+            "worksFor": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "Person",
+            "name": "Michael Thompson",
+            "jobTitle": "Sales & Partnerships Manager",
+            "description": "Manages sales and partnership relationships for LimoSchedule.",
+            "image": "{{ url('public/assets/images/team/team-michael-thompson.jpg') }}",
             "worksFor": { "@@id": "{{ url('/') }}#organization" }
         }
     ]
@@ -121,67 +121,67 @@
 
             <article class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
                 <div class="aspect-square overflow-hidden">
-                    <img src="{{ asset('public/assets/images/team/team-hamza-malik.jpg') }}" alt="Hamza Malik, Co-Founder and Chief Technology Officer at LimoSchedule" width="1042" height="1008" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                    <img src="{{ asset('public/assets/images/team/team-younas.jpg') }}" alt="Younas, Chief Executive Officer at LimoSchedule" width="1254" height="1254" class="w-full h-full object-cover" loading="lazy" decoding="async">
                 </div>
                 <div class="p-6">
-                    <h2 class="text-white text-[17px] font-bold mb-1">Hamza Malik</h2>
-                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Co-Founder &amp; Chief Technology Officer</div>
-                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Full-stack technology leader focused on building scalable travel platforms, automation systems, and API-driven booking solutions.</p>
-                </div>
-            </article>
-
-            <article class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
-                <div class="aspect-square overflow-hidden">
-                    <img src="{{ asset('public/assets/images/team/team-ayesha-khan.jpg') }}" alt="Ayesha Khan, Product and Operations Manager at LimoSchedule" width="1042" height="1008" class="w-full h-full object-cover" loading="lazy" decoding="async">
-                </div>
-                <div class="p-6">
-                    <h2 class="text-white text-[17px] font-bold mb-1">Ayesha Khan</h2>
-                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Product &amp; Operations Manager</div>
-                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Experienced in travel technology operations, product coordination, and creating efficient digital experiences for travel businesses.</p>
-                </div>
-            </article>
-
-            <article class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
-                <div class="aspect-square overflow-hidden">
-                    <img src="{{ asset('public/assets/images/team/team-michael-anderson.jpg') }}" alt="Michael Anderson, Chief Executive Officer at LimoSchedule" width="1042" height="1008" class="w-full h-full object-cover" loading="lazy" decoding="async">
-                </div>
-                <div class="p-6">
-                    <h2 class="text-white text-[17px] font-bold mb-1">Michael Anderson</h2>
+                    <h2 class="text-white text-[17px] font-bold mb-1">Younas</h2>
                     <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Chief Executive Officer</div>
-                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Travel technology executive focused on helping agencies and operators modernize their booking operations through smarter digital solutions.</p>
+                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Leads LimoSchedule&rsquo;s strategy and vision for transportation businesses worldwide.</p>
                 </div>
             </article>
 
             <article class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
                 <div class="aspect-square overflow-hidden">
-                    <img src="{{ asset('public/assets/images/team/team-emily-carter.jpg') }}" alt="Emily Carter, Head of Customer Success at LimoSchedule" width="1042" height="1008" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                    <img src="{{ asset('public/assets/images/team/team-ayesha-rahman.jpg') }}" alt="Ayesha Rahman, Customer Success Manager at LimoSchedule" width="1268" height="1241" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                    <h2 class="text-white text-[17px] font-bold mb-1">Ayesha Rahman</h2>
+                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Customer Success Manager</div>
+                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Helps transportation businesses get the most out of the LimoSchedule platform.</p>
+                </div>
+            </article>
+
+            <article class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="aspect-square overflow-hidden">
+                    <img src="{{ asset('public/assets/images/team/team-emily-carter.jpg') }}" alt="Emily Carter, Marketing and Growth Manager at LimoSchedule" width="1254" height="1254" class="w-full h-full object-cover" loading="lazy" decoding="async">
                 </div>
                 <div class="p-6">
                     <h2 class="text-white text-[17px] font-bold mb-1">Emily Carter</h2>
-                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Head of Customer Success</div>
-                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Customer experience specialist dedicated to helping travel businesses adopt technology and improve operational efficiency.</p>
+                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Marketing &amp; Growth Manager</div>
+                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Drives marketing and growth strategy for LimoSchedule.</p>
                 </div>
             </article>
 
             <article class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
                 <div class="aspect-square overflow-hidden">
-                    <img src="{{ asset('public/assets/images/team/team-daniel-brooks.jpg') }}" alt="Daniel Brooks, Head of Product at LimoSchedule" width="1042" height="1008" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                    <img src="{{ asset('public/assets/images/team/team-sophia-anderson.jpg') }}" alt="Sophia Anderson, Business Development Executive at LimoSchedule" width="1254" height="1254" class="w-full h-full object-cover" loading="lazy" decoding="async">
                 </div>
                 <div class="p-6">
-                    <h2 class="text-white text-[17px] font-bold mb-1">Daniel Brooks</h2>
-                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Head of Product</div>
-                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Product strategist focused on intuitive booking experiences, automation, and innovative SaaS solutions for the travel industry.</p>
+                    <h2 class="text-white text-[17px] font-bold mb-1">Sophia Anderson</h2>
+                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Business Development Executive</div>
+                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Builds partnerships and new business opportunities for LimoSchedule.</p>
                 </div>
             </article>
 
             <article class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
                 <div class="aspect-square overflow-hidden">
-                    <img src="{{ asset('public/assets/images/team/team-jessica-morgan.jpg') }}" alt="Jessica Morgan, Marketing and Partnerships Director at LimoSchedule" width="1042" height="1008" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                    <img src="{{ asset('public/assets/images/team/team-omar-hassan.jpg') }}" alt="Omar Hassan, Lead Software Engineer at LimoSchedule" width="1254" height="1254" class="w-full h-full object-cover" loading="lazy" decoding="async">
                 </div>
                 <div class="p-6">
-                    <h2 class="text-white text-[17px] font-bold mb-1">Jessica Morgan</h2>
-                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Marketing &amp; Partnerships Director</div>
-                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Marketing and partnerships professional focused on building strategic relationships and expanding travel technology solutions across the US and international markets.</p>
+                    <h2 class="text-white text-[17px] font-bold mb-1">Omar Hassan</h2>
+                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Lead Software Engineer</div>
+                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Leads engineering on the LimoSchedule booking platform.</p>
+                </div>
+            </article>
+
+            <article class="rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="aspect-square overflow-hidden">
+                    <img src="{{ asset('public/assets/images/team/team-michael-thompson.jpg') }}" alt="Michael Thompson, Sales and Partnerships Manager at LimoSchedule" width="1254" height="1254" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                </div>
+                <div class="p-6">
+                    <h2 class="text-white text-[17px] font-bold mb-1">Michael Thompson</h2>
+                    <div class="text-blue-400 text-[12.5px] font-semibold mb-3">Sales &amp; Partnerships Manager</div>
+                    <p class="text-gray-400 text-[13.5px] leading-relaxed">Manages sales and partnership relationships for LimoSchedule.</p>
                 </div>
             </article>
 

@@ -111,7 +111,7 @@ class PublicController extends Controller
             'description' => "Meet the LimoSchedule team — the people building white-label transportation booking technology for limo, taxi and chauffeur businesses.",
             'canonical'   => route('team'),
             'og_type'     => 'website',
-            'og_image'    => url('public/assets/images/team/team-hamza-malik.jpg'),
+            'og_image'    => url('public/assets/images/team/team-younas.jpg'),
             'twitter_card'=> 'summary_large_image',
         ];
         return view('pages.team', compact('seo'));
