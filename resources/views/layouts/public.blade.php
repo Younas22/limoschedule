@@ -154,6 +154,9 @@
                             <a href="{{ route('admin-panel') }}" class="nav-dropdown-link" role="menuitem">Admin Dashboard</a>
                             <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">White-Label Platform</a>
                             <a href="{{ route('features') }}" class="nav-dropdown-link" role="menuitem">Features</a>
+                            <a href="{{ route('website-features') }}" class="nav-dropdown-link" role="menuitem">Website Features</a>
+                            <a href="{{ route('customer-panel-features') }}" class="nav-dropdown-link" role="menuitem">Customer Panel Features</a>
+                            <a href="{{ route('driver-panel-features') }}" class="nav-dropdown-link" role="menuitem">Driver Panel Features</a>
                         </div>
                     </li>
 
@@ -260,6 +263,9 @@
                         <a href="{{ route('admin-panel') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Admin Dashboard</a>
                         <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">White-Label Platform</a>
                         <a href="{{ route('features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Features</a>
+                        <a href="{{ route('website-features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Website Features</a>
+                        <a href="{{ route('customer-panel-features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Customer Panel Features</a>
+                        <a href="{{ route('driver-panel-features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Driver Panel Features</a>
                     </div>
                 </li>
 
@@ -406,6 +412,9 @@
                     <li><a href="{{ route('admin-panel') }}"       class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Dashboard</a></li>
                     <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">White-Label Platform</a></li>
                     <li><a href="{{ route('features') }}"          class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Features</a></li>
+                    <li><a href="{{ route('website-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Website Features</a></li>
+                    <li><a href="{{ route('customer-panel-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Customer Panel Features</a></li>
+                    <li><a href="{{ route('driver-panel-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Driver Panel Features</a></li>
                 </ul>
             </div>
 

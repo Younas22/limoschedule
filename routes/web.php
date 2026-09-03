@@ -19,6 +19,9 @@ Route::get('/demo-thankyou', fn() => view('demo-thankyou'))->name('demo.thankyou
 Route::get('/platform', [PublicController::class, 'platform'])->name('platform');
 Route::get('/solutions', [PublicController::class, 'solutions'])->name('solutions');
 Route::get('/features', [PublicController::class, 'features'])->name('features');
+Route::get('/website-features', [PublicController::class, 'websiteFeatures'])->name('website-features');
+Route::get('/customer-panel-features', [PublicController::class, 'customerPanelFeatures'])->name('customer-panel-features');
+Route::get('/driver-panel-features', [PublicController::class, 'driverPanelFeatures'])->name('driver-panel-features');
 Route::get('/pricing', [PublicController::class, 'pricing'])->name('pricing');
 Route::get('/demo', [PublicController::class, 'demo'])->name('demo');
 Route::get('/about', [PublicController::class, 'about'])->name('about');
@@ -102,6 +105,9 @@ Route::get('/sitemap.xml', function () {
     $urls->push(['loc' => route('platform'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('solutions'),          'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('features'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('website-features'),   'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('customer-panel-features'), 'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
+    $urls->push(['loc' => route('driver-panel-features'), 'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('pricing'),            'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('demo'),                'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('about'),               'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);

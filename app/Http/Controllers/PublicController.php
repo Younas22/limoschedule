@@ -65,6 +65,45 @@ class PublicController extends Controller
         return view('pages.features', compact('seo'));
     }
 
+    public function websiteFeatures()
+    {
+        $seo = [
+            'title'       => 'Public Website Features | LimoSchedule Booking Website',
+            'description' => "Explore everything included in the LimoSchedule public website — guest booking, live fare quotes, fleet showcase, multi-language and SEO.",
+            'canonical'   => route('website-features'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/website-features/wf-hero-overview.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.website-features', compact('seo'));
+    }
+
+    public function customerPanelFeatures()
+    {
+        $seo = [
+            'title'       => 'Customer Panel Features | LimoSchedule',
+            'description' => "Everything your customers need in one panel — book rides, track trips, manage payments, download invoices and get support.",
+            'canonical'   => route('customer-panel-features'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/customer-panel-features/cp-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.customer-panel-features', compact('seo'));
+    }
+
+    public function driverPanelFeatures()
+    {
+        $seo = [
+            'title'       => 'Driver Panel | LimoSchedule',
+            'description' => "Give your drivers a powerful workspace to manage assigned rides, availability, trip progress, earnings, notifications, and customer details with LimoSchedule.",
+            'canonical'   => route('driver-panel-features'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/driver-panel-features/dp-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.driver-panel-features', compact('seo'));
+    }
+
     public function pricing()
     {
         $seo = [

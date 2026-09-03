@@ -418,7 +418,7 @@
 <section class="relative py-16 overflow-hidden" style="background: #060606;">
     <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
         <p class="text-gray-500 text-[14px]">
-            See how these features come together for your industry on our <a href="{{ route('solutions') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">solutions page</a>, or check <a href="{{ route('pricing') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">pricing</a> for the full breakdown.
+            See how these features come together for your industry on our <a href="{{ route('solutions') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">solutions page</a>, explore the <a href="{{ route('website-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">public website features</a>, <a href="{{ route('customer-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">customer panel features</a>, or <a href="{{ route('driver-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">driver panel features</a> in detail, or check <a href="{{ route('pricing') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">pricing</a> for the full breakdown.
         </p>
     </div>
 </section>
