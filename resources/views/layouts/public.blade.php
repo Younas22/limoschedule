@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -125,7 +125,7 @@
 <header
     id="navbar"
     class="fixed top-0 left-0 right-0 z-50"
-    style="background: rgba(10,10,10,0.65); backdrop-filter: blur(22px); -webkit-backdrop-filter: blur(22px); border-bottom: 1px solid rgba(255,255,255,0.06);"
+    style="background: #0A0A0A; border-bottom: 1px solid rgba(255,255,255,0.06);"
     role="banner"
 >
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
@@ -148,15 +148,18 @@
                         <div class="nav-dropdown-panel" data-dropdown-panel="platform" role="menu" aria-label="Platform">
                             <a href="{{ route('platform') }}" class="nav-dropdown-link nav-dropdown-link-featured" role="menuitem">Platform Overview</a>
                             <div class="nav-dropdown-divider"></div>
-                            <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">Booking Website</a>
-                            <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">Customer Portal</a>
-                            <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">Driver Panel</a>
+                            <a href="{{ url('/') }}#platform-modules" class="nav-dropdown-link" role="menuitem">Booking Website</a>
+                            <a href="{{ url('/') }}#platform-modules" class="nav-dropdown-link" role="menuitem">Customer Portal</a>
+                            <a href="{{ url('/') }}#platform-modules" class="nav-dropdown-link" role="menuitem">Driver Panel</a>
                             <a href="{{ route('admin-panel') }}" class="nav-dropdown-link" role="menuitem">Admin Dashboard</a>
-                            <a href="{{ url('/') }}#product-showcase" class="nav-dropdown-link" role="menuitem">White-Label Platform</a>
+                            <a href="{{ url('/') }}#platform-modules" class="nav-dropdown-link" role="menuitem">White-Label Platform</a>
                             <a href="{{ route('features') }}" class="nav-dropdown-link" role="menuitem">Features</a>
                             <a href="{{ route('website-features') }}" class="nav-dropdown-link" role="menuitem">Website Features</a>
                             <a href="{{ route('customer-panel-features') }}" class="nav-dropdown-link" role="menuitem">Customer Panel Features</a>
                             <a href="{{ route('driver-panel-features') }}" class="nav-dropdown-link" role="menuitem">Driver Panel Features</a>
+                            <a href="{{ route('admin-panel-features') }}" class="nav-dropdown-link" role="menuitem">Admin Panel Features</a>
+                            <a href="{{ route('technical-details') }}" class="nav-dropdown-link" role="menuitem">Technical Details</a>
+                            <a href="{{ route('installation') }}" class="nav-dropdown-link" role="menuitem">Installation &amp; Docs</a>
                         </div>
                     </li>
 
@@ -257,15 +260,18 @@
                     </button>
                     <div class="mob-accordion-panel pl-[46px]">
                         <a href="{{ route('platform') }}" class="block py-2.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300">Platform Overview &rarr;</a>
-                        <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Booking Website</a>
-                        <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Customer Portal</a>
-                        <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Driver Panel</a>
+                        <a href="{{ url('/') }}#platform-modules" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Booking Website</a>
+                        <a href="{{ url('/') }}#platform-modules" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Customer Portal</a>
+                        <a href="{{ url('/') }}#platform-modules" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Driver Panel</a>
                         <a href="{{ route('admin-panel') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Admin Dashboard</a>
-                        <a href="{{ url('/') }}#product-showcase" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">White-Label Platform</a>
+                        <a href="{{ url('/') }}#platform-modules" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">White-Label Platform</a>
                         <a href="{{ route('features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Features</a>
                         <a href="{{ route('website-features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Website Features</a>
                         <a href="{{ route('customer-panel-features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Customer Panel Features</a>
                         <a href="{{ route('driver-panel-features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Driver Panel Features</a>
+                        <a href="{{ route('admin-panel-features') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Admin Panel Features</a>
+                        <a href="{{ route('technical-details') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Technical Details</a>
+                        <a href="{{ route('installation') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Installation &amp; Docs</a>
                     </div>
                 </li>
 
@@ -406,15 +412,18 @@
             <div>
                 <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Platform</h4>
                 <ul class="flex flex-col gap-3">
-                    <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Booking Website</a></li>
-                    <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Customer Portal</a></li>
-                    <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Driver Panel</a></li>
+                    <li><a href="{{ url('/') }}#platform-modules"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Booking Website</a></li>
+                    <li><a href="{{ url('/') }}#platform-modules"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Customer Portal</a></li>
+                    <li><a href="{{ url('/') }}#platform-modules"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Driver Panel</a></li>
                     <li><a href="{{ route('admin-panel') }}"       class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Dashboard</a></li>
-                    <li><a href="{{ url('/') }}#product-showcase"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">White-Label Platform</a></li>
+                    <li><a href="{{ url('/') }}#platform-modules"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">White-Label Platform</a></li>
                     <li><a href="{{ route('features') }}"          class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Features</a></li>
                     <li><a href="{{ route('website-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Website Features</a></li>
                     <li><a href="{{ route('customer-panel-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Customer Panel Features</a></li>
                     <li><a href="{{ route('driver-panel-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Driver Panel Features</a></li>
+                    <li><a href="{{ route('admin-panel-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Panel Features</a></li>
+                    <li><a href="{{ route('technical-details') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Technical Details</a></li>
+                    <li><a href="{{ route('installation') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Installation &amp; Docs</a></li>
                 </ul>
             </div>
 

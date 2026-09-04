@@ -817,6 +817,10 @@
             </div>
         </div>
 
+        <p class="text-center text-gray-500 text-[13px] mt-8">
+            Want the full module-by-module breakdown? Explore the <a href="{{ route('admin-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">complete Admin Panel Features</a> explorer.
+        </p>
+
     </div><!-- /container -->
 </section>
 @endsection

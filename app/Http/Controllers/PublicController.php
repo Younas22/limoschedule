@@ -104,6 +104,45 @@ class PublicController extends Controller
         return view('pages.driver-panel-features', compact('seo'));
     }
 
+    public function adminPanelFeatures()
+    {
+        $seo = [
+            'title'       => 'Admin Panel Features | LimoSchedule',
+            'description' => "Explore every module of the LimoSchedule Admin Panel — bookings, customers, drivers, fleet, pricing, payments, reports, notifications, CMS and system tools.",
+            'canonical'   => route('admin-panel-features'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/admin-panel-features/ap-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.admin-panel-features', compact('seo'));
+    }
+
+    public function technicalDetails()
+    {
+        $seo = [
+            'title'       => 'LimoSchedule Technical Details — Technology & Architecture',
+            'description' => "Explore the technology stack, architecture, security, integrations, database, payment infrastructure and deployment requirements behind LimoSchedule.",
+            'canonical'   => route('technical-details'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.technical-details', compact('seo'));
+    }
+
+    public function installation()
+    {
+        $seo = [
+            'title'       => 'LimoSchedule Installation & Documentation — Setup Guide',
+            'description' => "Complete LimoSchedule installation and deployment guide covering server requirements, Laravel setup, database configuration, payments, Google Maps, browser push notifications, production deployment and troubleshooting.",
+            'canonical'   => route('installation'),
+            'og_type'     => 'website',
+            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+        return view('pages.installation', compact('seo'));
+    }
+
     public function pricing()
     {
         $seo = [

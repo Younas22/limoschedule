@@ -883,30 +883,6 @@ html:not(.js-ready) .ai-bubble-reveal {
     transition: background 0.2s ease, border-color 0.2s ease;
 }
 
-/* ── Product Showcase — tabs + layered panels ── */
-.showcase-tab {
-    transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-    cursor: pointer;
-}
-.showcase-tab-active {
-    color: #fff !important;
-    background: rgba(59,130,246,0.16) !important;
-    border-color: rgba(59,130,246,0.45) !important;
-}
-.showcase-panel {
-    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
-}
-.showcase-panel-active {
-    opacity: 1 !important;
-    filter: none !important;
-    transform: scale(1.02);
-    box-shadow: 0 0 0 2px rgba(59,130,246,0.55), 0 30px 90px rgba(59,130,246,0.2) !important;
-}
-.showcase-panel-dim {
-    opacity: 0.55;
-    filter: grayscale(0.25) brightness(0.78);
-}
-
 /* ── Industries — premium solution cards ── */
 .industry-card {
     transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), border-color 0.3s ease, box-shadow 0.3s ease;

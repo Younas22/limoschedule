@@ -27,7 +27,7 @@
     #dp-page * { box-sizing: border-box; }
     #dp-page .dp-eyebrow {
         display: inline-flex; align-items: center; gap: 8px;
-        padding: 7px 16px; border-radius: 999px;
+        padding: 6px 14px; border-radius: 999px;
         background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.22);
         color: #1D4ED8; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
     }
@@ -36,22 +36,6 @@
     #dp-page .dp-h3 { color: #0F172A; font-weight: 700; }
     #dp-page .dp-body { color: #475569; }
     #dp-page .dp-muted { color: #64748B; }
-    #dp-page .dp-section-soft { background: #F8FAFC; }
-    #dp-page .dp-card {
-        background: #ffffff; border: 1px solid rgba(15,23,42,0.08); border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(15,23,42,0.05);
-        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-    #dp-page .dp-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(15,23,42,0.09); border-color: rgba(37,99,235,0.35); }
-    #dp-page .dp-icon-box {
-        width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
-        display: flex; align-items: center; justify-content: center;
-        background: rgba(37,99,235,0.1); border: 1px solid rgba(37,99,235,0.2);
-    }
-    #dp-page .dp-figure {
-        border-radius: 20px; overflow: hidden; border: 1px solid rgba(15,23,42,0.08);
-        box-shadow: 0 30px 70px rgba(15,23,42,0.1);
-    }
     #dp-page .dp-btn-primary {
         display: inline-flex; align-items: center; justify-content: center; gap: 8px;
         background: #2563EB; color: #fff; font-weight: 700; font-size: 15px;
@@ -69,14 +53,91 @@
     #dp-page .dp-btn-secondary:hover { border-color: rgba(37,99,235,0.5); background: #F8FAFC; }
     #dp-page .dp-check { color: #2563EB; flex-shrink: 0; }
     #dp-page .dp-flow-step {
-        background: #ffffff; border: 1px solid rgba(15,23,42,0.08); border-radius: 14px;
-        padding: 13px 15px; display: flex; align-items: center; gap: 10px;
-        box-shadow: 0 6px 16px rgba(15,23,42,0.05);
+        background: #ffffff; border: 1px solid rgba(15,23,42,0.08); border-radius: 12px;
+        padding: 9px 12px; display: flex; align-items: center; gap: 8px;
+        box-shadow: 0 6px 16px rgba(15,23,42,0.05); font-size: 12px; font-weight: 600; color: #0F172A;
     }
     #dp-page .dp-arrow { color: #93A3B8; flex-shrink: 0; }
     #dp-page .dp-note {
         background: #EFF6FF; border: 1px solid rgba(37,99,235,0.18); border-radius: 12px;
-        padding: 12px 16px; color: #1E3A8A; font-size: 12.5px; line-height: 1.6;
+        padding: 10px 14px; color: #1E3A8A; font-size: 12px; line-height: 1.55;
+    }
+
+    /* Explorer layout */
+    #dp-page .dp-explorer { display: flex; align-items: flex-start; gap: 24px; }
+    #dp-page .dp-tabs {
+        flex: 0 0 260px; width: 260px; position: sticky; top: 84px;
+        display: flex; flex-direction: column; gap: 3px;
+        max-height: calc(100vh - 104px); overflow-y: auto;
+        padding-right: 4px;
+    }
+    #dp-page .dp-tab {
+        display: flex; align-items: center; gap: 11px;
+        padding: 9px 12px; border-radius: 11px;
+        border: 1px solid transparent; border-left: 3px solid transparent;
+        background: transparent; text-align: left; cursor: pointer;
+        transition: background 0.15s ease, border-color 0.15s ease;
+        width: 100%;
+    }
+    #dp-page .dp-tab:hover { background: #F8FAFC; }
+    #dp-page .dp-tab.active {
+        background: rgba(37,99,235,0.07);
+        border-color: rgba(37,99,235,0.16);
+        border-left-color: #2563EB;
+    }
+    #dp-page .dp-tab-icon {
+        width: 30px; height: 30px; border-radius: 8px; flex-shrink: 0;
+        display: flex; align-items: center; justify-content: center;
+        background: #F1F5F9; color: #64748B;
+        transition: background 0.15s ease, color 0.15s ease;
+    }
+    #dp-page .dp-tab.active .dp-tab-icon { background: #2563EB; color: #fff; }
+    #dp-page .dp-tab-name { font-size: 13px; font-weight: 700; color: #0F172A; line-height: 1.25; }
+    #dp-page .dp-tab-desc { font-size: 11px; color: #94A3B8; line-height: 1.2; margin-top: 1px; }
+    #dp-page .dp-tab.active .dp-tab-desc { color: #64748B; }
+
+    #dp-page .dp-content { flex: 1 1 0%; min-width: 0; }
+    #dp-page .dp-panel { display: none; }
+    #dp-page .dp-panel.active { display: block; animation: dp-fade 0.3s ease; }
+    @keyframes dp-fade { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+    #dp-page .dp-panel-grid { display: grid; grid-template-columns: 1fr; gap: 22px; align-items: center; }
+    @media (min-width: 1024px) { #dp-page .dp-panel-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+
+    #dp-page .dp-figure {
+        border-radius: 16px; overflow: hidden; border: 1px solid rgba(15,23,42,0.08);
+        box-shadow: 0 20px 50px rgba(15,23,42,0.09);
+        display: flex; align-items: center; justify-content: center;
+        background: #F8FAFC; max-height: 400px;
+    }
+    #dp-page .dp-figure img { max-height: 400px; width: auto; max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+    #dp-page .dp-feature-card {
+        background: #F8FAFC; border: 1px solid rgba(15,23,42,0.06); border-radius: 12px;
+        padding: 11px 13px; display: flex; align-items: flex-start; gap: 9px;
+    }
+    #dp-page .dp-chip {
+        background: #F1F5F9; border: 1px solid rgba(15,23,42,0.06); border-radius: 9px;
+        padding: 7px 10px; font-size: 11.5px; font-weight: 600; color: #0F172A; text-align: center;
+    }
+    #dp-page .dp-cta-box {
+        background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+        border-radius: 20px; padding: 34px 28px; text-align: center;
+    }
+
+    @media (max-width: 900px) {
+        #dp-page .dp-explorer { flex-direction: column; gap: 14px; }
+        #dp-page .dp-tabs {
+            position: sticky; top: 0; z-index: 20; width: 100%; flex: none;
+            flex-direction: row; overflow-x: auto; overflow-y: hidden; max-height: none;
+            padding: 8px 4px; background: #ffffff; border-bottom: 1px solid rgba(15,23,42,0.08);
+            gap: 6px; -webkit-overflow-scrolling: touch;
+        }
+        #dp-page .dp-tab { flex: 0 0 auto; width: auto; border-left: none; border-bottom: 3px solid transparent; border-radius: 9px; }
+        #dp-page .dp-tab.active { border-left-color: transparent; border-bottom-color: #2563EB; }
+        #dp-page .dp-tab-desc { display: none; }
+        #dp-page .dp-figure { max-height: 280px; }
+        #dp-page .dp-figure img { max-height: 280px; }
     }
 </style>
 @endpush
@@ -100,561 +161,388 @@
 #dp-page nav[aria-label="Breadcrumb"] span[aria-current] { color: #0F172A !important; }</style>
 @include('partials._breadcrumbs')
 
-    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-10 pb-14 lg:pt-14 lg:pb-16 text-center">
-        <span class="dp-eyebrow mb-6">Driver Panel</span>
+    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-8 pb-10 lg:pt-10 lg:pb-12 text-center">
+        <span class="dp-eyebrow mb-5">Driver Panel</span>
 
-        <h1 class="dp-h1 text-4xl sm:text-5xl lg:text-[54px] mb-6">
+        <h1 class="dp-h1 text-3xl sm:text-4xl lg:text-[44px] mb-4">
             A Smarter Driver Panel for Every Ride
         </h1>
 
-        <p class="dp-body text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto mb-4">
+        <p class="dp-body text-[15px] leading-relaxed max-w-2xl mx-auto mb-2">
             Give your drivers everything they need to manage assigned rides, track trip progress, monitor earnings, and stay connected &mdash; all from one simple dashboard.
         </p>
-        <p class="dp-muted text-[14.5px] leading-relaxed max-w-2xl mx-auto mb-9">
+        <p class="dp-muted text-[13px] leading-relaxed max-w-2xl mx-auto mb-7">
             Built for daily chauffeur, limo, black car, taxi, and airport-transfer operations.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="#dp-intro" class="dp-btn-primary w-full sm:w-auto">
+            <a href="#dp-explorer" class="dp-btn-primary w-full sm:w-auto">
                 <span>Explore Driver Features</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
             <a href="{{ route('contact') }}" class="dp-btn-secondary w-full sm:w-auto">Get LimoSchedule</a>
         </div>
     </div>
+</section>
 
-    <div class="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 pb-16 lg:pb-24">
-        <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-[700px] h-[300px] pointer-events-none" style="background: radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.14) 0%, transparent 70%);"></div>
-        <div class="dp-figure relative">
-            <img src="{{ asset('public/assets/images/driver-panel-features/dp-dashboard.jpg') }}" alt="LimoSchedule driver dashboard showing online status, today's trips, earnings, completed trips and average rating" width="1254" height="1254" class="w-full h-auto block" loading="eager" fetchpriority="high" decoding="sync">
-        </div>
+<!-- ═══════════════════════════════════════════════════════════════
+     COMPACT INTRO
+═══════════════════════════════════════════════════════════════ -->
+<section id="dp-explorer" class="relative pt-2 pb-6">
+    <div class="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+        <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Everything a Driver Needs. Nothing They Don&rsquo;t.</h2>
+        <p class="dp-body text-[13.5px] leading-relaxed">Browse each part of the Driver Panel below &mdash; from the dashboard to trip workflow, earnings and mobile access.</p>
     </div>
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     DRIVER EXPERIENCE INTRODUCTION
+     MAIN FEATURE EXPLORER
 ═══════════════════════════════════════════════════════════════ -->
-<section id="dp-intro" class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-14">
-            <h2 class="dp-h2 text-3xl sm:text-4xl mb-4">Everything a Driver Needs. Nothing They Don&rsquo;t.</h2>
-            <p class="dp-body text-[15.5px] leading-relaxed">Drivers get a focused interface for managing their assigned rides, availability, trip progress, customer contact, notifications, earnings and profile settings.</p>
-        </div>
+<section class="relative pb-16">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div class="dp-card p-6">
-                <div class="dp-icon-box mb-4">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                </div>
-                <h3 class="dp-h3 text-[15.5px] mb-2">One-Tap Availability</h3>
-                <p class="dp-body text-[13px] leading-relaxed">Go online or offline in a single tap, right from the dashboard.</p>
-            </div>
-            <div class="dp-card p-6">
-                <div class="dp-icon-box mb-4">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-                </div>
-                <h3 class="dp-h3 text-[15.5px] mb-2">Assigned Rides</h3>
-                <p class="dp-body text-[13px] leading-relaxed">A clear list of assigned bookings with all the trip details drivers need.</p>
-            </div>
-            <div class="dp-card p-6">
-                <div class="dp-icon-box mb-4">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M2 11h20"/></svg>
-                </div>
-                <h3 class="dp-h3 text-[15.5px] mb-2">Earnings &amp; Notifications</h3>
-                <p class="dp-body text-[13px] leading-relaxed">Track calculated earnings and stay updated with real-time alerts.</p>
-            </div>
-            <div class="dp-card p-6">
-                <div class="dp-icon-box mb-4">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
-                </div>
-                <h3 class="dp-h3 text-[15.5px] mb-2">Profile &amp; Preferences</h3>
-                <p class="dp-body text-[13px] leading-relaxed">Drivers manage their own profile, password, language and theme.</p>
-            </div>
-        </div>
-    </div>
-</section>
+        @php
+            $dpModules = [
+                'dashboard' => ['Dashboard', "Today's trips & earnings"],
+                'availability' => ['Availability & GPS', 'Online / offline & location'],
+                'bookings' => ['Assigned Bookings', 'Ride details, organized'],
+                'workflow' => ['Trip Workflow', 'Start to complete'],
+                'distance' => ['Distance & ETA', 'Google Distance Matrix'],
+                'earnings' => ['Earnings', 'Commission-based statement'],
+                'contact' => ['Customer Contact', 'Call & trip notes'],
+                'notifications' => ['Notifications', 'Push & in-app alerts'],
+                'profile' => ['Profile & Preferences', 'Account & vehicle info'],
+                'mobile' => ['Mobile Experience', 'Responsive on any device'],
+                'journey' => ['Complete Journey', 'The full connected flow'],
+            ];
+            $dpIcons = [
+                'dashboard' => '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+                'availability' => '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+                'bookings' => '<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+                'workflow' => '<path d="M5 12h14M12 5l7 7-7 7"/>',
+                'distance' => '<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>',
+                'earnings' => '<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>',
+                'contact' => '<path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>',
+                'notifications' => '<path d="M18 8a6 6 0 00-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/>',
+                'profile' => '<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/>',
+                'mobile' => '<rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/>',
+                'journey' => '<path d="M9 20l-5.5-5.5a4.95 4.95 0 010-7 4.95 4.95 0 017 0L12 9l1.5-1.5a4.95 4.95 0 017 0 4.95 4.95 0 010 7L15 20"/>',
+            ];
+        @endphp
 
-<!-- ═══════════════════════════════════════════════════════════════
-     DRIVER DASHBOARD
-═══════════════════════════════════════════════════════════════ -->
-<section class="dp-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="dp-explorer">
 
-            <div>
-                <span class="dp-eyebrow mb-5">Dashboard</span>
-                <h2 class="dp-h2 text-3xl sm:text-4xl mb-5">A Clear View of Every Driving Day</h2>
-                <p class="dp-body text-[15.5px] leading-relaxed mb-7">A personalized dashboard gives drivers the information they need the moment they sign in &mdash; from availability to today&rsquo;s trips.</p>
+            <!-- LEFT: STICKY TABS -->
+            <nav class="dp-tabs" role="tablist" aria-label="Driver Panel modules">
+                @foreach($dpModules as $key => [$name, $desc])
+                <button type="button" class="dp-tab @if($loop->first) active @endif" role="tab" data-target="dp-tab-{{ $key }}" aria-selected="{{ $loop->first ? 'true' : 'false' }}">
+                    <span class="dp-tab-icon">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{!! $dpIcons[$key] !!}</svg>
+                    </span>
+                    <span>
+                        <span class="dp-tab-name block">{{ $name }}</span>
+                        <span class="dp-tab-desc block">{{ $desc }}</span>
+                    </span>
+                </button>
+                @endforeach
+            </nav>
 
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    @foreach(['Personalized greeting','Online / offline control','Current ride','Next ride','Today\'s Trips','Month Earnings','Completed Trips','Average Rating','Assigned ride information','Unread notifications'] as $item)
-                    <li class="flex items-center gap-2"><svg class="dp-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] dp-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-            </div>
+            <!-- RIGHT: CONTENT -->
+            <div class="dp-content">
 
-            <div class="dp-figure">
-                <img src="{{ asset('public/assets/images/driver-panel-features/dp-dashboard.jpg') }}" alt="LimoSchedule driver dashboard with today's trips, month earnings, completed trips and average rating stat tiles" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-        </div>
-    </div>
-</section>
+                <!-- 1. DASHBOARD -->
+                <div class="dp-panel active" id="dp-tab-dashboard" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Dashboard</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">A Clear View of Every Driving Day</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-4">A personalized dashboard gives drivers the information they need the moment they sign in.</p>
 
-<!-- ═══════════════════════════════════════════════════════════════
-     AVAILABILITY + LIVE GPS
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-10">
-            <span class="dp-eyebrow mb-5">Availability &amp; GPS</span>
-            <h2 class="dp-h2 text-3xl sm:text-4xl mb-4">Control Availability. Stay Connected.</h2>
-            <p class="dp-body text-[15.5px] leading-relaxed">Drivers switch between Online and Offline with one tap. While online, the browser periodically reports the driver&rsquo;s GPS location to support dispatch and ETA calculations.</p>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-center gap-2.5 mb-12">
-            @foreach(['Online','GPS Location Reporting','Dispatch / ETA Information'] as $step)
-                <div class="dp-flow-step"><span class="text-[13px] font-semibold" style="color:#0F172A;">{{ $step }}</span></div>
-                @if(!$loop->last)
-                <svg class="dp-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                @endif
-            @endforeach
-        </div>
-
-        <div class="dp-figure mb-10 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/driver-panel-features/dp-availability-gps.jpg') }}" alt="LimoSchedule driver availability toggle and live GPS reporting while online" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-            @foreach(['Online / Offline Toggle','Admin Notified on Change','GPS Reporting While Online','Auto-Unavailable During a Ride'] as $item)
-            <div class="dp-card px-4 py-4 text-center">
-                <span class="text-[12.5px] font-semibold" style="color:#0F172A;">{{ $item }}</span>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     ASSIGNED BOOKINGS
-═══════════════════════════════════════════════════════════════ -->
-<section class="dp-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div class="dp-figure order-2 lg:order-1">
-                <img src="{{ asset('public/assets/images/driver-panel-features/dp-assigned-bookings.jpg') }}" alt="LimoSchedule assigned booking detail with pickup, drop-off, customer, vehicle, date, time and fare" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-
-            <div class="order-1 lg:order-2">
-                <span class="dp-eyebrow mb-5">Assigned Bookings</span>
-                <h2 class="dp-h2 text-3xl sm:text-4xl mb-5">Every Assigned Ride, Clearly Organized</h2>
-                <p class="dp-body text-[15.5px] leading-relaxed mb-6">Drivers see their assigned bookings and the relevant trip details for each ride.</p>
-
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6">
-                    @foreach(['Pickup','Drop-off','Stops','Customer name','Customer phone','Vehicle','Date & time','Fare & booking info'] as $item)
-                    <li class="flex items-center gap-2"><svg class="dp-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] dp-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-
-                <div class="dp-note">
-                    No complicated dispatch workflow. Drivers see the rides assigned to them and the information they need to complete them &mdash; there is no accept/decline step.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     TRIP WORKFLOW
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-10">
-            <span class="dp-eyebrow mb-5">Trip Workflow</span>
-            <h2 class="dp-h2 text-3xl sm:text-4xl mb-4">A Simple Ride Workflow</h2>
-            <p class="dp-body text-[15.5px] leading-relaxed">From an assigned booking to a completed ride, drivers follow a short, predictable lifecycle.</p>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-center gap-2.5 mb-4">
-            @foreach(['Assigned','Start Ride','In Progress','Complete Ride','Completed'] as $status)
-                <div class="dp-flow-step"><span class="text-[13px] font-semibold" style="color:#0F172A;">{{ $status }}</span></div>
-                @if(!$loop->last)
-                <svg class="dp-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                @endif
-            @endforeach
-        </div>
-        <p class="text-center text-[12.5px] dp-muted mb-12">Start Ride and Complete Ride are the only two actions a driver takes &mdash; there is no accept/reject step.</p>
-
-        <div class="dp-figure max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/driver-panel-features/dp-trip-workflow.jpg') }}" alt="LimoSchedule driver trip workflow from booking assigned through start ride, in progress, complete ride and completed" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     GPS, DISTANCE & ETA
-═══════════════════════════════════════════════════════════════ -->
-<section class="dp-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div>
-                <span class="dp-eyebrow mb-5">Distance &amp; ETA</span>
-                <h2 class="dp-h2 text-3xl sm:text-4xl mb-5">Useful ETA &amp; Distance Information</h2>
-                <p class="dp-body text-[15.5px] leading-relaxed mb-6">Google Distance Matrix powers distance and time calculations, so drivers get useful trip-timing information right in the panel.</p>
-
-                <ul class="grid grid-cols-1 gap-2.5 mb-6">
-                    @foreach(['Distance and time calculations via Google Distance Matrix','Browser GPS reporting supports dispatch-related location data','Estimated arrival time calculated when a ride starts'] as $item)
-                    <li class="flex items-start gap-2"><svg class="dp-check mt-0.5" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] dp-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-
-                <div class="dp-note">
-                    <strong>LimoSchedule Driver Panel:</strong> distance &amp; ETA information, not embedded turn-by-turn navigation. Drivers use their own phone&rsquo;s preferred map app for actual driving directions.
-                </div>
-            </div>
-
-            <div class="dp-figure">
-                <img src="{{ asset('public/assets/images/driver-panel-features/dp-distance-eta.jpg') }}" alt="LimoSchedule distance and ETA calculation using Google Distance Matrix from driver location to pickup and drop-off" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     DRIVER EARNINGS
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="dp-eyebrow mb-5">Earnings</span>
-            <h2 class="dp-h2 text-3xl sm:text-4xl mb-4">Know What You&rsquo;re Earning</h2>
-            <p class="dp-body text-[15.5px] leading-relaxed">Driver earnings are calculated from paid bookings using the commission rate configured by the admin.</p>
-        </div>
-
-        <div class="dp-figure mb-10 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/driver-panel-features/dp-earnings.jpg') }}" alt="LimoSchedule driver earnings showing this month, last month, all-time total and per-booking earnings" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="flex flex-wrap items-center justify-center gap-3 mb-4">
-            <div class="dp-card px-5 py-4 text-center min-w-[140px]">
-                <p class="text-[11px] font-semibold uppercase tracking-wide dp-muted mb-1">Paid Booking Fare</p>
-                <p class="dp-h3 text-lg">$145.00</p>
-            </div>
-            <span class="dp-muted text-xl font-bold">&times;</span>
-            <div class="dp-card px-5 py-4 text-center min-w-[140px]">
-                <p class="text-[11px] font-semibold uppercase tracking-wide dp-muted mb-1">Commission Rate</p>
-                <p class="dp-h3 text-lg">20%</p>
-            </div>
-            <span class="dp-muted text-xl font-bold">=</span>
-            <div class="dp-card px-5 py-4 text-center min-w-[140px]" style="border-color: rgba(37,99,235,0.3);">
-                <p class="text-[11px] font-semibold uppercase tracking-wide dp-muted mb-1">Driver Earnings</p>
-                <p class="dp-h3 text-lg" style="color:#2563EB;">$29.00</p>
-            </div>
-        </div>
-        <p class="text-center text-[12px] dp-muted mb-10">Illustrative example only. Actual fares and commission rates vary per driver and booking.</p>
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 max-w-2xl mx-auto mb-8">
-            @foreach(['This Month','Last Month','All-Time','Per-Booking'] as $item)
-            <div class="dp-card px-4 py-4 text-center">
-                <span class="text-[12.5px] font-semibold" style="color:#0F172A;">{{ $item }}</span>
-            </div>
-            @endforeach
-        </div>
-
-        <div class="dp-note max-w-3xl mx-auto text-center">
-            Earnings shown here are a calculated statement for the driver&rsquo;s own reference. There is no payout processing, withdrawal request, or bank account management within the Driver Panel.
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     CUSTOMER CONTACT & TRIP NOTES
-═══════════════════════════════════════════════════════════════ -->
-<section class="dp-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div class="dp-figure order-2 lg:order-1">
-                <img src="{{ asset('public/assets/images/driver-panel-features/dp-customer-contact.jpg') }}" alt="LimoSchedule assigned ride showing customer name, call passenger link and trip notes" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-
-            <div class="order-1 lg:order-2">
-                <span class="dp-eyebrow mb-5">Customer Contact</span>
-                <h2 class="dp-h2 text-3xl sm:text-4xl mb-5">Customer Details When You Need Them</h2>
-                <p class="dp-body text-[15.5px] leading-relaxed mb-6">Assigned rides provide the customer information a driver needs for a smooth pickup.</p>
-
-                <ul class="grid grid-cols-1 gap-2.5 mb-6">
-                    @foreach(['Customer name','Customer phone number','Direct phone / tel link','Trip notes for special instructions'] as $item)
-                    <li class="flex items-center gap-2"><svg class="dp-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] dp-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-
-                <div class="flex items-center gap-2 mb-6">
-                    <span class="text-[11px] font-bold uppercase tracking-wide px-3 py-1.5 rounded-full" style="background:#EFF6FF; color:#1D4ED8; border:1px solid rgba(37,99,235,0.25);">One Tap to Call</span>
+                            <div class="grid grid-cols-2 gap-2">
+                                @foreach(['Online / Offline Control','Current & Next Ride',"Today's Trips",'Month Earnings','Completed Trips','Average Rating'] as $item)
+                                <div class="dp-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-dashboard.jpg') }}" alt="LimoSchedule driver dashboard with today's trips, month earnings, completed trips and average rating stat tiles" width="1254" height="1254" loading="eager" decoding="async">
+                        </div>
+                    </div>
                 </div>
 
-                <div class="dp-note">
-                    Contact is a direct phone call, not in-app chat. There is no driver&ndash;customer messaging interface in the Driver Panel.
+                <!-- 2. AVAILABILITY & GPS -->
+                <div class="dp-panel" id="dp-tab-availability" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Availability &amp; GPS</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Control Availability. Stay Connected.</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">One-tap Online/Offline. While online, the browser periodically reports GPS location for dispatch and ETA.</p>
+
+                            <div class="flex flex-wrap items-center gap-1.5">
+                                @foreach(['Online','GPS Reporting','Dispatch / ETA'] as $step)
+                                    <div class="dp-flow-step">{{ $step }}</div>
+                                    @if(!$loop->last)<svg class="dp-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>@endif
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-availability-gps.jpg') }}" alt="LimoSchedule driver availability toggle and live GPS reporting while online" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- ═══════════════════════════════════════════════════════════════
-     DRIVER NOTIFICATIONS
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- 3. ASSIGNED BOOKINGS -->
+                <div class="dp-panel" id="dp-tab-bookings" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Assigned Bookings</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Every Assigned Ride, Clearly Organized</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">Drivers see their assigned bookings and the relevant trip details for each ride.</p>
 
-            <div>
-                <span class="dp-eyebrow mb-5">Notifications</span>
-                <h2 class="dp-h2 text-3xl sm:text-4xl mb-5">Never Miss an Important Ride Update</h2>
-                <p class="dp-body text-[15.5px] leading-relaxed mb-6">Browser push notifications can be enabled from the Driver Panel, alongside a full in-app notification center.</p>
+                            <div class="grid grid-cols-2 gap-2 mb-3">
+                                @foreach(['Pickup & Drop-off','Stops','Customer Name & Phone','Vehicle & Fare'] as $item)
+                                <div class="dp-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
 
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
-                    @foreach(['In-app notification center','Browser push notifications','Notification enable control','Admin-controlled events','Optional custom notification sound'] as $item)
-                    <li class="flex items-center gap-2"><svg class="dp-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] dp-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-
-                <div class="flex flex-wrap gap-2">
-                    @foreach(['New Booking Assigned','Booking Updated','Booking Cancelled','Pickup Reminder','Customer Update','Payment / Trip Update','Dispatch Update'] as $event)
-                    <span class="text-[11.5px] font-medium px-2.5 py-1 rounded-full" style="background:#EFF6FF; color:#1D4ED8; border:1px solid rgba(37,99,235,0.2);">{{ $event }}</span>
-                    @endforeach
+                            <div class="dp-note">
+                                No accept/decline step. Drivers see the rides assigned to them and the information they need.
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-assigned-bookings.jpg') }}" alt="LimoSchedule assigned booking detail with pickup, drop-off, customer, vehicle, date, time and fare" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="dp-figure">
-                <img src="{{ asset('public/assets/images/driver-panel-features/dp-notifications.jpg') }}" alt="LimoSchedule driver notification preferences with browser push notifications and notification sound" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-        </div>
-    </div>
-</section>
+                <!-- 4. TRIP WORKFLOW -->
+                <div class="dp-panel" id="dp-tab-workflow" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Trip Workflow</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">A Simple Ride Workflow</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">From an assigned booking to a completed ride, drivers follow a short, predictable lifecycle.</p>
 
-<!-- ═══════════════════════════════════════════════════════════════
-     DRIVER PROFILE & PREFERENCES
-═══════════════════════════════════════════════════════════════ -->
-<section class="dp-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div class="dp-figure order-2 lg:order-1">
-                <img src="{{ asset('public/assets/images/driver-panel-features/dp-profile.jpg') }}" alt="LimoSchedule driver profile settings with contact information, vehicle details and preferences" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-
-            <div class="order-1 lg:order-2">
-                <span class="dp-eyebrow mb-5">Profile &amp; Preferences</span>
-                <h2 class="dp-h2 text-3xl sm:text-4xl mb-5">Keep Driver Information Up to Date</h2>
-                <p class="dp-body text-[15.5px] leading-relaxed mb-6">Drivers manage their own profile and account preferences from the panel.</p>
-
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6">
-                    @foreach(['Name, email & phone','Address','Profile photo','License / passport / national ID','Password','Language','Theme'] as $item)
-                    <li class="flex items-center gap-2"><svg class="dp-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] dp-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-
-                <div class="dp-note">
-                    License, passport and national ID are reference text fields on the driver profile &mdash; the panel does not include document upload or a verification workflow.
+                            <div class="flex flex-wrap items-center gap-1.5 mb-2">
+                                @foreach(['Assigned','Start Ride','In Progress','Complete Ride','Completed'] as $status)
+                                    <div class="dp-flow-step">{{ $status }}</div>
+                                    @if(!$loop->last)<svg class="dp-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>@endif
+                                @endforeach
+                            </div>
+                            <p class="text-[11.5px] dp-muted">Only two actions &mdash; no accept/reject step.</p>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-trip-workflow.jpg') }}" alt="LimoSchedule driver trip workflow from booking assigned through start ride, in progress, complete ride and completed" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- ═══════════════════════════════════════════════════════════════
-     MOBILE-FIRST DRIVER EXPERIENCE
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-10">
-            <span class="dp-eyebrow mb-5">Mobile Experience</span>
-            <h2 class="dp-h2 text-3xl sm:text-4xl mb-4">Built for Drivers on the Move</h2>
-            <p class="dp-body text-[15.5px] leading-relaxed">The Driver Panel is a responsive web application that works across desktop, tablet and mobile browsers.</p>
-        </div>
+                <!-- 5. DISTANCE & ETA -->
+                <div class="dp-panel" id="dp-tab-distance" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Distance &amp; ETA</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Useful ETA &amp; Distance Information</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">Google Distance Matrix powers distance and time calculations right in the panel.</p>
 
-        <div class="flex justify-center mb-10">
-            <span class="text-[11px] font-bold uppercase tracking-wide px-4 py-2 rounded-full" style="background:#EFF6FF; color:#1D4ED8; border:1px solid rgba(37,99,235,0.25);">Responsive Web-Based Driver Panel</span>
-        </div>
-
-        <div class="dp-figure mb-12 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/driver-panel-features/dp-complete-experience.jpg') }}" alt="LimoSchedule driver panel shown responsively across desktop, tablet and mobile screens" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            @foreach(['Responsive Dashboard','Mobile-Friendly Controls','Compact Layouts','Easy Access While Working'] as $item)
-            <div class="rounded-xl px-3 py-3 text-center" style="background:#fff; border:1px solid rgba(15,23,42,0.08);">
-                <span class="text-[12px] font-semibold" style="color:#0F172A;">{{ $item }}</span>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     COMPLETE DRIVER JOURNEY
-═══════════════════════════════════════════════════════════════ -->
-<section class="dp-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-10">
-            <span class="dp-eyebrow mb-5">Driver Journey</span>
-            <h2 class="dp-h2 text-3xl sm:text-4xl">The Complete Driver Experience</h2>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-center gap-2 mb-12">
-            @foreach(['Go Online','Receive Assigned Ride','View Trip Details','Check Distance / ETA','Start Ride','In Progress','Complete Ride','Track Earnings','Receive Updates'] as $step)
-                <div class="dp-flow-step"><span class="text-[12.5px] font-semibold" style="color:#0F172A;">{{ $step }}</span></div>
-                @if(!$loop->last)
-                <svg class="dp-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                @endif
-            @endforeach
-        </div>
-
-        <div class="dp-figure max-w-5xl mx-auto">
-            <img src="{{ asset('public/assets/images/driver-panel-features/dp-complete-experience.jpg') }}" alt="Complete LimoSchedule driver experience from going online through assigned rides, trip execution, earnings and notifications" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     FEATURE GRID
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="dp-eyebrow mb-5">Full Overview</span>
-            <h2 class="dp-h2 text-3xl sm:text-4xl">Everything Your Drivers Need</h2>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            @php
-                $dpFeatures = [
-                    ['Driver Dashboard', 'A live daily overview of trips, earnings, completed rides and rating.'],
-                    ['Online / Offline Availability', 'One-tap control over when a driver is ready to receive rides.'],
-                    ['Browser GPS Reporting', 'Live location reporting while online supports dispatch and ETA.'],
-                    ['Assigned Bookings', 'A clear list of rides assigned to the driver, with full trip details.'],
-                    ['Trip Status Management', 'Start Ride and Complete Ride update the booking status instantly.'],
-                    ['Distance & ETA', 'Google Distance Matrix–powered distance and arrival-time information.'],
-                    ['Driver Earnings', 'Commission-based earnings, calculated from paid bookings.'],
-                    ['Customer Contact', 'Direct call access to the customer for an assigned ride.'],
-                    ['Trip Notes', 'Special instructions shared for each booking.'],
-                    ['Notifications', 'An in-app notification center for every ride update.'],
-                    ['Browser Push', 'Real-time push alerts for new and updated assignments.'],
-                    ['Driver Profile', 'Manage personal information, vehicle reference and contact details.'],
-                    ['Language Preferences', 'Choose a preferred display language for the panel.'],
-                    ['Theme Preferences', 'Switch between light and dark appearance.'],
-                    ['Responsive Web Experience', 'A consistent Driver Panel across desktop, tablet and mobile.'],
-                ];
-            @endphp
-            @foreach($dpFeatures as [$title, $desc])
-            <div class="dp-card p-6">
-                <div class="dp-icon-box mb-4">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <div class="dp-note">
+                                <strong>Distance &amp; ETA only</strong> &mdash; not embedded turn-by-turn navigation. Drivers use their own phone&rsquo;s map app for directions.
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-distance-eta.jpg') }}" alt="LimoSchedule distance and ETA calculation using Google Distance Matrix from driver location to pickup and drop-off" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
                 </div>
-                <h3 class="dp-h3 text-[15px] mb-2">{{ $title }}</h3>
-                <p class="dp-body text-[13px] leading-relaxed">{{ $desc }}</p>
+
+                <!-- 6. EARNINGS -->
+                <div class="dp-panel" id="dp-tab-earnings" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Earnings</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Know What You&rsquo;re Earning</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">Calculated from paid bookings using the commission rate configured by the admin.</p>
+
+                            <div class="flex flex-wrap items-center gap-2 mb-3">
+                                <div class="dp-chip" style="flex:1 1 100px;">Fare <strong>$145</strong></div>
+                                <span class="dp-muted text-sm font-bold">&times;</span>
+                                <div class="dp-chip" style="flex:1 1 100px;">Rate <strong>20%</strong></div>
+                                <span class="dp-muted text-sm font-bold">=</span>
+                                <div class="dp-chip" style="flex:1 1 100px; border-color: rgba(37,99,235,0.3); color:#2563EB;">Earn <strong>$29</strong></div>
+                            </div>
+
+                            <div class="dp-note">
+                                A calculated statement for reference only &mdash; no payout, withdrawal, or bank account management.
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-earnings.jpg') }}" alt="LimoSchedule driver earnings showing this month, last month, all-time total and per-booking earnings" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. CUSTOMER CONTACT -->
+                <div class="dp-panel" id="dp-tab-contact" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Customer Contact</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Customer Details When You Need Them</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">Assigned rides provide the customer information a driver needs for a smooth pickup.</p>
+
+                            <div class="mb-3">
+                                <span class="text-[10.5px] font-bold uppercase tracking-wide px-3 py-1.5 rounded-full" style="background:#EFF6FF; color:#1D4ED8; border:1px solid rgba(37,99,235,0.25);">One Tap to Call</span>
+                            </div>
+
+                            <div class="dp-note">
+                                Direct phone call, not in-app chat &mdash; there is no driver&ndash;customer messaging interface.
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-customer-contact.jpg') }}" alt="LimoSchedule assigned ride showing customer name, call passenger link and trip notes" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. NOTIFICATIONS -->
+                <div class="dp-panel" id="dp-tab-notifications" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Notifications</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Never Miss an Important Update</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">Browser push and a full in-app notification center, enabled from the Driver Panel.</p>
+
+                            <div class="flex flex-wrap gap-1.5">
+                                @foreach(['New Booking','Booking Cancelled','Pickup Reminder','Dispatch Update'] as $event)
+                                <span class="text-[11px] font-medium px-2.5 py-1 rounded-full" style="background:#EFF6FF; color:#1D4ED8; border:1px solid rgba(37,99,235,0.2);">{{ $event }}</span>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-notifications.jpg') }}" alt="LimoSchedule driver notification preferences with browser push notifications and notification sound" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. PROFILE & PREFERENCES -->
+                <div class="dp-panel" id="dp-tab-profile" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Profile &amp; Preferences</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Keep Driver Information Up to Date</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">Drivers manage their own profile and account preferences from the panel.</p>
+
+                            <div class="grid grid-cols-2 gap-2 mb-3">
+                                @foreach(['Name, Email & Phone','Profile Photo','License / Passport / ID','Password, Language & Theme'] as $item)
+                                <div class="dp-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+
+                            <div class="dp-note">
+                                License, passport and national ID are reference text fields &mdash; no document upload or verification.
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-profile.jpg') }}" alt="LimoSchedule driver profile settings with contact information, vehicle details and preferences" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. MOBILE EXPERIENCE -->
+                <div class="dp-panel" id="dp-tab-mobile" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Mobile Experience</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">Built for Drivers on the Move</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">A responsive web application that works across desktop, tablet and mobile browsers.</p>
+
+                            <span class="text-[10.5px] font-bold uppercase tracking-wide px-3 py-1.5 rounded-full inline-block" style="background:#EFF6FF; color:#1D4ED8; border:1px solid rgba(37,99,235,0.25);">Responsive Web-Based Driver Panel</span>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-complete-experience.jpg') }}" alt="LimoSchedule driver panel shown responsively across desktop, tablet and mobile screens" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. COMPLETE JOURNEY -->
+                <div class="dp-panel" id="dp-tab-journey" role="tabpanel">
+                    <div class="dp-panel-grid">
+                        <div>
+                            <span class="dp-eyebrow mb-3">Driver Journey</span>
+                            <h2 class="dp-h2 text-xl sm:text-2xl mb-2">The Complete Driver Experience</h2>
+                            <p class="dp-body text-[13px] leading-relaxed mb-3">A visual summary of the full connected Driver Panel experience.</p>
+
+                            <div class="flex flex-wrap items-center gap-1.5">
+                                @foreach(['Go Online','Assigned Ride','Distance/ETA','Start Ride','Complete','Earnings'] as $step)
+                                    <div class="dp-flow-step">{{ $step }}</div>
+                                    @if(!$loop->last)<svg class="dp-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>@endif
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="dp-figure">
+                            <img src="{{ asset('public/assets/images/driver-panel-features/dp-complete-experience.jpg') }}" alt="Complete LimoSchedule driver experience from going online through assigned rides, trip execution, earnings and notifications" width="1254" height="1254" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /dp-content -->
+        </div><!-- /dp-explorer -->
+
+        <!-- Compact CTA -->
+        <div class="dp-cta-box mt-14">
+            <h2 class="text-white font-extrabold tracking-tight text-2xl sm:text-3xl mb-3">Give Your Drivers a Better Way to Work</h2>
+            <p class="text-gray-300 text-[14px] max-w-xl mx-auto mb-7">Launch a complete limo, taxi, chauffeur, and airport-transfer booking system with a dedicated Driver Panel built into LimoSchedule.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="{{ route('contact') }}" class="dp-btn-primary w-full sm:w-auto">
+                    <span>Get LimoSchedule</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="{{ route('features') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-bold px-8 py-[13px] rounded-xl text-[14.5px] text-white transition-all duration-200 hover:bg-white/10" style="background: rgba(255,255,255,0.06); border: 1.5px solid rgba(255,255,255,0.25);">
+                    Explore All Features
+                </a>
             </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     DRIVER PANEL BENEFITS FOR OPERATORS
-═══════════════════════════════════════════════════════════════ -->
-<section class="dp-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-14">
-            <span class="dp-eyebrow mb-5">For Operators</span>
-            <h2 class="dp-h2 text-3xl sm:text-4xl">Better Driver Operations. Better Customer Experience.</h2>
+            <p class="text-gray-400 text-[12.5px] mt-6">
+                Also see the <a href="{{ route('website-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Website</a>, <a href="{{ route('customer-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Customer Panel</a>, and <a href="{{ route('admin-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Admin Panel</a> feature pages.
+            </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            @php
-                $dpBenefits = [
-                    ['Faster Dispatch Visibility', 'Drivers can see assigned rides and important trip information right away.'],
-                    ['Better Ride Coordination', 'Availability and GPS reporting support day-to-day dispatch operations.'],
-                    ['Clear Trip Progress', 'Drivers follow a straightforward Assigned → Start → In Progress → Complete lifecycle.'],
-                    ['Better Driver Visibility', 'Owners and admins manage driver availability and ride assignments from the overall system.'],
-                    ['Transparent Earnings', 'Drivers see calculated earnings based on paid bookings and their configured commission.'],
-                    ['Fewer Missed Updates', 'Browser push and in-app notifications help drivers stay informed on every assignment.'],
-                ];
-            @endphp
-            @foreach($dpBenefits as [$title, $desc])
-            <div class="dp-card p-6">
-                <h3 class="dp-h3 text-[15.5px] mb-2">{{ $title }}</h3>
-                <p class="dp-body text-[13px] leading-relaxed">{{ $desc }}</p>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     SECURITY & ACCOUNT MANAGEMENT
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center mb-10">
-            <span class="dp-eyebrow mb-5">Security</span>
-            <h2 class="dp-h2 text-3xl sm:text-4xl">Secure, Role-Specific Driver Access</h2>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
-            @foreach(['Secure Driver Login','Password Management','Role-Specific Authentication','Language Preferences','Theme Preferences','Account Profile Management'] as $item)
-            <div class="dp-card px-4 py-4 text-center">
-                <span class="text-[12.5px] font-semibold" style="color:#0F172A;">{{ $item }}</span>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     FINAL DRIVER PANEL SUMMARY
-═══════════════════════════════════════════════════════════════ -->
-<section class="dp-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <h2 class="dp-h2 text-3xl sm:text-4xl mb-4">One Driver Panel. Every Ride Under Control.</h2>
-            <p class="dp-body text-[15.5px] leading-relaxed">From availability and assigned bookings to trip progress, ETA information, earnings, customer contact and notifications &mdash; LimoSchedule gives drivers a focused workspace built around the way they work.</p>
-        </div>
-
-        <div class="dp-figure max-w-3xl mx-auto">
-            <img src="{{ asset('public/assets/images/driver-panel-features/dp-dashboard.jpg') }}" alt="LimoSchedule driver panel summary dashboard view" width="1254" height="1254" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     FINAL CTA
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-24 lg:py-28 overflow-hidden" style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);">
-    <div class="absolute inset-0 pointer-events-none" style="background-image: radial-gradient(ellipse at 50% 0%, rgba(37,99,235,0.25) 0%, transparent 60%);"></div>
-    <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-white font-extrabold tracking-tight leading-[1.12] mb-6" style="font-size: clamp(2rem, 4.5vw, 3.1rem);">
-            Give Your Drivers a Better Way to Work
-        </h2>
-        <p class="text-gray-300 text-[16px] leading-relaxed mb-10 max-w-xl mx-auto">
-            Launch a complete limo, taxi, chauffeur, and airport-transfer booking system with a dedicated Driver Panel built into LimoSchedule.
-        </p>
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="{{ route('contact') }}" class="dp-btn-primary w-full sm:w-auto">
-                <span>Get LimoSchedule</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="{{ route('features') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-bold px-8 py-4 rounded-xl text-[15px] text-white transition-all duration-200 hover:bg-white/10" style="background: rgba(255,255,255,0.06); border: 1.5px solid rgba(255,255,255,0.25);">
-                Explore All Features
-            </a>
-        </div>
-        <p class="text-gray-400 text-[13px] mt-8">
-            Also see the <a href="{{ route('website-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Website Features</a> and <a href="{{ route('customer-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Customer Panel Features</a>.
-        </p>
     </div>
 </section>
 
 </div>
 
 @endsection
+
+@push('scripts')
+<script>
+(function () {
+    var tabs = document.querySelectorAll('#dp-page .dp-tab');
+    var panels = document.querySelectorAll('#dp-page .dp-panel');
+
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            var targetId = tab.getAttribute('data-target');
+
+            tabs.forEach(function (t) {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+
+            panels.forEach(function (p) {
+                p.classList.toggle('active', p.id === targetId);
+            });
+
+            if (window.innerWidth <= 900) {
+                var content = document.querySelector('#dp-page .dp-content');
+                if (content) {
+                    var top = content.getBoundingClientRect().top + window.scrollY - 70;
+                    window.scrollTo({ top: top, behavior: 'smooth' });
+                }
+                tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }
+        });
+    });
+})();
+</script>
+@endpush

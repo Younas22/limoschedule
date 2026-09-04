@@ -27,7 +27,7 @@
     #wf-page * { box-sizing: border-box; }
     #wf-page .wf-eyebrow {
         display: inline-flex; align-items: center; gap: 8px;
-        padding: 7px 16px; border-radius: 999px;
+        padding: 6px 14px; border-radius: 999px;
         background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.22);
         color: #1D4ED8; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
     }
@@ -36,22 +36,12 @@
     #wf-page .wf-h3 { color: #0B1220; font-weight: 700; }
     #wf-page .wf-body { color: #4B5563; }
     #wf-page .wf-muted { color: #6B7280; }
-    #wf-page .wf-section-soft { background: #F6F8FC; }
     #wf-page .wf-card {
         background: #ffffff; border: 1px solid rgba(15,23,42,0.08); border-radius: 16px;
         box-shadow: 0 10px 30px rgba(15,23,42,0.05);
         transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
     #wf-page .wf-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(15,23,42,0.09); border-color: rgba(59,130,246,0.35); }
-    #wf-page .wf-icon-box {
-        width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
-        display: flex; align-items: center; justify-content: center;
-        background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2);
-    }
-    #wf-page .wf-figure {
-        border-radius: 20px; overflow: hidden; border: 1px solid rgba(15,23,42,0.08);
-        box-shadow: 0 30px 70px rgba(15,23,42,0.1);
-    }
     #wf-page .wf-btn-primary {
         display: inline-flex; align-items: center; justify-content: center; gap: 8px;
         background: #2563EB; color: #fff; font-weight: 700; font-size: 15px;
@@ -78,11 +68,92 @@
         color: #9CA3AF; text-decoration: line-through; text-decoration-color: rgba(156,163,175,0.6);
     }
     #wf-page .wf-flow-step {
-        background: #ffffff; border: 1px solid rgba(15,23,42,0.08); border-radius: 14px;
-        padding: 14px 16px; display: flex; align-items: center; gap: 10px;
-        box-shadow: 0 6px 16px rgba(15,23,42,0.05);
+        background: #ffffff; border: 1px solid rgba(15,23,42,0.08); border-radius: 12px;
+        padding: 9px 12px; display: flex; align-items: center; gap: 8px;
+        box-shadow: 0 6px 16px rgba(15,23,42,0.05); font-size: 12px; font-weight: 600; color: #0B1220;
     }
     #wf-page .wf-arrow { color: #93A3B8; flex-shrink: 0; }
+
+    /* Explorer layout */
+    #wf-page .wf-explorer { display: flex; align-items: flex-start; gap: 24px; }
+    #wf-page .wf-tabs {
+        flex: 0 0 260px; width: 260px; position: sticky; top: 84px;
+        display: flex; flex-direction: column; gap: 3px;
+        max-height: calc(100vh - 104px); overflow-y: auto;
+        padding-right: 4px;
+    }
+    #wf-page .wf-tab {
+        display: flex; align-items: center; gap: 11px;
+        padding: 9px 12px; border-radius: 11px;
+        border: 1px solid transparent; border-left: 3px solid transparent;
+        background: transparent; text-align: left; cursor: pointer;
+        transition: background 0.15s ease, border-color 0.15s ease;
+        width: 100%;
+    }
+    #wf-page .wf-tab:hover { background: #F6F8FC; }
+    #wf-page .wf-tab.active {
+        background: rgba(37,99,235,0.07);
+        border-color: rgba(37,99,235,0.16);
+        border-left-color: #2563EB;
+    }
+    #wf-page .wf-tab-icon {
+        width: 30px; height: 30px; border-radius: 8px; flex-shrink: 0;
+        display: flex; align-items: center; justify-content: center;
+        background: #F1F5F9; color: #64748B;
+        transition: background 0.15s ease, color 0.15s ease;
+    }
+    #wf-page .wf-tab.active .wf-tab-icon { background: #2563EB; color: #fff; }
+    #wf-page .wf-tab-name { font-size: 13px; font-weight: 700; color: #0B1220; line-height: 1.25; }
+    #wf-page .wf-tab-desc { font-size: 11px; color: #94A3B8; line-height: 1.2; margin-top: 1px; }
+    #wf-page .wf-tab.active .wf-tab-desc { color: #6B7280; }
+
+    #wf-page .wf-content { flex: 1 1 0%; min-width: 0; }
+    #wf-page .wf-panel { display: none; }
+    #wf-page .wf-panel.active { display: block; animation: wf-fade 0.3s ease; }
+    @keyframes wf-fade { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+    #wf-page .wf-panel-grid { display: grid; grid-template-columns: 1fr; gap: 22px; align-items: center; }
+    @media (min-width: 1024px) { #wf-page .wf-panel-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+
+    #wf-page .wf-figure {
+        border-radius: 16px; overflow: hidden; border: 1px solid rgba(15,23,42,0.08);
+        box-shadow: 0 20px 50px rgba(15,23,42,0.09);
+        display: flex; align-items: center; justify-content: center;
+        background: #F8FAFC; max-height: 420px;
+    }
+    #wf-page .wf-figure img { max-height: 420px; width: auto; max-width: 100%; height: auto; display: block; margin: 0 auto; }
+
+    #wf-page .wf-feature-card {
+        background: #F6F8FC; border: 1px solid rgba(15,23,42,0.06); border-radius: 12px;
+        padding: 11px 13px; display: flex; align-items: flex-start; gap: 9px;
+    }
+    #wf-page .wf-note {
+        background: #EFF6FF; border: 1px solid rgba(37,99,235,0.18); border-radius: 12px;
+        padding: 10px 14px; color: #1E3A8A; font-size: 12px; line-height: 1.55;
+    }
+    #wf-page .wf-chip {
+        background: #F1F5F9; border: 1px solid rgba(15,23,42,0.06); border-radius: 9px;
+        padding: 7px 10px; font-size: 11.5px; font-weight: 600; color: #0B1220; text-align: center;
+    }
+    #wf-page .wf-cta-box {
+        background: linear-gradient(135deg, #0B1220 0%, #14213D 100%);
+        border-radius: 20px; padding: 34px 28px; text-align: center;
+    }
+
+    @media (max-width: 900px) {
+        #wf-page .wf-explorer { flex-direction: column; gap: 14px; }
+        #wf-page .wf-tabs {
+            position: sticky; top: 0; z-index: 20; width: 100%; flex: none;
+            flex-direction: row; overflow-x: auto; overflow-y: hidden; max-height: none;
+            padding: 8px 4px; background: #ffffff; border-bottom: 1px solid rgba(15,23,42,0.08);
+            gap: 6px; -webkit-overflow-scrolling: touch;
+        }
+        #wf-page .wf-tab { flex: 0 0 auto; width: auto; border-left: none; border-bottom: 3px solid transparent; border-radius: 9px; }
+        #wf-page .wf-tab.active { border-left-color: transparent; border-bottom-color: #2563EB; }
+        #wf-page .wf-tab-desc { display: none; }
+        #wf-page .wf-figure { max-height: 280px; }
+        #wf-page .wf-figure img { max-height: 280px; }
+    }
 </style>
 @endpush
 
@@ -107,563 +178,408 @@
 #wf-page nav[aria-label="Breadcrumb"] a:hover { color: #0B1220 !important; }
 #wf-page nav[aria-label="Breadcrumb"] span[aria-current] { color: #0B1220 !important; }</style>
 
-    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-10 pb-14 lg:pt-14 lg:pb-16 text-center">
-        <span class="wf-eyebrow mb-6">Public Website</span>
+    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-8 pb-10 lg:pt-10 lg:pb-12 text-center">
+        <span class="wf-eyebrow mb-5">Public Website</span>
 
-        <h1 class="wf-h1 text-4xl sm:text-5xl lg:text-[56px] mb-6">
-            More Than a Website.<br class="hidden sm:block"> A Complete Online Booking Experience.
+        <h1 class="wf-h1 text-3xl sm:text-4xl lg:text-[46px] mb-5">
+            More Than a Website. A Complete Online Booking Experience.
         </h1>
 
-        <p class="wf-body text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto mb-9">
+        <p class="wf-body text-[15.5px] leading-relaxed max-w-2xl mx-auto mb-7">
             LimoSchedule gives your limo, chauffeur or transportation business a powerful public website built to showcase your services, capture bookings, calculate fares and turn visitors into customers.
         </p>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-7">
-            <a href="{{ route('contact') }}" class="wf-btn-primary w-full sm:w-auto">
-                <span>Book a Demo</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a href="#wf-overview" class="wf-btn-secondary w-full sm:w-auto">Explore Features</a>
-        </div>
-
-        <p class="wf-muted text-[12.5px] font-medium">
-            Guest Booking &middot; Live Fare Quotes &middot; Fleet Showcase &middot; Multi-Language &middot; SEO Ready
-        </p>
-    </div>
-
-    <div class="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 pb-16 lg:pb-24">
-        <div class="wf-figure">
-            <img src="{{ asset('public/assets/images/website-features/wf-hero-overview.jpg') }}" alt="LimoSchedule public website shown on a laptop, with booking, fleet, blog and SEO features highlighted" width="1536" height="1024" class="w-full h-auto block" loading="eager" fetchpriority="high" decoding="sync">
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     WEBSITE OVERVIEW
-═══════════════════════════════════════════════════════════════ -->
-<section id="wf-overview" class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-14">
-            <span class="wf-eyebrow mb-5">Overview</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl">Everything Your Transportation Business Needs Online</h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="wf-card p-7">
-                <div class="wf-icon-box mb-5">
-                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
-                </div>
-                <h3 class="wf-h3 text-[17px] mb-2.5">Showcase Your Business</h3>
-                <p class="wf-body text-[14px] leading-relaxed">Present your services and fleet on a professional, fully branded website that builds trust from the first visit.</p>
-            </div>
-            <div class="wf-card p-7">
-                <div class="wf-icon-box mb-5">
-                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg>
-                </div>
-                <h3 class="wf-h3 text-[17px] mb-2.5">Book Without an Account</h3>
-                <p class="wf-body text-[14px] leading-relaxed">Visitors can request or book a ride instantly as a guest &mdash; no registration required to get moving.</p>
-            </div>
-            <div class="wf-card p-7">
-                <div class="wf-icon-box mb-5">
-                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                </div>
-                <h3 class="wf-h3 text-[17px] mb-2.5">Give Customers a Panel</h3>
-                <p class="wf-body text-[14px] leading-relaxed">Existing customers sign in to their own secure account to manage bookings and details.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     ONLINE BOOKING
-═══════════════════════════════════════════════════════════════ -->
-<section class="wf-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div>
-                <span class="wf-eyebrow mb-5">Online Booking</span>
-                <h2 class="wf-h2 text-3xl sm:text-4xl mb-5">Turn Website Visitors Into Bookings</h2>
-                <p class="wf-body text-[15.5px] leading-relaxed mb-8">
-                    Guest booking is fully built in &mdash; visitors can request a ride without creating an account, and every detail feeds straight into a live, accurate fare.
-                </p>
-
-                <div class="space-y-5">
-                    <div>
-                        <h3 class="wf-h3 text-[13.5px] uppercase tracking-wide mb-2" style="color:#2563EB;">Trip Types</h3>
-                        <div class="flex flex-wrap gap-2">
-                            @foreach(['One Way','Round Trip','Hourly','Airport Transfer'] as $item)
-                            <span class="inline-flex items-center gap-1.5 text-[13px] font-medium wf-body px-3 py-1.5 rounded-full" style="background:#fff;border:1px solid rgba(15,23,42,0.1);">{{ $item }}</span>
-                            @endforeach
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="wf-h3 text-[13.5px] uppercase tracking-wide mb-2" style="color:#2563EB;">Route &amp; Stops</h3>
-                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            @foreach(['Pickup & Drop-off','Google Places Autocomplete','Unlimited Stops','Date & Time'] as $item)
-                            <li class="flex items-center gap-2"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] wf-body">{{ $item }}</span></li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="wf-h3 text-[13.5px] uppercase tracking-wide mb-2" style="color:#2563EB;">Trip Details</h3>
-                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            @foreach(['Vehicle Selection','Passenger Count','Luggage Count','Waiting Time & Toll Options'] as $item)
-                            <li class="flex items-center gap-2"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] wf-body">{{ $item }}</span></li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="wf-h3 text-[13.5px] uppercase tracking-wide mb-2" style="color:#2563EB;">Pricing &amp; Checkout</h3>
-                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                            @foreach(['Live Fare Quote','Coupon Codes','Guest Contact Details','WhatsApp Hand-off','Booking Confirmation','Invoice + PDF Download'] as $item)
-                            <li class="flex items-center gap-2"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] wf-body">{{ $item }}</span></li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    <div class="flex items-center gap-2 pt-1">
-                        <span class="wf-soon-badge">Coming Soon</span>
-                        <span class="text-[13px] wf-muted">Voice search &mdash; UI is present, functionality is not yet implemented.</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wf-figure">
-                <img src="{{ asset('public/assets/images/website-features/wf-online-booking.jpg') }}" alt="LimoSchedule online booking form showing trip type, pickup, drop-off, passengers and a live fare quote" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     LIVE FARE CALCULATOR
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="wf-eyebrow mb-5">Live Fare Calculator</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl mb-4">Know the Fare Before the Customer Books</h2>
-            <p class="wf-body text-[15.5px] leading-relaxed">A genuine distance- and time-based pricing engine &mdash; not a static price list.</p>
-        </div>
-
-        <!-- Pricing flow -->
-        <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
-            @foreach(['Route','Distance & Time','Pricing Rules','Discounts & Surcharges','Final Fare'] as $i => $step)
-                <div class="wf-flow-step"><span class="text-[13.5px] font-semibold" style="color:#0B1220;">{{ $step }}</span></div>
-                @if(!$loop->last)
-                <svg class="wf-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                @endif
-            @endforeach
-        </div>
-
-        <div class="wf-figure mb-14 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/website-features/wf-fare-calculator.jpg') }}" alt="LimoSchedule fare calculator pricing flow from route to final fare, with pricing factors listed" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
-            @foreach(['Base Fare','Distance-Based Pricing','Long-Distance Discount','Hourly Pricing','Waiting Charges','Night Surcharge','Weekend Surcharge','Toll Charges','Airport Surcharge','Service Fee','Minimum Fare','Extra Passenger Charges','Coupon Discounts','Tax','Multi-Currency Display'] as $factor)
-            <div class="wf-card px-4 py-4 text-center">
-                <span class="text-[12.5px] font-semibold" style="color:#0B1220;">{{ $factor }}</span>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     FLEET SHOWCASE
-═══════════════════════════════════════════════════════════════ -->
-<section class="wf-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div class="wf-figure order-2 lg:order-1">
-                <img src="{{ asset('public/assets/images/website-features/wf-fleet-showcase.jpg') }}" alt="LimoSchedule public fleet page showing vehicle cards with pricing and amenities" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-
-            <div class="order-1 lg:order-2">
-                <span class="wf-eyebrow mb-5">Fleet Showcase</span>
-                <h2 class="wf-h2 text-3xl sm:text-4xl mb-5">Showcase Your Fleet Like a Premium Transportation Company</h2>
-                <p class="wf-body text-[15.5px] leading-relaxed mb-7">Give customers a clear view of the vehicles available for their journey.</p>
-
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    @foreach(['Vehicle Categories (Sedan, SUV, Van)','Vehicle Search','Passenger Capacity','Luggage Capacity','Vehicle Year','Transmission','Fuel Type','Vehicle Description','Multiple Gallery Images','Vehicle Pricing','Wi-Fi & Bottled Water','Phone Charger & Baby Seat','Air Conditioning'] as $item)
-                    <li class="flex items-center gap-2"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] wf-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     SERVICES
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="wf-eyebrow mb-5">Services</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl mb-4">Present Every Service You Offer</h2>
-            <p class="wf-body text-[15.5px] leading-relaxed">Every service page is independently editable &mdash; its own hero, heading, content, SEO fields and images.</p>
-        </div>
-
-        <div class="wf-figure mb-12 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/website-features/wf-services.jpg') }}" alt="LimoSchedule services page showing six transportation service types with booking options" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            @foreach([
-                ['Airport Transfer', 'Seamless airport pick-up and drop-off.', 'M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-1 .1-1.3.5l-.7.8c-.4.5-.2 1.2.4 1.4L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.3 5.3c.3.6 1 .8 1.4.4l.8-.7c.4-.4.6-.9.5-1.3z'],
-                ['Chauffeur Service', 'Professional drivers for a premium experience.', 'M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2'],
-                ['Corporate Transfer', 'Reliable corporate travel for your business.', 'M20 7h-4V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2H4a2 2 0 00-2 2v11a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z'],
-                ['City Rides', 'Comfortable rides across the city.', 'M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z'],
-                ['Hourly Rides', 'Flexible hourly bookings as per your schedule.', 'M12 2a10 10 0 1010 10A10 10 0 0012 2zm1 5v5l4 2'],
-                ['VIP Transport', 'Luxury vehicles for VIPs and special guests.', 'M12 2l2.4 6.6L21 10l-5 4.6L17.4 21 12 17.4 6.6 21 8 14.6 3 10l6.6-1.4L12 2z'],
-            ] as [$name, $desc, $path])
-            <div class="wf-card p-6">
-                <div class="wf-icon-box mb-4">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ $path }}"/></svg>
-                </div>
-                <h3 class="wf-h3 text-[15.5px] mb-1.5">{{ $name }}</h3>
-                <p class="wf-body text-[13px] leading-relaxed">{{ $desc }}</p>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     BOOKING JOURNEY
-═══════════════════════════════════════════════════════════════ -->
-<section class="wf-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="wf-eyebrow mb-5">Booking Journey</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl">From Search to Confirmation in Minutes</h2>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-12">
-            @foreach([
-                ['01', 'Enter Pickup & Drop-off'],
-                ['02', 'Choose Trip Type & Vehicle'],
-                ['03', 'Add Passengers, Luggage & Stops'],
-                ['04', 'Get Your Live Fare'],
-                ['05', 'Confirm & Receive Booking Details'],
-            ] as [$num, $label])
-            <div class="wf-card p-5 text-center">
-                <div class="mx-auto mb-3 w-11 h-11 rounded-full flex items-center justify-center font-bold text-[15px]" style="background:#2563EB; color:#fff;">{{ $num }}</div>
-                <p class="wf-h3 text-[13.5px] leading-snug">{{ $label }}</p>
-            </div>
-            @endforeach
-        </div>
-
-        <div class="wf-figure max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/website-features/wf-booking-journey.jpg') }}" alt="Five-step LimoSchedule customer booking journey from pickup entry to confirmation" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     CUSTOMER ACCESS & SECURITY
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div>
-                <span class="wf-eyebrow mb-5">Customer Access</span>
-                <h2 class="wf-h2 text-3xl sm:text-4xl mb-5">Give Customers Their Own Secure Account</h2>
-                <p class="wf-body text-[15.5px] leading-relaxed mb-7">
-                    Customers and admins sign in through a single shared login page; drivers use their own separate, dedicated login.
-                </p>
-
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-7">
-                    @foreach(['Customer Registration','Customer / Admin Login','Separate Driver Login','Password Reset (per role)','Email Verification','Active Sessions','Login History','Account Security'] as $item)
-                    <li class="flex items-center gap-2"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] wf-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-
-                <div class="grid grid-cols-3 gap-2.5 mb-6">
-                    <div class="rounded-xl p-3.5 text-center" style="background:#F6F8FC; border:1px solid rgba(15,23,42,0.08);">
-                        <div class="wf-h3 text-[12.5px]">Customer</div>
-                        <div class="wf-muted text-[11px] mt-0.5">Books rides, manages profile</div>
-                    </div>
-                    <div class="rounded-xl p-3.5 text-center" style="background:#F6F8FC; border:1px solid rgba(15,23,42,0.08);">
-                        <div class="wf-h3 text-[12.5px]">Admin</div>
-                        <div class="wf-muted text-[11px] mt-0.5">Manages bookings, fleet, settings</div>
-                    </div>
-                    <div class="rounded-xl p-3.5 text-center" style="background:#F6F8FC; border:1px solid rgba(15,23,42,0.08);">
-                        <div class="wf-h3 text-[12.5px]">Driver</div>
-                        <div class="wf-muted text-[11px] mt-0.5">Own dedicated login &amp; trips</div>
-                    </div>
-                </div>
-
-                <p class="text-[12.5px] wf-muted">
-                    <span class="wf-not-avail">Social login</span> and <span class="wf-not-avail">OTP/SMS login</span> are not currently available.
-                </p>
-            </div>
-
-            <div class="wf-figure">
-                <img src="{{ asset('public/assets/images/website-features/wf-authentication.jpg') }}" alt="LimoSchedule login page with customer, admin and driver access and account security features" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     COMMUNICATION
-═══════════════════════════════════════════════════════════════ -->
-<section class="wf-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div class="wf-figure order-2 lg:order-1">
-                <img src="{{ asset('public/assets/images/website-features/wf-communication.jpg') }}" alt="LimoSchedule communication channels including contact form, phone, email, WhatsApp and browser notifications" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-            </div>
-
-            <div class="order-1 lg:order-2">
-                <span class="wf-eyebrow mb-5">Communication</span>
-                <h2 class="wf-h2 text-3xl sm:text-4xl mb-5">Stay Connected With Every Customer</h2>
-
-                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6">
-                    @foreach(['Contact Form','Phone Click-to-Call','Email','WhatsApp Click-to-Chat','Floating WhatsApp Button','Booking WhatsApp Hand-off','Browser Push Notifications','Booking Updates'] as $item)
-                    <li class="flex items-center gap-2"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] wf-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-
-                <p class="text-[12.5px] wf-muted leading-relaxed">
-                    WhatsApp is a click-to-chat link with a pre-filled message &mdash; not a WhatsApp Business API integration (no delivery receipts or automated replies).
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     SEO & CONTENT
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="wf-eyebrow mb-5">SEO &amp; Content</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl mb-4">Built to Be Found</h2>
-            <p class="wf-body text-[15.5px] leading-relaxed">Every page ships with the technical SEO foundations search engines look for &mdash; not a promise of guaranteed rankings.</p>
-        </div>
-
-        <div class="wf-figure mb-12 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/website-features/wf-seo.jpg') }}" alt="LimoSchedule blog and SEO features including sitemap, meta tags, redirects and schema markup" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3.5">
-            @foreach(['Dynamic XML Sitemap','Robots.txt','Meta Titles','Meta Descriptions','Keywords','Canonical URLs','Open Graph Images','JSON-LD Schema','301 Redirects','302 Redirects','SEO Area Pages','Blog Categories','Blog Tags','Blog View Counts','Per-Page SEO Fields'] as $item)
-            <div class="wf-card px-4 py-4 text-center">
-                <span class="text-[12.5px] font-semibold" style="color:#0B1220;">{{ $item }}</span>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     BLOG, REVIEWS, ROUTES & AREAS
-═══════════════════════════════════════════════════════════════ -->
-<section class="wf-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="wf-eyebrow mb-5">Content &amp; Local Growth</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl">Keep Your Website Fresh and Local</h2>
-        </div>
-
-        <div class="wf-figure mb-12 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/website-features/wf-content-growth.jpg') }}" alt="LimoSchedule reviews, blog, popular routes and service area features" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <div class="wf-card p-6">
-                <h3 class="wf-h3 text-[15px] mb-2">Blog</h3>
-                <p class="wf-body text-[13px] leading-relaxed">Categories, tags, posts, view tracking and per-post SEO fields.</p>
-            </div>
-            <div class="wf-card p-6">
-                <h3 class="wf-h3 text-[15px] mb-2">Reviews</h3>
-                <p class="wf-body text-[13px] leading-relaxed">Customer ratings and comments tied to a booking, driver and vehicle, with admin moderation and a featured flag.</p>
-            </div>
-            <div class="wf-card p-6">
-                <h3 class="wf-h3 text-[15px] mb-2">Popular Routes</h3>
-                <p class="wf-body text-[13px] leading-relaxed">Fixed city and intercity routes with pricing, including optional discounted pricing.</p>
-            </div>
-            <div class="wf-card p-6">
-                <h3 class="wf-h3 text-[15px] mb-2">Service Areas</h3>
-                <p class="wf-body text-[13px] leading-relaxed">Dedicated, SEO-managed pages for each coverage area.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     GLOBAL READY
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="wf-eyebrow mb-5">Global Ready</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl">Ready for Customers Around the World</h2>
-        </div>
-
-        <div class="wf-figure mb-12 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/website-features/wf-global-ready.jpg') }}" alt="LimoSchedule multi-language and multi-currency settings for a global audience" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <div class="wf-card p-6">
-                <h3 class="wf-h3 text-[15px] mb-3">Multi-Language</h3>
-                <ul class="space-y-2">
-                    @foreach(['Multiple languages','Language switcher','Native language names','RTL support','Database-backed translations'] as $item)
-                    <li class="flex items-center gap-2"><svg class="wf-check" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13px] wf-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-            </div>
-            <div class="wf-card p-6">
-                <h3 class="wf-h3 text-[15px] mb-3">Multi-Currency</h3>
-                <ul class="space-y-2">
-                    @foreach(['Currency switcher','Currency symbol display','Exchange rates','Admin-managed rates'] as $item)
-                    <li class="flex items-center gap-2"><svg class="wf-check" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13px] wf-body">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-        <p class="text-center text-[12.5px] wf-muted mt-6 max-w-xl mx-auto">
-            Exchange rates are set and updated by the admin &mdash; they are not pulled automatically from a live currency-rate API.
-        </p>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     DYNAMIC WEBSITE / CMS
-═══════════════════════════════════════════════════════════════ -->
-<section class="wf-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-10">
-            <span class="wf-eyebrow mb-5">Dynamic CMS</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl mb-4">Your Website. Fully Dynamic. Fully Manageable.</h2>
-            <p class="wf-body text-[15.5px] leading-relaxed">Every page is built from admin-managed content sections &mdash; nothing on the public site is hardcoded copy.</p>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
-            @foreach(['Add','Reorder','Enable / Disable','Remove'] as $step)
-                <div class="wf-flow-step"><span class="text-[13.5px] font-semibold" style="color:#0B1220;">{{ $step }}</span></div>
-                @if(!$loop->last)
-                <svg class="wf-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                @endif
-            @endforeach
-        </div>
-        <p class="text-center text-[13px] wf-muted mb-12">Sections are reordered with simple drag-and-drop &mdash; no coding required.</p>
-
-        <div class="wf-figure mb-12 max-w-4xl mx-auto">
-            <img src="{{ asset('public/assets/images/website-features/wf-dynamic-cms.jpg') }}" alt="LimoSchedule admin-managed website section builder with add, reorder and enable or disable controls" width="1536" height="1024" class="w-full h-auto block" loading="lazy" decoding="async">
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            @foreach(['Hero','Booking Widget','Rich Text','Items','Trust Badges','Stats','Process','Fleet','Popular Routes','Areas','Testimonials','Team','FAQ','Vision & Mission','Promotions','Blog','Contact','CTA'] as $section)
-            <div class="rounded-xl px-3 py-3 text-center" style="background:#fff; border:1px solid rgba(15,23,42,0.08);">
-                <span class="text-[12px] font-semibold" style="color:#0B1220;">{{ $section }}</span>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     MORE WEBSITE FEATURES
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-12">
-            <span class="wf-eyebrow mb-5">More Included</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl">More Website Features</h2>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5">
-            @foreach(['Light/Dark Theme','Responsive Design','Contact Form','Quote Requests','Testimonials','Promotions','FAQ','Team Profiles','Legal Pages','Cookie Policy','Privacy Policy','Terms of Service','Refund Policy','Booking Confirmation','Guest Invoice','PDF Invoice'] as $item)
-            <div class="wf-card px-4 py-4 text-center">
-                <span class="text-[12.5px] font-semibold" style="color:#0B1220;">{{ $item }}</span>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     FEATURE SUMMARY
-═══════════════════════════════════════════════════════════════ -->
-<section class="wf-section-soft relative py-20 lg:py-24">
-    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-14">
-            <span class="wf-eyebrow mb-5">Full Checklist</span>
-            <h2 class="wf-h2 text-3xl sm:text-4xl">Everything Included in Your Public Website</h2>
-        </div>
-
-        @php
-            $summary = [
-                'Booking' => ['Guest booking, no account required','One Way, Round Trip, Hourly & Airport Transfer','Google Places Autocomplete','Unlimited intermediate stops','Live AJAX fare quoting','Coupon code application','WhatsApp hand-off on submit','Shareable confirmation & invoice pages','PDF invoice download'],
-                'Fleet' => ['Public fleet grid, searchable & filterable','Vehicle categories (Sedan, SUV, Van)','Per-vehicle amenities','Multiple gallery images per vehicle','Per-vehicle pricing display'],
-                'Pricing' => ['Distance & time-based fare engine','Long-distance discount tier','Night & weekend surcharges','Waiting charges','Coupon discounts','Multi-currency display'],
-                'Customer Access' => ['Customer registration, login, logout','Shared admin/customer login, separate driver login','Per-role password reset','Active-session & login-history tracking'],
-                'Communication' => ['Working contact form','WhatsApp click-to-chat + floating button','Browser push notification opt-in'],
-                'Content' => ['Blog with categories, tags & view counts','Separate quote-request enquiry path','Moderated reviews with featured flag','Popular Routes with route types','Service area pages'],
-                'SEO' => ['XML sitemap & robots.txt','Per-page SEO fields & custom schema','301/302 redirect manager'],
-                'Globalization' => ['Multi-language (DB-backed, RTL-capable)','Multi-currency (admin-managed rates)','Light/dark theme'],
-                'CMS' => ['18 admin-managed section types','Drag-and-drop section ordering','Enable/disable & remove per page'],
-            ];
-        @endphp
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            @foreach($summary as $group => $items)
-            <div class="wf-card p-6">
-                <h3 class="wf-h3 text-[13px] uppercase tracking-wide mb-4" style="color:#2563EB;">{{ $group }}</h3>
-                <ul class="space-y-2.5">
-                    @foreach($items as $item)
-                    <li class="flex items-start gap-2"><svg class="wf-check mt-0.5" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13px] wf-body leading-snug">{{ $item }}</span></li>
-                    @endforeach
-                </ul>
-            </div>
-            @endforeach
-        </div>
-
-        <div class="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[12.5px]">
-            <span class="flex items-center gap-1.5"><span class="wf-soon-badge">Coming Soon</span><span class="wf-muted">Voice Search</span></span>
-            <span class="wf-not-avail">Social Login</span>
-            <span class="wf-not-avail">OTP / SMS Login</span>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════
-     FINAL CTA
-═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-24 lg:py-28 overflow-hidden" style="background: linear-gradient(135deg, #0B1220 0%, #14213D 100%);">
-    <div class="absolute inset-0 pointer-events-none" style="background-image: radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.25) 0%, transparent 60%);"></div>
-    <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-white font-extrabold tracking-tight leading-[1.12] mb-6" style="font-size: clamp(2rem, 4.5vw, 3.1rem);">
-            Give Your Limo Business a Website That Does More Than Look Good.
-        </h2>
-        <p class="text-gray-300 text-[16px] leading-relaxed mb-10 max-w-xl mx-auto">
-            Showcase your fleet, accept bookings, calculate fares and give customers a complete online booking experience with LimoSchedule.
-        </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a href="{{ route('contact') }}" class="wf-btn-primary w-full sm:w-auto">
                 <span>Book a Demo</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
-            <a href="{{ route('features') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-bold px-8 py-4 rounded-xl text-[15px] text-white transition-all duration-200 hover:bg-white/10" style="background: rgba(255,255,255,0.06); border: 1.5px solid rgba(255,255,255,0.25);">
-                View All Features
-            </a>
+            <a href="#wf-explorer" class="wf-btn-secondary w-full sm:w-auto">Explore Features</a>
         </div>
-        <p class="text-gray-500 text-[13px] mt-8">
-            Want to see what customers and drivers get after booking? Explore the <a href="{{ route('customer-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Customer Panel</a> and <a href="{{ route('driver-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Driver Panel</a> features.
-        </p>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     COMPACT INTRO
+═══════════════════════════════════════════════════════════════ -->
+<section id="wf-explorer" class="relative pt-2 pb-6">
+    <div class="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+        <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Everything Your Transportation Business Needs Online</h2>
+        <p class="wf-body text-[13.5px] leading-relaxed">Browse each part of the public website below &mdash; from booking and pricing to fleet, content and global reach.</p>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MAIN FEATURE EXPLORER
+═══════════════════════════════════════════════════════════════ -->
+<section class="relative pb-16">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+        @php
+            $wfModules = [
+                'booking' => ['Online Booking', 'Guest booking & trip details'],
+                'fare' => ['Live Fare Calculator', 'Distance & time-based pricing'],
+                'fleet' => ['Fleet Showcase', 'Vehicles & amenities'],
+                'services' => ['Services', 'Six service types'],
+                'journey' => ['Booking Journey', 'Search to confirmation'],
+                'access' => ['Customer Access & Security', 'Login & accounts'],
+                'communication' => ['Communication', 'Contact, WhatsApp & alerts'],
+                'seo' => ['SEO & Content', 'Sitemap, meta & schema'],
+                'content' => ['Blog, Reviews & Local', 'Content that keeps growing'],
+                'global' => ['Global Ready', 'Language & currency'],
+                'cms' => ['Dynamic CMS', 'Admin-managed sections'],
+            ];
+            $wfIcons = [
+                'booking' => '<rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/>',
+                'fare' => '<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>',
+                'fleet' => '<circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M5 17H3v-6l2-5h11l3 5h1a2 2 0 012 2v4h-2"/>',
+                'services' => '<path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/>',
+                'journey' => '<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+                'access' => '<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>',
+                'communication' => '<path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>',
+                'seo' => '<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>',
+                'content' => '<path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>',
+                'global' => '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>',
+                'cms' => '<rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>',
+            ];
+        @endphp
+
+        <div class="wf-explorer">
+
+            <!-- LEFT: STICKY TABS -->
+            <nav class="wf-tabs" role="tablist" aria-label="Website feature modules">
+                @foreach($wfModules as $key => [$name, $desc])
+                <button type="button" class="wf-tab @if($loop->first) active @endif" role="tab" data-target="wf-tab-{{ $key }}" aria-selected="{{ $loop->first ? 'true' : 'false' }}">
+                    <span class="wf-tab-icon">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{!! $wfIcons[$key] !!}</svg>
+                    </span>
+                    <span>
+                        <span class="wf-tab-name block">{{ $name }}</span>
+                        <span class="wf-tab-desc block">{{ $desc }}</span>
+                    </span>
+                </button>
+                @endforeach
+            </nav>
+
+            <!-- RIGHT: CONTENT -->
+            <div class="wf-content">
+
+                <!-- 1. ONLINE BOOKING -->
+                <div class="wf-panel active" id="wf-tab-booking" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Online Booking</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Turn Website Visitors Into Bookings</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-4">Guest booking is fully built in &mdash; no account required, and every detail feeds a live, accurate fare.</p>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-3">
+                                @foreach(['One Way','Round Trip','Hourly','Airport Transfer','Unlimited Stops','Live Fare Quote','Coupon Codes','WhatsApp Hand-off','PDF Invoice'] as $item)
+                                <div class="wf-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="wf-soon-badge">Coming Soon</span>
+                                <span class="text-[12px] wf-muted">Voice search &mdash; UI present, not yet functional.</span>
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-online-booking.jpg') }}" alt="LimoSchedule online booking form showing trip type, pickup, drop-off, passengers and a live fare quote" width="1536" height="1024" loading="eager" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. LIVE FARE CALCULATOR -->
+                <div class="wf-panel" id="wf-tab-fare" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Live Fare Calculator</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Know the Fare Before the Customer Books</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-4">A genuine distance- and time-based pricing engine &mdash; not a static price list.</p>
+
+                            <div class="flex flex-wrap items-center gap-1.5 mb-4">
+                                @foreach(['Route','Distance & Time','Pricing Rules','Discounts','Final Fare'] as $step)
+                                    <div class="wf-flow-step">{{ $step }}</div>
+                                    @if(!$loop->last)<svg class="wf-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>@endif
+                                @endforeach
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-2">
+                                @foreach(['Base Fare','Per-KM Rate','Long-Distance Tier','Hourly Rate','Night/Weekend','Airport & Toll'] as $factor)
+                                <div class="wf-chip">{{ $factor }}</div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-fare-calculator.jpg') }}" alt="LimoSchedule fare calculator pricing flow from route to final fare, with pricing factors listed" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. FLEET SHOWCASE -->
+                <div class="wf-panel" id="wf-tab-fleet" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Fleet Showcase</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Showcase Your Fleet</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-4">Give customers a clear view of the vehicles available for their journey.</p>
+
+                            <div class="grid grid-cols-2 gap-2">
+                                @foreach(['Sedan, SUV, Van','Vehicle Search','Passenger Capacity','Luggage Capacity','Multiple Gallery Images','Vehicle Pricing','Wi-Fi & Amenities','Air Conditioning'] as $item)
+                                <div class="wf-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-fleet-showcase.jpg') }}" alt="LimoSchedule public fleet page showing vehicle cards with pricing and amenities" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. SERVICES -->
+                <div class="wf-panel" id="wf-tab-services" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Services</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Present Every Service You Offer</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-4">Every service page is independently editable &mdash; its own hero, content and SEO fields.</p>
+
+                            <div class="grid grid-cols-2 gap-2">
+                                @foreach(['Airport Transfer','Chauffeur Service','Corporate Transfer','City Rides','Hourly Rides','VIP Transport'] as $item)
+                                <div class="wf-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-services.jpg') }}" alt="LimoSchedule services page showing six transportation service types with booking options" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. BOOKING JOURNEY -->
+                <div class="wf-panel" id="wf-tab-journey" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Booking Journey</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">From Search to Confirmation in Minutes</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-4">A short, guided path from first search to a confirmed booking.</p>
+
+                            <div class="grid grid-cols-1 gap-2">
+                                @foreach([
+                                    ['01', 'Enter Pickup & Drop-off'],
+                                    ['02', 'Choose Trip Type & Vehicle'],
+                                    ['03', 'Add Passengers, Luggage & Stops'],
+                                    ['04', 'Get Your Live Fare'],
+                                    ['05', 'Confirm & Receive Booking Details'],
+                                ] as [$num, $label])
+                                <div class="flex items-center gap-2.5 wf-feature-card">
+                                    <div class="w-6 h-6 flex-shrink-0 rounded-full flex items-center justify-center font-bold text-[11px]" style="background:#2563EB; color:#fff;">{{ $num }}</div>
+                                    <p class="wf-h3 text-[12.5px]">{{ $label }}</p>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-booking-journey.jpg') }}" alt="Five-step LimoSchedule customer booking journey from pickup entry to confirmation" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. CUSTOMER ACCESS & SECURITY -->
+                <div class="wf-panel" id="wf-tab-access" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Customer Access</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Give Customers Their Own Secure Account</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-3">Customers and admins share a login page; drivers use their own separate login.</p>
+
+                            <div class="grid grid-cols-2 gap-2 mb-3">
+                                @foreach(['Customer Registration','Password Reset (per role)','Separate Driver Login','Active Sessions','Login History','Email Verification'] as $item)
+                                <div class="wf-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+
+                            <p class="text-[11.5px] wf-muted">
+                                <span class="wf-not-avail">Social login</span> and <span class="wf-not-avail">OTP/SMS login</span> are not currently available.
+                            </p>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-authentication.jpg') }}" alt="LimoSchedule login page with customer, admin and driver access and account security features" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. COMMUNICATION -->
+                <div class="wf-panel" id="wf-tab-communication" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Communication</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-3">Stay Connected With Every Customer</h2>
+
+                            <div class="grid grid-cols-2 gap-2 mb-3">
+                                @foreach(['Contact Form','Phone Click-to-Call','Email','WhatsApp Click-to-Chat','Browser Push','Booking Updates'] as $item)
+                                <div class="wf-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+
+                            <div class="wf-note">
+                                WhatsApp is a click-to-chat link with a pre-filled message &mdash; not a Business API integration.
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-communication.jpg') }}" alt="LimoSchedule communication channels including contact form, phone, email, WhatsApp and browser notifications" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. SEO & CONTENT -->
+                <div class="wf-panel" id="wf-tab-seo" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">SEO &amp; Content</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Built to Be Found</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-4">Technical SEO foundations on every page &mdash; not a promise of guaranteed rankings.</p>
+
+                            <div class="grid grid-cols-3 gap-2">
+                                @foreach(['XML Sitemap','Robots.txt','Meta Titles','Canonical URLs','OG Images','JSON-LD Schema','301/302 Redirects','SEO Area Pages','Per-Page SEO Fields'] as $item)
+                                <div class="wf-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-seo.jpg') }}" alt="LimoSchedule blog and SEO features including sitemap, meta tags, redirects and schema markup" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. BLOG, REVIEWS & LOCAL -->
+                <div class="wf-panel" id="wf-tab-content" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Content &amp; Local Growth</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-3">Keep Your Website Fresh and Local</h2>
+
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="wf-feature-card"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><span class="wf-h3 text-[12.5px] block">Blog</span><span class="text-[11.5px] wf-body">Categories, tags, view tracking, per-post SEO.</span></span></div>
+                                <div class="wf-feature-card"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><span class="wf-h3 text-[12.5px] block">Reviews</span><span class="text-[11.5px] wf-body">Moderated ratings, tied to booking/driver/vehicle.</span></span></div>
+                                <div class="wf-feature-card"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><span class="wf-h3 text-[12.5px] block">Popular Routes</span><span class="text-[11.5px] wf-body">City & intercity routes with pricing.</span></span></div>
+                                <div class="wf-feature-card"><svg class="wf-check" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><span class="wf-h3 text-[12.5px] block">Service Areas</span><span class="text-[11.5px] wf-body">Dedicated, SEO-managed coverage pages.</span></span></div>
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-content-growth.jpg') }}" alt="LimoSchedule reviews, blog, popular routes and service area features" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. GLOBAL READY -->
+                <div class="wf-panel" id="wf-tab-global" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Global Ready</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Ready for Customers Around the World</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-3">Speak your customers' language, and show fares in a currency they recognize.</p>
+
+                            <div class="grid grid-cols-2 gap-2 mb-3">
+                                @foreach(['Multi-Language (RTL)','DB-Backed Translations','Currency Switcher','Admin-Managed Rates'] as $item)
+                                <div class="wf-chip">{{ $item }}</div>
+                                @endforeach
+                            </div>
+                            <div class="wf-note">
+                                Exchange rates are set by the admin &mdash; not pulled automatically from a live currency-rate API.
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-global-ready.jpg') }}" alt="LimoSchedule multi-language and multi-currency settings for a global audience" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. DYNAMIC CMS -->
+                <div class="wf-panel" id="wf-tab-cms" role="tabpanel">
+                    <div class="wf-panel-grid">
+                        <div>
+                            <span class="wf-eyebrow mb-3">Dynamic CMS</span>
+                            <h2 class="wf-h2 text-xl sm:text-2xl mb-2">Your Website. Fully Manageable.</h2>
+                            <p class="wf-body text-[13px] leading-relaxed mb-3">Every page is built from admin-managed sections &mdash; nothing is hardcoded copy.</p>
+
+                            <div class="flex flex-wrap items-center gap-1.5 mb-3">
+                                @foreach(['Add','Reorder','Enable/Disable','Remove'] as $step)
+                                    <div class="wf-flow-step">{{ $step }}</div>
+                                    @if(!$loop->last)<svg class="wf-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>@endif
+                                @endforeach
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-2">
+                                @foreach(['Hero','Booking Widget','Fleet','Testimonials','FAQ','Blog','Stats','Process','CTA'] as $section)
+                                <div class="wf-chip">{{ $section }}</div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="wf-figure">
+                            <img src="{{ asset('public/assets/images/website-features/wf-dynamic-cms.jpg') }}" alt="LimoSchedule admin-managed website section builder with add, reorder and enable or disable controls" width="1536" height="1024" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /wf-content -->
+        </div><!-- /wf-explorer -->
+
+        <!-- Compact CTA -->
+        <div class="wf-cta-box mt-14">
+            <h2 class="text-white font-extrabold tracking-tight text-2xl sm:text-3xl mb-3">Give Your Limo Business a Website That Does More Than Look Good.</h2>
+            <p class="text-gray-300 text-[14px] max-w-xl mx-auto mb-7">Showcase your fleet, accept bookings, calculate fares and give customers a complete online booking experience with LimoSchedule.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="{{ route('contact') }}" class="wf-btn-primary w-full sm:w-auto">
+                    <span>Book a Demo</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="{{ route('features') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-bold px-8 py-[13px] rounded-xl text-[14.5px] text-white transition-all duration-200 hover:bg-white/10" style="background: rgba(255,255,255,0.06); border: 1.5px solid rgba(255,255,255,0.25);">
+                    View All Features
+                </a>
+            </div>
+            <p class="text-gray-400 text-[12.5px] mt-6">
+                Also see the <a href="{{ route('customer-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Customer Panel</a>, <a href="{{ route('driver-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Driver Panel</a>, and <a href="{{ route('admin-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Admin Panel</a> feature pages.
+            </p>
+        </div>
+
     </div>
 </section>
 
 </div>
 
 @endsection
+
+@push('scripts')
+<script>
+(function () {
+    var tabs = document.querySelectorAll('#wf-page .wf-tab');
+    var panels = document.querySelectorAll('#wf-page .wf-panel');
+
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            var targetId = tab.getAttribute('data-target');
+
+            tabs.forEach(function (t) {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+
+            panels.forEach(function (p) {
+                p.classList.toggle('active', p.id === targetId);
+            });
+
+            if (window.innerWidth <= 900) {
+                var content = document.querySelector('#wf-page .wf-content');
+                if (content) {
+                    var top = content.getBoundingClientRect().top + window.scrollY - 70;
+                    window.scrollTo({ top: top, behavior: 'smooth' });
+                }
+                tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }
+        });
+    });
+})();
+</script>
+@endpush
