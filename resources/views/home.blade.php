@@ -185,8 +185,8 @@
                 </div>
 
                 <!-- Headline -->
-                <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-black tracking-tight leading-[1.2] mb-5 section-fade whitespace-normal" style="transition-delay: 0.05s; color:#0F172A;">
-                    <span class="block">Limo, Taxi &amp; Chauffeur Booking Software</span><span class="block">White Label, One-Time Investment</span>
+                <h1 class="font-black tracking-tight leading-[1.15] mb-5 section-fade whitespace-normal" style="transition-delay: 0.05s; color:#0F172A; font-size: clamp(1.875rem, 1rem + 4vw, 3.5rem); font-weight: 900;">
+                    <span class="block">Limo, Taxi &amp; Chauffeur <span style="color:#2563EB;">Booking Software</span></span><span class="block">White Label, One-Time Investment</span>
                 </h1>
 
                 <!-- Supporting copy -->

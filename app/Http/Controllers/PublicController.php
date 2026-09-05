@@ -41,6 +41,8 @@ class PublicController extends Controller
 
     public function solutions()
     {
+        $solutions = require base_path('app/Support/solutions.php');
+
         $seo = [
             'title'       => 'Transportation Booking Solutions for Limo, Taxi & Chauffeur Businesses | LimoSchedule',
             'description' => 'White-label transportation booking software for limo services, black car, taxi, chauffeur, airport transfer and corporate travel businesses — built around you.',
@@ -49,8 +51,44 @@ class PublicController extends Controller
             'og_image'    => url('public/assets/images/industries/limo-services.jpg'),
             'twitter_card'=> 'summary_large_image',
         ];
-        return view('pages.solutions', compact('seo'));
+        return view('pages.solutions', compact('seo', 'solutions'));
     }
+
+    /**
+     * Shared renderer for the 12 dedicated Solutions pages (see
+     * app/Support/solutions.php for content, resources/views/pages/{slug}.blade.php
+     * for the thin view, and resources/views/partials/_solution-page.blade.php
+     * for the shared markup they all render through).
+     */
+    private function solutionPage(string $slug)
+    {
+        $solutions = require base_path('app/Support/solutions.php');
+        $solution = $solutions[$slug];
+
+        $seo = [
+            'title'       => $solution['title'],
+            'description' => $solution['meta_description'],
+            'canonical'   => route($slug),
+            'og_type'     => 'website',
+            'og_image'    => $solution['image'] ? url($solution['image']) : url('public/assets/images/industries/limo-services.jpg'),
+            'twitter_card'=> 'summary_large_image',
+        ];
+
+        return view('pages.'.$slug, compact('solution', 'seo'));
+    }
+
+    public function limoServices() { return $this->solutionPage('limo-services'); }
+    public function blackCarServices() { return $this->solutionPage('black-car-services'); }
+    public function taxiCompanies() { return $this->solutionPage('taxi-companies'); }
+    public function chauffeurServices() { return $this->solutionPage('chauffeur-services'); }
+    public function airportTransfers() { return $this->solutionPage('airport-transfers'); }
+    public function corporateTravel() { return $this->solutionPage('corporate-travel'); }
+    public function weddingTransportation() { return $this->solutionPage('wedding-transportation'); }
+    public function eventTransportation() { return $this->solutionPage('event-transportation'); }
+    public function hotelResortTransfers() { return $this->solutionPage('hotel-resort-transfers'); }
+    public function tourTravelTransportation() { return $this->solutionPage('tour-travel-transportation'); }
+    public function partyBusServices() { return $this->solutionPage('party-bus-services'); }
+    public function executiveTransportation() { return $this->solutionPage('executive-transportation'); }
 
     public function features()
     {

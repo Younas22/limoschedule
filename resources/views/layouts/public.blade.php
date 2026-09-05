@@ -173,18 +173,18 @@
                                 <a href="{{ route('solutions') }}" class="nav-dropdown-link nav-dropdown-link-featured" role="menuitem">All Solutions</a>
                                 <div class="nav-dropdown-divider"></div>
                                 <div class="nav-dropdown-links-grid">
-                                    <a href="{{ route('solutions') }}#solution-limo-heading" class="nav-dropdown-link" role="menuitem">Limo Services</a>
-                                    <a href="{{ route('solutions') }}#solution-blackcar-heading" class="nav-dropdown-link" role="menuitem">Black Car Services</a>
-                                    <a href="{{ route('solutions') }}#solution-taxi-heading" class="nav-dropdown-link" role="menuitem">Taxi Companies</a>
-                                    <a href="{{ route('solutions') }}#solution-chauffeur-heading" class="nav-dropdown-link" role="menuitem">Chauffeur Services</a>
-                                    <a href="{{ route('solutions') }}#solution-airport-heading" class="nav-dropdown-link" role="menuitem">Airport Transfers</a>
-                                    <a href="{{ route('solutions') }}#solution-corporate-heading" class="nav-dropdown-link" role="menuitem">Corporate Travel</a>
-                                    <a href="#" class="nav-dropdown-link" role="menuitem">Wedding Transportation</a>
-                                    <a href="#" class="nav-dropdown-link" role="menuitem">Event Transportation</a>
-                                    <a href="#" class="nav-dropdown-link" role="menuitem">Hotel &amp; Resort Transfers</a>
-                                    <a href="#" class="nav-dropdown-link" role="menuitem">Tour &amp; Travel Transportation</a>
-                                    <a href="#" class="nav-dropdown-link" role="menuitem">Party Bus Services</a>
-                                    <a href="#" class="nav-dropdown-link" role="menuitem">Executive Transportation</a>
+                                    <a href="{{ route('limo-services') }}" class="nav-dropdown-link" role="menuitem">Limo Services</a>
+                                    <a href="{{ route('black-car-services') }}" class="nav-dropdown-link" role="menuitem">Black Car Services</a>
+                                    <a href="{{ route('taxi-companies') }}" class="nav-dropdown-link" role="menuitem">Taxi Companies</a>
+                                    <a href="{{ route('chauffeur-services') }}" class="nav-dropdown-link" role="menuitem">Chauffeur Services</a>
+                                    <a href="{{ route('airport-transfers') }}" class="nav-dropdown-link" role="menuitem">Airport Transfers</a>
+                                    <a href="{{ route('corporate-travel') }}" class="nav-dropdown-link" role="menuitem">Corporate Travel</a>
+                                    <a href="{{ route('wedding-transportation') }}" class="nav-dropdown-link" role="menuitem">Wedding Transportation</a>
+                                    <a href="{{ route('event-transportation') }}" class="nav-dropdown-link" role="menuitem">Event Transportation</a>
+                                    <a href="{{ route('hotel-resort-transfers') }}" class="nav-dropdown-link" role="menuitem">Hotel &amp; Resort Transfers</a>
+                                    <a href="{{ route('tour-travel-transportation') }}" class="nav-dropdown-link" role="menuitem">Tour &amp; Travel Transportation</a>
+                                    <a href="{{ route('party-bus-services') }}" class="nav-dropdown-link" role="menuitem">Party Bus Services</a>
+                                    <a href="{{ route('executive-transportation') }}" class="nav-dropdown-link" role="menuitem">Executive Transportation</a>
                                 </div>
                             </div>
                             <div class="nav-dropdown-visual">
@@ -308,18 +308,18 @@
                     </button>
                     <div class="mob-accordion-panel pl-[46px]">
                         <a href="{{ route('solutions') }}" class="block py-2.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300">All Solutions &rarr;</a>
-                        <a href="{{ route('solutions') }}#solution-limo-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Limo Services</a>
-                        <a href="{{ route('solutions') }}#solution-blackcar-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Black Car Services</a>
-                        <a href="{{ route('solutions') }}#solution-taxi-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Taxi Companies</a>
-                        <a href="{{ route('solutions') }}#solution-chauffeur-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Chauffeur Services</a>
-                        <a href="{{ route('solutions') }}#solution-airport-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Airport Transfers</a>
-                        <a href="{{ route('solutions') }}#solution-corporate-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Corporate Travel</a>
-                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Wedding Transportation</a>
-                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Event Transportation</a>
-                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Hotel &amp; Resort Transfers</a>
-                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Tour &amp; Travel Transportation</a>
-                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Party Bus Services</a>
-                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Executive Transportation</a>
+                        <a href="{{ route('limo-services') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Limo Services</a>
+                        <a href="{{ route('black-car-services') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Black Car Services</a>
+                        <a href="{{ route('taxi-companies') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Taxi Companies</a>
+                        <a href="{{ route('chauffeur-services') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Chauffeur Services</a>
+                        <a href="{{ route('airport-transfers') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Airport Transfers</a>
+                        <a href="{{ route('corporate-travel') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Corporate Travel</a>
+                        <a href="{{ route('wedding-transportation') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Wedding Transportation</a>
+                        <a href="{{ route('event-transportation') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Event Transportation</a>
+                        <a href="{{ route('hotel-resort-transfers') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Hotel &amp; Resort Transfers</a>
+                        <a href="{{ route('tour-travel-transportation') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Tour &amp; Travel Transportation</a>
+                        <a href="{{ route('party-bus-services') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Party Bus Services</a>
+                        <a href="{{ route('executive-transportation') }}" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Executive Transportation</a>
                     </div>
                 </li>
 
@@ -452,12 +452,13 @@
             <div>
                 <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Solutions</h4>
                 <ul class="flex flex-col gap-3">
-                    <li><a href="{{ route('solutions') }}#solution-limo-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Limo Services</a></li>
-                    <li><a href="{{ route('solutions') }}#solution-blackcar-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Black Car Services</a></li>
-                    <li><a href="{{ route('solutions') }}#solution-taxi-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Taxi Companies</a></li>
-                    <li><a href="{{ route('solutions') }}#solution-chauffeur-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Chauffeur Services</a></li>
-                    <li><a href="{{ route('solutions') }}#solution-airport-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Airport Transfers</a></li>
-                    <li><a href="{{ route('solutions') }}#solution-corporate-heading" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Corporate Travel</a></li>
+                    <li><a href="{{ route('limo-services') }}" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Limo Services</a></li>
+                    <li><a href="{{ route('black-car-services') }}" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Black Car Services</a></li>
+                    <li><a href="{{ route('taxi-companies') }}" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Taxi Companies</a></li>
+                    <li><a href="{{ route('chauffeur-services') }}" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Chauffeur Services</a></li>
+                    <li><a href="{{ route('airport-transfers') }}" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Airport Transfers</a></li>
+                    <li><a href="{{ route('corporate-travel') }}" class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Corporate Travel</a></li>
+                    <li><a href="{{ route('solutions') }}" class="footer-nav-link text-blue-400 hover:text-blue-300 text-[13.5px] font-semibold transition-colors duration-200">View All Solutions &rarr;</a></li>
                 </ul>
             </div>
 

@@ -18,6 +18,20 @@ Route::get('/demo-thankyou', fn() => view('demo-thankyou'))->name('demo.thankyou
 // Public section pages
 Route::get('/platform', [PublicController::class, 'platform'])->name('platform');
 Route::get('/solutions', [PublicController::class, 'solutions'])->name('solutions');
+
+// Dedicated Solutions pages (nav "Solutions" dropdown — must stay before the blog catch-all)
+Route::get('/limo-services', [PublicController::class, 'limoServices'])->name('limo-services');
+Route::get('/black-car-services', [PublicController::class, 'blackCarServices'])->name('black-car-services');
+Route::get('/taxi-companies', [PublicController::class, 'taxiCompanies'])->name('taxi-companies');
+Route::get('/chauffeur-services', [PublicController::class, 'chauffeurServices'])->name('chauffeur-services');
+Route::get('/airport-transfers', [PublicController::class, 'airportTransfers'])->name('airport-transfers');
+Route::get('/corporate-travel', [PublicController::class, 'corporateTravel'])->name('corporate-travel');
+Route::get('/wedding-transportation', [PublicController::class, 'weddingTransportation'])->name('wedding-transportation');
+Route::get('/event-transportation', [PublicController::class, 'eventTransportation'])->name('event-transportation');
+Route::get('/hotel-resort-transfers', [PublicController::class, 'hotelResortTransfers'])->name('hotel-resort-transfers');
+Route::get('/tour-travel-transportation', [PublicController::class, 'tourTravelTransportation'])->name('tour-travel-transportation');
+Route::get('/party-bus-services', [PublicController::class, 'partyBusServices'])->name('party-bus-services');
+Route::get('/executive-transportation', [PublicController::class, 'executiveTransportation'])->name('executive-transportation');
 Route::get('/features', [PublicController::class, 'features'])->name('features');
 Route::get('/website-features', [PublicController::class, 'websiteFeatures'])->name('website-features');
 Route::get('/customer-panel-features', [PublicController::class, 'customerPanelFeatures'])->name('customer-panel-features');
@@ -107,6 +121,9 @@ Route::get('/sitemap.xml', function () {
     $urls->push(['loc' => url('/'),                    'lastmod' => now()->toDateString(), 'priority' => '1.0', 'changefreq' => 'weekly']);
     $urls->push(['loc' => route('platform'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('solutions'),          'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
+    foreach (['limo-services','black-car-services','taxi-companies','chauffeur-services','airport-transfers','corporate-travel','wedding-transportation','event-transportation','hotel-resort-transfers','tour-travel-transportation','party-bus-services','executive-transportation'] as $solutionRoute) {
+        $urls->push(['loc' => route($solutionRoute), 'lastmod' => now()->toDateString(), 'priority' => '0.7', 'changefreq' => 'monthly']);
+    }
     $urls->push(['loc' => route('features'),           'lastmod' => now()->toDateString(), 'priority' => '0.9', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('website-features'),   'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
     $urls->push(['loc' => route('customer-panel-features'), 'lastmod' => now()->toDateString(), 'priority' => '0.8', 'changefreq' => 'monthly']);
