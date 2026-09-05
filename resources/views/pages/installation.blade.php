@@ -22,8 +22,17 @@
         {
             "@@type": "TechArticle",
             "headline": "LimoSchedule Installation & Documentation",
+            "description": "Complete LimoSchedule installation and deployment guide covering server requirements, Laravel setup, database configuration, payments, Google Maps, browser push notifications, production deployment and troubleshooting.",
             "url": "{{ route('installation') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Do I need a Google Maps API key to use LimoSchedule?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule uses Google Maps services, which requires creating a Google Cloud Console API key, enabling the required APIs, and restricting the key by referrer before adding it to your installation." } },
+                { "@@type": "Question", "name": "Do browser push notifications require special server setup?", "acceptedAnswer": { "@@type": "Answer", "text": "HTTPS is required in production. Beyond that, push notifications execute inline with each request — there's no separate worker process to run, which keeps setup simple for small deployments." } },
+                { "@@type": "Question", "name": "What if I run into a problem during installation?", "acceptedAnswer": { "@@type": "Answer", "text": "The installation guide includes a dedicated Troubleshooting section covering common setup issues, so you can diagnose and resolve problems without leaving the documentation." } }
+            ]
         }
     ]
 }
@@ -1149,6 +1158,25 @@ php artisan view:cache</pre>
 
             </div><!-- /inst-content -->
         </div><!-- /inst-explorer -->
+
+        <!-- Installation FAQ -->
+        <div class="max-w-3xl mx-auto mt-14 mb-2">
+            <h2 class="inst-h2 text-xl sm:text-2xl mb-6 text-center">Installation Questions</h2>
+            <div class="flex flex-col gap-3">
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="inst-h3 text-[14.5px] mb-1.5">Do I need a Google Maps API key to use LimoSchedule?</h3>
+                    <p class="inst-body text-[13.5px] leading-relaxed">Yes. LimoSchedule uses Google Maps services, which requires creating a Google Cloud Console API key, enabling the required APIs, and restricting the key by referrer before adding it to your installation.</p>
+                </div>
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="inst-h3 text-[14.5px] mb-1.5">Do browser push notifications require special server setup?</h3>
+                    <p class="inst-body text-[13.5px] leading-relaxed">HTTPS is required in production. Beyond that, push notifications execute inline with each request &mdash; there's no separate worker process to run, which keeps setup simple for small deployments.</p>
+                </div>
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="inst-h3 text-[14.5px] mb-1.5">What if I run into a problem during installation?</h3>
+                    <p class="inst-body text-[13.5px] leading-relaxed">The installation guide includes a dedicated Troubleshooting section covering common setup issues, so you can diagnose and resolve problems without leaving the documentation.</p>
+                </div>
+            </div>
+        </div>
 
         <!-- Compact CTA -->
         <div class="inst-cta-box mt-14">

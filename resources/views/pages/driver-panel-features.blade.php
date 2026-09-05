@@ -18,6 +18,14 @@
             "name": "LimoSchedule",
             "url": "{{ url('/') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Can drivers see their earnings from the driver panel?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Drivers can view a commission-based earnings statement directly in the Driver Panel, alongside their assigned trips." } },
+                { "@@type": "Question", "name": "Can drivers go offline when they're not working?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Drivers can toggle their availability online or offline from the Driver Panel, so they only receive assignments while they're on shift." } },
+                { "@@type": "Question", "name": "Does the driver panel show real-time distance and ETA?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Distance and ETA are calculated using the Google Distance Matrix API, so drivers and dispatch see accurate, real-time trip timing." } }
+            ]
         }
     ]
 }
@@ -487,6 +495,25 @@
             </div><!-- /dp-content -->
         </div><!-- /dp-explorer -->
 
+        <!-- Driver Panel FAQ -->
+        <div class="max-w-3xl mx-auto mt-14 mb-2">
+            <h2 class="dp-h2 text-xl sm:text-2xl mb-6 text-center">Driver Panel Questions</h2>
+            <div class="flex flex-col gap-3">
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="dp-h3 text-[14.5px] mb-1.5">Can drivers see their earnings from the driver panel?</h3>
+                    <p class="dp-body text-[13.5px] leading-relaxed">Yes. Drivers can view a commission-based earnings statement directly in the Driver Panel, alongside their assigned trips.</p>
+                </div>
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="dp-h3 text-[14.5px] mb-1.5">Can drivers go offline when they're not working?</h3>
+                    <p class="dp-body text-[13.5px] leading-relaxed">Yes. Drivers can toggle their availability online or offline from the Driver Panel, so they only receive assignments while they're on shift.</p>
+                </div>
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="dp-h3 text-[14.5px] mb-1.5">Does the driver panel show real-time distance and ETA?</h3>
+                    <p class="dp-body text-[13.5px] leading-relaxed">Yes. Distance and ETA are calculated using the Google Distance Matrix API, so drivers and dispatch see accurate, real-time trip timing.</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Compact CTA -->
         <div class="dp-cta-box mt-14">
             <h2 class="text-white font-extrabold tracking-tight text-2xl sm:text-3xl mb-3">Give Your Drivers a Better Way to Work</h2>
@@ -501,7 +528,7 @@
                 </a>
             </div>
             <p class="text-gray-400 text-[12.5px] mt-6">
-                Also see the <a href="{{ route('website-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Website</a>, <a href="{{ route('customer-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Customer Panel</a>, and <a href="{{ route('admin-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Admin Panel</a> feature pages.
+                Also see the <a href="{{ route('website-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Website</a>, <a href="{{ route('customer-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Customer Panel</a>, and <a href="{{ route('admin-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">Admin Panel</a> feature pages, or <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">explore the live demo</a>.
             </p>
         </div>
 

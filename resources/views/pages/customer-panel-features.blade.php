@@ -18,6 +18,14 @@
             "name": "LimoSchedule",
             "url": "{{ url('/') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Can customers track their driver's live location and ETA?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The Customer Panel shows live dispatch information, including distance and driver details, so customers can see their ETA in real time." } },
+                { "@@type": "Question", "name": "Can customers download invoices for their trips?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Every completed trip generates a PDF invoice that customers can access from their trip history in the Customer Panel." } },
+                { "@@type": "Question", "name": "How do customers get support if they have an issue?", "acceptedAnswer": { "@@type": "Answer", "text": "Customers can raise a support ticket directly from the Customer Panel, so issues are tracked and handled without relying on phone calls." } }
+            ]
         }
     ]
 }
@@ -173,7 +181,7 @@
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="{{ route('contact') }}" class="cp-btn-primary w-full sm:w-auto">
+            <a href="{{ route('demo') }}" class="cp-btn-primary w-full sm:w-auto">
                 <span>Book a Demo</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -513,12 +521,31 @@
             </div><!-- /cp-content -->
         </div><!-- /cp-explorer -->
 
+        <!-- Customer Panel FAQ -->
+        <div class="max-w-3xl mx-auto mt-14 mb-2">
+            <h2 class="cp-h2 text-xl sm:text-2xl mb-6 text-center">Customer Panel Questions</h2>
+            <div class="flex flex-col gap-3">
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="cp-h3 text-[14.5px] mb-1.5">Can customers track their driver's live location and ETA?</h3>
+                    <p class="cp-body text-[13.5px] leading-relaxed">Yes. The Customer Panel shows live dispatch information, including distance and driver details, so customers can see their ETA in real time.</p>
+                </div>
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="cp-h3 text-[14.5px] mb-1.5">Can customers download invoices for their trips?</h3>
+                    <p class="cp-body text-[13.5px] leading-relaxed">Yes. Every completed trip generates a PDF invoice that customers can access from their trip history in the Customer Panel.</p>
+                </div>
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="cp-h3 text-[14.5px] mb-1.5">How do customers get support if they have an issue?</h3>
+                    <p class="cp-body text-[13.5px] leading-relaxed">Customers can raise a support ticket directly from the Customer Panel, so issues are tracked and handled without relying on phone calls.</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Compact CTA -->
         <div class="cp-cta-box mt-14">
             <h2 class="text-white font-extrabold tracking-tight text-2xl sm:text-3xl mb-3">Give Your Customers More Than A Booking Form.</h2>
             <p class="text-gray-300 text-[14px] max-w-xl mx-auto mb-7">Deliver a complete digital customer experience with booking management, payments, trip updates, invoices, notifications, support and account controls &mdash; all in one responsive panel.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <a href="{{ route('contact') }}" class="cp-btn-primary w-full sm:w-auto">
+                <a href="{{ route('demo') }}" class="cp-btn-primary w-full sm:w-auto">
                     <span>Book a Demo</span>
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>

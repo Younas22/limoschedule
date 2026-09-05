@@ -18,6 +18,14 @@
             "name": "LimoSchedule",
             "url": "{{ url('/') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Can customers book without creating an account?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Guest booking is fully built in on the LimoSchedule public website — no account required, and every trip detail still feeds a live, accurate fare quote." } },
+                { "@@type": "Question", "name": "Is the LimoSchedule booking website search-engine optimized?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The public website includes SEO fundamentals out of the box — an XML sitemap, meta tags and structured data — so your booking pages are set up to be found in search." } },
+                { "@@type": "Question", "name": "Can I edit the content sections on my booking website myself?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The website includes a dynamic content system where you can add, reorder, enable or disable sections like the hero, fleet showcase, testimonials, FAQ and blog without touching code." } }
+            ]
         }
     ]
 }
@@ -190,7 +198,7 @@
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="{{ route('contact') }}" class="wf-btn-primary w-full sm:w-auto">
+            <a href="{{ route('demo') }}" class="wf-btn-primary w-full sm:w-auto">
                 <span>Book a Demo</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -524,12 +532,31 @@
             </div><!-- /wf-content -->
         </div><!-- /wf-explorer -->
 
+        <!-- Website FAQ -->
+        <div class="max-w-3xl mx-auto mt-14 mb-2">
+            <h2 class="wf-h2 text-xl sm:text-2xl mb-6 text-center">Website Feature Questions</h2>
+            <div class="flex flex-col gap-3">
+                <div class="wf-card p-5">
+                    <h3 class="wf-h3 text-[14.5px] mb-1.5">Can customers book without creating an account?</h3>
+                    <p class="wf-body text-[13.5px] leading-relaxed">Yes. Guest booking is fully built in &mdash; no account required, and every trip detail still feeds a live, accurate fare quote.</p>
+                </div>
+                <div class="wf-card p-5">
+                    <h3 class="wf-h3 text-[14.5px] mb-1.5">Is the LimoSchedule booking website search-engine optimized?</h3>
+                    <p class="wf-body text-[13.5px] leading-relaxed">Yes. The public website includes SEO fundamentals out of the box &mdash; an XML sitemap, meta tags and structured data &mdash; so your booking pages are set up to be found in search.</p>
+                </div>
+                <div class="wf-card p-5">
+                    <h3 class="wf-h3 text-[14.5px] mb-1.5">Can I edit the content sections on my booking website myself?</h3>
+                    <p class="wf-body text-[13.5px] leading-relaxed">Yes. The website includes a dynamic content system where you can add, reorder, enable or disable sections like the hero, fleet showcase, testimonials, FAQ and blog without touching code.</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Compact CTA -->
         <div class="wf-cta-box mt-14">
             <h2 class="text-white font-extrabold tracking-tight text-2xl sm:text-3xl mb-3">Give Your Limo Business a Website That Does More Than Look Good.</h2>
             <p class="text-gray-300 text-[14px] max-w-xl mx-auto mb-7">Showcase your fleet, accept bookings, calculate fares and give customers a complete online booking experience with LimoSchedule.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-                <a href="{{ route('contact') }}" class="wf-btn-primary w-full sm:w-auto">
+                <a href="{{ route('demo') }}" class="wf-btn-primary w-full sm:w-auto">
                     <span>Book a Demo</span>
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>

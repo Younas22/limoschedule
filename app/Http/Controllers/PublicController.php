@@ -132,8 +132,8 @@ class PublicController extends Controller
     public function driverPanelFeatures()
     {
         $seo = [
-            'title'       => 'Driver Panel | LimoSchedule',
-            'description' => "Give your drivers a powerful workspace to manage assigned rides, availability, trip progress, earnings, notifications, and customer details with LimoSchedule.",
+            'title'       => 'Driver Panel Features | LimoSchedule',
+            'description' => 'Give your drivers a powerful workspace to manage assigned rides, availability, trip progress, earnings, notifications, and customer details with LimoSchedule.',
             'canonical'   => route('driver-panel-features'),
             'og_type'     => 'website',
             'og_image'    => url('public/assets/images/driver-panel-features/dp-dashboard.jpg'),

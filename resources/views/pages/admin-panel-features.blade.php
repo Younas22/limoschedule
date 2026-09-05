@@ -18,6 +18,14 @@
             "name": "LimoSchedule",
             "url": "{{ url('/') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Can I manage my vehicle fleet from the admin panel?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The Vehicle & Fleet module gives you full control over your fleet from the admin panel, alongside bookings, drivers and pricing." } },
+                { "@@type": "Question", "name": "Can I create promotions or discount codes?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The Pricing & Promotions module lets you set fare rules and create offers directly from the admin panel." } },
+                { "@@type": "Question", "name": "Can I see business reports and analytics from the admin panel?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The Reports & Analytics module gives you business insights alongside the rest of your operations, all from one dashboard." } }
+            ]
         }
     ]
 }
@@ -167,9 +175,18 @@
     <div class="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 pt-6 pb-8 text-center">
         <span class="apf-eyebrow mb-4">Admin Panel</span>
         <h1 class="apf-h1 text-2xl sm:text-3xl lg:text-[36px] mb-3">Complete Control. One Powerful Admin Panel.</h1>
-        <p class="apf-body text-[14px] leading-relaxed max-w-2xl mx-auto">
+        <p class="apf-body text-[14px] leading-relaxed max-w-2xl mx-auto mb-6">
             Manage bookings, customers, drivers, vehicles, pricing, payments, notifications, content and system settings from one centralized control center.
         </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a href="{{ route('demo') }}" class="apf-btn-primary w-full sm:w-auto">
+                <span>Book a Demo</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="{{ route('contact') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-bold px-[26px] py-[13px] rounded-xl text-[14.5px] transition-all duration-200" style="background: #ffffff; color: #0F172A; border: 1.5px solid rgba(15,23,42,0.14);">
+                Get Started
+            </a>
+        </div>
     </div>
 </section>
 
@@ -476,10 +493,29 @@
             </div><!-- /apf-content -->
         </div><!-- /apf-explorer -->
 
+        <!-- Admin Panel FAQ -->
+        <div class="max-w-3xl mx-auto mt-14 mb-2">
+            <h2 class="apf-h2 text-xl sm:text-2xl mb-6 text-center">Admin Panel Questions</h2>
+            <div class="flex flex-col gap-3">
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="apf-h3 text-[14.5px] mb-1.5">Can I manage my vehicle fleet from the admin panel?</h3>
+                    <p class="apf-body text-[13.5px] leading-relaxed">Yes. The Vehicle &amp; Fleet module gives you full control over your fleet from the admin panel, alongside bookings, drivers and pricing.</p>
+                </div>
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="apf-h3 text-[14.5px] mb-1.5">Can I create promotions or discount codes?</h3>
+                    <p class="apf-body text-[13.5px] leading-relaxed">Yes. The Pricing &amp; Promotions module lets you set fare rules and create offers directly from the admin panel.</p>
+                </div>
+                <div style="background:#F8FAFC; border:1px solid rgba(15,23,42,0.08); border-radius:16px; padding:20px;">
+                    <h3 class="apf-h3 text-[14.5px] mb-1.5">Can I see business reports and analytics from the admin panel?</h3>
+                    <p class="apf-body text-[13.5px] leading-relaxed">Yes. The Reports &amp; Analytics module gives you business insights alongside the rest of your operations, all from one dashboard.</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Compact CTA -->
         <div class="apf-cta-box mt-14">
             <h2 class="text-white font-extrabold tracking-tight text-2xl sm:text-3xl mb-3">See the Admin Panel in Action</h2>
-            <p class="text-gray-300 text-[14px] max-w-xl mx-auto mb-7">Get a full walkthrough of every module, or explore the rest of the LimoSchedule platform.</p>
+            <p class="text-gray-300 text-[14px] max-w-xl mx-auto mb-7">Get a full walkthrough of every module in the <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-semibold">live demo</a>, or explore the rest of the LimoSchedule platform.</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a href="{{ route('contact') }}" class="apf-btn-primary w-full sm:w-auto">
                     <span>Get LimoSchedule</span>

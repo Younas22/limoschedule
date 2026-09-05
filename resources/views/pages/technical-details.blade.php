@@ -26,7 +26,16 @@
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
             "softwareVersion": "Laravel 12",
+            "image": "{{ url('public/assets/images/hero/hero-luxury-dashboard.jpg') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Is LimoSchedule self-hosted or cloud-hosted?", "acceptedAnswer": { "@@type": "Answer", "text": "LimoSchedule is self-hosted — you deploy it on your own server. It requires PHP 8.2+, a MySQL or MariaDB database, and an Apache or Nginx web server." } },
+                { "@@type": "Question", "name": "What security measures does LimoSchedule include?", "acceptedAnswer": { "@@type": "Answer", "text": "LimoSchedule includes CSRF protection, session-based authentication with separate guards for Admin, Customer and Driver, role-based permissions, bcrypt password hashing, input validation, mass-assignment protection, SQL injection and XSS protection, and rate limiting." } },
+                { "@@type": "Question", "name": "What technology stack is LimoSchedule built with?", "acceptedAnswer": { "@@type": "Answer", "text": "LimoSchedule is built on PHP 8.2+, Laravel 12, a MySQL/MariaDB database, Blade templates, Alpine.js, Tailwind CSS and Vite." } }
+            ]
         }
     ]
 }
@@ -700,6 +709,25 @@
                     <span class="text-[12.5px] td-body">{{ $item }}</span>
                 </div>
                 @endforeach
+            </div>
+        </div>
+
+        <!-- Technical FAQ -->
+        <div class="max-w-3xl mx-auto mt-14 mb-2">
+            <h2 class="td-h2 text-xl sm:text-2xl mb-6 text-center">Technical Questions</h2>
+            <div class="flex flex-col gap-3">
+                <div class="td-card p-5">
+                    <h3 class="td-h3 text-[14.5px] mb-1.5">Is LimoSchedule self-hosted or cloud-hosted?</h3>
+                    <p class="td-body text-[13.5px] leading-relaxed">LimoSchedule is self-hosted &mdash; you deploy it on your own server. It requires PHP 8.2+, a MySQL or MariaDB database, and an Apache or Nginx web server.</p>
+                </div>
+                <div class="td-card p-5">
+                    <h3 class="td-h3 text-[14.5px] mb-1.5">What security measures does LimoSchedule include?</h3>
+                    <p class="td-body text-[13.5px] leading-relaxed">CSRF protection, session-based authentication with separate guards for Admin, Customer and Driver, role-based permissions, bcrypt password hashing, input validation, mass-assignment protection, SQL injection and XSS protection, and rate limiting.</p>
+                </div>
+                <div class="td-card p-5">
+                    <h3 class="td-h3 text-[14.5px] mb-1.5">What technology stack is LimoSchedule built with?</h3>
+                    <p class="td-body text-[13.5px] leading-relaxed">PHP 8.2+, Laravel 12, a MySQL/MariaDB database, Blade templates, Alpine.js, Tailwind CSS and Vite.</p>
+                </div>
             </div>
         </div>
 
