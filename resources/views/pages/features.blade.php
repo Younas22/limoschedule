@@ -25,6 +25,7 @@
             "url": "{{ route('features') }}",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
+            "image": "{{ url('public/assets/images/hero/hero-luxury-dashboard.jpg') }}",
             "description": "White-label transportation booking software with online reservations, a customer panel, a driver panel and an admin dashboard.",
             "offers": {
                 "@@type": "Offer",
@@ -33,6 +34,14 @@
                 "availability": "https://schema.org/InStock"
             },
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Can limo booking software calculate fares automatically?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule's Fare Calculator shows customers an instant, transparent price for pickup, drop-off, date and vehicle type before they confirm a booking — no manual quoting needed." } },
+                { "@@type": "Question", "name": "Can limo booking software manage drivers?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The Driver Panel lets drivers see assigned trips and status updates in real time, and Driver Management lets your team add and organize the driver roster from one place." } },
+                { "@@type": "Question", "name": "Do customers need to download an app to book a ride?", "acceptedAnswer": { "@@type": "Answer", "text": "No. Customers book directly from your branded booking website in a browser — there's no app to download or install." } }
+            ]
         }
     ]
 }
@@ -71,11 +80,17 @@
             From online reservations to driver operations, LimoSchedule brings your essential transportation workflows into one complete platform.
         </p>
 
-        <a href="{{ route('platform') }}"
-           class="btn-cta inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-bold px-8 py-4 rounded-xl text-[15px] border border-blue-500/30">
-            <span>Explore the Platform</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a href="{{ route('platform') }}"
+               class="btn-cta btn-primary w-full sm:w-auto">
+                <span>Explore the Platform</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%27s%20features.%20Can%20I%20talk%20to%20an%20expert%3F" target="_blank" rel="noopener"
+               class="btn-outline w-full sm:w-auto">
+                <span>Talk to an Expert</span>
+            </a>
+        </div>
     </div>
 </section>
 
@@ -107,7 +122,16 @@
                         <h3 class="text-white text-[15px] font-bold mb-1">Reservation Management</h3>
                         <p class="text-gray-500 text-[13.5px] leading-relaxed">Every reservation is organized and searchable, so nothing gets lost as booking volume grows.</p>
                     </div>
+                    <div>
+                        <h3 class="text-white text-[15px] font-bold mb-1">Online Payments</h3>
+                        <p class="text-gray-500 text-[13.5px] leading-relaxed">Stripe and PayPal are built in, so customers can pay by card or PayPal at the time of booking.</p>
+                    </div>
                 </div>
+
+                <a href="{{ route('website-features') }}" class="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200 mt-6">
+                    Explore all website features
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
             </div>
 
             <!-- Screenshot: booking form -->
@@ -204,6 +228,11 @@
                         <p class="text-gray-500 text-[13.5px] leading-relaxed">Display pricing in the currency your customers expect.</p>
                     </div>
                 </div>
+
+                <a href="{{ route('customer-panel-features') }}" class="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200 mt-6">
+                    Explore all customer panel features
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
             </div>
 
         </div>
@@ -239,6 +268,11 @@
                         <p class="text-gray-500 text-[13.5px] leading-relaxed">Assign bookings to the right driver quickly, without phone calls or manual coordination.</p>
                     </div>
                 </div>
+
+                <a href="{{ route('driver-panel-features') }}" class="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200 mt-6">
+                    Explore all driver panel features
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
             </div>
 
             <!-- Screenshot: driver panel -->
@@ -361,7 +395,8 @@
         </div>
 
         <p class="text-center text-gray-500 text-[14px] mt-8">
-            See the full dashboard in action &mdash; <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">explore the live demo</a>.
+            See the full dashboard in action &mdash; <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">explore the live demo</a>,
+            or <a href="{{ route('admin-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">browse all admin dashboard features</a>.
         </p>
 
     </div>
@@ -413,6 +448,36 @@
 </article>
 
 <!-- ═══════════════════════════════════════════════════════════════
+     FEATURE QUESTIONS
+═══════════════════════════════════════════════════════════════ -->
+<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #060606;">
+    <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 lg:mb-14">
+            <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.1] mb-4 text-white">
+                Feature Questions
+            </h2>
+            <p class="text-gray-400 text-[15px] leading-relaxed">
+                For pricing, setup and account questions, see the <a href="{{ url('/') }}#quick-faq" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">full FAQ</a>. A few questions specific to what's included:
+            </p>
+        </div>
+        <div class="flex flex-col gap-4">
+            <div class="rounded-2xl p-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-2">Can limo booking software calculate fares automatically?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">Yes. LimoSchedule's Fare Calculator shows customers an instant, transparent price for pickup, drop-off, date and vehicle type before they confirm a booking &mdash; no manual quoting needed.</p>
+            </div>
+            <div class="rounded-2xl p-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-2">Can limo booking software manage drivers?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">Yes. The Driver Panel lets drivers see assigned trips and status updates in real time, and Driver Management lets your team add and organize the driver roster from one place.</p>
+            </div>
+            <div class="rounded-2xl p-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-2">Do customers need to download an app to book a ride?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">No. Customers book directly from your branded booking website in a browser &mdash; there's no app to download or install.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
      MORE TO EXPLORE
 ═══════════════════════════════════════════════════════════════ -->
 <section class="relative py-16 overflow-hidden" style="background: #060606;">
@@ -438,8 +503,8 @@
             One complete platform &middot; <a href="{{ route('pricing') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">$1,999 one-time payment</a> &middot; no monthly SaaS fee
         </p>
 
-        <a href="{{ route('contact') }}"
-           class="btn-cta inline-flex items-center justify-center gap-2.5 bg-[#3B82F6] text-white font-bold px-9 py-4 rounded-xl text-[15.5px] border border-blue-500/30 mb-5">
+        <a href="{{ route('demo') }}"
+           class="btn-cta btn-primary mb-5">
             <span>Request a Demo</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>

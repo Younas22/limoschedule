@@ -94,7 +94,7 @@ class PublicController extends Controller
     {
         $seo = [
             'title'       => 'Limo & Transportation Booking Software Features | LimoSchedule',
-            'description' => "Explore LimoSchedule's transportation booking software features — online reservations, customer and driver panels, admin dashboard and white-label branding.",
+            'description' => 'Every LimoSchedule feature — online booking, fare calculator, payments, customer and driver panels, admin dashboard, white-label branding — for one $1,999 payment.',
             'canonical'   => route('features'),
             'og_type'     => 'website',
             'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
