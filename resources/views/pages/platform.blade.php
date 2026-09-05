@@ -25,6 +25,7 @@
             "url": "{{ route('platform') }}",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
+            "image": "{{ url('public/assets/images/hero/hero-luxury-dashboard.jpg') }}",
             "description": "White-label limo, black car, taxi and chauffeur booking software with a booking website, customer panel, driver panel and admin dashboard.",
             "offers": {
                 "@@type": "Offer",
@@ -33,6 +34,14 @@
                 "availability": "https://schema.org/InStock"
             },
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Does the $1,999 license include all four panels, or are they sold separately?", "acceptedAnswer": { "@@type": "Answer", "text": "All four panels — the booking website, customer portal, driver panel and admin dashboard — are included in the single $1,999 one-time license. There's no separate tier or add-on fee for any of them." } },
+                { "@@type": "Question", "name": "How does a booking move from the website to a driver?", "acceptedAnswer": { "@@type": "Answer", "text": "A customer books on the branded website, the booking appears in the admin dashboard, admin assigns it to a driver, the driver completes the pickup from the driver panel, and the completed ride is recorded automatically — no manual re-entry at any step." } },
+                { "@@type": "Question", "name": "Can I use my own domain with the booking website?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule is white-label, so the booking website runs on your own domain with your logo and colors — customers and drivers never see LimoSchedule branding." } }
+            ]
         }
     ]
 }
@@ -76,14 +85,13 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
-                    <a href="{{ route('contact') }}"
-                       class="btn-cta w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white font-bold px-8 py-4 rounded-xl text-[15px] border border-blue-500/30">
-                        <span>Get Started</span>
+                    <a href="{{ route('demo') }}"
+                       class="btn-cta btn-primary w-full sm:w-auto">
+                        <span>Book a Demo</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                     <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule%27s%20white-label%20platform.%20Can%20I%20talk%20to%20an%20expert%3F" target="_blank" rel="noopener"
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-semibold px-7 py-4 rounded-xl text-[15px] text-white transition-all duration-200 hover:bg-white/10"
-                       style="background: #000; border: 1px solid rgba(255,255,255,0.28);">
+                       class="btn-outline w-full sm:w-auto">
                         <span>Talk to an Expert</span>
                     </a>
                 </div>
@@ -156,11 +164,14 @@
                 <h2 id="booking-website-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-5 text-white">
                     A Branded Booking Website That Converts Visitors Into Rides
                 </h2>
-                <p class="text-gray-400 text-[16px] leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
+                <p class="text-gray-400 text-[16px] leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
                     Your customers book directly from a professional, branded booking website &mdash; no app download, no phone tag. Every booking flows straight into your admin dashboard and driver panel automatically.
                 </p>
+                <p class="text-gray-500 text-[14px] leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
+                    For example, an airport transfer customer gets an instant fare quote and confirmation at 2 AM, with the trip already assigned and visible to a driver before your team opens for the day.
+                </p>
 
-                <ul class="grid grid-cols-2 gap-3 max-w-md mx-auto lg:mx-0 text-left">
+                <ul class="grid grid-cols-2 gap-3 max-w-md mx-auto lg:mx-0 text-left mb-6">
                     <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Advanced Booking</span></li>
                     <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Fare Calculator</span></li>
                     <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Mobile Responsive</span></li>
@@ -168,6 +179,11 @@
                     <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">Multi-Currency</span></li>
                     <li class="flex items-center gap-2"><svg class="flex-shrink-0" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span class="text-[13.5px] text-gray-300">White-Label Branding</span></li>
                 </ul>
+
+                <a href="{{ route('website-features') }}" class="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                    Explore all booking website features
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
             </div>
 
             <!-- Visual -->
@@ -241,9 +257,17 @@
                 <h2 id="customer-panel-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-5 text-white">
                     Give Customers Control Over Every Booking
                 </h2>
-                <p class="text-gray-400 text-[16px] leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p class="text-gray-400 text-[16px] leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
                     From the customer panel, riders can view upcoming trips, review their booking history, and manage their account &mdash; creating a self-service experience that reduces phone calls and no-shows for your team.
                 </p>
+                <p class="text-gray-500 text-[14px] leading-relaxed mb-6 max-w-lg mx-auto lg:mx-0">
+                    A corporate client with a recurring airport pickup can check their trip time and driver details themselves, instead of calling your office to confirm.
+                </p>
+
+                <a href="{{ route('customer-panel-features') }}" class="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                    Explore all customer panel features
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
             </div>
 
         </div>
@@ -264,9 +288,17 @@
                 <h2 id="driver-panel-heading" class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-5 text-white">
                     Keep Every Driver Connected and On Schedule
                 </h2>
-                <p class="text-gray-400 text-[16px] leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <p class="text-gray-400 text-[16px] leading-relaxed mb-4 max-w-lg mx-auto lg:mx-0">
                     Drivers see their assigned trips, pickup and drop-off details, and real-time status updates from the driver panel &mdash; so dispatch stays organized without a single phone call.
                 </p>
+                <p class="text-gray-500 text-[14px] leading-relaxed mb-6 max-w-lg mx-auto lg:mx-0">
+                    A taxi company with a dozen drivers on shift can assign every booking from the admin dashboard, with each driver seeing their own trips the moment they're assigned.
+                </p>
+
+                <a href="{{ route('driver-panel-features') }}" class="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                    Explore all driver panel features
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
             </div>
 
             <!-- Visual -->
@@ -378,7 +410,8 @@
         </div>
 
         <p class="text-center text-gray-500 text-[14px] mt-8">
-            See the full dashboard in action &mdash; <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">explore the live demo</a>.
+            See the full dashboard in action &mdash; <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">explore the live demo</a>,
+            or <a href="{{ route('admin-panel-features') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">browse all admin dashboard features</a>.
         </p>
 
     </div>
@@ -478,6 +511,36 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
+     PLATFORM FAQ
+═══════════════════════════════════════════════════════════════ -->
+<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #060606;">
+    <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 lg:mb-14">
+            <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.1] mb-4 text-white">
+                Platform Questions
+            </h2>
+            <p class="text-gray-400 text-[15px] leading-relaxed">
+                For pricing, setup and general questions, see the <a href="{{ url('/') }}#quick-faq" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">full FAQ</a>. A few questions specific to how the platform fits together:
+            </p>
+        </div>
+        <div class="flex flex-col gap-4">
+            <div class="rounded-2xl p-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-2">Does the $1,999 license include all four panels, or are they sold separately?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">All four panels &mdash; the booking website, customer portal, driver panel and admin dashboard &mdash; are included in the single $1,999 one-time license. There's no separate tier or add-on fee for any of them.</p>
+            </div>
+            <div class="rounded-2xl p-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-2">How does a booking move from the website to a driver?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">A customer books on the branded website, the booking appears in the admin dashboard, admin assigns it to a driver, the driver completes the pickup from the driver panel, and the completed ride is recorded automatically &mdash; no manual re-entry at any step.</p>
+            </div>
+            <div class="rounded-2xl p-6" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-2">Can I use my own domain with the booking website?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">Yes. LimoSchedule is white-label, so the booking website runs on your own domain with your logo and colors &mdash; customers and drivers never see LimoSchedule branding.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
      FINAL CTA
 ═══════════════════════════════════════════════════════════════ -->
 <section class="relative overflow-hidden" style="background: #030303; padding: 100px 0 110px;">
@@ -493,7 +556,7 @@
         </p>
 
         <a href="{{ route('contact') }}"
-           class="btn-cta inline-flex items-center justify-center gap-2.5 bg-[#3B82F6] text-white font-bold px-9 py-4 rounded-xl text-[15.5px] border border-blue-500/30 mb-5">
+           class="btn-cta btn-primary mb-5">
             <span>Get Started</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -509,7 +572,7 @@
 
         <p class="text-gray-600 text-[12.5px] mt-10">
             See how LimoSchedule fits your business &mdash;
-            <a href="{{ url('/') }}#industries" class="text-gray-500 hover:text-white transition-colors duration-200">explore solutions</a> &middot;
+            <a href="{{ route('solutions') }}" class="text-gray-500 hover:text-white transition-colors duration-200">explore solutions</a> &middot;
             <a href="{{ route('features') }}" class="text-gray-500 hover:text-white transition-colors duration-200">view all features</a>
         </p>
     </div>

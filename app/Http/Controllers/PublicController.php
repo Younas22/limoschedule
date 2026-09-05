@@ -29,8 +29,8 @@ class PublicController extends Controller
     public function platform()
     {
         $seo = [
-            'title'       => 'Limo Booking Software & White-Label Transportation Platform | LimoSchedule',
-            'description' => 'Complete white-label limo, black car, taxi and chauffeur booking software — booking website, customer panel, driver panel and admin dashboard in one platform.',
+            'title'       => 'LimoSchedule Platform — Website, Customer, Driver & Admin in One',
+            'description' => "See how LimoSchedule's booking website, customer, driver and admin panels work together as one white-label platform — $1,999 one-time, no monthly fees.",
             'canonical'   => route('platform'),
             'og_type'     => 'website',
             'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
