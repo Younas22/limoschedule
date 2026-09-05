@@ -107,7 +107,7 @@
     </style>
 
     @stack('styles')
-    <!-- <script src="https://chat.limoschedule.com/widget.js"></script> -->
+    <script src="https://chat.limoschedule.com/widget.js"></script>
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMFKF24L1V"></script>
@@ -146,20 +146,20 @@
                             <svg class="nav-dropdown-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                         </button>
                         <div class="nav-dropdown-panel" data-dropdown-panel="platform" role="menu" aria-label="Platform">
-                            <a href="{{ route('platform') }}" class="nav-dropdown-link nav-dropdown-link-featured" role="menuitem">Platform Overview</a>
-                            <div class="nav-dropdown-divider"></div>
-                            <a href="{{ url('/') }}#platform-modules" class="nav-dropdown-link" role="menuitem">Booking Website</a>
-                            <a href="{{ url('/') }}#platform-modules" class="nav-dropdown-link" role="menuitem">Customer Portal</a>
-                            <a href="{{ url('/') }}#platform-modules" class="nav-dropdown-link" role="menuitem">Driver Panel</a>
-                            <a href="{{ route('admin-panel') }}" class="nav-dropdown-link" role="menuitem">Admin Dashboard</a>
-                            <a href="{{ url('/') }}#platform-modules" class="nav-dropdown-link" role="menuitem">White-Label Platform</a>
-                            <a href="{{ route('features') }}" class="nav-dropdown-link" role="menuitem">Features</a>
-                            <a href="{{ route('website-features') }}" class="nav-dropdown-link" role="menuitem">Website Features</a>
-                            <a href="{{ route('customer-panel-features') }}" class="nav-dropdown-link" role="menuitem">Customer Panel Features</a>
-                            <a href="{{ route('driver-panel-features') }}" class="nav-dropdown-link" role="menuitem">Driver Panel Features</a>
-                            <a href="{{ route('admin-panel-features') }}" class="nav-dropdown-link" role="menuitem">Admin Panel Features</a>
-                            <a href="{{ route('technical-details') }}" class="nav-dropdown-link" role="menuitem">Technical Details</a>
-                            <a href="{{ route('installation') }}" class="nav-dropdown-link" role="menuitem">Installation &amp; Docs</a>
+                            <div class="nav-dropdown-links">
+                                <a href="{{ route('platform') }}" class="nav-dropdown-link nav-dropdown-link-featured" role="menuitem">Platform Overview</a>
+                                <div class="nav-dropdown-divider"></div>
+                                <a href="{{ route('features') }}" class="nav-dropdown-link" role="menuitem">Features</a>
+                                <a href="{{ route('website-features') }}" class="nav-dropdown-link" role="menuitem">Website Features</a>
+                                <a href="{{ route('customer-panel-features') }}" class="nav-dropdown-link" role="menuitem">Customer Panel Features</a>
+                                <a href="{{ route('driver-panel-features') }}" class="nav-dropdown-link" role="menuitem">Driver Panel Features</a>
+                                <a href="{{ route('admin-panel-features') }}" class="nav-dropdown-link" role="menuitem">Admin Panel Features</a>
+                                <a href="{{ route('technical-details') }}" class="nav-dropdown-link" role="menuitem">Technical Details</a>
+                                <a href="{{ route('installation') }}" class="nav-dropdown-link" role="menuitem">Installation &amp; Docs</a>
+                            </div>
+                            <div class="nav-dropdown-visual">
+                                <img src="{{ url('public/assets/images/nav/nav-family-limo.png') }}" alt="Family being welcomed into a LimoSchedule chauffeur limousine" width="760" height="507" loading="lazy" decoding="async">
+                            </div>
                         </div>
                     </li>
 
@@ -168,15 +168,28 @@
                             <span>Solutions</span>
                             <svg class="nav-dropdown-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                         </button>
-                        <div class="nav-dropdown-panel" data-dropdown-panel="solutions" role="menu" aria-label="Solutions">
-                            <a href="{{ route('solutions') }}" class="nav-dropdown-link nav-dropdown-link-featured" role="menuitem">All Solutions</a>
-                            <div class="nav-dropdown-divider"></div>
-                            <a href="{{ route('solutions') }}#solution-limo-heading" class="nav-dropdown-link" role="menuitem">Limo Services</a>
-                            <a href="{{ route('solutions') }}#solution-blackcar-heading" class="nav-dropdown-link" role="menuitem">Black Car Services</a>
-                            <a href="{{ route('solutions') }}#solution-taxi-heading" class="nav-dropdown-link" role="menuitem">Taxi Companies</a>
-                            <a href="{{ route('solutions') }}#solution-chauffeur-heading" class="nav-dropdown-link" role="menuitem">Chauffeur Services</a>
-                            <a href="{{ route('solutions') }}#solution-airport-heading" class="nav-dropdown-link" role="menuitem">Airport Transfers</a>
-                            <a href="{{ route('solutions') }}#solution-corporate-heading" class="nav-dropdown-link" role="menuitem">Corporate Travel</a>
+                        <div class="nav-dropdown-panel nav-dropdown-panel--wide" data-dropdown-panel="solutions" role="menu" aria-label="Solutions">
+                            <div class="nav-dropdown-links nav-dropdown-links--wide">
+                                <a href="{{ route('solutions') }}" class="nav-dropdown-link nav-dropdown-link-featured" role="menuitem">All Solutions</a>
+                                <div class="nav-dropdown-divider"></div>
+                                <div class="nav-dropdown-links-grid">
+                                    <a href="{{ route('solutions') }}#solution-limo-heading" class="nav-dropdown-link" role="menuitem">Limo Services</a>
+                                    <a href="{{ route('solutions') }}#solution-blackcar-heading" class="nav-dropdown-link" role="menuitem">Black Car Services</a>
+                                    <a href="{{ route('solutions') }}#solution-taxi-heading" class="nav-dropdown-link" role="menuitem">Taxi Companies</a>
+                                    <a href="{{ route('solutions') }}#solution-chauffeur-heading" class="nav-dropdown-link" role="menuitem">Chauffeur Services</a>
+                                    <a href="{{ route('solutions') }}#solution-airport-heading" class="nav-dropdown-link" role="menuitem">Airport Transfers</a>
+                                    <a href="{{ route('solutions') }}#solution-corporate-heading" class="nav-dropdown-link" role="menuitem">Corporate Travel</a>
+                                    <a href="#" class="nav-dropdown-link" role="menuitem">Wedding Transportation</a>
+                                    <a href="#" class="nav-dropdown-link" role="menuitem">Event Transportation</a>
+                                    <a href="#" class="nav-dropdown-link" role="menuitem">Hotel &amp; Resort Transfers</a>
+                                    <a href="#" class="nav-dropdown-link" role="menuitem">Tour &amp; Travel Transportation</a>
+                                    <a href="#" class="nav-dropdown-link" role="menuitem">Party Bus Services</a>
+                                    <a href="#" class="nav-dropdown-link" role="menuitem">Executive Transportation</a>
+                                </div>
+                            </div>
+                            <div class="nav-dropdown-visual">
+                                <img src="{{ url('public/assets/images/nav/nav-solutions-airport.png') }}" alt="Chauffeur loading luggage into a black Mercedes V-Class beside a private jet for an airport transfer" width="760" height="507" loading="lazy" decoding="async">
+                            </div>
                         </div>
                     </li>
 
@@ -188,15 +201,20 @@
                             <svg class="nav-dropdown-chevron" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                         </button>
                         <div class="nav-dropdown-panel" data-dropdown-panel="company" role="menu" aria-label="Company">
-                            <a href="{{ route('about') }}" class="nav-dropdown-link" role="menuitem">About</a>
-                            <a href="{{ route('team') }}" class="nav-dropdown-link" role="menuitem">Team</a>
-                            <a href="{{ route('careers') }}" class="nav-dropdown-link" role="menuitem">
-                                <span>Careers</span>
-                                <span class="hiring-badge"><span class="hiring-badge-dot"></span>Hiring</span>
-                            </a>
-                            <a href="{{ route('contact') }}" class="nav-dropdown-link" role="menuitem">Contact</a>
-                            <a href="{{ route('faq') }}" class="nav-dropdown-link" role="menuitem">FAQ</a>
-                            <a href="{{ route('blogs.index') }}" class="nav-dropdown-link" role="menuitem">Blog</a>
+                            <div class="nav-dropdown-links">
+                                <a href="{{ route('about') }}" class="nav-dropdown-link" role="menuitem">About</a>
+                                <a href="{{ route('team') }}" class="nav-dropdown-link" role="menuitem">Team</a>
+                                <a href="{{ route('careers') }}" class="nav-dropdown-link" role="menuitem">
+                                    <span>Careers</span>
+                                    <span class="hiring-badge"><span class="hiring-badge-dot"></span>Hiring</span>
+                                </a>
+                                <a href="{{ route('contact') }}" class="nav-dropdown-link" role="menuitem">Contact</a>
+                                <a href="{{ route('faq') }}" class="nav-dropdown-link" role="menuitem">FAQ</a>
+                                <a href="{{ route('blogs.index') }}" class="nav-dropdown-link" role="menuitem">Blog</a>
+                            </div>
+                            <div class="nav-dropdown-visual">
+                                <img src="{{ url('public/assets/images/nav/nav-company-team.png') }}" alt="The LimoSchedule team reviewing a live dashboard showing bookings, dispatch and fleet status" width="760" height="507" loading="lazy" decoding="async">
+                            </div>
                         </div>
                     </li>
 
@@ -215,15 +233,16 @@
                 <span class="w-px h-4 bg-white/10 block"></span>
                 <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F"
                    target="_blank" rel="noopener"
-                   class="inline-flex items-center gap-2 text-gray-300 hover:text-white text-[13px] font-semibold px-4 py-2 rounded-xl transition-all duration-200 hover:border-green-500/30"
-                   style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12);">
+                   class="btn-outline hover:border-green-500/30"
+                   style="padding: 8px 16px; font-size: 13px;">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="#22c55e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
                     <span>Talk to an Expert</span>
                 </a>
-                <a href="{{ route('contact') }}"
-                   class="btn-cta inline-flex items-center gap-2 bg-[#3B82F6] text-white text-[13px] font-semibold px-4 py-2 rounded-xl border border-blue-500/30">
+                <a href="{{ route('demo') }}"
+                   class="btn-cta btn-primary"
+                   style="padding: 8px 18px; font-size: 13px;">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    <span>Get Started</span>
+                    <span>Book a Demo</span>
                 </a>
             </div>
 
@@ -295,6 +314,12 @@
                         <a href="{{ route('solutions') }}#solution-chauffeur-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Chauffeur Services</a>
                         <a href="{{ route('solutions') }}#solution-airport-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Airport Transfers</a>
                         <a href="{{ route('solutions') }}#solution-corporate-heading" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Corporate Travel</a>
+                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Wedding Transportation</a>
+                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Event Transportation</a>
+                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Hotel &amp; Resort Transfers</a>
+                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Tour &amp; Travel Transportation</a>
+                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Party Bus Services</a>
+                        <a href="#" class="block py-2.5 text-[13.5px] text-gray-400 hover:text-white">Executive Transportation</a>
                     </div>
                 </li>
 
@@ -306,7 +331,7 @@
                         </span>
                         <div>
                             <div class="font-semibold text-[14px] text-gray-200">Pricing</div>
-                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">One-time payment, no SaaS fees</div>
+                            <div class="text-[11.5px] text-gray-500 mt-0.5 font-normal">One-time Investment, no SaaS fees</div>
                         </div>
                         <svg class="ml-auto flex-shrink-0 text-gray-600 group-hover:text-gray-400 transition-colors" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
                     </a>
@@ -350,15 +375,16 @@
                 @endif
                 <a href="https://wa.me/923460820722?text=Hi%2C%20I%27m%20interested%20in%20LimoSchedule.%20Can%20you%20show%20me%20a%20live%20demo%3F"
                    target="_blank" rel="noopener"
-                   class="flex items-center justify-center gap-2 text-gray-300 text-[14px] font-semibold px-4 py-3 rounded-xl transition-all duration-200"
-                   style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.12);">
+                   class="btn-outline"
+                   style="padding: 12px 16px; font-size: 14px;">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="#22c55e"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.99 0C5.376 0 0 5.373 0 11.988c0 2.104.549 4.14 1.595 5.945L0 24l6.335-1.652A11.981 11.981 0 0011.99 24C18.604 24 24 18.627 24 12.012 24 5.373 18.604 0 11.99 0zm.01 21.823a9.886 9.886 0 01-5.03-1.372l-.362-.214-3.762.981.999-3.649-.235-.374a9.837 9.837 0 01-1.511-5.195c0-5.452 4.443-9.893 9.901-9.893 5.452 0 9.895 4.441 9.895 9.893 0 5.452-4.443 9.823-9.895 9.823z"/></svg>
                     Talk to an Expert
                 </a>
-                <a href="{{ route('contact') }}"
-                   class="btn-cta flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[14px] font-semibold px-4 py-3 rounded-xl border border-blue-500/30">
+                <a href="{{ route('demo') }}"
+                   class="btn-cta btn-primary"
+                   style="padding: 12px 16px; font-size: 14px;">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    <span>Get Started</span>
+                    <span>Book a Demo</span>
                 </a>
             </div>
         </div>
@@ -412,11 +438,6 @@
             <div>
                 <h4 class="text-[11px] font-bold uppercase tracking-[0.12em] text-gray-600 mb-5">Platform</h4>
                 <ul class="flex flex-col gap-3">
-                    <li><a href="{{ url('/') }}#platform-modules"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Booking Website</a></li>
-                    <li><a href="{{ url('/') }}#platform-modules"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Customer Portal</a></li>
-                    <li><a href="{{ url('/') }}#platform-modules"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Driver Panel</a></li>
-                    <li><a href="{{ route('admin-panel') }}"       class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Dashboard</a></li>
-                    <li><a href="{{ url('/') }}#platform-modules"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">White-Label Platform</a></li>
                     <li><a href="{{ route('features') }}"          class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Features</a></li>
                     <li><a href="{{ route('website-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Website Features</a></li>
                     <li><a href="{{ route('customer-panel-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Customer Panel Features</a></li>
@@ -461,7 +482,8 @@
                     Launch your transportation business with a complete white-label booking platform.
                 </p>
                 <a href="{{ url('/') }}#contactForm"
-                   class="btn-cta inline-flex items-center justify-center gap-2 bg-[#3B82F6] text-white text-[13.5px] font-semibold px-5 py-2.5 rounded-xl border border-blue-500/30 mb-4">
+                   class="btn-cta btn-primary mb-4"
+                   style="padding: 10px 20px; font-size: 13.5px;">
                     <span>Get Started</span>
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>

@@ -3,6 +3,27 @@
    Color palette: #0A0A0A · #3B82F6 · #FFFFFF
 ══════════════════════════════════════════════════════ */
 
+:root {
+    /* Brand blue — one governed scale instead of five interchangeable hex
+       values scattered through the markup. */
+    --color-primary: #3B82F6;
+    --color-primary-dark: #2563EB;
+    --color-primary-darker: #1D4ED8;
+    --color-primary-light: #60A5FA;
+    /* Success / WhatsApp green */
+    --color-success: #22C55E;
+    --color-success-dark: #16A34A;
+    /* Dark section backgrounds — named on purpose rather than flattened to
+       one shade: the slight step between #0A0A0A/#060606/#070707 gives
+       adjacent stacked dark sections subtle depth/separation. */
+    --bg-void: #0A0A0A;
+    --bg-deep: #060606;
+    --bg-footer: #070707;
+    /* Sitewide button corner radius — sharp/square corners, per premium
+       B2B direction (no pill-shaped or softly-rounded buttons). */
+    --radius-btn: 0px;
+}
+
 *, *::before, *::after { font-family: 'Inter', sans-serif; box-sizing: border-box; }
 
 /* ── Page base ── */
@@ -75,6 +96,69 @@ body { background: #0A0A0A; color: #fff; -webkit-font-smoothing: antialiased; }
 .btn-cta svg  { position: relative; z-index: 1; }
 .btn-cta:active { transform: translateY(0); }
 
+/* ── Unified button system ──
+   .btn-cta supplies hover glow/lift behavior only (above). These classes
+   supply the actual look, so every CTA on the site shares one definition
+   instead of re-typing bg/radius/padding/border at each call site.
+   Usage: <a class="btn-cta btn-primary">…</a> or <a class="btn-outline">…</a> */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--color-primary);
+    color: #fff;
+    font-weight: 700;
+    border-radius: var(--radius-btn);
+    border: 1px solid rgba(59,130,246,0.3);
+    padding: 13px 28px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* Outline/ghost button for dark sections (header, footer, dark CTAs) */
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.03);
+    color: #d1d5db;
+    font-weight: 600;
+    border-radius: var(--radius-btn);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 13px 28px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.btn-outline:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.22);
+    color: #fff;
+}
+
+/* Outline button for white sections (hero, contact) */
+.btn-outline-light {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #ffffff;
+    color: #0F172A;
+    font-weight: 600;
+    border-radius: var(--radius-btn);
+    border: 1.5px solid rgba(15,23,42,0.14);
+    padding: 13px 28px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+.btn-outline-light:hover {
+    background: #F8FAFC;
+    border-color: rgba(15,23,42,0.24);
+}
+
 /* Mobile menu slide-in */
 .mobile-menu {
     position: absolute;
@@ -115,25 +199,63 @@ body { background: #0A0A0A; color: #fff; -webkit-font-smoothing: antialiased; }
 .nav-dropdown-panel {
     position: absolute;
     top: calc(100% + 10px);
-    left: 50%;
-    transform: translateX(-50%) translateY(-6px);
-    min-width: 240px;
+    left: 0;
+    transform: translateY(-6px);
+    display: flex;
+    align-items: stretch;
+    width: 600px;
+    max-width: calc(100vw - 40px);
     background: #111111;
     border: 1px solid rgba(255,255,255,0.09);
-    border-radius: 14px;
+    border-radius: 16px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.02);
-    padding: 8px;
+    overflow: hidden;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
     z-index: 60;
 }
+.nav-dropdown-links {
+    flex: 0 0 250px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+/* Wide variant — used when a dropdown's link list is split into 2 columns */
+.nav-dropdown-panel--wide { width: 760px; }
+.nav-dropdown-links--wide { flex: 0 0 440px; }
+.nav-dropdown-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px 8px;
+}
+.nav-dropdown-links-grid .nav-dropdown-link { font-size: 12.5px; padding: 8px 10px; }
+.nav-dropdown-visual {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 20px;
+    background: #0c0c0c;
+    border-left: 1px solid rgba(255,255,255,0.07);
+    min-width: 0;
+}
+.nav-dropdown-visual img {
+    display: block;
+    max-width: 100%;
+    max-height: 210px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
 .nav-dropdown-item.is-open .nav-dropdown-panel {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
 }
 .nav-dropdown-link {
     display: flex; align-items: center; justify-content: space-between; gap: 8px;
@@ -828,29 +950,6 @@ html:not(.js-ready) .ai-bubble-reveal {
 .faq-trigger[aria-expanded="true"] .faq-num {
     background: rgba(59,130,246,0.2) !important;
     box-shadow: 0 0 14px rgba(59,130,246,0.25);
-}
-
-/* ── Final CTA ── */
-.cta-final-btn-primary {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.cta-final-btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 0 1px rgba(59,130,246,0.6), 0 16px 48px rgba(59,130,246,0.45) !important;
-}
-.cta-final-btn-primary:active {
-    transform: translateY(0);
-}
-.cta-final-btn-ghost {
-    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
-}
-.cta-final-btn-ghost:hover {
-    transform: translateY(-2px);
-    background: rgba(255,255,255,0.07) !important;
-    border-color: rgba(255,255,255,0.2) !important;
-}
-.cta-final-btn-ghost:active {
-    transform: translateY(0);
 }
 
 /* ── Footer ── */
