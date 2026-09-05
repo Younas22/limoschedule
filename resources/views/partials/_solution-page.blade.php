@@ -64,10 +64,17 @@
                     @endforeach
                 </ul>
 
-                <div class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3">
+                <div class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3 mb-4">
                     <a href="{{ route('contact') }}" class="btn-cta btn-primary" style="padding: 13px 24px; font-size: 14px;">
                         <span>{{ $s['cta_label'] }}</span>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="text-center lg:text-left">
+                    <span class="text-gray-500 text-[12.5px]">Prefer to see it first?</span>
+                    <a href="{{ route('demo') }}" class="inline-flex items-center gap-1 font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200 text-[12.5px] ml-1">
+                        Explore the live demo
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
             </div>
@@ -87,6 +94,20 @@
             </div>
 
         </div>
+
+        @if(!empty($s['faqs']))
+        <div class="max-w-2xl mx-auto mt-14 pt-10" style="border-top: 1px solid rgba(255,255,255,0.07);">
+            <h2 class="text-white text-xl sm:text-2xl font-black tracking-tight mb-6 text-center">{{ $s['name'] }} Questions</h2>
+            <div class="flex flex-col gap-3">
+                @foreach($s['faqs'] as $faq)
+                <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                    <h3 class="text-white font-semibold text-[14.5px] mb-1.5">{{ $faq['q'] }}</h3>
+                    <p class="text-gray-400 text-[13.5px] leading-relaxed">{{ $faq['a'] }}</p>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        @endif
 
         <div class="text-center mt-14 pt-10" style="border-top: 1px solid rgba(255,255,255,0.07);">
             <span class="text-gray-500 text-[13px]">Not quite your business?</span>

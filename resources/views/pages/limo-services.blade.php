@@ -14,11 +14,21 @@
         },
         {
             "@@type": "Service",
-            "name": "{{ $solution['service_name'] }}",
+            "name": {!! json_encode($solution['service_name']) !!},
             "serviceType": "Transportation Booking Software",
             "provider": { "@@id": "{{ url('/') }}#organization" },
-            "description": "{{ $solution['service_description'] }}"
+            "description": {!! json_encode($solution['service_description']) !!}
         }
+        @if(!empty($solution['faqs']))
+        ,{
+            "@@type": "FAQPage",
+            "mainEntity": [
+                @foreach($solution['faqs'] as $faq)
+                { "@@type": "Question", "name": {!! json_encode($faq['q']) !!}, "acceptedAnswer": { "@@type": "Answer", "text": {!! json_encode($faq['a']) !!} } }@if(!$loop->last),@endif
+                @endforeach
+            ]
+        }
+        @endif
     ]
 }
 </script>

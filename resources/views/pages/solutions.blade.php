@@ -18,6 +18,13 @@
             "name": "LimoSchedule",
             "url": "{{ url('/') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Is LimoSchedule available for industries not listed here?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The platform — a booking website, customer panel, driver panel and admin dashboard — is built to work for any passenger transportation business, not only the twelve industries listed here. If you don't see your exact category, the same platform still applies." } },
+                { "@@type": "Question", "name": "Does each industry get different features, or is it the same platform?", "acceptedAnswer": { "@@type": "Answer", "text": "It's the same complete platform for every industry. Each solution page highlights the features most relevant to that type of business, but nothing is removed or restricted by industry." } }
+            ]
         }
     ]
 }
@@ -54,7 +61,7 @@
         </h1>
 
         <p class="text-gray-400 text-[17px] sm:text-[18px] leading-relaxed max-w-2xl mx-auto mb-9">
-            Power your limo, black car, taxi, chauffeur or airport transfer business with a complete white-label booking platform.
+            Power your limo, taxi, chauffeur, corporate, wedding or event transportation business with a complete white-label booking platform.
         </p>
 
         <a href="#solutions-grid"
@@ -71,7 +78,7 @@
 <section class="relative py-16 lg:py-20 overflow-hidden" style="background: #060606;">
     <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-5 text-white">
-            One Platform. Six Ways to Use It.
+            One Platform. Twelve Ways to Use It.
         </h2>
         <p class="text-gray-400 text-[16px] leading-relaxed">
             LimoSchedule is built on the same complete <a href="{{ route('platform') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">booking platform</a> &mdash; a booking website, customer panel, driver panel and admin dashboard &mdash; adapted to how each type of transportation business actually operates. Find your industry below.
@@ -104,6 +111,27 @@
                     </span>
                 </a>
             @endforeach
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SOLUTIONS FAQ
+═══════════════════════════════════════════════════════════════ -->
+<section class="relative py-16 lg:py-20 overflow-hidden" style="background: #060606;">
+    <div class="relative z-10 max-w-2xl mx-auto px-5 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.1] mb-8 text-white text-center">
+            Solutions Questions
+        </h2>
+        <div class="flex flex-col gap-3">
+            <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-1.5">Is LimoSchedule available for industries not listed here?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">Yes. The platform &mdash; a booking website, customer panel, driver panel and admin dashboard &mdash; is built to work for any passenger transportation business, not only the twelve industries listed here. If you don't see your exact category, the same platform still applies.</p>
+            </div>
+            <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-1.5">Does each industry get different features, or is it the same platform?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">It's the same complete platform for every industry. Each solution page highlights the features most relevant to that type of business, but nothing is removed or restricted by industry.</p>
+            </div>
         </div>
     </div>
 </section>

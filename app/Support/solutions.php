@@ -28,6 +28,10 @@ return [
         'icon_svg'           => null,
         'service_name'       => 'Limo Booking Software',
         'service_description'=> 'White-label booking website and admin dashboard for limo services, replacing phone-based bookings with automated online reservations and centralized dispatch.',
+        'faqs'               => [
+            ['q' => 'Is LimoSchedule suitable for a small limo service?', 'a' => "Yes. Because it's a one-time purchase rather than a per-seat subscription, a small limo service pays the same license fee as a larger fleet, with the same booking website, fare calculator and admin dashboard."],
+            ['q' => 'Does the booking website replace phone-based reservations for a limo service?', 'a' => 'Yes. The branded booking website and admin dashboard handle reservations online and route them straight to dispatch, replacing manual phone bookings and paper schedules.'],
+        ],
     ],
 
     'black-car-services' => [
@@ -45,6 +49,10 @@ return [
         'icon_svg'           => null,
         'service_name'       => 'Black Car Booking Software',
         'service_description'=> 'White-label booking website and customer panel for black car services, giving premium clients a self-service reservation experience under their own brand.',
+        'faqs'               => [
+            ['q' => 'Can black car clients book and manage rides themselves?', 'a' => 'Yes. The Customer Panel lets clients book, view and manage their own rides under your brand, without calling your office.'],
+            ['q' => 'Is the black car booking experience mobile-friendly?', 'a' => 'Yes. The booking website and Customer Panel are mobile responsive, so clients can book from any device.'],
+        ],
     ],
 
     'taxi-companies' => [
@@ -62,6 +70,10 @@ return [
         'icon_svg'           => null,
         'service_name'       => 'Taxi Booking Software',
         'service_description'=> 'Admin dashboard and driver panel for taxi companies, connecting bookings, dispatch and drivers in one system.',
+        'faqs'               => [
+            ['q' => 'Can a taxi company assign bookings to drivers automatically?', 'a' => 'Bookings are managed from the admin dashboard and assigned to drivers through the Driver Panel, connecting dispatch to drivers without manual phone coordination.'],
+            ['q' => "Does the fare calculator work for a taxi company's pricing?", 'a' => 'Yes. The Fare Calculator prices trips automatically, so taxi bookings show a fare before the customer confirms.'],
+        ],
     ],
 
     'chauffeur-services' => [
@@ -79,6 +91,10 @@ return [
         'icon_svg'           => null,
         'service_name'       => 'Chauffeur Booking Software',
         'service_description'=> 'Connected customer, driver and admin panels for chauffeur services, tracking every trip from booking to drop-off.',
+        'faqs'               => [
+            ['q' => 'Can I track a chauffeur trip from booking to drop-off?', 'a' => 'Yes. Customer, driver and admin panels stay connected, so every chauffeur trip is tracked automatically from booking to completion.'],
+            ['q' => 'Is the chauffeur booking platform white-label?', 'a' => "Yes. Customers and drivers only see your brand — your logo, colors and domain, not LimoSchedule's."],
+        ],
     ],
 
     'airport-transfers' => [
@@ -96,6 +112,10 @@ return [
         'icon_svg'           => null,
         'service_name'       => 'Airport Transfer Booking Software',
         'service_description'=> 'Advanced booking and a connected driver panel for airport transfer businesses, keeping pickup times accurate and visible to the whole team.',
+        'faqs'               => [
+            ['q' => 'Can LimoSchedule keep airport pickups on schedule?', 'a' => 'Yes. Advanced booking and a connected Driver Panel keep pickup times accurate and visible to your whole team, reducing the risk of a late pickup.'],
+            ['q' => 'Do airport transfer customers get an instant fare quote?', 'a' => 'Yes. The Fare Calculator shows an instant, transparent price before the customer confirms an airport transfer booking.'],
+        ],
     ],
 
     'corporate-travel' => [
@@ -113,6 +133,10 @@ return [
         'icon_svg'           => null,
         'service_name'       => 'Corporate Travel Booking Software',
         'service_description'=> 'Branded, mobile-responsive booking website with multi-currency support for corporate travel accounts.',
+        'faqs'               => [
+            ['q' => 'Can LimoSchedule handle corporate accounts across different countries?', 'a' => 'Yes. Multi-currency and multi-language support let you serve corporate travel accounts in the pricing and language they expect, wherever they are based.'],
+            ['q' => 'Is the corporate travel booking platform under our own brand?', 'a' => "Yes. It's white-label, so corporate clients see your branded booking website, not LimoSchedule's."],
+        ],
     ],
 
     'wedding-transportation' => [
@@ -130,6 +154,10 @@ return [
         'icon_svg'           => '<path d="M20.8 4.6c-1.7-1.6-4.4-1.6-6.1 0L12 7.1 9.3 4.6c-1.7-1.6-4.4-1.6-6.1 0-1.8 1.7-1.8 4.4 0 6.1L12 19l8.8-8.3c1.8-1.7 1.8-4.4 0-6.1z"/>',
         'service_name'       => 'Wedding Transportation Booking Software',
         'service_description'=> 'Advanced booking and driver coordination for wedding transportation, with white-label branding to keep the experience under your own brand.',
+        'faqs'               => [
+            ['q' => 'Can LimoSchedule keep wedding-day pickups on schedule?', 'a' => "Yes. Advanced booking and driver coordination through the Driver Panel keep every pickup on schedule for the day."],
+            ['q' => 'Is the wedding transportation booking experience mobile-friendly?', 'a' => 'Yes. Couples and wedding parties can book and check details from any device.'],
+        ],
     ],
 
     'event-transportation' => [
@@ -147,6 +175,10 @@ return [
         'icon_svg'           => '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
         'service_name'       => 'Event Transportation Booking Software',
         'service_description'=> 'Admin dashboard and driver panel for event transportation, coordinating multiple vehicles and pickup points from one place.',
+        'faqs'               => [
+            ['q' => 'Can LimoSchedule coordinate multiple vehicles for one event?', 'a' => 'Yes. The admin dashboard and Driver Panel coordinate multiple vehicles and routes from one place, keeping every guest on time.'],
+            ['q' => 'Can event transportation pricing be calculated automatically?', 'a' => 'Yes. The Fare Calculator prices each vehicle and route automatically instead of manual quoting.'],
+        ],
     ],
 
     'hotel-resort-transfers' => [
@@ -164,6 +196,10 @@ return [
         'icon_svg'           => '<rect x="4" y="2" width="16" height="20" rx="1"/><line x1="9" y1="7" x2="9" y2="7"/><line x1="15" y1="7" x2="15" y2="7"/><line x1="9" y1="12" x2="9" y2="12"/><line x1="15" y1="12" x2="15" y2="12"/><line x1="9" y1="17" x2="15" y2="17"/>',
         'service_name'       => 'Hotel & Resort Transfer Booking Software',
         'service_description'=> 'Branded booking website and customer panel for hotel and resort transfers, letting guests reserve transfers instantly without phone calls.',
+        'faqs'               => [
+            ['q' => 'Can hotel guests book transfers without calling the front desk?', 'a' => 'Yes. Guests book instantly through your branded booking website, and the Customer Panel keeps them updated in real time.'],
+            ['q' => 'Is the hotel transfer booking platform under our own brand?', 'a' => "Yes. It's white-label, so guests see your hotel or resort's brand, not LimoSchedule's."],
+        ],
     ],
 
     'tour-travel-transportation' => [
@@ -181,6 +217,10 @@ return [
         'icon_svg'           => '<polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/>',
         'service_name'       => 'Tour & Travel Booking Software',
         'service_description'=> 'Advanced booking with multi-currency and multi-language support for tour and travel transportation businesses managing group itineraries.',
+        'faqs'               => [
+            ['q' => 'Can LimoSchedule handle group tour bookings?', 'a' => 'Yes. Advanced booking and the admin dashboard make it easy to manage multi-stop itineraries and group bookings in one place.'],
+            ['q' => 'Can international travelers book in their own currency?', 'a' => 'Yes. Multi-currency and multi-language support make the booking experience accessible to international travelers.'],
+        ],
     ],
 
     'party-bus-services' => [
@@ -198,6 +238,10 @@ return [
         'icon_svg'           => '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
         'service_name'       => 'Party Bus Booking Software',
         'service_description'=> 'Fare calculator and admin dashboard for party bus services, automating group pricing and bookings.',
+        'faqs'               => [
+            ['q' => 'Can LimoSchedule handle group pricing for party bus bookings?', 'a' => 'Yes. The Fare Calculator and admin dashboard automate group pricing and bookings, so nothing is quoted manually.'],
+            ['q' => 'Can customers book a party bus from their phone?', 'a' => 'Yes. The booking website is mobile responsive, so customers can book from any device.'],
+        ],
     ],
 
     'executive-transportation' => [
@@ -215,6 +259,10 @@ return [
         'icon_svg'           => '<rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>',
         'service_name'       => 'Executive Transportation Booking Software',
         'service_description'=> 'White-label branding and a customer panel for executive transportation, delivering a discreet, professional self-service booking experience.',
+        'faqs'               => [
+            ['q' => 'Can executive clients get a discreet, self-service booking experience?', 'a' => 'Yes. The Customer Panel gives executive clients a polished, self-service experience under your own brand, without phone calls.'],
+            ['q' => 'Is the executive transportation platform white-label?', 'a' => "Yes. Your branding is what clients and drivers see — not LimoSchedule's."],
+        ],
     ],
 
 ];
