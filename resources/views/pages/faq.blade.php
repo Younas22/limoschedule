@@ -71,6 +71,31 @@
                     "@@type": "Question",
                     "name": "How does the setup process work?",
                     "acceptedAnswer": { "@@type": "Answer", "text": "We configure your branding, business settings, currency, language and platform details for you, so your complete platform is ready to launch without you having to build anything yourself." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "What's the difference between limo booking software and limo dispatch software?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Limo dispatch software focuses mainly on assigning drivers to jobs and tracking vehicles. Limo booking software is broader — it also includes the customer-facing booking website, online payments and admin tools to run the business day to day. LimoSchedule includes driver assignment through its Driver Panel as one part of a complete platform, not as a separate product." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Is LimoSchedule suitable for a small or one-person limo company?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Because LimoSchedule is a one-time purchase rather than a monthly subscription, a one-vehicle operator pays the same license fee as a larger fleet — the cost doesn't scale with the number of drivers or bookings." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "What should I look for when choosing limo booking software?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Compare the pricing model (subscription vs. one-time), whether the platform is truly white-label, which panels are included (customer, driver, admin), which payment processors are supported, how long setup takes, and whether fares are calculated automatically." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "Can I see LimoSchedule before I buy it?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The live demo walks through the booking website, customer panel, driver panel and admin dashboard before you purchase the $1,999 license." }
+                },
+                {
+                    "@@type": "Question",
+                    "name": "What payment methods can my customers use to pay?",
+                    "acceptedAnswer": { "@@type": "Answer", "text": "LimoSchedule supports Stripe and PayPal out of the box, so customers can pay by card or PayPal at the time of booking." }
                 }
             ]
         }
@@ -280,6 +305,96 @@
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
                         <p class="text-gray-400 text-[14px] leading-relaxed">We configure your branding, business settings, currency, language and platform details for you, so your complete platform is ready to launch without you having to build anything yourself.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q11 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">11</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">What's the difference between limo booking software and limo dispatch software?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Limo dispatch software focuses mainly on assigning drivers to jobs and tracking vehicles. Limo booking software is broader &mdash; it also includes the customer-facing booking website, online payments and admin tools to run the business day to day. LimoSchedule includes driver assignment through its Driver Panel as one part of a complete platform, not as a separate product.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">12</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Is LimoSchedule suitable for a small or one-person limo company?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. Because LimoSchedule is a one-time purchase rather than a monthly subscription, a one-vehicle operator pays the same license fee as a larger fleet &mdash; the cost doesn't scale with the number of drivers or bookings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q13 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">13</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">What should I look for when choosing limo booking software?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Compare the pricing model (subscription vs. one-time), whether the platform is truly white-label, which panels are included (customer, driver, admin), which payment processors are supported, how long setup takes, and whether fares are calculated automatically.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">14</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Can I see LimoSchedule before I buy it?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-medium">The live demo</a> walks through the booking website, customer panel, driver panel and admin dashboard before you purchase the $1,999 license.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">15</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">What payment methods can my customers use to pay?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">LimoSchedule supports Stripe and PayPal out of the box, so customers can pay by card or PayPal at the time of booking.</p>
                     </div>
                 </div>
             </div>

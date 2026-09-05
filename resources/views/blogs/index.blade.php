@@ -1,5 +1,35 @@
 @extends('layouts.public')
 
+@push('styles')
+<script type="application/ld+json">
+{
+    "@@context": "https://schema.org",
+    "@@graph": [
+        {
+            "@@type": "Organization",
+            "@@id": "{{ url('/') }}#organization",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "logo": "{{ url('public/logo/logo-white.png') }}"
+        },
+        {
+            "@@type": "WebSite",
+            "@@id": "{{ url('/') }}#website",
+            "name": "LimoSchedule",
+            "url": "{{ url('/') }}",
+            "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "CollectionPage",
+            "name": "LimoSchedule Blog",
+            "url": "{{ route('blogs.index') }}",
+            "isPartOf": { "@@id": "{{ url('/') }}#website" }
+        }
+    ]
+}
+</script>
+@endpush
+
 @section('content')
 
 <!-- ═══════════════════════════════════════════════════════════════

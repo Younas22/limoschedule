@@ -72,6 +72,13 @@
             "description": "Manages sales and partnership relationships for LimoSchedule.",
             "image": "{{ url('public/assets/images/team/team-michael-thompson.jpg') }}",
             "worksFor": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "How can I get in touch with the LimoSchedule team?", "acceptedAnswer": { "@@type": "Answer", "text": "You can reach the LimoSchedule team by email at support@limoschedule.com, by phone, through the contact form, or via WhatsApp." } },
+                { "@@type": "Question", "name": "Who do I contact for a demo or general questions?", "acceptedAnswer": { "@@type": "Answer", "text": "Use the contact page to request a demo or ask a general question, or explore the live demo directly to see the platform first." } }
+            ]
         }
     ]
 }
@@ -191,9 +198,30 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
+     TEAM FAQ
+═══════════════════════════════════════════════════════════════ -->
+<section class="relative py-16 lg:py-20 overflow-hidden" style="background: #0A0A0A;">
+    <div class="relative z-10 max-w-2xl mx-auto px-5 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-black tracking-tight leading-[1.15] mb-6 text-white text-center">
+            Getting in Touch
+        </h2>
+        <div class="flex flex-col gap-3">
+            <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[14.5px] mb-1.5">How can I get in touch with the LimoSchedule team?</h3>
+                <p class="text-gray-400 text-[13.5px] leading-relaxed">You can reach the LimoSchedule team by email at support@limoschedule.com, by phone, through the <a href="{{ route('contact') }}" class="text-blue-400 hover:text-blue-300 font-semibold">contact form</a>, or via WhatsApp.</p>
+            </div>
+            <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[14.5px] mb-1.5">Who do I contact for a demo or general questions?</h3>
+                <p class="text-gray-400 text-[13.5px] leading-relaxed">Use the <a href="{{ route('contact') }}" class="text-blue-400 hover:text-blue-300 font-semibold">contact page</a> to request a demo or ask a general question, or explore the <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-semibold">live demo</a> directly to see the platform first.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
      MORE TO EXPLORE
 ═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-16 overflow-hidden" style="background: #0A0A0A;">
+<section class="relative py-16 overflow-hidden" style="background: #060606;">
     <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
         <p class="text-gray-500 text-[14px]">
             Learn more <a href="{{ route('about') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">about LimoSchedule</a>, or explore the <a href="{{ route('platform') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">platform</a>.

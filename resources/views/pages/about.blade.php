@@ -24,6 +24,13 @@
             "name": "LimoSchedule",
             "url": "{{ url('/') }}",
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Is LimoSchedule an off-the-shelf product or a custom development project?", "acceptedAnswer": { "@@type": "Answer", "text": "LimoSchedule is an off-the-shelf, ready-to-configure platform — not a custom development project. You set up your branding and business settings; you don't build the software from scratch." } },
+                { "@@type": "Question", "name": "Does LimoSchedule replace multiple separate tools?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule replaces phone bookings, WhatsApp threads, manual dispatching and spreadsheets with one connected system covering the booking website, customer panel, driver panel and admin dashboard." } }
+            ]
         }
     ]
 }
@@ -239,9 +246,30 @@
 </section>
 
 <!-- ═══════════════════════════════════════════════════════════════
+     ABOUT FAQ
+═══════════════════════════════════════════════════════════════ -->
+<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #060606;">
+    <div class="relative z-10 max-w-2xl mx-auto px-5 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-8 text-white text-center">
+            Common Questions
+        </h2>
+        <div class="flex flex-col gap-3">
+            <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-1.5">Is LimoSchedule an off-the-shelf product or a custom development project?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">LimoSchedule is an off-the-shelf, ready-to-configure platform &mdash; not a custom development project. You set up your branding and business settings; you don't build the software from scratch.</p>
+            </div>
+            <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-1.5">Does LimoSchedule replace multiple separate tools?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">Yes. LimoSchedule replaces phone bookings, WhatsApp threads, manual dispatching and spreadsheets with one connected system covering the booking website, customer panel, driver panel and admin dashboard.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
      MORE TO EXPLORE
 ═══════════════════════════════════════════════════════════════ -->
-<section class="relative py-16 overflow-hidden" style="background: #060606;">
+<section class="relative py-16 overflow-hidden" style="background: #0A0A0A;">
     <div class="relative z-10 max-w-3xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
         <p class="text-gray-500 text-[14px]">
             Find your <a href="{{ route('solutions') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">industry solution</a>, check <a href="{{ route('pricing') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">pricing</a>, or <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-semibold transition-colors duration-200">see a live demo</a>.

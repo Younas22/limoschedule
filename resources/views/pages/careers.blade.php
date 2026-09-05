@@ -46,6 +46,13 @@
         }@if(!$loop->last),@endif
         @endforeach
 @endif
+        ,{
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Can I apply if there's no open position that matches my skills?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The application form includes a General Application option, so you can submit your resume even if none of the current openings match exactly." } },
+                { "@@type": "Question", "name": "What do I need to submit with my application?", "acceptedAnswer": { "@@type": "Answer", "text": "A resume or CV (PDF or Word document) is required. LinkedIn, portfolio and GitHub links, plus a cover letter, are optional but help your application stand out." } }
+            ]
+        }
     ]
 }
 </script>
@@ -454,6 +461,27 @@
             </a>
         </div>
 
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     APPLICATION FAQ
+═══════════════════════════════════════════════════════════════ -->
+<section class="relative py-20 lg:py-24 overflow-hidden" style="background: #060606;">
+    <div class="relative z-10 max-w-2xl mx-auto px-5 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-black tracking-tight leading-[1.15] mb-8 text-white text-center">
+            Application Questions
+        </h2>
+        <div class="flex flex-col gap-3">
+            <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-1.5">Can I apply if there's no open position that matches my skills?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">Yes. The application form includes a General Application option, so you can submit your resume even if none of the current openings match exactly.</p>
+            </div>
+            <div class="rounded-2xl p-5" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <h3 class="text-white font-semibold text-[15px] mb-1.5">What do I need to submit with my application?</h3>
+                <p class="text-gray-400 text-[14px] leading-relaxed">A resume or CV (PDF or Word document) is required. LinkedIn, portfolio and GitHub links, plus a cover letter, are optional but help your application stand out.</p>
+            </div>
+        </div>
     </div>
 </section>
 

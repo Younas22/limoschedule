@@ -33,6 +33,17 @@
                 "availability": "https://schema.org/InStock"
             },
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "Is LimoSchedule a monthly subscription?", "acceptedAnswer": { "@@type": "Answer", "text": "No. LimoSchedule is a one-time payment of $1,999 — there are no recurring subscription fees to use the platform." } },
+                { "@@type": "Question", "name": "What exactly is included in the $1,999 price?", "acceptedAnswer": { "@@type": "Answer", "text": "Your one-time payment includes the complete white-label platform — a branded booking website, Customer Panel, Driver Panel and Admin Dashboard — configured and ready to launch." } },
+                { "@@type": "Question", "name": "Are there any hidden costs or add-on fees?", "acceptedAnswer": { "@@type": "Answer", "text": "No. The $1,999 price covers the complete platform — no hidden costs, no surprise add-on fees for standard use." } },
+                { "@@type": "Question", "name": "Do I pay more as my bookings grow?", "acceptedAnswer": { "@@type": "Answer", "text": "No. There are no limits on bookings — you won't be charged more as your business grows." } },
+                { "@@type": "Question", "name": "How quickly can I launch after payment?", "acceptedAnswer": { "@@type": "Answer", "text": "Most businesses are configured and ready to launch in as little as 30 minutes once your branding and business settings are in place." } },
+                { "@@type": "Question", "name": "What if my business has custom requirements?", "acceptedAnswer": { "@@type": "Answer", "text": "If you need custom integrations or a setup beyond the standard platform, our team can walk you through what's possible." } }
+            ]
         }
     ]
 }
@@ -159,7 +170,7 @@
                 A Different Ownership Model
             </h2>
             <p class="text-gray-400 text-[16px] leading-relaxed">
-                Most booking platforms charge a recurring subscription for as long as you use them. LimoSchedule works differently.
+                Most limo dispatch software on the market is a monthly subscription &mdash; publicly listed pricing runs roughly $99&ndash;$349 per month, which totals <strong class="text-white font-semibold">$1,188&ndash;$4,188 in the first year alone</strong>. LimoSchedule is a single $1,999 payment, with no recurring cost after that.
             </p>
         </div>
 
