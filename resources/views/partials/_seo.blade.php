@@ -1,6 +1,7 @@
 <title>{{ $seo['title'] ?? 'LimoSchedule' }}</title>
 <meta name="description" content="{{ $seo['description'] ?? '' }}">
 <meta name="author" content="LimoSchedule">
+<meta name="robots" content="{{ $seo['robots'] ?? 'index, follow' }}">
 <link rel="canonical" href="{{ $seo['canonical'] ?? url()->current() }}">
 <link rel="icon" type="image/x-icon" href="{{ url('public/favicon.ico') }}?v=3">
 <link rel="shortcut icon" href="{{ url('public/favicon.ico') }}?v=3">

@@ -31,6 +31,7 @@
             "url": "{{ url('/') }}",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
+            "image": "{{ url('public/assets/images/hero/hero-fleet-lineup.jpg') }}",
             "description": "White-label transportation booking software with a booking website, customer panel, driver panel and admin dashboard.",
             "offers": {
                 "@@type": "Offer",
@@ -39,6 +40,26 @@
                 "availability": "https://schema.org/InStock"
             },
             "publisher": { "@@id": "{{ url('/') }}#organization" }
+        },
+        {
+            "@@type": "FAQPage",
+            "mainEntity": [
+                { "@@type": "Question", "name": "What is included in LimoSchedule?", "acceptedAnswer": { "@@type": "Answer", "text": "A complete white-label platform: a branded booking website, a Customer Portal, a Driver Panel, and a full Admin Dashboard — all included in a single one-time license." } },
+                { "@@type": "Question", "name": "Is LimoSchedule white-label?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule is fully white-label — your logo, your brand colors, your domain. There's no LimoSchedule branding on the platform your customers see." } },
+                { "@@type": "Question", "name": "How quickly can my platform be set up?", "acceptedAnswer": { "@@type": "Answer", "text": "Most businesses are fully configured and ready to launch in as little as 30 minutes once your branding and business settings are in place." } },
+                { "@@type": "Question", "name": "Is this a monthly SaaS subscription?", "acceptedAnswer": { "@@type": "Answer", "text": "No. LimoSchedule is a one-time payment of $1,999 — there are no recurring subscription fees to use the platform." } },
+                { "@@type": "Question", "name": "Does it support multiple languages?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule includes multi-language support, so you can serve customers in the language they're most comfortable with." } },
+                { "@@type": "Question", "name": "Does it support multiple currencies?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. You can accept and display pricing in multiple currencies to match how your customers actually pay." } },
+                { "@@type": "Question", "name": "Does it include a booking website?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Your license includes a complete, branded booking website where customers can search, book and manage their rides." } },
+                { "@@type": "Question", "name": "Does it include customer and driver panels?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. LimoSchedule includes a dedicated Customer Portal for bookings and trip history, and a Driver Panel for assigned trips and trip details — alongside the Admin Dashboard." } },
+                { "@@type": "Question", "name": "Can I customize my branding?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Because LimoSchedule is white-label, you can fully customize your branding — logo, colors and domain — so the platform looks and feels like your own product." } },
+                { "@@type": "Question", "name": "How does the setup process work?", "acceptedAnswer": { "@@type": "Answer", "text": "You provide your branding and business details, we configure your platform, and you review it before going live — most businesses launch within 30 minutes." } },
+                { "@@type": "Question", "name": "What's the difference between limo booking software and limo dispatch software?", "acceptedAnswer": { "@@type": "Answer", "text": "Limo dispatch software focuses mainly on assigning drivers to jobs and tracking vehicles. Limo booking software is broader — it also includes the customer-facing booking website, online payments and admin tools to run the business day to day. LimoSchedule includes driver assignment through its Driver Panel as one part of a complete platform, not as a separate product." } },
+                { "@@type": "Question", "name": "Is LimoSchedule suitable for a small or one-person limo company?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. Because LimoSchedule is a one-time purchase rather than a monthly subscription, a one-vehicle operator pays the same license fee as a larger fleet — the cost doesn't scale with the number of drivers or bookings." } },
+                { "@@type": "Question", "name": "What should I look for when choosing limo booking software?", "acceptedAnswer": { "@@type": "Answer", "text": "Compare the pricing model (subscription vs. one-time), whether the platform is truly white-label, which panels are included (customer, driver, admin), which payment processors are supported, how long setup takes, and whether fares are calculated automatically." } },
+                { "@@type": "Question", "name": "Can I see LimoSchedule before I buy it?", "acceptedAnswer": { "@@type": "Answer", "text": "Yes. The live demo walks through the booking website, customer panel, driver panel and admin dashboard before you purchase the $1,999 license." } },
+                { "@@type": "Question", "name": "What payment methods can my customers use to pay?", "acceptedAnswer": { "@@type": "Answer", "text": "LimoSchedule supports Stripe and PayPal out of the box, so customers can pay by card or PayPal at the time of booking." } }
+            ]
         }
     ]
 }
@@ -239,6 +260,27 @@
 
 </section>
 
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION — WHAT IS LIMOSCHEDULE? (AEO / GEO definition block)
+═══════════════════════════════════════════════════════════════ -->
+<section id="what-is-limoschedule" class="relative overflow-hidden section-fade" style="background: #0A0A0A; padding: 60px 0;">
+    <div class="relative z-10 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full" style="background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.18);">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            <span class="text-[11px] font-bold tracking-[0.14em] uppercase text-blue-400">What Is LimoSchedule?</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black tracking-tight leading-[1.25] mb-5 text-white">
+            Limo, Taxi &amp; Chauffeur Booking Software, Explained
+        </h2>
+        <p class="text-gray-400 text-[15px] leading-relaxed mb-4 max-w-3xl mx-auto">
+            Limo booking software is a platform that lets a limo, black car, taxi or chauffeur business take reservations online, assign drivers, calculate fares automatically, and manage the whole operation from one dashboard &mdash; replacing phone-based booking and paper schedules.
+        </p>
+        <p class="text-gray-400 text-[15px] leading-relaxed max-w-3xl mx-auto">
+            LimoSchedule is exactly that: a complete white-label platform &mdash; booking website, customer portal, driver panel and admin dashboard &mdash; built for limo services, black car operators, taxi companies, chauffeur services, airport transfers, and corporate, wedding, event, hotel, tour and party bus transportation businesses, for one <strong class="text-white font-semibold">$1,999 one-time payment</strong>.
+        </p>
+    </div>
+</section>
 
 <!-- ═══════════════════════════════════════════════════════════════
      SECTION — PLATFORM MODULES (Built for the Way Transportation Businesses Operate)
@@ -717,6 +759,14 @@
             </div>
 
         </div>
+
+        <div class="text-center mt-10 section-fade" style="transition-delay: 0.45s;">
+            <span class="text-gray-500 text-[13.5px]">Also included:</span>
+            <a href="{{ route('ai-agent') }}" class="inline-flex items-center gap-1.5 text-[13.5px] font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200 ml-1">
+                an AI voice agent that answers booking calls 24/7
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
     </div>
 </section>
 
@@ -748,8 +798,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
             <!-- 1. Limo Services -->
-            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.05s">
-                <img src="{{ asset('public/assets/images/industries/limo-services.jpg') }}" alt="Limo Services — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <a href="{{ route('limo-services') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.05s">
+                <img src="{{ asset('public/assets/images/industries/limo-services.jpg') }}" alt="Black stretch limousine with booking, route-map and fare-confirmation panels illustrating LimoSchedule's limo booking software" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Limo Services</h3>
@@ -762,8 +812,8 @@
             </a>
 
             <!-- 2. Black Car Services -->
-            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.1s">
-                <img src="{{ asset('public/assets/images/industries/black-car-services.jpg') }}" alt="Black Car Services — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <a href="{{ route('black-car-services') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.1s">
+                <img src="{{ asset('public/assets/images/industries/black-car-services.jpg') }}" alt="Black Mercedes-Benz sedan in a city setting with booking and route-map panels illustrating LimoSchedule's black car booking software" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Black Car Services</h3>
@@ -776,8 +826,8 @@
             </a>
 
             <!-- 3. Taxi Companies -->
-            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.15s">
-                <img src="{{ asset('public/assets/images/industries/taxi-companies.jpg') }}" alt="Taxi Companies — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <a href="{{ route('taxi-companies') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.15s">
+                <img src="{{ asset('public/assets/images/industries/taxi-companies.jpg') }}" alt="Black taxi cab with driver, route-map and dispatch-analytics panels illustrating LimoSchedule's taxi dispatch and booking software" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Taxi Companies</h3>
@@ -790,8 +840,8 @@
             </a>
 
             <!-- 4. Chauffeur Services -->
-            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.2s">
-                <img src="{{ asset('public/assets/images/industries/chauffeur-services.jpg') }}" alt="Chauffeur Services — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <a href="{{ route('chauffeur-services') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.2s">
+                <img src="{{ asset('public/assets/images/industries/chauffeur-services.jpg') }}" alt="Uniformed chauffeur standing beside a black Mercedes sedan with customer, driver and route-map panels illustrating LimoSchedule's chauffeur booking software" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Chauffeur Services</h3>
@@ -804,8 +854,8 @@
             </a>
 
             <!-- 5. Airport Transfer Services -->
-            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.25s">
-                <img src="{{ asset('public/assets/images/industries/airport-transfer.jpg') }}" alt="Airport Transfer Services — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <a href="{{ route('airport-transfers') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.25s">
+                <img src="{{ asset('public/assets/images/industries/airport-transfer.jpg') }}" alt="Black Mercedes sedan at an airport terminal with luggage and flight-time, route-map panels illustrating LimoSchedule's airport transfer booking software" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Airport Transfer Services</h3>
@@ -818,8 +868,8 @@
             </a>
 
             <!-- 6. Corporate Travel -->
-            <a href="{{ route('contact') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.3s">
-                <img src="{{ asset('public/assets/images/industries/corporate-travel.jpg') }}" alt="Corporate Travel — LimoSchedule booking platform" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <a href="{{ route('corporate-travel') }}" class="industry-card group relative block rounded-2xl overflow-hidden section-fade aspect-[4/3]" style="border: 1px solid rgba(255,255,255,0.08); transition-delay: 0.3s">
+                <img src="{{ asset('public/assets/images/industries/corporate-travel.jpg') }}" alt="Businessman greeted by a chauffeur beside a black sedan outside a corporate office, with calendar and company-profile panels illustrating LimoSchedule's corporate travel booking software" width="1448" height="1086" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 30%, rgba(6,6,10,0.55) 62%, rgba(6,6,10,0.95) 100%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5">
                     <h3 class="text-white text-[16.5px] font-bold mb-1.5">Corporate Travel</h3>
@@ -831,6 +881,13 @@
                 </div>
             </a>
 
+        </div>
+
+        <div class="text-center mt-10 section-fade" style="transition-delay: 0.35s;">
+            <a href="{{ route('solutions') }}" class="inline-flex items-center gap-2 text-[14px] font-semibold text-blue-400 hover:text-blue-300 transition-colors duration-200">
+                See all 12 industries we serve
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
         </div>
     </div>
 </section>
@@ -855,7 +912,7 @@
                 Why Keep Renting Your Software?
             </h2>
             <p class="text-gray-400 text-[16.5px] leading-relaxed">
-                Get a complete white-label platform designed for your business &mdash; without building everything from scratch.
+                Most limo dispatch software is rented, not owned &mdash; publicly listed pricing for competing platforms runs roughly $99&ndash;$349 per month, which totals <strong class="text-white font-semibold">$1,188&ndash;$4,188 in the first year alone</strong>. LimoSchedule is a single $1,999 payment, with no recurring cost after that.
             </p>
         </div>
 
@@ -1283,6 +1340,96 @@
                 <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
                     <div class="px-6 pb-6 pl-[4.25rem]">
                         <p class="text-gray-400 text-[14px] leading-relaxed">We configure your branding, business settings, currency, language and platform details for you, so your complete platform is ready to launch without you having to build anything yourself.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q11 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">11</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">What's the difference between limo booking software and limo dispatch software?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Limo dispatch software focuses mainly on assigning drivers to jobs and tracking vehicles. Limo booking software is broader &mdash; it also includes the customer-facing booking website, online payments and admin tools to run the business day to day. LimoSchedule includes driver assignment through its Driver Panel as one part of a complete platform, not as a separate product.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">12</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Is LimoSchedule suitable for a small or one-person limo company?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. Because LimoSchedule is a one-time purchase rather than a monthly subscription, a one-vehicle operator pays the same license fee as a larger fleet &mdash; the cost doesn't scale with the number of drivers or bookings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q13 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">13</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">What should I look for when choosing limo booking software?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Compare the pricing model (subscription vs. one-time), whether the platform is truly white-label, which panels are included (customer, driver, admin), which payment processors are supported, how long setup takes, and whether fares are calculated automatically. LimoSchedule is a one-time payment with all four panels, Stripe and PayPal support, and a 30-minute setup.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q14 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">14</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">Can I see LimoSchedule before I buy it?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">Yes. <a href="{{ route('demo') }}" class="text-blue-400 hover:text-blue-300 font-medium">The live demo</a> walks through the booking website, customer panel, driver panel and admin dashboard before you purchase the $1,999 license.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q15 -->
+            <div class="faq-item rounded-2xl overflow-hidden" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07);">
+                <button class="faq-trigger w-full flex items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+                    <span class="flex items-center gap-4">
+                        <span class="faq-num flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold text-blue-400" style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.2);">15</span>
+                        <span class="text-white font-semibold text-[15px] leading-snug">What payment methods can my customers use to pay?</span>
+                    </span>
+                    <span class="faq-chevron flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-transform duration-300" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                </button>
+                <div class="faq-body" style="max-height: 0; overflow: hidden; transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);">
+                    <div class="px-6 pb-6 pl-[4.25rem]">
+                        <p class="text-gray-400 text-[14px] leading-relaxed">LimoSchedule supports Stripe and PayPal out of the box, so customers can pay by card or PayPal at the time of booking.</p>
                     </div>
                 </div>
             </div>

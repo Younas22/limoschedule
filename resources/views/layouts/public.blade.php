@@ -107,7 +107,7 @@
     </style>
 
     @stack('styles')
-    <script src="https://chat.limoschedule.com/widget.js"></script>
+    <script src="https://chat.limoschedule.com/widget.js" defer></script>
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMFKF24L1V"></script>
@@ -445,6 +445,9 @@
                     <li><a href="{{ route('admin-panel-features') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Admin Panel Features</a></li>
                     <li><a href="{{ route('technical-details') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Technical Details</a></li>
                     <li><a href="{{ route('installation') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Installation &amp; Docs</a></li>
+                    <li><a href="{{ route('how-it-works') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">How It Works</a></li>
+                    <li><a href="{{ route('ai-agent') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">AI Booking Agent</a></li>
+                    <li><a href="{{ route('voice-search') }}"  class="footer-nav-link text-gray-400 hover:text-white text-[13.5px] transition-colors duration-200">Voice Search Booking</a></li>
                 </ul>
             </div>
 

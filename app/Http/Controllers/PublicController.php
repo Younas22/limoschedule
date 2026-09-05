@@ -15,11 +15,11 @@ class PublicController extends Controller
         $countries = Country::orderBy('name')->get();
 
         $seo = [
-            'title'       => 'LimoSchedule — White-Label Limo & Transportation Booking Platform',
-            'description' => "LimoSchedule is a complete white-label transportation booking platform — booking website, customer panel, driver panel and admin dashboard, one-time payment.",
+            'title'       => 'LimoSchedule — White-Label Limo Booking Software ($1,999)',
+            'description' => 'White-label limo, taxi & chauffeur booking software — booking website, customer, driver and admin panels, for a $1,999 one-time payment. No monthly fees.',
             'canonical'   => url('/'),
             'og_type'     => 'website',
-            'og_image'    => url('public/assets/images/hero/hero-luxury-dashboard.jpg'),
+            'og_image'    => url('public/assets/images/hero/hero-fleet-lineup.jpg'),
             'twitter_card'=> 'summary_large_image',
         ];
 
