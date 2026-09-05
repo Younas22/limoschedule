@@ -138,7 +138,7 @@
                             name="schema"
                             rows="6"
                             spellcheck="false"
-                            placeholder='<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "Article", ... }</script>'
+                            placeholder='<script type="application/ld+json">{ "@@context": "https://schema.org", "@@type": "Article", ... }</script>'
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg text-xs font-mono focus:outline-none focus:ring-2 focus:ring-yellow-400 @error('schema') border-red-400 @enderror"
                         >{{ old('schema') }}</textarea>
                         @error('schema') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
