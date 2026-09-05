@@ -1,6 +1,9 @@
 @extends('layouts.public')
 
 @push('styles')
+@if($blog->schema)
+{!! $blog->schema !!}
+@endif
 <style>
     .toc-scroll { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.15) transparent; }
     .toc-scroll::-webkit-scrollbar { width: 4px; }

@@ -131,6 +131,19 @@
                             <p id="serpDesc" class="text-gray-600 text-xs mt-0.5 leading-relaxed line-clamp-2">{{ old('meta_description', $blog->meta_description ?: 'Meta description will appear here...') }}</p>
                         </div>
                     </div>
+
+                    <div class="mt-5 pt-5 border-t border-gray-100">
+                        <label class="block text-xs font-medium text-gray-600 mb-1.5">Schema Markup (JSON-LD)</label>
+                        <p class="text-xs text-gray-400 mb-2">Paste the complete <code class="bg-gray-100 px-1 py-0.5 rounded">&lt;script type="application/ld+json"&gt;...&lt;/script&gt;</code> tag. It's output on this post's page exactly as pasted — nothing is validated or modified.</p>
+                        <textarea
+                            name="schema"
+                            rows="6"
+                            spellcheck="false"
+                            placeholder='<script type="application/ld+json">{ "@context": "https://schema.org", "@type": "Article", ... }</script>'
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg text-xs font-mono focus:outline-none focus:ring-2 focus:ring-yellow-400 @error('schema') border-red-400 @enderror"
+                        >{{ old('schema', $blog->schema) }}</textarea>
+                        @error('schema') <p class="mt-1 text-xs text-red-600">{{ $message }}</p> @enderror
+                    </div>
                 </div>
 
             </div>
