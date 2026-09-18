@@ -133,7 +133,7 @@
 
             <!-- Logo -->
             <a href="{{ url('/') }}" class="flex-shrink-0 block" aria-label="LimoSchedule — Home">
-                <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" width="890" height="130" class="h-[30px] w-auto block" loading="eager" decoding="sync">
+                <img src="{{ url('public/logo/white-LimoSchedule.svg') }}" alt="LimoSchedule" width="230" height="40" class="h-[30px] w-auto block" loading="eager" decoding="sync">
             </a>
 
             <!-- Desktop Nav links -->
