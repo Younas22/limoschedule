@@ -424,7 +424,7 @@
             <!-- Column 1: Brand -->
             <div class="flex flex-col gap-5">
                 <a href="{{ url('/') }}" class="inline-block" aria-label="LimoSchedule — Home">
-                    <img src="{{ url('public/logo/logo-white.png') }}" alt="LimoSchedule" width="890" height="130" class="h-[28px] w-auto block" loading="lazy" decoding="async">
+                    <img src="{{ url('public/logo/white-LimoSchedule.svg') }}" alt="LimoSchedule" width="230" height="40" class="h-[28px] w-auto block" loading="lazy" decoding="async">
                 </a>
                 <p class="text-gray-500 text-[13px] leading-relaxed max-w-[250px]">
                     Complete booking technology for limo, black car, taxi and chauffeur businesses.
